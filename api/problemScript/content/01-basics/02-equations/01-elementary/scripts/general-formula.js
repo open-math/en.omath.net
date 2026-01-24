@@ -64,29 +64,29 @@ var general_formula_default = defineProblemScript('__auto_generated__',{
   return {
     problemContent: /* @__PURE__ */ jsxs(Fragment, { children: [
       /* @__PURE__ */ jsxs(ProblemDescription, { children: [
-        /* @__PURE__ */ jsx(P, { children: "Решите уравнение, используя выведенную ранее общую формулу:" }),
+        /* @__PURE__ */ jsx(P, { children: "Solve the equation using the previously derived general formula:" }),
         /* @__PURE__ */ jsx(BlockMath, { children: equation })
       ] }),
       /* @__PURE__ */ jsx(
         ProblemCheck,
         {
-          label: "Корень уравнения",
+          label: "Root of the equation",
           answer: root.replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, "$1/$2").replace(/^-?\\frac/, (m) => m.includes("-") ? "-" : "")
         }
       ),
       /* @__PURE__ */ jsx(ProblemAnswer, { children: /* @__PURE__ */ jsx(BlockMath, { children: root }) }),
       /* @__PURE__ */ jsxs(ProblemSolution, { children: [
         /* @__PURE__ */ jsxs(P, { children: [
-          "Определяем коэффициенты ",
+          "Identify the coefficients ",
           /* @__PURE__ */ jsx(M, { children: "A" }),
-          " и ",
+          " and ",
           /* @__PURE__ */ jsx(M, { children: "B" }),
-          " в уравнении:"
+          " in the equation:"
         ] }),
         /* @__PURE__ */ jsx(BlockMath, { children: math`
                         A = ${A}, \enspace B = ${B}
                     ` }),
-        /* @__PURE__ */ jsx(P, { children: "Подставляем их в общую формулу:" }),
+        /* @__PURE__ */ jsx(P, { children: "Substitute them into the general formula:" }),
         /* @__PURE__ */ jsx(BlockMath, { children: math`
                         x = -\frac{B}{A}
                         >>{big}
