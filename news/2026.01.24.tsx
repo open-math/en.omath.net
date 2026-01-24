@@ -3,7 +3,7 @@ const topicReference = $CONTENT.foundations.equations.elementary;
 export default (
     <>
         <P>
-            New <Ref to={topicReference}>topic</Ref> about solving simple equations -- "Elementary Equations".
+            Learning to solve elementary equations in new <Ref to={topicReference}>topic</Ref> "Elementary Equations".
         </P>
     </>
 );

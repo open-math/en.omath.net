@@ -1,1 +1,1 @@
-export const authorContribution = 'Идея и основной контент.';
+export const authorContribution = 'Idea and main content.';

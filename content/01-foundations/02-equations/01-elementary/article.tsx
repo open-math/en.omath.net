@@ -823,11 +823,10 @@ export default defineProse({
         <BlockMath>{math`x + 3 - 3 = 10 - 3 \\ x = 7`}</BlockMath>
 
         <P>
-            From the true equality <M>x + 3 = 10</M>, we obtained the true equality
-            <M>x = 7</M>. Since the equality <M>x = 7</M> is true, it means that <M>x</M> and <M>7</M> are{' '}
-            <B>one and the same</B>, that is, the unknown number <M>x</M> is the number <M>7</M>. And so we found the
-            solution to the equation! We can even perform a check and substitute the number <M>7</M> instead of <M>x</M>{' '}
-            in the original equation <M>x + 3 = 10</M>:
+            From the true equality <M>x + 3 = 10</M>, we obtained the true equality <M>x = 7</M>. Since the equality{' '}
+            <M>x = 7</M> is true, it means that <M>x</M> and <M>7</M> are <B>one and the same</B>, that is, the unknown
+            number <M>x</M> is the number <M>7</M>. And so we found the solution to the equation! We can even perform a
+            check and substitute the number <M>7</M> instead of <M>x</M> in the original equation <M>x + 3 = 10</M>:
         </P>
 
         <BlockMath>{math`7 + 3 = 10 \\ 10 = 10`}</BlockMath>
@@ -862,9 +861,8 @@ export default defineProse({
 
         <P>
             With addition and subtraction, everything is quite simple. The main task is to add or subtract a number so
-            that
-            <M>0</M> is obtained. This way you can get rid of unnecessary and interfering pieces of equalities. Let's
-            look at examples. Be sure to carefully study the solution of each, there are tricky nuances:
+            that <M>0</M> is obtained. This way you can get rid of unnecessary and interfering pieces of equalities.
+            Let's look at examples. Be sure to carefully study the solution of each, there are tricky nuances:
         </P>
 
         <Problems title="Equations with Addition and Subtraction" level="easy">
@@ -1176,10 +1174,9 @@ export default defineProse({
 
                     <P>
                         But our work is not finished yet! Now in the left part our <M>x</M> is hindered by
-                        multiplication by
-                        <M>3</M> and subtraction of <M>4</M>. To get rid of <M>-4</M>, according to the same action rule
-                        add the number <M>4</M> to both sides of the equation. Then in the left part <M>-4</M> and{' '}
-                        <M>+4</M>
+                        multiplication by <M>3</M> and subtraction of <M>4</M>. To get rid of <M>-4</M>, according to
+                        the same action rule add the number <M>4</M> to both sides of the equation. Then in the left
+                        part <M>-4</M> and <M>+4</M>
                         will destroy each other, and only <M>3x</M> will remain there:
                     </P>
 
@@ -1222,7 +1219,7 @@ export default defineProse({
                         Each time we did everything according to the same action rule, so each time we obtained a new{' '}
                         <B>true</B>
                         equality. After three simplifications, we arrived at the true equality <M>x = 3</M>. That is the
-                        unknown number <M>x</M> is the number <M>3</M>. <M>3</M> is the solution of the equation
+                        unknown number <M>x</M> is the number <M>3</M>. <M>3</M> is the solution of the equation{' '}
                         <M>4x - 4 = 5 + x</M>.
                     </P>
                 </ProblemSolution>
@@ -1329,9 +1326,9 @@ export default defineProse({
                     <P>
                         The first time we left <M>x</M> in the left part of the equality. Now let's try to leave it in
                         the right part. To do this, according to the{' '}
-                        <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract
-                        <M>4x</M> from both sides of the equation. Then in the left part <M>4x</M> and <M>-4x</M> will
-                        destroy each other, and only <M>-4</M> will remain there:
+                        <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract <M>4x</M> from both sides of
+                        the equation. Then in the left part <M>4x</M> and <M>-4x</M> will destroy each other, and only{' '}
+                        <M>-4</M> will remain there:
                     </P>
 
                     <BlockMath>{math`
@@ -1587,7 +1584,7 @@ export default defineProse({
                 </P>
                 <P>
                     Complete nonsense. Unfortunately, such an illiterate answer you will hear in 90% of cases from
-                    schoolchildren and even students. To start with, the variable is not always denoted by the letter
+                    schoolchildren and even students. To start with, the variable is not always denoted by the letter{' '}
                     <M>x</M>. A variable can be denoted by any letters and symbols, for example <M>y</M>, <M>z</M>,{' '}
                     <M>t</M>, <M>\alpha</M>, <M>\beta</M> etc.
                 </P>
@@ -1700,8 +1697,8 @@ export default defineProse({
         <List type="ol">
             <Li>
                 We dance with a tambourine, jump over a fire three times and move <M>-5</M>
-                to the right with the opposite sign. We get <M>x = 8 + 5</M>. The answer is
-                <M>13</M>. And why and how it happened, don't even think...
+                to the right with the opposite sign. We get <M>x = 8 + 5</M>. The answer is <M>13</M>. And why and how
+                it happened, don't even think...
             </Li>
             <Li>
                 The number <M>-5</M> prevents <M>x</M> from being alone. We need to get rid of it. To do this, add{' '}
