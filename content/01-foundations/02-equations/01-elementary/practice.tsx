@@ -204,7 +204,8 @@ export default defineProse({
                     <P>
                         To get <M>x</M> alone, we need to get rid of multiplication by <M>8</M>. To do this, by the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we divide both sides of the equation by{' '}
-                        <M>8</M>. Then in the left side we can cancel <M>8</M> and <M>8</M> (<M>8 : 8 = 1</M>), and only <M>x</M> will remain there:
+                        <M>8</M>. Then in the left side we can cancel <M>8</M> and <M>8</M> (<M>8 : 8 = 1</M>), and only{' '}
+                        <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 8} \ | \ 8x = 80 \ | \ \brand{\div 8} \\
@@ -284,9 +285,8 @@ export default defineProse({
                         <P>
                             Now multiplication by <M>10</M> and addition of <M>3</M> prevent <M>x</M> from being alone.
                             First, get rid of adding <M>3</M>. To do this, by the rule of same action, we subtract{' '}
-                            <M>3</M>
-                            from both sides of the equation. Then in the left side <M>+3</M> and <M>-3</M> will cancel
-                            each other out (the sum is <M>0</M>), and only <M>10x</M> will remain there:
+                            <M>3</M> from both sides of the equation. Then in the left side <M>+3</M> and <M>-3</M> will
+                            cancel each other out (the sum is <M>0</M>), and only <M>10x</M> will remain there:
                         </P>
                         <BlockMath>{math`
                             \brand{- 3} \ | \ 10x + 3 = 0 \ | \ \brand{- 3} \\
@@ -794,8 +794,8 @@ export default defineProse({
                 <P>
                     This trick problem demonstrates well two types of thinking: "fast/intuitive", which consumes less
                     energy, and "slow/logical". When you try to solve this problem quickly in your head, the "fast" type
-                    of thinking takes over, which subtracts <M>100</M> from the total sum of <M>110</M>
-                    and gets that the ball costs <M>10</M> rubles. It does not check the result, but simply outputs it.
+                    of thinking takes over, which subtracts <M>100</M> from the total sum of <M>110</M> and gets that
+                    the ball costs <M>10</M> rubles. It does not check the result, but simply outputs it.
                 </P>
             </ProblemNote>
         </Problem>
@@ -1223,10 +1223,11 @@ export default defineProse({
                     <P>
                         When I was <M>14</M>, my father was three times older than me. That is, he was <M>42</M> years
                         old then. I am <M>x</M> years old now, and father is twice as old, that is, <M>2x</M> years old.
-                        Since then I have grown by <M>x - 14</M> years. Father has grown by <M>2x - 42</M> years differently since then. But we
-                        live on the same planet and none of us flew into deep space. Therefore, time passes equally for
-                        both of us. So, both I and he aged by the same number of years! It turns out my difference of{' '}
-                        <M>x-14</M> years is the same difference as his difference of <M>2x - 42</M> years:
+                        Since then I have grown by <M>x - 14</M> years. Father has grown by <M>2x - 42</M> years
+                        differently since then. But we live on the same planet and none of us flew into deep space.
+                        Therefore, time passes equally for both of us. So, both I and he aged by the same number of
+                        years! It turns out my difference of <M>x-14</M> years is the same difference as his difference
+                        of <M>2x - 42</M> years:
                     </P>
                     <BlockMath>{math`x - 14 = 2x - 42`}</BlockMath>
                     <P>
@@ -1509,8 +1510,7 @@ export default defineProse({
                         <P>
                             Let's group <M>x</M> in the left side of the equation. To do this, we need to get rid of the
                             fraction on the right. To do this, by the <Dep to={sameActionRule}>rule</Dep> of same
-                            action, subtract the fraction <M>{math`\frac{49x}{42}`}</M>
-                            from both sides of the equation:
+                            action, subtract the fraction <M>{math`\frac{49x}{42}`}</M> from both sides of the equation:
                         </P>
                         <BlockMath>{math`
                             \brand{- \frac{49x}{42}} \ | \ \frac{54x + 162}{42} = \frac{49x}{42} \ | \ \brand{- \frac{49x}{42}} \\
@@ -1820,18 +1820,17 @@ export default defineProse({
                 </ProblemHint>
                 <ProblemAnswer>
                     Alina covered <M>37</M> kilometers on the first day, <M>42</M> kilometers on the second day, and{' '}
-                    <M>32</M>
-                    kilometers on the third day.
+                    <M>32</M> kilometers on the third day.
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
                         We have at least some data about how much Alina covered on the second and third days. Absolutely
                         nothing is known only about the first day. Therefore, let's denote by <M>x</M> the number of
                         kilometers, that Alina covered on the first day. On the second day she covered <M>5</M>{' '}
-                        kilometers more, that is <M>x + 5</M> kilometers. And on the third day she covered <M>10</M> kilometers less than on the
-                        second, that is, from the kilometers of the second day (<M>x + 5</M>) subtract <M>10</M>{' '}
-                        kilometers: <M>(x + 5) - 10</M> kilometers. It turns out that on the third day Alina covered{' '}
-                        <M>x - 5</M> kilometers.
+                        kilometers more, that is <M>x + 5</M> kilometers. And on the third day she covered <M>10</M>{' '}
+                        kilometers less than on the second, that is, from the kilometers of the second day (<M>x + 5</M>
+                        ) subtract <M>10</M> kilometers: <M>(x + 5) - 10</M> kilometers. It turns out that on the third
+                        day Alina covered <M>x - 5</M> kilometers.
                     </P>
                     <P>
                         In total, she covered the entire route in three days, that is <M>111</M> kilometers. So we can
@@ -1884,8 +1883,7 @@ export default defineProse({
                 </ProblemHint>
                 <ProblemAnswer>
                     Pavel covered <M>14</M> kilometers on the first day, <M>11</M> kilometers on the second day, and{' '}
-                    <M>17</M>
-                    kilometers on the third day.
+                    <M>17</M> kilometers on the third day.
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
@@ -2326,8 +2324,8 @@ export default defineProse({
                     `}</BlockMath>
                     <P>
                         Now the variable <M>x</M> is hindered only by addition with <M>2</M>. To get rid of it, we
-                        subtract <M>2</M> from both sides of the equation. Then on the left side <M>+2</M> and <M>-2</M> will
-                        mutually destroy each other (resulting in <M>0</M>), leaving only <M>x</M>:
+                        subtract <M>2</M> from both sides of the equation. Then on the left side <M>+2</M> and <M>-2</M>{' '}
+                        will mutually destroy each other (resulting in <M>0</M>), leaving only <M>x</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{- 2} \ | \ x + 2 = 6 \ | \ \brand{- 2} \\
@@ -2795,7 +2793,7 @@ export default defineProse({
                 </P>
                 <BlockMath>{math`-3p + 1 = 5p + 25`}</BlockMath>
                 <P>
-                    Let's group <M>p</M> on the right side of the equation. To do this, we need to get rid of <M>-3p</M>
+                    Let's group <M>p</M> on the right side of the equation. To do this, we need to get rid of <M>-3p</M>{' '}
                     on the left side. To do this, using the <Dep to={sameActionRule}>rule</Dep> of the same action, we
                     add <M>3p</M> to both sides of the equation:
                 </P>
@@ -2916,9 +2914,8 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         It is more profitable to group <M>x</M> on the right side of the equation, by subtracting{' '}
-                        <M>3x</M>
-                        from both sides of the equation using the <Dep to={sameActionRule}>rule</Dep> of the same
-                        action:
+                        <M>3x</M> from both sides of the equation using the <Dep to={sameActionRule}>rule</Dep> of the
+                        same action:
                     </P>
                     <BlockMath>{math`
                         \brand{- 3x} \ | \ 3x + 2 = x \ | \ \brand{- 3x} \\
@@ -2979,9 +2976,8 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         It is more profitable to group <M>x</M> on the left side of the equation, by subtracting{' '}
-                        <M>5x</M>
-                        from both sides of the equation using the <Dep to={sameActionRule}>rule</Dep> of the same
-                        action:
+                        <M>5x</M> from both sides of the equation using the <Dep to={sameActionRule}>rule</Dep> of the
+                        same action:
                     </P>
                     <BlockMath>{math`
                         \brand{- 5x} \ | \ 7x - 2 = 5x + 10 \ | \ \brand{- 5x} \\
@@ -2993,7 +2989,7 @@ export default defineProse({
                         <M>x</M> is positive.
                     </P>
                     <P>
-                        If we had chosen to group <M>x</M> on the right side of the equation by subtracting <M>7x</M>
+                        If we had chosen to group <M>x</M> on the right side of the equation by subtracting <M>7x</M>{' '}
                         from both sides of the equation, we would have arrived at the following situation:
                     </P>
                     <BlockMath>{math`
@@ -3009,9 +3005,8 @@ export default defineProse({
                 </ProblemSolution>
                 <ProblemNote>
                     Important conclusion -- if the solution can be greatly simplified, a negative coefficient at{' '}
-                    <M>x</M>
-                    can be tolerated. But if no strong simplification can be achieved, it is better to avoid negative
-                    coefficients and group so that the coefficient at <M>x</M> is positive.
+                    <M>x</M> can be tolerated. But if no strong simplification can be achieved, it is better to avoid
+                    negative coefficients and group so that the coefficient at <M>x</M> is positive.
                 </ProblemNote>
             </SubProblem>
 
@@ -3634,10 +3629,9 @@ export default defineProse({
                     <BlockMath>{math`A_1x + B_1 = 0 >>{big} A_2x + B_2 = 0`}</BlockMath>
                     <P>
                         Since these two equations are irreducible to each other, the coefficients <M>A_2</M> and{' '}
-                        <M>B_2</M>
-                        cannot be obtained from <M>A_1</M> and <M>B_1</M> by multiplying by the same number, otherwise
-                        this common factor could simply be factored out. The multipliers must be different, for example{' '}
-                        <M>n</M> to obtain <M>A_2</M> and <M>m</M> to obtain <M>B_2</M>:
+                        <M>B_2</M> cannot be obtained from <M>A_1</M> and <M>B_1</M> by multiplying by the same number,
+                        otherwise this common factor could simply be factored out. The multipliers must be different,
+                        for example <M>n</M> to obtain <M>A_2</M> and <M>m</M> to obtain <M>B_2</M>:
                     </P>
                     <BlockMath>{math`A_1x + B_1 = 0 >>{big} \underbrace{nA_1}_{A_2}x + \underbrace{mB_1}_{B_2} = 0`}</BlockMath>
                     <P>

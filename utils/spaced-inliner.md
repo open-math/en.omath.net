@@ -17,4 +17,7 @@ To fix this you first need to find such problematic places.
 Use this find regexp: `(\w)\n\s*(<[B|M])`.
 Replace value: `$1 $2`.
 
+Regexp for line break after tag: `(</[BM].*?>)\n\s*(\w)`.
+Replace value: `$1 $2`.
+
 **Keep in mind that sometimes there is really no need to have space between text and tags!**

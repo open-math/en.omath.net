@@ -625,8 +625,8 @@ export default defineProse({
                 <P>
                     So we have a true equality. This means that identical objects lie on the sides of the <M>=</M> sign.
                     We perform the same action on both of these objects, and they <B>"reacted" identically</B> to the
-                    action -- turned into another pair of <B>also identical</B>
-                    objects. Which means the new equality is also true!
+                    action -- turned into another pair of <B>also identical</B> objects. Which means the new equality is
+                    also true!
                 </P>
 
                 <P>{QED}</P>
@@ -967,9 +967,8 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         The situation here is tricky. Our unknown <M>y</M> is on two "scale pans" at once. We need it to
-                        remain only on one. In this case, it is good if <M>y</M>
-                        remains only on the right scale pan, because no additional numbers are added or subtracted
-                        there.
+                        remain only on one. In this case, it is good if <M>y</M> remains only on the right scale pan,
+                        because no additional numbers are added or subtracted there.
                     </P>
 
                     <P>
@@ -1176,8 +1175,7 @@ export default defineProse({
                         But our work is not finished yet! Now in the left part our <M>x</M> is hindered by
                         multiplication by <M>3</M> and subtraction of <M>4</M>. To get rid of <M>-4</M>, according to
                         the same action rule add the number <M>4</M> to both sides of the equation. Then in the left
-                        part <M>-4</M> and <M>+4</M>
-                        will destroy each other, and only <M>3x</M> will remain there:
+                        part <M>-4</M> and <M>+4</M> will destroy each other, and only <M>3x</M> will remain there:
                     </P>
 
                     <BlockMath>{math`
@@ -1217,10 +1215,9 @@ export default defineProse({
 
                     <P>
                         Each time we did everything according to the same action rule, so each time we obtained a new{' '}
-                        <B>true</B>
-                        equality. After three simplifications, we arrived at the true equality <M>x = 3</M>. That is the
-                        unknown number <M>x</M> is the number <M>3</M>. <M>3</M> is the solution of the equation{' '}
-                        <M>4x - 4 = 5 + x</M>.
+                        <B>true</B> equality. After three simplifications, we arrived at the true equality <M>x = 3</M>.
+                        That is the unknown number <M>x</M> is the number <M>3</M>. <M>3</M> is the solution of the
+                        equation <M>4x - 4 = 5 + x</M>.
                     </P>
                 </ProblemSolution>
             </SubProblem>
@@ -1696,9 +1693,9 @@ export default defineProse({
 
         <List type="ol">
             <Li>
-                We dance with a tambourine, jump over a fire three times and move <M>-5</M>
-                to the right with the opposite sign. We get <M>x = 8 + 5</M>. The answer is <M>13</M>. And why and how
-                it happened, don't even think...
+                We dance with a tambourine, jump over a fire three times and move <M>-5</M> to the right with the
+                opposite sign. We get <M>x = 8 + 5</M>. The answer is <M>13</M>. And why and how it happened, don't even
+                think...
             </Li>
             <Li>
                 The number <M>-5</M> prevents <M>x</M> from being alone. We need to get rid of it. To do this, add{' '}
@@ -2036,8 +2033,7 @@ export default defineProse({
 
                     <P>
                         So, the speed of the first cyclist is <M>19</M> km/h. The speed of the second cyclist is{' '}
-                        <M>2</M> km/h higher, that is <M>21</M>
-                        km/h.
+                        <M>2</M> km/h higher, that is <M>21</M> km/h.
                     </P>
                 </ProblemSolution>
             </SubProblem>
