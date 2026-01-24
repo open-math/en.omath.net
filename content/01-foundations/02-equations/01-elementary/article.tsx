@@ -12,7 +12,7 @@ import scalesBalance from './assets/scales-balance.svg';
 import scalesBalanceActions from './assets/scales-balance-actions.svg';
 import equationScalesIdea from './assets/equation-scales-idea.svg';
 import foundIt from './assets/found-it.svg';
-import flyingNumbers from './assets/flying-numbers.webp';
+import flyingNumbers from './assets/flying-numbers.jpg';
 import magicTrianglesEpidemic from './assets/magic-triangles-epidemic.jpg';
 import magicTriangleUsage from './assets/magic-triangle-usage.svg';
 import savingMoney from './assets/saving-money.svg';

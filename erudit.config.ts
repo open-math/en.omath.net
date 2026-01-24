@@ -45,7 +45,7 @@ export default defineEruditConfig({
         enabled: true,
         becomeContributorLink: 'https://github.com/open-math/en.omath.net/blob/main/CONTRIBUTION.md',
         howToImproveLink: 'https://github.com/open-math/en.omath.net/blob/main/CONTRIBUTION.md',
-        editLinkPrefix: 'https://github.com/open-math/en.omath.net/blob/main/',
+        editLinkPrefix: 'https://github.com/open-math/en.omath.net/blob/main/content/',
         reportIssueLink: 'https://github.com/open-math/en.omath.net/issues/',
     },
     // sponsors: {

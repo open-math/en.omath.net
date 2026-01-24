@@ -1,9 +1,9 @@
 export default defineBook({
-    title: 'Math Fundamentals',
+    title: 'Math Foundations',
     description: `
         All the foundational and most useful topics, formulas, and concepts on which all of mathematics is built.
         The perfect starting point if you are a complete beginner in mathematics.
-        No prior knowledge required.
+        No prior knowledge required!
         Everything is explained in a simple and understandable language.
     `,
     externals: [
