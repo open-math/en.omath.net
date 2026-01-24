@@ -1,9 +1,9 @@
-const topicReference = $CONTENT.basics.equations.elementary;
+const topicReference = $CONTENT.foundations.equations.elementary;
 
 export default (
     <>
         <P>
-            New <Ref to={topicReference}>topic</Ref> in solving simple equations -- "Elementary Equations".
+            New <Ref to={topicReference}>topic</Ref> about solving simple equations -- "Elementary Equations".
         </P>
     </>
 );

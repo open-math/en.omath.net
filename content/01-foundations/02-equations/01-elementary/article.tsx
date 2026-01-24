@@ -25,8 +25,8 @@ import carFactory from './assets/car-factory.svg';
 // #region Links
 //
 
-const twister = $CONTENT.basics.equations.elementary.practice.$twister;
-const magicTrianglesProblem = $CONTENT.basics.equations.elementary.practice.$magicTriangles;
+const twister = $CONTENT.foundations.equations.elementary.practice.$twister;
+const magicTrianglesProblem = $CONTENT.foundations.equations.elementary.practice.$magicTriangles;
 
 //
 // #endregion

@@ -27,11 +27,11 @@ import generalFormula from './scripts/general-formula';
 // #region Deps
 //
 
-const equationSolution = $CONTENT.basics.equations.elementary.article.$equationSolution;
-const sameActionRule = $CONTENT.basics.equations.elementary.article.$sameActionRule;
-const alwaysGlobal = $CONTENT.basics.equations.elementary.article.$alwaysGlobal;
-const firstEquation = $CONTENT.basics.equations.elementary.article.$firstEquation;
-const equalityFalseTrue = $CONTENT.basics.equations.elementary.article.$equalityFalseTrue;
+const equationSolution = $CONTENT.foundations.equations.elementary.article.$equationSolution;
+const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
+const alwaysGlobal = $CONTENT.foundations.equations.elementary.article.$alwaysGlobal;
+const firstEquation = $CONTENT.foundations.equations.elementary.article.$firstEquation;
+const equalityFalseTrue = $CONTENT.foundations.equations.elementary.article.$equalityFalseTrue;
 
 //
 // #endregion
