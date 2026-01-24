@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "name": "@open-math/en.omath.ru",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "bun erudit dev",
+        "build": "bun erudit build",
+        "launch": "bun erudit launch",
+        "generate": "bun erudit generate",
+        "preview": "bun erudit preview"
+    },
+    "dependencies": {
+        "erudit": "4.0.0-dev.3",
+        "@erudit-js/prose": "4.0.0-dev.3",
+        "@open-math/shared": "open-math/shared"
+    }
+}

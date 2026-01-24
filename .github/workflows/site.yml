@@ -1,0 +1,31 @@
+name: Build and Deploy
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout 🛎️
+              uses: actions/checkout@v4
+
+            - name: Setup up Node.js
+              uses: actions/setup-node@main
+
+            - uses: oven-sh/setup-bun@v2
+              with:
+                  bun-version: latest
+
+            - name: Install and Build 🔧
+              run: |
+                  bun install
+                  bun generate -- --preset github-pages
+
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  branch: gh-pages
+                  folder: .output/public
