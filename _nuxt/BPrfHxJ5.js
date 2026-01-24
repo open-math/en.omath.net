@@ -1,1 +1,0 @@
-import{_ as e,k as r,e as o}from"./DzR2NfOv.js";const s={},t={class:"border-border mx-(--proseAsideWidth) mt-(--proseGap) rounded border-0 border-b"};function c(n,d){return r(),o("hr",t)}const _=e(s,[["render",c]]);export{_ as default};
