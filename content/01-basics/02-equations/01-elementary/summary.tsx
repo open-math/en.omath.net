@@ -2,13 +2,13 @@ import article from './article';
 
 export default defineProse()(() => (
     <>
-        <H1>Равенство</H1>
+        <H1>Equality</H1>
 
         <Include toc>{article.uniques.equality}</Include>
 
         <Include toc>{article.uniques.equalityFalseTrue}</Include>
 
-        <H1>Уравнение</H1>
+        <H1>Equation</H1>
 
         <Include toc>{article.uniques.equation}</Include>
 
@@ -16,25 +16,26 @@ export default defineProse()(() => (
 
         <Include toc>{article.uniques.equationGuessing}</Include>
 
-        <H1>Правило одинакового действия</H1>
+        <H1>Same action rule</H1>
 
         <Include toc>{article.uniques.sameActionRule}</Include>
 
         <Include toc>{article.uniques.sameActionRuleExamples}</Include>
 
-        <H1>Решение уравнений</H1>
+        <H1>Solving equations</H1>
 
         <P>
-            Решение почти всех уравнений сводится к последовательному <B>упрощению</B> исходного уравнения, раз за разом
-            применяя <Dep to={article.uniques.sameActionRule}>правило</Dep> одинакового действия. Упрощения производятся
-            до тех пор, пока не станет понятно, каким числом является неизвестная. Обычно упрощениями удается свести
-            уравнение к тривильному виду <M>{math`x = \ldots`}</M>
+            Solving almost all equations comes down to sequentially <B>simplifying</B> the original equation, applying
+            the same action
+            <Dep to={article.uniques.sameActionRule}>rule</Dep> time and again. Simplification continues until it
+            becomes clear what number the unknown represents. Usually, simplifications manage to reduce the equation to
+            the trivial form <M>{math`x = \ldots`}</M>
         </P>
 
         <List type="ul">
             <Li>
                 <P>
-                    <B>Сложение</B> нейтрализуют <B>вычитанием</B> и наоборот, чтобы получился <M>0</M>:
+                    <B>Addition</B> is neutralized by <B>subtraction</B> and vice versa, to get <M>0</M>:
                 </P>
                 <BlockMath>{math`
                     \brand{- \ 5} \ | \ x + \red{5} = 12 \ | \ \brand{- \ 5} \\
@@ -48,7 +49,7 @@ export default defineProse()(() => (
             </Li>
             <Li>
                 <P>
-                    <B>Умножение</B> нейтрализуют <B>делением</B> и наоборот, чтобы получилась <M>1</M>:
+                    <B>Multiplication</B> is neutralized by <B>division</B> and vice versa, to get <M>1</M>:
                 </P>
                 <BlockMath>{math`
                     \brand{\div \ 4} \ | \ \red{4}x = 20 \ | \ \brand{\div \ 4} \\
@@ -63,8 +64,8 @@ export default defineProse()(() => (
         </List>
 
         <P>
-            Умножайте и делите обе части аккуратно! Помните, что эти действия применяются ко всей левой и ко всей правой
-            частям, а не только там, где вам удобно! Помните о том, что:
+            Multiply and divide both sides carefully! Remember that these actions apply to the entire left and entire
+            right sides, not just where it suits you! Remember that:
         </P>
 
         <Include toc>{article.uniques.alwaysGlobal}</Include>
@@ -73,13 +74,13 @@ export default defineProse()(() => (
 
         <Include toc>{article.uniques.chainAlternate}</Include>
 
-        <H1>Зачем решать уравнения?</H1>
+        <H1>Why solve equations?</H1>
 
         <Include>{article.uniques.whySolveEquations}</Include>
 
         <Include toc>{article.uniques.realLifeApplications}</Include>
 
-        <H1>Типовые ошибки</H1>
+        <H1>Common mistakes</H1>
 
         <Include toc>{article.uniques.commonMistakes}</Include>
     </>

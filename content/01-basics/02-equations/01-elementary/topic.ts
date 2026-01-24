@@ -1,11 +1,11 @@
 import { authorContribution } from '#project/utils/contributions';
 
 export default defineTopic({
-    title: 'Элементарные уравнения',
+    title: 'Elementary Equations',
     description: `
-        Научимся решать простейшие уравнения и преобразовывать равенства.
-        Просто, наглядно, с примерами и без заучивания наизусть кучи странных правил.
-        Это ключевой и необходимый навык в математике и всех остальных точных науках.
+        We will learn how to solve elementary equations and transform equalities.
+        Simple, visual, with examples and without memorizing a bunch of strange rules.
+        This is a key and necessary skill in mathematics and all other exact sciences.
     `,
     contributions: [
         {

@@ -74,11 +74,11 @@ export default defineProblemScript({
         problemContent: (
             <>
                 <ProblemDescription>
-                    <P>Решите уравнение, используя выведенную ранее общую формулу:</P>
+                    <P>Solve the equation using the previously derived general formula:</P>
                     <BlockMath>{equation}</BlockMath>
                 </ProblemDescription>
                 <ProblemCheck
-                    label="Корень уравнения"
+                    label="Root of the equation"
                     answer={root
                         .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '$1/$2')
                         .replace(/^-?\\frac/, (m) => (m.includes('-') ? '-' : ''))}
@@ -88,12 +88,12 @@ export default defineProblemScript({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        Определяем коэффициенты <M>A</M> и <M>B</M> в уравнении:
+                        Identify the coefficients <M>A</M> and <M>B</M> in the equation:
                     </P>
                     <BlockMath>{math`
                         A = ${A}, \enspace B = ${B}
                     `}</BlockMath>
-                    <P>Подставляем их в общую формулу:</P>
+                    <P>Substitute them into the general formula:</P>
                     <BlockMath>{math`
                         x = -\frac{B}{A}
                         >>{big}

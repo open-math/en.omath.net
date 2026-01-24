@@ -1,21 +1,18 @@
 ---
-mode: edit
-model: Claude Sonnet 4
+agent: agent
+model: Gemini 3 Pro (Preview) (copilot)
 description: 'Proofreading'
 ---
 
-Ограничения:
+Restrictions:
 
-- Не меняй двойные тире и дефисы "--" на обычное тире!
-- Не меняй кавычки!
-- Не трогай YAML-подобную разметку!
-- Не трогай LaTeX подобные формулы!
-- Не трогай секции вида {{ ... }}!
-- Не удаляй большие блоки текста!
+- Do not touch double dashes (they are handled by engine)!
+- Do not touch quotes (they are handled by engine)!
+- Do not touch math formulas!
+- Do not remove large chunks of text!
 
-Задача - Исправить:
+Your task is to fix following:
 
-- Орфографические ошибки
-- Грамматические ошибки
-- Пунктуационные ошибки (но не заменяя тире, дефисы и кавычки)
-- Буквы "е" на "ё" где это необходимо
+- Spelling errors
+- Grammar errors
+- Punctuation errors (but without replacing dashes, hyphens and quotes)

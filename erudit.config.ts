@@ -78,11 +78,11 @@ export default defineEruditConfig({
     ads: {
         aside: {
             provider: 'yandex',
-            blockId: 'R-A-2185026-3',
+            blockId: 'R-A-18528824-1',
         },
         bottom: {
             provider: 'yandex',
-            blockId: 'R-A-2185026-1',
+            blockId: 'R-A-18528824-2',
         },
     },
     elements: defaultElements,

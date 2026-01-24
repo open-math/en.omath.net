@@ -1,18 +1,9 @@
 export default defineGroup({
     separator: true,
-    title: 'Уравнения',
+    title: 'Equations',
     description: `
-        Разбор самых популярных уравнений: элементарных, квадратных, систем и т.д.
-        Вы поймёте, зачем их вообще нужно решать и как с их помощью можно описывать процессы в реальной жизни.
-        Разберем и нюансы: преобразования, ОДЗ, "потеря" и появление "лишних" корней и многие другие.
+        Analysis of the most popular equations: elementary, quadratic, systems, etc.
+        You will understand why they need to be solved at all and how they can be used to describe processes in real life.
+        We will also consider nuances: transformations, domain restrictions, "loss" and appearance of "extraneous" roots, and many others.
     `,
-    externals: [
-        {
-            type: 'physical',
-            title: 'Задачи на составление уравнений и методы их решения',
-            info: 'Крамор В. С., (Школьный курс математики)',
-            link: 'https://ddpu.edu.ua/fmk/studentam/3em/10.pdf',
-            reason: 'Больше 300 задач на сведение жизненных ситуаций к уравнениям вместе с решениями и ответами.',
-        },
-    ],
 });

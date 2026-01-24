@@ -1,9 +1,9 @@
 export default defineGroup({
-    title: 'Квадратные уравнения',
+    title: 'Quadratic Equations',
     dependencies: [
         {
             dependency: $CONTENT.basics.equations.elementary,
-            reason: 'Перед решением квадратных уравнений вы должны уметь решать элементарные. Иначе никак. Даже не пытайтесь.',
+            reason: "Before solving quadratic equations, you must be able to solve elementary ones. No other way. Don't even try.",
         },
     ],
 });
