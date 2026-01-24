@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"><link rel="stylesheet" href="/_nuxt/entry.B3_WfWq4.css" crossorigin><link rel="modulepreload" as="script" crossorigin href="/_nuxt/DzR2NfOv.js"><script type="module" src="/_nuxt/DzR2NfOv.js" crossorigin></script>
+            <style>
+:root {
+    --color-brand: light-dark(#1879d9, #4e94d9);
+    --duration-multiplier: 1;
+}
+            </style>
+        <script>/**
+ * Setup theme on client side as early as possible to prevent blinking.
+ * Script is injected in html <head> via Nitro plugin.
+ */
+(() => {
+    const w = window;
+    const d = document;
+    const s = localStorage;
+    const key = 'theme';
+
+    const getLocalTheme = () => {
+        const _localTheme = s.getItem(key) || 'system';
+        s.setItem(key, _localTheme);
+        return _localTheme;
+    };
+
+    const getBinaryTheme = (theme) => {
+        switch (theme) {
+            case 'dark':
+            case 'light':
+                return theme;
+            case 'system':
+                return w.matchMedia('(prefers-color-scheme: dark)').matches
+                    ? 'dark'
+                    : 'light';
+        }
+    };
+
+    d.documentElement.setAttribute(
+        'data-theme',
+        getBinaryTheme(getLocalTheme()),
+    );
+})();
+</script></head><body><div id="__nuxt"></div><div id="teleports"></div><script>window.__NUXT__={};window.__NUXT__.config={public:{erudit:{mode:"static",version:"4.0.0-dev.3",project:{language:{current:"en",translations:{en:{name:"English",link:"https://en.omath.net"},ru:{name:"Русский",link:"https://omath.ru"}}},originUrl:"https://en.omath.net/",baseUrl:"/",siteInfo:{title:"Open Math",short:"Clear and interesting",logotype:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/logotype.svg",favicon:{default:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/favicons/default.svg",group:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/favicons/group.svg",book:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/favicons/book.svg",page:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/favicons/page-article.svg",article:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/favicons/page-article.svg",summary:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/favicons/summary.svg",practice:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/favicons/practice.svg"}},seo:{siteTitle:"Open Math",useBookSiteTitle:true,image:{src:"https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/og.png",width:500,height:500}},debug:{ads:false,log:false,slowTransition:false,fakeApi:{repository:false},analytics:""},style:{brandColor:"light-dark(#1879d9, #4e94d9)"},repository:{type:"github",name:"open-math/en.omath.net",branch:"main",_link:"https://github.com/open-math/en.omath.net/tree/main"},customLinks:"",contributors:{enabled:true,becomeContributorLink:"https://github.com/open-math/en.omath.net/blob/main/CONTRIBUTION.md",howToImproveLink:"https://github.com/open-math/en.omath.net/blob/main/CONTRIBUTION.md",editLinkPrefix:"https://github.com/open-math/en.omath.net/blob/main/",reportIssueLink:"https://github.com/open-math/en.omath.net/issues/"},sponsors:"",ads:{aside:{provider:"yandex",blockId:"R-A-2185026-3"},bottom:{provider:"yandex",blockId:"R-A-2185026-1"}},analytics:{yandex:{verification:"7d97dac84bd592c6",metricsId:"106425766"},google:{verification:"hbTull_8pcvJm4alie8PVq6-f87heZXqSGp6DVFsJPk",gtag:"G-NE4S66HSF0"}}}},buildTimestamp:1769250445572},app:{baseURL:"/",buildId:"4b29bbc1-f790-4624-8e85-c761ad8388a4",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="false" id="__NUXT_DATA__">[{"prerenderedAt":1,"serverRendered":2},1769250485478,false]</script></body></html>

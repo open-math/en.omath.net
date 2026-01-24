@@ -1,0 +1,1 @@
+{"type":"function","value":"(contentTitle) => `Summary of the topic \"${contentTitle}\": key definitions, theorems, properties and examples of their use. All the most important things in a concise form!`"}
