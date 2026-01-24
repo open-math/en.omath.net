@@ -1,0 +1,1 @@
+{"type":"function","value":"(name) => `Personal page of contributor \"${name}\" with information about their contributions to the project.`"}

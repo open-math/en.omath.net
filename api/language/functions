@@ -1,0 +1,1 @@
+{"m":"function m(number, one, few, includeNumber = true) {\n  const text = number === 1 ? one : few;\n  return includeNumber ? `${number} ${text}` : text;\n}"}
