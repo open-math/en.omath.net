@@ -1,1 +1,0 @@
-import{i as n,T as r}from"./DzR2NfOv.js";const p=Symbol();function a(){return n(p)}function m(o){let e;typeof o=="string"?e=o:e=o.schemaName;const{appElements:s}=a(),t=s[e];if(!t)throw new r(`No AppElement found for schema "${e}"!`);return t}export{a,p,m as u};
