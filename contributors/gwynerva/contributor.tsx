@@ -3,10 +3,10 @@ export default defineContributor({
     displayName: 'Peter Radko',
     short: 'Geniuses are not born — they become!',
     links: {
-        'My site': 'https://radkopeter.ru/',
+        'My site [RU]': 'https://radkopeter.ru/',
         GitHub: 'https://github.com/Gwynerva',
         Telegram: 'https://t.me/gwynerva',
-        Email: 'mailto:newpetya@inbox.ru',
+        Email: 'mailto:the.gwynerva@gmail.com',
     },
     description: (
         <>

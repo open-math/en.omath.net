@@ -12,6 +12,7 @@
 <p align="center">
 🌐 <a href="https://en.omath.net">Site</a>
 ✍🏻 <a href="./CONTRIBUTION.md">Contribute</a>
+💎 <a href="https://boosty.to/omath.en">Sponsor</a>
 </p>
 
 <p align="center">▨</p>
