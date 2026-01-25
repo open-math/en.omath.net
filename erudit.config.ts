@@ -15,6 +15,7 @@ export default defineEruditConfig({
             brandColor: 'light-dark(#1879d9, #4e94d9)',
         },
         favicon: defaultAssets.favicon,
+        loadingSvg: defaultAssets.loadingSvg,
     },
     seo: {
         siteTitle: 'Open Math',

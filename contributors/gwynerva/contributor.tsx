@@ -5,7 +5,7 @@ export default defineContributor({
     links: {
         'My site': 'https://radkopeter.ru/',
         GitHub: 'https://github.com/Gwynerva',
-        Telegram: 'https://t.me/math_head',
+        Telegram: 'https://t.me/gwynerva',
         Email: 'mailto:newpetya@inbox.ru',
     },
     description: (

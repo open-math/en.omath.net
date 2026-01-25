@@ -16,3 +16,6 @@ Your task is to fix following:
 - Spelling errors
 - Grammar errors
 - Punctuation errors (but without replacing dashes, hyphens and quotes)
+
+Keep the simple and direct writing style.
+The document context is math textbook so keep needed technical terms and phrasing.

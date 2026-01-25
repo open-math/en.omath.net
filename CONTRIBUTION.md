@@ -14,7 +14,7 @@ If your suggestions lead to adding new content **(other than typo reports!)**, w
 You can propose changes in two ways:
 
 1. Edit the material directly on GitHub and open a Pull Request.
-2. Contact me via Telegram ([@math_head](https://t.me/math_head)) or email ([newpetya@inbox.ru](mailto:newpetya@inbox.ru)).
+2. Contact me via Telegram ([@gwynerva](https://t.me/gwynerva)) or email ([newpetya@inbox.ru](mailto:newpetya@inbox.ru)).
 3. Install a local copy of project on your PC to make large contributions.
 
 # Rules for using links

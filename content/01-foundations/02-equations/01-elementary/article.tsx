@@ -76,7 +76,7 @@ export default defineProse({
 
         <P>
             That is why everything is described here in such a way that you 100% understand the basic principles of
-            working with equalities and equations. So that basic actions do not cause you any contradictions or
+            working with equalities and equations. So those basic actions do not cause you any contradictions or
             misunderstandings. So that if necessary, you yourself could explain in detail every step of solving any
             equation.
         </P>
@@ -207,8 +207,8 @@ export default defineProse({
         </P>
 
         <P>
-            On a playground, you can almost always find a "seesaw" — a construction consisting of a long board lying on
-            a support in the middle. If children of the same weight sit on both sides, the seesaw is in balance and does
+            On a playground, you can almost always find a seesaw — a construction consisting of a long board lying on a
+            support in the middle. If children of the same weight sit on both sides, the seesaw is in balance and does
             not tilt to either side. This is an example of true equality.
         </P>
 
