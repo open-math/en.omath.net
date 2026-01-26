@@ -11,6 +11,7 @@ import magicTriangle1 from './assets/practice/magic-triangle-1.svg';
 import magicTriangle2 from './assets/practice/magic-triangle-2.svg';
 import magicTriangle3 from './assets/practice/magic-triangle-3.svg';
 import rootClasses from './assets/practice/root-classes.svg';
+import catHeight from './assets/practice/cat-height.svg';
 
 //
 // #endregion
@@ -685,6 +686,101 @@ export default defineProse({
                     useless, because it leads to the loss of <M>x</M> from the equation, which means we can no longer
                     find out what it equals.
                 </P>
+            </ProblemSolution>
+        </Problem>
+
+        <Problem title="Cats vs... Trees" level="easy">
+            <ProblemDescription>
+                <P>Find the height of the cat.</P>
+                <Image src={catHeight} width="400px" />
+            </ProblemDescription>
+            <ProblemHint>
+                Denote the tree height as 🌲, and the cat height as 🐱. Using these variables, look at each picture and
+                write down what is depicted on it in the form of an equation.
+            </ProblemHint>
+            <ProblemCheck answer={50} />
+            <ProblemAnswer>
+                <M>50</M>
+            </ProblemAnswer>
+            <ProblemSolution>
+                <ProblemSection title="Direct solution">
+                    <P>
+                        Let's look at the picture and write it down directly as equations. To begin with, we don't know
+                        the height of neither the tree nor the cat. Let's denote them with corresponding
+                        emoji-variables: 🌲 and 🐱.
+                    </P>
+                    <P>
+                        In the left picture we see that the cat height plus <M>200</M> is the tree height. Writing it as
+                        an equation:
+                    </P>
+                    <BlockMath>{math`🐱 + 200 = 🌲`}</BlockMath>
+                    <P>
+                        In the right picture, the sum of tree and cat heights gives <M>300</M>. Writing it down:
+                    </P>
+                    <BlockMath>{math`🌲 + 🐱 = 300`}</BlockMath>
+                    <P>
+                        In this second equation there is a tree height 🌲. But we already know from the first equation
+                        that its height equals <M>😺 + 200</M>. Let's substitute this instead of the tree emoji:
+                    </P>
+                    <BlockMath>{math`\underbrace{(🐱 + 200)}_{\large\phantom{M}🌲\phantom{M}} + 🐱 = 300`}</BlockMath>
+                    <P>
+                        We got an equation with one variable -- the cat height 😺. Let's expand the parentheses and
+                        combine like cats, that is, like terms:
+                    </P>
+                    <BlockMath>{math`
+                        🐱 + 200 + 🐱 = 300 \\
+                        2🐱 + 200 = 300
+                    `}</BlockMath>
+                    <P>
+                        Multiplication by <M>2</M> and addition of <M>200</M> prevent the cat height from remaining
+                        alone. Let's get rid of addition first, by the <Dep to={sameActionRule}>rule</Dep> of same
+                        action subtracting <M>200</M> from both sides of the equation.
+                    </P>
+                    <BlockMath>{math`
+                        \brand{- 200} \ | \ 2🐱 + 200 = 300 \ | \ \brand{- 200} \\
+                        -\cancel{200} + 2🐱 + \cancel{200} = 300 - 200 \\
+                        2🐱 = 100
+                    `}</BlockMath>
+                    <P>
+                        Now divide both sides of the equation by <M>2</M> to get rid of multiplication:
+                    </P>
+                    <BlockMath>{math`
+                        \brand{\div 2} \ | \ 2🐱 = 100 \ | \ \brand{\div 2} \\
+                        \frac{\cancel{2}🐱}{\cancel{2}} = \frac{100}{2} \\
+                        \boxed{🐱 = 50}
+                    `}</BlockMath>
+                    <P>
+                        The cat height is <M>50</M> centimeters! That's one big cat. Probably a Maine Coon...
+                    </P>
+                </ProblemSection>
+                <ProblemSection title="Solution using one equation">
+                    <P>
+                        We can immediately reduce the picture to a single equation. For this we need an object whose
+                        height we want to describe in two ways. Let this object be the tree, and let's denote the cat
+                        height as unknown 😺.
+                    </P>
+                    <P>
+                        From the left picture one can see that the tree height equals <M>😺 + 200</M>. From the right
+                        one, that the tree height equals <M>300 - 😺</M>. But it's all the same height, so we can write
+                        an equation:
+                    </P>
+                    <BlockMath>{math`🐱 + 200 = 300 - 🐱`}</BlockMath>
+                    <P>
+                        Let's group the cat height on one side, for example on the left. To do this, by the{' '}
+                        <Dep to={sameActionRule}>rule</Dep> of same action, let's add 🐱 to both sides of the equation.
+                        Then on the right <M>-😺+😺</M> will sum up to <M>0</M>.
+                    </P>
+                    <BlockMath>{math`
+                        \brand{+ 🐱} \ | \ 🐱 + 200 = 300 - 🐱 \ | \ \brand{+ 🐱} \\
+                        🐱 + 🐱 + 200 = 300 - \cancel{🐱} + \cancel{🐱} \\
+                        2🐱 + 200 = 300
+                    `}</BlockMath>
+                    <P>
+                        The rest is just like in the first solution: getting rid of addition of <M>200</M> by
+                        subtracting it from both sides of the equation, and then dividing both sides by <M>2</M>:
+                    </P>
+                    <BlockMath>{math`\boxed{🐱 = 50}`}</BlockMath>
+                </ProblemSection>
             </ProblemSolution>
         </Problem>
 

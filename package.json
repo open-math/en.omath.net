@@ -7,11 +7,15 @@
         "build": "bun erudit build",
         "launch": "bun erudit launch",
         "generate": "bun erudit generate",
-        "preview": "bun erudit preview"
+        "preview": "bun erudit preview",
+        "format": "bun prettier --write ."
     },
     "dependencies": {
         "erudit": "4.0.0-dev.4",
         "@erudit-js/prose": "4.0.0-dev.4",
         "@open-math/shared": "open-math/shared"
+    },
+    "devDependencies": {
+        "prettier": "^3.8.1"
     }
 }
