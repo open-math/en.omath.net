@@ -1,7 +1,7 @@
 import { authorContribution } from '#project/utils/contributions';
 
 export default defineTopic({
-    title: 'What is quadratic equation?',
+    title: 'What is Quadratic Equation?',
     navTitle: 'What is it?',
     description: `
         Let's figure out what a quadratic equation and a quadratic trinomial are.

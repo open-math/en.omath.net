@@ -1,7 +1,8 @@
 export default defineGroup({
-    title: 'Quadratic equations',
+    title: 'Quadratic Equations',
     description: `
-        A comprehensive study of quadratic equations: quadratic trinomials, completing the square, discriminant, Vieta's formulas, factoring, real-life applications, and even mental math solutions!
+        A comprehensive overview of quadratic equations: quadratic trinomials, completing the square, discriminant,
+        Vieta's formulas, factoring, real-life applications, and even methods for solving them quickly in your head!
     `,
     dependencies: [
         {

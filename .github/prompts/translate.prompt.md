@@ -8,6 +8,8 @@ Translate this document to English language.
 Keep the author simple and direct (in terms of swear words) writing style, without falling into academic formalities.
 But keep in mind that this is a text about mathematics, so where needed use correct phrases that are used when writing math texts.
 
+Make sure to detect and replace bad looking "literal translation" parts of text that do not make sense in English with proper English alternatives.
+
 Rules:
 
 - do not touch quotes and dashes — they are handled automatically by engine. Leave them "as is".

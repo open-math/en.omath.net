@@ -9,7 +9,7 @@ import quadraticPolynomialMeme from './assets/quadratic-polynomial-meme.webp';
 //
 // #endregion
 
-// #region Deps
+// #region Links
 //
 
 const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
@@ -42,7 +42,7 @@ export default defineProse({
                 `,
             }}
         >
-            The square complicates everything
+            Complicated square
         </H1>
 
         <P>
