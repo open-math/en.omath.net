@@ -15,6 +15,7 @@ Restrictions:
 - Do not touch math formulas!
 - Do not remove large chunks of text!
 - Do not remove swear words!
+- If you need to add emdash "—", add it as double dash "--"!
 
 Your task is to fix following:
 

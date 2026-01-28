@@ -1875,7 +1875,7 @@ export default defineProse({
             the rules and methods described above to solve it. Here is a clear demonstration:
         </P>
 
-        <Problems $={uniques.realLifeApplications} title="Applying equations in life" level="easy">
+        <Problems $={uniques.realLifeApplications} title="Applying equations in life" level="easy" applied>
             <P>No matter what sphere of human activity you take, you can find equations everywhere!</P>
 
             <SubProblem label="Finances">
