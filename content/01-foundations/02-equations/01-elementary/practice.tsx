@@ -76,16 +76,16 @@ export default defineProse({
 })(({ uniques }) => (
     <>
         <Important title="This is basics!">
-            The skill of transforming equalities and solving equations is fundamental in all mathematics and exact
+            The skill of transforming equalities and solving equations is fundamental to all mathematics and exact
             sciences. Try to solve as many problems as possible. Regardless of whether you managed to solve the problem
             or not, always open the solution and check the correctness of your reasoning.
         </Important>
 
         <Important title="Don't rush!">
-            If you have no experience in solving equations, do not rush to do as much as possible at once. Break the
-            solution of the problems of this practice into several days. A day for "basics" level problems, a day for
-            "normal", a day for "advanced". At the beginning of a new day, re-solve those problems that you had
-            difficulties with the previous time.
+            If you have no experience in solving equations, do not rush to do as much as possible at once. Spread the
+            practice problems over several days. A day for "basics" level problems, a day for "normal", a day for
+            "advanced". At the beginning of a new day, re-solve the problems you had difficulties with the previous
+            time.
         </Important>
 
         <Problems title="Simple equations" level="easy">
@@ -101,9 +101,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of adding <M>100</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of the added <M>100</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>100</M> from both sides of
-                        the equation. Then <M>+100</M> and <M>-100</M> in the left side will cancel each other out (the
+                        the equation. Then <M>+100</M> and <M>-100</M> on the left side will cancel each other out (the
                         sum is <M>0</M>), and only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -124,9 +124,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of adding <M>3</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of the added <M>3</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>3</M> from both sides of the
-                        equation. Then <M>+3</M> and <M>-3</M> in the right side will cancel each other out (the sum is{' '}
+                        equation. Then <M>+3</M> and <M>-3</M> on the right side will cancel each other out (the sum is{' '}
                         <M>0</M>), and only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -147,10 +147,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>-1</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>-1</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we multiply both sides of the equation by{' '}
-                        <M>-1</M>. Then in the left side multiplication of <M>-1</M> by <M>-1</M> will simply give{' '}
-                        <M>1</M>:
+                        <M>-1</M>. Then on the left side, multiplying <M>-1</M> by <M>-1</M> simply gives <M>1</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot (-1)} \ | \ -x = -666 \ | \ \brand{\cdot (-1)} \\
@@ -170,9 +169,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        Now addition of <M>10</M> prevents <M>x</M> from being alone. To get rid of it, by the{' '}
+                        Now, adding <M>10</M> prevents <M>x</M> from being alone. To get rid of it, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>10</M> from both sides of the
-                        equation. Then <M>+10</M> and <M>-10</M> in the right side will cancel each other out (the sum
+                        equation. Then <M>+10</M> and <M>-10</M> on the right side will cancel each other out (the sum
                         is <M>0</M>), and only <M>-x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -181,9 +180,9 @@ export default defineProse({
                         30 = -x
                     `}</BlockMath>
                     <P>
-                        Now <M>x</M> is negative, but we want it to be positive. To get rid of multiplication by{' '}
-                        <M>-1</M>, by the rule of same action, we multiply both sides of the equation by <M>-1</M>. Then
-                        in the right side multiplication of <M>-1</M> by <M>-1</M> will simply give <M>1</M>:
+                        Now <M>x</M> is negative, but we want it to be positive. To get rid of multiplying by <M>-1</M>,
+                        using the same action rule, we multiply both sides of the equation by <M>-1</M>. Then on the
+                        right side, multiplying <M>-1</M> by <M>-1</M> simply gives <M>1</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot (-1)} \ | \ 30 = -x \ | \ \brand{\cdot (-1)} \\
@@ -203,9 +202,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>8</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>8</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we divide both sides of the equation by{' '}
-                        <M>8</M>. Then in the left side we can cancel <M>8</M> and <M>8</M> (<M>8 : 8 = 1</M>), and only{' '}
+                        <M>8</M>. Then on the left side we can cancel <M>8</M> and <M>8</M> (<M>8 : 8 = 1</M>), and only{' '}
                         <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -226,9 +225,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of division by <M>20</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of dividing by <M>20</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we multiply both sides of the equation by{' '}
-                        <M>20</M>. Then in the right side we can cancel <M>20</M> and <M>20</M> (<M>20 : 20 = 1</M>),
+                        <M>20</M>. Then on the right side we can cancel <M>20</M> and <M>20</M> (<M>20 : 20 = 1</M>),
                         and only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -250,9 +249,9 @@ export default defineProse({
                 <ProblemSolution>
                     <ProblemSection title="Solution 1">
                         <P>
-                            Let's group <M>x</M> in one side of the equation, for example, in the right one. To do this,
-                            by the <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>x</M> from both
-                            sides of the equation. Then <M>+x</M> and <M>-x</M> in the left side will cancel each other
+                            Let's group the x's on one side of the equation, for example, on the right. To do this,
+                            using the <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>x</M> from both
+                            sides of the equation. Then <M>+x</M> and <M>-x</M> on the left side will cancel each other
                             out (the sum is <M>0</M>), and only <M>3</M> will remain there:
                         </P>
                         <BlockMath>{math`
@@ -261,9 +260,9 @@ export default defineProse({
                             3 = -10x
                         `}</BlockMath>
                         <P>
-                            Now multiplication by <M>-10</M> prevents <M>x</M> from being alone in the right side. To
-                            get rid of it, by the rule of same action, we divide both sides of the equation by{' '}
-                            <M>-10</M>. Then in the right side we can perform cancellation:
+                            Now, multiplying by <M>-10</M> prevents <M>x</M> from being alone on the right side. To get
+                            rid of it, using the same action rule, we divide both sides of the equation by <M>-10</M>.
+                            Then on the right side we can perform cancellation:
                         </P>
                         <BlockMath>{math`
                             \brand{\div -10} \ | \ 3 = -10x \ | \ \brand{\div -10} \\
@@ -273,9 +272,9 @@ export default defineProse({
                     </ProblemSection>
                     <ProblemSection title="Solution 2">
                         <P>
-                            Now let's group <M>x</M> in the left side of the equation. To do this, by the{' '}
+                            Now let's group the x's on the left side of the equation. To do this, using the{' '}
                             <Dep to={sameActionRule}>rule</Dep> of same action, we add <M>9x</M> to both sides of the
-                            equation. Then <M>-9x</M> and <M>+9x</M> in the right side will cancel each other out (the
+                            equation. Then <M>-9x</M> and <M>+9x</M> on the right side will cancel each other out (the
                             sum is <M>0</M>):
                         </P>
                         <BlockMath>{math`
@@ -284,10 +283,10 @@ export default defineProse({
                             10x + 3 = 0
                         `}</BlockMath>
                         <P>
-                            Now multiplication by <M>10</M> and addition of <M>3</M> prevent <M>x</M> from being alone.
-                            First, get rid of adding <M>3</M>. To do this, by the rule of same action, we subtract{' '}
-                            <M>3</M> from both sides of the equation. Then in the left side <M>+3</M> and <M>-3</M> will
-                            cancel each other out (the sum is <M>0</M>), and only <M>10x</M> will remain there:
+                            Now, multiplying by <M>10</M> and adding <M>3</M> prevent <M>x</M> from being alone. First,
+                            let's get rid of adding <M>3</M>. To do this, using the same action rule, we subtract{' '}
+                            <M>3</M> from both sides of the equation. Then on the left side, <M>+3</M> and <M>-3</M>{' '}
+                            will cancel each other out (the sum is <M>0</M>), and only <M>10x</M> will remain there:
                         </P>
                         <BlockMath>{math`
                             \brand{- 3} \ | \ 10x + 3 = 0 \ | \ \brand{- 3} \\
@@ -295,7 +294,7 @@ export default defineProse({
                             10x = -3
                         `}</BlockMath>
                         <P>
-                            Divide both sides of the equation by <M>10</M>. Then in the left side we can cancel{' '}
+                            Divide both sides of the equation by <M>10</M>. Then on the left side we can cancel{' '}
                             <M>10</M> and <M>10</M> (<M>10 : 10 = 1</M>), and only <M>x</M> will remain there:
                         </P>
                         <BlockMath>{math`
@@ -306,8 +305,8 @@ export default defineProse({
                     </ProblemSection>
                 </ProblemSolution>
                 <ProblemNote>
-                    A demonstrative example that some ways of solving are shorter than others. In this case, grouping{' '}
-                    <M>x</M> in the right side of the equation turned out to be a shorter path to the solution.
+                    A demonstrative example that some ways of solving are shorter than others. In this case, grouping
+                    the x's on the right side of the equation turned out to be a shorter path to the solution.
                 </ProblemNote>
             </SubProblem>
 
@@ -317,23 +316,23 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemCheck answer={22} />
                 <ProblemHint>
-                    Convert the mixed fraction to improper fraction in the right side of the equation.
+                    Convert the mixed fraction to improper fraction on the right side of the equation.
                 </ProblemHint>
                 <ProblemAnswer>
                     <M>22</M>
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        There is a mixed fraction in the right side. It is inconvenient to work with them, so first we
-                        convert it to an improper fraction.
+                        There is a mixed fraction on the right side. It is inconvenient to work with mixed fractions, so
+                        first we convert it to an improper fraction.
                     </P>
                     <BlockMath>{math`\frac{2}{7}x = \frac{44}{7}`}</BlockMath>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>2</M> and division by <M>7</M>
-                        . First, let's get rid of division by <M>7</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>2</M> and dividing by <M>7</M>.
+                        First, let's get rid of dividing by <M>7</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we multiply both sides of the equation by{' '}
-                        <M>7</M>. Then in the right side <M>7</M> and <M>7</M> will cancel (and in the left side too),
-                        and only <M>2x</M> will remain there:
+                        <M>7</M>. Then on the right side the <M>7</M>s will cancel (as will the <M>7</M>s on the left
+                        side), and only <M>2x</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot 7} \ | \ \frac{2}{7}x = \frac{44}{7} \ | \ \brand{\cdot 7} \\
@@ -341,8 +340,8 @@ export default defineProse({
                         2x = 44
                     `}</BlockMath>
                     <P>
-                        Now only multiplication by <M>2</M> prevents <M>x</M> from being alone. To get rid of it, by the
-                        rule of same action, we divide both sides of the equation by <M>2</M>. Then in the left side{' '}
+                        Now, only multiplying by <M>2</M> prevents <M>x</M> from being alone. To get rid of it, using
+                        the same action rule, we divide both sides of the equation by <M>2</M>. Then on the left side{' '}
                         <M>2</M> and <M>2</M> will cancel, and only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -364,9 +363,9 @@ export default defineProse({
                 <ProblemSolution>
                     <ProblemSection title="Solution 1">
                         <P>
-                            Let's group <M>x</M> in one side of the equation, for example, in the right one. To do this,
-                            by the <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>3x</M> from both
-                            sides of the equation. Then in the left side <M>+3x</M> and <M>-3x</M> will cancel each
+                            Let's group <M>x</M> on one side of the equation, for example, on the right side. To do
+                            this, by the <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>3x</M> from
+                            both sides of the equation. Then on the left side <M>+3x</M> and <M>-3x</M> will cancel each
                             other out (the sum is <M>0</M>), and only <M>2</M> will remain there:
                         </P>
                         <BlockMath>{math`
@@ -375,9 +374,9 @@ export default defineProse({
                             2 = -10x - 5
                         `}</BlockMath>
                         <P>
-                            Now multiplication by <M>-10</M> and addition of <M>-5</M> prevent <M>x</M> from being alone
-                            in the right side. First, let's get rid of adding <M>-5</M>. To do this, by the rule of same
-                            action, we add <M>5</M> to both sides of the equation. Then in the right side <M>+5</M> and{' '}
+                            Now multiplying by <M>-10</M> and adding <M>-5</M> prevent <M>x</M> from being alone on the
+                            right side. First, let's get rid of adding <M>-5</M>. To do this, by the rule of same
+                            action, we add <M>5</M> to both sides of the equation. Then on the right side <M>+5</M> and{' '}
                             <M>-5</M> will cancel each other out (the sum is <M>0</M>):
                         </P>
                         <BlockMath>{math`
@@ -386,9 +385,9 @@ export default defineProse({
                             7 = -10x
                         `}</BlockMath>
                         <P>
-                            Now multiplication by <M>-10</M> prevents <M>x</M> from being alone in the right side. To
-                            get rid of it, by the rule of same action, we divide both sides of the equation by{' '}
-                            <M>-10</M>. Then in the right side we can perform cancellation:
+                            Now multiplying by <M>-10</M> prevents <M>x</M> from being alone on the right side. To get
+                            rid of it, by the same action rule, we divide both sides of the equation by <M>-10</M>. Then
+                            on the right side we can perform cancellation:
                         </P>
                         <BlockMath>{math`
                             \brand{\div -10} \ | \ 7 = -10x \ | \ \brand{\div -10} \\
@@ -398,8 +397,8 @@ export default defineProse({
                     </ProblemSection>
                     <ProblemSection title="Solution 2">
                         <P>
-                            Now let's group <M>x</M> in the left side of the equation. To do this, by the{' '}
-                            <Dep to={sameActionRule}>rule</Dep> of same action, we add <M>7x</M> so that in the right
+                            Now let's group <M>x</M> on the left side of the equation. To do this, by the{' '}
+                            <Dep to={sameActionRule}>rule</Dep> of same action, we add <M>7x</M> so that on the right
                             side <M>-7x</M> and <M>+7x</M> cancel each other out (the sum is <M>0</M>):
                         </P>
                         <BlockMath>{math`
@@ -408,9 +407,9 @@ export default defineProse({
                             2 + 10x = -5
                         `}</BlockMath>
                         <P>
-                            Now multiplication by <M>10</M> and addition of <M>2</M> prevent <M>x</M> from being alone
-                            in the left side. First, get rid of adding <M>2</M>. To do this, by the rule of same action,
-                            we subtract <M>2</M> from both sides of the equation.
+                            Now multiplying by <M>10</M> and adding <M>2</M> prevent <M>x</M> from being alone on the
+                            left side. First, get rid of adding <M>2</M>. To do this, by the same action rule, we
+                            subtract <M>2</M> from both sides of the equation.
                         </P>
                         <BlockMath>{math`
                             \brand{- 2} \ | \ 2 + 10x = -5 \ | \ \brand{- 2} \\
@@ -418,7 +417,7 @@ export default defineProse({
                             10x = -7
                         `}</BlockMath>
                         <P>
-                            Finally, divide both sides of the equation by <M>10</M>. Then in the left side we can cancel{' '}
+                            Finally, divide both sides of the equation by <M>10</M>. Then on the left side we can cancel{' '}
                             <M>10</M> and <M>10</M> (<M>10 : 10 = 1</M>), and only <M>x</M> will remain there:
                         </P>
                         <BlockMath>{math`
@@ -430,7 +429,7 @@ export default defineProse({
                 </ProblemSolution>
                 <ProblemNote>
                     <P>
-                        In this problem, it does not matter in which side of the equation to group <M>x</M>. The
+                        In this problem, it does not matter on which side of the equation to group <M>x</M>. The
                         solutions turned out to be identical in the number of transformations.
                     </P>
                 </ProblemNote>
@@ -448,11 +447,11 @@ export default defineProse({
                     <P>First, expand the brackets:</P>
                     <BlockMath>{math`10x + 20 = -7`}</BlockMath>
                     <P>
-                        Multiplication by <M>10</M> and addition of <M>20</M> prevent <M>x</M> from being alone. First,
-                        let's get rid of adding <M>20</M>. To do this, by the <Dep to={sameActionRule}>rule</Dep> of
-                        same action, we subtract <M>20</M> from both sides of the equation. Then in the left side{' '}
-                        <M>+20</M> and <M>-20</M> will cancel each other out (the sum is <M>0</M>), and only <M>10x</M>{' '}
-                        will remain there:
+                        Multiplying by <M>10</M> and adding <M>20</M> prevent <M>x</M> from being alone. First, let's
+                        get rid of adding <M>20</M>. To do this, by the <Dep to={sameActionRule}>rule</Dep> of same
+                        action, we subtract <M>20</M> from both sides of the equation. Then on the left side <M>+20</M>{' '}
+                        and <M>-20</M> will cancel each other out (the sum is <M>0</M>), and only <M>10x</M> will remain
+                        there:
                     </P>
                     <BlockMath>{math`
                         \brand{- 20} \ | \ 10x + 20 = -7 \ | \ \brand{- 20} \\
@@ -460,9 +459,9 @@ export default defineProse({
                         10x = -27
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>10</M> prevents <M>x</M> from being alone. To get rid of it, by the
-                        rule of same action, we divide both sides of the equation by <M>10</M>. Then in the left side we
-                        can cancel <M>10</M> and <M>10</M> (<M>10 : 10 = 1</M>), and only <M>x</M> will remain there:
+                        Now multiplying by <M>10</M> prevents <M>x</M> from being alone. To get rid of it, by the rule
+                        of same action, we divide both sides of the equation by <M>10</M>. Then on the left side we can
+                        cancel <M>10</M> and <M>10</M> (<M>10 : 10 = 1</M>), and only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 10} \ | \ 10x = -27 \ | \ \brand{\div 10} \\
@@ -481,17 +480,17 @@ export default defineProse({
                     <M>{math`\frac{5}{2}`}</M>
                 </ProblemAnswer>
                 <ProblemSolution>
-                    <P>First, expand the brackets and combine like terms in the left side of the equation:</P>
+                    <P>First, expand the brackets and combine like terms on the left side of the equation:</P>
                     <BlockMath>{math`
                         8 - 10x + 15 = 13 - 6x \\
                         -10x + 23 = 13 - 6x
                     `}</BlockMath>
                     <P>
-                        Let's choose in which side of the equation to group <M>x</M>. Let it be the right side. This
-                        means we need to ensure no <M>x</M> remains in the left side. To do this, by the{' '}
+                        Let's choose on which side of the equation to group the <M>x</M>'s. Let's choose the right side.
+                        This means we need to ensure no <M>x</M> remains on the left side. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we add <M>10x</M> to both sides of the
-                        equation. Then in the left side <M>-10x</M> and <M>+10x</M> will cancel each other out (the sum
-                        is <M>0</M>), and only the number <M>23</M> will remain there:
+                        equation. Then on the left side <M>-10x</M> and <M>+10x</M> will cancel each other out (the sum
+                        is <M>0</M>), and only the number <M>23</M> will remain:
                     </P>
                     <BlockMath>{math`
                         \brand{+ 10x} \ | \ -10x + 23 = 13 - 6x \ | \ \brand{+ 10x} \\
@@ -499,9 +498,9 @@ export default defineProse({
                         23 = 13 + 4x
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>4</M> and addition of <M>13</M> prevent <M>x</M> from being alone.
-                        First, let's get rid of adding <M>13</M>. To do this, we subtract <M>13</M> from both sides of
-                        the equation.
+                        Now multiplying by <M>4</M> and adding <M>13</M> prevent <M>x</M> from being alone. First, let's
+                        get rid of the added <M>13</M>. To do this, we subtract <M>13</M> from both sides of the
+                        equation.
                     </P>
                     <BlockMath>{math`
                         \brand{- 13} \ | \ 23 = 13 + 4x \ | \ \brand{- 13} \\
@@ -509,8 +508,8 @@ export default defineProse({
                         10 = 4x
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>4</M> prevents <M>x</M> from being alone. To get rid of it, by the rule
-                        of same action, we divide both sides of the equation by <M>4</M>. Then in the right side we can
+                        Now multiplying by <M>4</M> prevents <M>x</M> from being alone. To get rid of it, using the rule
+                        of same action, we divide both sides of the equation by <M>4</M>. Then on the right side we can
                         cancel <M>4</M> and <M>4</M> (<M>4 : 4 = 1</M>), and only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -541,10 +540,10 @@ export default defineProse({
             <ProblemSolution>
                 <P>
                     The first printed equation in history, despite the loud title, is solved in the same way as all
-                    other equations. In the left side, the unknown <M>x</M> is not alone because of multiplication by{' '}
-                    <M>14</M> and addition of <M>15</M>. First, let's get rid of adding <M>15</M>. To do this, by the{' '}
+                    other equations. On the left side, the unknown <M>x</M> is not alone because of multiplying by{' '}
+                    <M>14</M> and adding <M>15</M>. First, let's get rid of the added <M>15</M>. To do this, using the{' '}
                     <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>15</M> from both sides of the
-                    equation. Then in the left side <M>+15</M> and <M>-15</M> will cancel each other out (the sum is{' '}
+                    equation. Then on the left side <M>+15</M> and <M>-15</M> will cancel each other out (the sum is{' '}
                     <M>0</M>), and only <M>14x</M> remains there.
                 </P>
                 <BlockMath>{math`
@@ -554,7 +553,7 @@ export default defineProse({
                     14x = 56
                 `}</BlockMath>
                 <P>
-                    Now divide both sides by <M>14</M>. Then in the left side we can cancel <M>14</M> and <M>14</M> (
+                    Now divide both sides by <M>14</M>. Then on the left side we can cancel <M>14</M> and <M>14</M> (
                     <M>14 : 14 = 1</M>), and only <M>x</M> will remain there:
                 </P>
                 <BlockMath>{math`
@@ -602,7 +601,7 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`x = 1 + \frac{x}{2}`}</BlockMath>
                     <P>
-                        By the <Dep to={sameActionRule}>rule of same action</Dep> subtract <M>{math`\frac{x}{2}`}</M>{' '}
+                        Using the <Dep to={sameActionRule}>same action rule</Dep>, subtract <M>{math`\frac{x}{2}`}</M>{' '}
                         from both sides of the equation:
                     </P>
                     <BlockMath>{math`
@@ -611,7 +610,7 @@ export default defineProse({
                         \frac{x}{2} = 1
                     `}</BlockMath>
                     <P>
-                        Now multiply both parts of the equation by <M>2</M>:
+                        Now multiply both sides of the equation by <M>2</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot 2} \ | \ \frac{x}{2} = 1 \ | \ \brand{\cdot 2} \\
@@ -662,7 +661,7 @@ export default defineProse({
                 `}</BlockMath>
                 <P>
                     Since the result is a true equality, then <M>10</M> is the solution to the equation <M>x + 3 = 5</M>
-                    . Today you are thinking for Matvey. Is he right? If not, specifically explain what is wrong with
+                    . Today, you are thinking for Matvey. Is he right? If not, explain specifically what is wrong with
                     his solution.
                 </P>
             </ProblemDescription>
@@ -673,7 +672,7 @@ export default defineProse({
                     First, the number <M>10</M> that Matvey named is not a solution to the equation <M>x + 3 = 5</M>{' '}
                     purely by definition. Because <Dep to={equationSolution}>by definition</Dep>, a solution or root of
                     an equation is a number that, when substituted for the unknown in the equation, turns it into a true
-                    equality. Substitute <M>10</M> instead of <M>x</M> and get a false equality:
+                    equality. Substitute <M>10</M> for <M>x</M> and get a false equality:
                 </P>
                 <BlockMath>{math`
                     10 + 3 = 5 \\
@@ -706,8 +705,8 @@ export default defineProse({
                 <ProblemSection title="Direct solution">
                     <P>
                         Let's look at the picture and write it down directly as equations. To begin with, we don't know
-                        the height of neither the tree nor the cat. Let's denote them with corresponding
-                        emoji-variables: 🌲 and 🐱.
+                        the height of either the tree or the cat. Let's denote them with corresponding emoji-variables:
+                        🌲 and 🐱.
                     </P>
                     <P>
                         In the left picture we see that the cat height plus <M>200</M> is the tree height. Writing it as
@@ -732,9 +731,9 @@ export default defineProse({
                         2🐱 + 200 = 300
                     `}</BlockMath>
                     <P>
-                        Multiplication by <M>2</M> and addition of <M>200</M> prevent the cat height from remaining
-                        alone. Let's get rid of addition first, by the <Dep to={sameActionRule}>rule</Dep> of same
-                        action subtracting <M>200</M> from both sides of the equation.
+                        Multiplying by <M>2</M> and adding <M>200</M> prevent the cat height from remaining alone. Let's
+                        get rid of the addition first. Using the <Dep to={sameActionRule}>rule</Dep> of same action, we
+                        subtract <M>200</M> from both sides of the equation.
                     </P>
                     <BlockMath>{math`
                         \brand{- 200} \ | \ 2🐱 + 200 = 300 \ | \ \brand{- 200} \\
@@ -742,7 +741,7 @@ export default defineProse({
                         2🐱 = 100
                     `}</BlockMath>
                     <P>
-                        Now divide both sides of the equation by <M>2</M> to get rid of multiplication:
+                        Now divide both sides of the equation by <M>2</M> to get rid of the multiplication:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 2} \ | \ 2🐱 = 100 \ | \ \brand{\div 2} \\
@@ -755,7 +754,7 @@ export default defineProse({
                 </ProblemSection>
                 <ProblemSection title="Solution using one equation">
                     <P>
-                        We can immediately reduce the picture to a single equation. For this we need an object whose
+                        We can immediately reduce the picture to a single equation. To do this, we need an object whose
                         height we want to describe in two ways. Let this object be the tree, and let's denote the cat
                         height as unknown 😺.
                     </P>
@@ -766,7 +765,7 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`🐱 + 200 = 300 - 🐱`}</BlockMath>
                     <P>
-                        Let's group the cat height on one side, for example on the left. To do this, by the{' '}
+                        Let's group the cat heights on one side, for example on the left. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, let's add 🐱 to both sides of the equation.
                         Then on the right <M>-😺+😺</M> will sum up to <M>0</M>.
                     </P>
@@ -776,8 +775,8 @@ export default defineProse({
                         2🐱 + 200 = 300
                     `}</BlockMath>
                     <P>
-                        The rest is just like in the first solution: getting rid of addition of <M>200</M> by
-                        subtracting it from both sides of the equation, and then dividing both sides by <M>2</M>:
+                        The rest is just like in the first solution: getting rid of the added <M>200</M> by subtracting
+                        it from both sides of the equation, and then dividing both sides by <M>2</M>:
                     </P>
                     <BlockMath>{math`\boxed{🐱 = 50}`}</BlockMath>
                 </ProblemSection>
@@ -807,8 +806,8 @@ export default defineProse({
                 </P>
                 <BlockMath>{math`2x + 10 = 100`}</BlockMath>
                 <P>
-                    To get <M>x</M> alone, we need to get rid of multiplication by <M>2</M> and addition of <M>10</M>.
-                    First, let's get rid of adding <M>10</M>. To do this, by the <Dep to={sameActionRule}>rule</Dep> of
+                    To get <M>x</M> alone, we need to get rid of multiplying by <M>2</M> and adding <M>10</M>. First,
+                    let's get rid of the added <M>10</M>. To do this, using the <Dep to={sameActionRule}>rule</Dep> of
                     same action, we subtract <M>10</M> from both sides of the equation.
                 </P>
                 <BlockMath>{math`
@@ -817,7 +816,7 @@ export default defineProse({
                     2x = 90
                 `}</BlockMath>
                 <P>
-                    Now divide both sides of the equation by <M>2</M>. Then in the left side we can cancel <M>2</M> and{' '}
+                    Now divide both sides of the equation by <M>2</M>. Then on the left side we can cancel <M>2</M> and{' '}
                     <M>2</M> (<M>2 : 2 = 1</M>), and only <M>x</M> will remain there:
                 </P>
                 <BlockMath>{math`
@@ -826,7 +825,7 @@ export default defineProse({
                     \boxed{x = 45}
                 `}</BlockMath>
                 <P>
-                    So, the initial number is equal to <M>45</M>.
+                    So, the initial number is <M>45</M>.
                 </P>
             </ProblemSolution>
         </Problem>
@@ -861,11 +860,11 @@ export default defineProse({
                     bat will be <M>x + 100</M> rubles. And together they cost <M>110</M> rubles. Let's make an equation:
                 </P>
                 <BlockMath>{math`x + (x + 100) = 110`}</BlockMath>
-                <P>Combine like terms in the left side of the equation:</P>
+                <P>Combine like terms on the left side of the equation:</P>
                 <BlockMath>{math`2x + 100 = 110`}</BlockMath>
                 <P>
-                    To get <M>x</M> alone, we need to get rid of multiplication by <M>2</M> and addition of <M>100</M>.
-                    First, let's get rid of adding <M>100</M>. To do this, by the <Dep to={sameActionRule}>rule</Dep> of
+                    To get <M>x</M> alone, we need to get rid of multiplying by <M>2</M> and adding <M>100</M>. First,
+                    let's get rid of the added <M>100</M>. To do this, using the <Dep to={sameActionRule}>rule</Dep> of
                     same action, we subtract <M>100</M> from both sides of the equation.
                 </P>
                 <BlockMath>{math`
@@ -874,7 +873,7 @@ export default defineProse({
                     2x = 10
                 `}</BlockMath>
                 <P>
-                    Now divide both sides of the equation by <M>2</M>. Then in the left side we can cancel <M>2</M> and{' '}
+                    Now divide both sides of the equation by <M>2</M>. Then on the left side we can cancel <M>2</M> and{' '}
                     <M>2</M> (<M>2 : 2 = 1</M>), and only <M>x</M> will remain there:
                 </P>
                 <BlockMath>{math`
@@ -926,12 +925,12 @@ export default defineProse({
                         kilograms. The total must be <M>100</M> kg of concrete:
                     </P>
                     <BlockMath>{math`x + 3x = 100`}</BlockMath>
-                    <P>Combine like terms in the left side of the equation:</P>
+                    <P>Combine like terms on the left side of the equation:</P>
                     <BlockMath>{math`4x = 100`}</BlockMath>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>4</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>4</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we divide both sides of the equation by{' '}
-                        <M>4</M>. Then in the left side <M>4</M> and <M>4</M> will cancel, and only <M>x</M> will remain
+                        <M>4</M>. Then on the left side <M>4</M> and <M>4</M> will cancel, and only <M>x</M> will remain
                         there:
                     </P>
                     <BlockMath>{math`
@@ -953,8 +952,8 @@ export default defineProse({
                     <BlockMath>{math`\frac{x}{3} + x = 100`}</BlockMath>
                     <P>
                         On the left we have a fraction with a denominator of <M>3</M>. It is inconvenient to work with
-                        it. To get rid of this denominator, by the <Dep to={sameActionRule}>rule</Dep> of same action,
-                        we multiply both sides of the equation by <M>3</M>. Do not forget that any action is{' '}
+                        it. To get rid of this denominator, using the <Dep to={sameActionRule}>rule</Dep> of same
+                        action, we multiply both sides of the equation by <M>3</M>. Do not forget that any action is{' '}
                         <Dep to={alwaysGlobal}>global</Dep>, so we enclose the left side of the equation in parentheses:
                     </P>
                     <BlockMath>{math`
@@ -965,8 +964,8 @@ export default defineProse({
                         4x = 300
                     `}</BlockMath>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>4</M>. To do this divide both
-                        sides of the equation by <M>4</M>. Then in the left side <M>4</M> and <M>4</M> will cancel, and
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>4</M>. To do this, divide both
+                        sides of the equation by <M>4</M>. Then on the left side <M>4</M> and <M>4</M> will cancel, and
                         only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -1003,10 +1002,10 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        First, let's find <M>I^2</M>. Currently, in the right side, multiplication by <M>R</M> prevents
-                        it. To get rid of it, by the <Dep to={sameActionRule}>rule</Dep> of same action, we divide both
-                        sides of the equation by <M>R</M>. Then in the right side <M>R</M> and <M>R</M> will cancel, and
-                        quite only <M>I^2</M> will remain there:
+                        First, let's find <M>I^2</M>. Currently, multiplying by <M>R</M> on the right side prevents
+                        this. To get rid of it, using the <Dep to={sameActionRule}>rule</Dep> of same action, we divide
+                        both sides of the equation by <M>R</M>. Then on the right side <M>R</M> and <M>R</M> will
+                        cancel, and only <M>I^2</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{\div R} \ | \ P = I^2 R \ | \ \brand{\div R} \\
@@ -1039,10 +1038,10 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        Let's derive the equality for <M>E_p</M>. Currently, in the right side, division by <M>gh</M>{' '}
-                        prevents it. To get rid of it, by the <Dep to={sameActionRule}>rule</Dep> of same action, we
-                        multiply both sides of the equation by <M>gh</M>. Then in the right side <M>gh</M> and <M>gh</M>{' '}
-                        will cancel, and only <M>E_p</M> will remain there:
+                        Let's derive the equality for <M>E_p</M>. Currently, dividing by <M>gh</M> on the right side{' '}
+                        prevents this. To get rid of it, using the <Dep to={sameActionRule}>rule</Dep> of same action,
+                        we multiply both sides of the equation by <M>gh</M>. Then on the right side <M>gh</M> and{' '}
+                        <M>gh</M> will cancel, and only <M>E_p</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot gh} \ | \ m = \frac{E_p}{gh} \ | \ \brand{\cdot gh} \\
@@ -1054,7 +1053,7 @@ export default defineProse({
 
                     <P>
                         Now let's derive the equality for <M>g</M>. First, let's take it out of the denominator. To do
-                        this, by the rule of same action, we multiply both sides of the equation by <M>g</M>. Then in
+                        this, using the same action rule, we multiply both sides of the equation by <M>g</M>. Then on
                         the right side <M>g</M> and <M>g</M> will cancel, and only <M>h</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -1063,8 +1062,8 @@ export default defineProse({
                         mg = \frac{E_p}{h}
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>m</M> prevents <M>g</M> from being alone in the left side. To get rid
-                        of it, by the rule of same action, we divide both sides of the equation by <M>m</M>.
+                        Now multiplying by <M>m</M> prevents <M>g</M> from being alone on the left side. To get rid of
+                        it, using the same action rule, we divide both sides of the equation by <M>m</M>.
                     </P>
                     <BlockMath>{math`
                         \brand{\div m} \ | \ mg = \frac{E_p}{h} \ | \ \brand{\div m} \\
@@ -1097,9 +1096,9 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         Let's derive the equality for <M>E_k</M>. First, let's pull it out of the denominator. To do
-                        this, by the <Dep to={sameActionRule}>rule</Dep> of same action, we multiply both sides of the
-                        equation by <M>E_k</M>. Then in the right side <M>E_k</M> and <M>E_k</M> will cancel, and only{' '}
-                        <M>mv^2</M> will remain there:
+                        this, using the <Dep to={sameActionRule}>rule</Dep> of same action, we multiply both sides of
+                        the equation by <M>E_k</M>. Then on the right side <M>E_k</M> and <M>E_k</M> will cancel, and
+                        only <M>mv^2</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot E_k} \ | \ 2 = \frac{mv^2}{E_k} \ | \ \brand{\cdot E_k} \\
@@ -1107,8 +1106,8 @@ export default defineProse({
                         2E_k = mv^2
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>2</M> prevents <M>E_k</M> from being alone in the left side. To get rid
-                        of it, by the rule of same action, we divide both sides of the equation by <M>2</M>.
+                        Now multiplying by <M>2</M> prevents <M>E_k</M> from being alone on the left side. To get rid of
+                        it, using the same action rule, we divide both sides of the equation by <M>2</M>.
                     </P>
                     <BlockMath>{math`
                         \brand{\div 2} \ | \ 2E_k = mv^2 \ | \ \brand{\div 2} \\
@@ -1119,11 +1118,10 @@ export default defineProse({
                     <Hr />
 
                     <P>
-                        Now let's derive the equality for <M>v^2</M>. Currently, in the right side, multiplication by{' '}
-                        <M>m</M> and division by <M>E_k</M> prevent it. First, let's get rid of division by <M>E_k</M>.
-                        To do this, by the rule of same action, we multiply both sides of the equation by <M>E_k</M>.
-                        Then in the right side <M>E_k</M> and <M>E_k</M> will cancel, and only <M>mv^2</M> will remain
-                        there:
+                        Now let's derive the equality for <M>v^2</M>. Currently, multiplying by <M>m</M> and dividing by{' '}
+                        <M>E_k</M> on the right side prevent it. First, let's get rid of dividing by <M>E_k</M>. To do
+                        this, using the same action rule, we multiply both sides of the equation by <M>E_k</M>. Then on
+                        the right side <M>E_k</M> and <M>E_k</M> will cancel, and only <M>mv^2</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot E_k} \ | \ 2 = \frac{mv^2}{E_k} \ | \ \brand{\cdot E_k} \\
@@ -1131,8 +1129,8 @@ export default defineProse({
                         2E_k = mv^2
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>m</M> prevents <M>v^2</M> from being alone in the right side. To get
-                        rid of it, by the rule of same action, we divide both sides of the equation by <M>m</M>.
+                        Now multiplying by <M>m</M> prevents <M>v^2</M> from being alone on the right side. To get rid
+                        of it, using the same action rule, we divide both sides of the equation by <M>m</M>.
                     </P>
                     <BlockMath>{math`
                         \brand{\div m} \ | \ 2E_k = mv^2 \ | \ \brand{\div m} \\
@@ -1151,8 +1149,8 @@ export default defineProse({
 
                     <P>
                         Let's derive the equality for <M>{math`\frac{1}{2}`}</M>. Currently, the number <M>2</M> is in
-                        the numerator. We need to "move" it to the denominator. To do this, by the rule of same action,
-                        we divide both sides of the equation by <M>2</M>.
+                        the numerator. We need to "move" it to the denominator. To do this, using the rule of same
+                        action, we divide both sides of the equation by <M>2</M>.
                     </P>
                     <BlockMath>{math`
                         \brand{\div 2} \ | \ 2 = \frac{mv^2}{E_k} \ | \ \brand{\div 2} \\
@@ -1160,8 +1158,8 @@ export default defineProse({
                         1 = \frac{mv^2}{2E_k}
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>E_k</M> and <M>mv^2</M> in the numerator prevent the number <M>2</M>{' '}
-                        from being alone in the denominator. First, let's get rid of <M>E_k</M>. To do this, by the rule
+                        Now, multiplying by <M>E_k</M> and <M>mv^2</M> in the numerator prevent the number <M>2</M> from
+                        being alone in the denominator. First, let's get rid of <M>E_k</M>. To do this, using the rule
                         of same action, we multiply both sides of the equation by <M>E_k</M>.
                     </P>
                     <BlockMath>{math`
@@ -1170,7 +1168,7 @@ export default defineProse({
                         E_k = \frac{mv^2}{2}
                     `}</BlockMath>
                     <P>
-                        Now let's get rid of <M>mv^2</M> in the numerator. To do this, by the rule of same action, we
+                        Now let's get rid of <M>mv^2</M> in the numerator. To do this, using the same action rule, we
                         divide both sides of the equation by <M>mv^2</M>.
                     </P>
                     <BlockMath>{math`
@@ -1203,12 +1201,12 @@ export default defineProse({
                         <M>2x</M> and Liza's age <M>x</M> is equal to <M>24</M> years. We get the equation:
                     </P>
                     <BlockMath>{math`2x + x = 24`}</BlockMath>
-                    <P>Combine like terms in the left side of the equation:</P>
+                    <P>Combine like terms on the left side of the equation:</P>
                     <BlockMath>{math`3x = 24`}</BlockMath>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>3</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>3</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we divide both sides of the equation by{' '}
-                        <M>3</M>. Then in the left side we can cancel <M>3</M> and <M>3</M> (<M>3 : 3 = 1</M>), and only{' '}
+                        <M>3</M>. Then on the left side we can cancel <M>3</M> and <M>3</M> (<M>3 : 3 = 1</M>), and only{' '}
                         <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -1241,17 +1239,17 @@ export default defineProse({
                         Maria's age nothing is known, so let's denote it as the unknown <M>x</M>. Then, if Maria's age
                         is <M>x</M>, then Peter's age will be <M>6</M> years more, that is <M>x + 6</M>. In two years,
                         when Maria will be <M>x + 2</M> years old, and Peter will be <M>x + 6 + 2</M> years old, their
-                        total age wil be equal to <M>40</M> years. We get the equation:
+                        total age will be <M>40</M> years. We get the equation:
                     </P>
                     <BlockMath>{math`\underbrace{(x + 2)}_{\text{Maria}} + \underbrace{(x + 6 + 2)}_{\text{Peter}} = 40`}</BlockMath>
-                    <P>Combine like terms in the left side of the equation:</P>
+                    <P>Combine like terms on the left side of the equation:</P>
                     <BlockMath>{math`
                         x + 2 + x + 6 + 2 = 40 \\
                         2x + 10 = 40
                     `}</BlockMath>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>2</M> and addition of{' '}
-                        <M>10</M>. First, let's get rid of adding <M>10</M>. To do this, by the{' '}
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>2</M> and adding <M>10</M>.
+                        First, let's get rid of the added <M>10</M>. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, we subtract <M>10</M> from both sides of the
                         equation.
                     </P>
@@ -1261,7 +1259,7 @@ export default defineProse({
                         2x = 30
                     `}</BlockMath>
                     <P>
-                        Now divide both sides of the equation by <M>2</M>. Then in the left side we can cancel <M>2</M>{' '}
+                        Now divide both sides of the equation by <M>2</M>. Then on the left side we can cancel <M>2</M>{' '}
                         and <M>2</M> (<M>2 : 2 = 1</M>), and only <M>x</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -1302,9 +1300,9 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`x + 28 = 2x`}</BlockMath>
                     <P>
-                        By the <Dep to={sameActionRule}>rule</Dep> of same action, subtract <M>x</M> from both sides of
-                        the equation. Then in the left side <M>x</M> and <M>-x</M> will cancel each other out (the sum
-                        is <M>0</M>), and only <M>28</M> will remain there:
+                        Using the <Dep to={sameActionRule}>rule</Dep> of same action, subtract <M>x</M> from both sides
+                        of the equation. Then on the left side <M>x</M> and <M>-x</M> will cancel each other out (the
+                        sum is <M>0</M>), and only <M>28</M> will remain there:
                     </P>
                     <BlockMath>{math`
                         \brand{- x} \ | \ x + 28 = 2x \ | \ \brand{- x} \\
@@ -1319,18 +1317,18 @@ export default defineProse({
                     <P>
                         When I was <M>14</M>, my father was three times older than me. That is, he was <M>42</M> years
                         old then. I am <M>x</M> years old now, and father is twice as old, that is, <M>2x</M> years old.
-                        Since then I have grown by <M>x - 14</M> years. Father has grown by <M>2x - 42</M> years
-                        differently since then. But we live on the same planet and none of us flew into deep space.
-                        Therefore, time passes equally for both of us. So, both I and he aged by the same number of
-                        years! It turns out my difference of <M>x-14</M> years is the same difference as his difference
-                        of <M>2x - 42</M> years:
+                        Since then I have grown by <M>x - 14</M> years. Father has grown by <M>2x - 42</M> years since
+                        then. But we live on the same planet and none of us flew into deep space. Therefore, time passes
+                        equally for both of us. So, both I and he aged by the same number of years! It turns out my
+                        difference of <M>x-14</M> years is the same difference as his difference of <M>2x - 42</M>{' '}
+                        years:
                     </P>
                     <BlockMath>{math`x - 14 = 2x - 42`}</BlockMath>
                     <P>
-                        And then you just need to solve a simple equation. First, let's group <M>x</M> in the right side
-                        of the equation. To do this, let's get rid of <M>x</M> in the left side. To do this, by the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of same action, subtract <M>x</M> from both sides of the
-                        equation:
+                        And then you just need to solve a simple equation. First, let's group the <M>x</M>'s on the
+                        right side of the equation. To do this, let's get rid of <M>x</M> on the left side. To do this,
+                        using the <Dep to={sameActionRule}>rule</Dep> of same action, subtract <M>x</M> from both sides
+                        of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- x} \ | \ x - 14 = 2x - 42 \ | \ \brand{- x} \\
@@ -1366,9 +1364,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        Subtraction of <M>121</M> prevents <M>x^2</M> from being alone. To get rid of it, by the{' '}
+                        Subtracting <M>121</M> prevents <M>x^2</M> from being alone. To get rid of it, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, add <M>121</M> to both sides of the
-                        equation. Then in the left side <M>-121</M> and <M>+121</M> will cancel each other out (the sum
+                        equation. Then on the left side <M>-121</M> and <M>+121</M> will cancel each other out (the sum
                         is <M>0</M>), and only <M>x^2</M> will remain there:
                     </P>
                     <BlockMath>{math`
@@ -1394,14 +1392,14 @@ export default defineProse({
                     <M>-2</M>
                 </ProblemAnswer>
                 <ProblemSolution>
-                    <P>Let's expand the brackets and combine like terms in both sides of the equation:</P>
+                    <P>Let's expand the brackets and combine like terms on both sides of the equation:</P>
                     <BlockMath>{math`
                         -x - 4 + 5x + 15 = -5 -5x - 2 \\
                         4x + 11 = -5x -7
                     `}</BlockMath>
                     <P>
-                        Let's group <M>x</M> in the left side of the equation. To do this, we need to get rid of{' '}
-                        <M>-5x</M> in the right side. To do this, by the <Dep to={sameActionRule}>rule</Dep> of same
+                        Let's group the <M>x</M>'s on the left side of the equation. To do this, we need to get rid of{' '}
+                        <M>-5x</M> on the right side. To do this, using the <Dep to={sameActionRule}>rule</Dep> of same
                         action, add <M>5x</M> to both sides of the equation.
                     </P>
                     <BlockMath>{math`
@@ -1410,9 +1408,8 @@ export default defineProse({
                         9x + 11 = -7
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>9</M> and addition of <M>11</M> prevent <M>x</M> from being alone.
-                        First, let's get rid of adding <M>11</M>. To do this, subtract <M>11</M> from both sides of the
-                        equation.
+                        Now multiplying by <M>9</M> and adding <M>11</M> prevent <M>x</M> from being alone. First, let's
+                        get rid of the added <M>11</M>. To do this, subtract <M>11</M> from both sides of the equation.
                     </P>
                     <BlockMath>{math`
                         \brand{- 11} \ | \ 9x + 11 = -7 \ | \ \brand{- 11} \\
@@ -1420,7 +1417,7 @@ export default defineProse({
                         9x = -18
                     `}</BlockMath>
                     <P>
-                        Now multiplication by <M>9</M> prevents <M>x</M> from being alone. To get rid of it, by the rule
+                        Now multiplying by <M>9</M> prevents <M>x</M> from being alone. To get rid of it, using the rule
                         of same action, divide both sides of the equation by <M>9</M>.
                     </P>
                     <BlockMath>{math`
@@ -1446,9 +1443,9 @@ export default defineProse({
                     <ProblemSection title="Solution 1">
                         <P>
                             In the equation we have two fractions with the same denominator <M>11</M>. Let's get rid of
-                            these fractions, by the <Dep to={sameActionRule}>rule</Dep> of same action by multiplying
-                            both sides of the equation by <M>11</M>. Never ever should we forget about the{' '}
-                            <Dep to={alwaysGlobal}>globality</Dep> of this action, and we enclose the left side in
+                            these fractions. Using the <Dep to={sameActionRule}>rule</Dep> of same action, we multiply
+                            both sides of the equation by <M>11</M>. We should never forget about the{' '}
+                            <Dep to={alwaysGlobal}>globality</Dep> of this action, so we enclose the left side in
                             parentheses:
                         </P>
                         <BlockMath>{math`
@@ -1459,8 +1456,8 @@ export default defineProse({
                             10x = 50
                         `}</BlockMath>
                         <P>
-                            Now only multiplication by <M>10</M> prevents <M>x</M> from being alone in the left side. To
-                            get rid of it, divide both sides of the equation by <M>10</M>. Then in the left side we can
+                            Now only multiplying by <M>10</M> prevents <M>x</M> from being alone on the left side. To
+                            get rid of it, divide both sides of the equation by <M>10</M>. Then on the left side we can
                             cancel:
                         </P>
                         <BlockMath>{math`
@@ -1471,7 +1468,7 @@ export default defineProse({
                     </ProblemSection>
                     <ProblemSection title="Solution 2">
                         <P>
-                            In the left side, bring the fraction to a common denominator <M>11</M>.
+                            On the left side, bring the fraction to a common denominator <M>11</M>.
                         </P>
                         <BlockMath>{math`
                             \frac{11x}{11} - \frac{x}{11} = \frac{50}{11} \\
@@ -1479,10 +1476,10 @@ export default defineProse({
                             \frac{10x}{11} = \frac{50}{11}
                         `}</BlockMath>
                         <P>
-                            Now multiplication by <M>10</M> and division by <M>11</M> prevent <M>x</M> from being alone.
-                            First, let's get rid of division by <M>11</M>. To do this, by the{' '}
+                            Now multiplying by <M>10</M> and dividing by <M>11</M> prevent <M>x</M> from being alone.
+                            First, let's get rid of dividing by <M>11</M>. To do this, using the{' '}
                             <Dep to={sameActionRule}>rule</Dep> of same action, multiply both sides of the equation by{' '}
-                            <M>11</M>. Then in the left side <M>11</M> and <M>11</M> will cancel, and only <M>10x</M>{' '}
+                            <M>11</M>. Then on the left side <M>11</M> and <M>11</M> will cancel, and only <M>10x</M>{' '}
                             will remain there:
                         </P>
                         <BlockMath>{math`
@@ -1491,7 +1488,7 @@ export default defineProse({
                             10x = 50
                         `}</BlockMath>
                         <P>
-                            Divide both sides of the equation by <M>10</M>. Then in the left side we can cancel and only{' '}
+                            Divide both sides of the equation by <M>10</M>. Then on the left side we can cancel and only{' '}
                             <M>x</M> will remain there:
                         </P>
                         <BlockMath>{math`
@@ -1517,7 +1514,7 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        Let's get <M>x^2</M> out of the denominator. To do this, by the{' '}
+                        Let's get <M>x^2</M> out of the denominator. To do this, using the{' '}
                         <Dep to={sameActionRule}>rule</Dep> of same action, multiply both sides of the equation by{' '}
                         <M>x^2 - 19</M>.
                     </P>
@@ -1527,8 +1524,8 @@ export default defineProse({
                         6 = x^2 - 19
                     `}</BlockMath>
                     <P>
-                        Now subtraction of <M>19</M> prevents <M>x^2</M> from being alone in the right side. To get rid
-                        of it, add <M>19</M> to both sides of the equation. Then in the right side <M>-19</M> and{' '}
+                        Now subtracting <M>19</M> prevents <M>x^2</M> from being alone on the right side. To get rid of
+                        it, add <M>19</M> to both sides of the equation. Then on the right side <M>-19</M> and{' '}
                         <M>+19</M> will cancel each other out (the sum is <M>0</M>), and only <M>x^2</M> will remain
                         there:
                     </P>
@@ -1559,8 +1556,8 @@ export default defineProse({
                     <ProblemSection title="Solution 1">
                         <P>
                             We need to get rid of the fractions. They have numbers <M>7</M> and <M>6</M> in their
-                            denominators. Let's get rid of these denominators, by the{' '}
-                            <Dep to={sameActionRule}>rule</Dep> of same action by multiplying both sides of the equation
+                            denominators. Let's get rid of these denominators. Using the{' '}
+                            <Dep to={sameActionRule}>rule</Dep> of same action, we multiply both sides of the equation
                             by both <M>7</M> and <M>6</M>. Naturally do not forget to enclose the left side in brackets,
                             because the <Dep to={alwaysGlobal}>action is global</Dep>:
                         </P>
@@ -1572,8 +1569,8 @@ export default defineProse({
                             54x + 162 = 49x
                         `}</BlockMath>
                         <P>
-                            Let's group <M>x</M> in the right side of the equation. To do this, we need to get rid of{' '}
-                            <M>54x</M> in the left side. To do this, subtract <M>54x</M> from both sides of the
+                            Let's group the <M>x</M>'s on the right side of the equation. To do this, we need to get rid
+                            of <M>54x</M> on the left side. To do this, subtract <M>54x</M> from both sides of the
                             equation.
                         </P>
                         <BlockMath>{math`
@@ -1582,7 +1579,7 @@ export default defineProse({
                             162 = -5x
                         `}</BlockMath>
                         <P>
-                            Now only multiplication by <M>-5</M> prevents <M>x</M> from being alone. To get rid of it,
+                            Now only multiplying by <M>-5</M> prevents <M>x</M> from being alone. To get rid of it,
                             divide both sides of the equation by <M>-5</M>.
                         </P>
                         <BlockMath>{math`
@@ -1604,9 +1601,10 @@ export default defineProse({
                             \frac{54x + 162}{42} = \frac{49x}{42}
                         `}</BlockMath>
                         <P>
-                            Let's group <M>x</M> in the left side of the equation. To do this, we need to get rid of the
-                            fraction on the right. To do this, by the <Dep to={sameActionRule}>rule</Dep> of same
-                            action, subtract the fraction <M>{math`\frac{49x}{42}`}</M> from both sides of the equation:
+                            Let's group the <M>x</M>'s on the left side of the equation. To do this, we need to get rid
+                            of the fraction on the right. To do this, using the <Dep to={sameActionRule}>rule</Dep> of
+                            same action, subtract the fraction <M>{math`\frac{49x}{42}`}</M> from both sides of the
+                            equation:
                         </P>
                         <BlockMath>{math`
                             \brand{- \frac{49x}{42}} \ | \ \frac{54x + 162}{42} = \frac{49x}{42} \ | \ \brand{- \frac{49x}{42}} \\
@@ -1615,8 +1613,8 @@ export default defineProse({
                             \frac{5x + 162}{42} = 0
                         `}</BlockMath>
                         <P>
-                            To make <M>x</M> stay alone, we need to get rid of multiplication by <M>5</M>, addition of{' '}
-                            <M>162</M> and division by <M>42</M>. First, let's get rid of division by <M>42</M>. To do
+                            To make <M>x</M> stay alone, we need to get rid of multiplying by <M>5</M>, adding{' '}
+                            <M>162</M> and dividing by <M>42</M>. First, let's get rid of dividing by <M>42</M>. To do
                             this, multiply both sides of the equation by <M>42</M>:
                         </P>
                         <BlockMath>{math`
@@ -1625,8 +1623,8 @@ export default defineProse({
                             5x + 162 = 0
                         `}</BlockMath>
                         <P>
-                            Now let's get rid of adding <M>162</M>. To do this, subtract <M>162</M> from both sides of
-                            the equation:
+                            Now let's get rid of the added <M>162</M>. To do this, subtract <M>162</M> from both sides
+                            of the equation:
                         </P>
                         <BlockMath>{math`
                             \brand{- 162} \ | \ 5x + 162 = 0 \ | \ \brand{- 162} \\
@@ -1634,7 +1632,7 @@ export default defineProse({
                             5x = -162
                         `}</BlockMath>
                         <P>
-                            Finally, let's get rid of multiplication by <M>5</M>. To do this, divide both sides of the
+                            Finally, let's get rid of multiplying by <M>5</M>. To do this, divide both sides of the
                             equation by <M>5</M>:
                         </P>
                         <BlockMath>{math`
@@ -1678,9 +1676,9 @@ export default defineProse({
                         1 = -\frac{x+5}{5}
                     `}</BlockMath>
                     <P>
-                        Addition of <M>5</M>, division by <M>5</M> and multiplication by <M>-1</M> prevent <M>x</M> from
-                        being alone in the right side. First, let's get rid of multiplication by <M>-1</M>. To do this,
-                        multiply both sides of the equation by <M>-1</M>:
+                        Adding <M>5</M>, dividing by <M>5</M> and multiplying by <M>-1</M> prevent <M>x</M> from being
+                        alone on the right side. First, let's get rid of multiplying by <M>-1</M>. To do this, multiply
+                        both sides of the equation by <M>-1</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot -1} \ | \ 1 = -\frac{x+5}{5} \ | \ \brand{\cdot -1} \\
@@ -1688,7 +1686,7 @@ export default defineProse({
                         -1 = \frac{x+5}{5}
                     `}</BlockMath>
                     <P>
-                        Now let's get rid of division by <M>5</M>. To do this, multiply both sides of the equation by{' '}
+                        Now let's get rid of dividing by <M>5</M>. To do this, multiply both sides of the equation by{' '}
                         <M>5</M>.
                     </P>
                     <BlockMath>{math`
@@ -1727,7 +1725,7 @@ export default defineProse({
                     <BlockMath>{math`Ax + B = 0, \enspace A \neq 0`}</BlockMath>
                 </ProblemDescription>
                 <ProblemHint>
-                    Using the <Dep to={sameActionRule}>rule of same action</Dep>, isolate <M>x</M> on one side of the
+                    Using the <Dep to={sameActionRule}>same action rule</Dep>, isolate <M>x</M> on one side of the
                     equation, and all other data on the other.
                 </ProblemHint>
                 <ProblemAnswer>
@@ -1735,9 +1733,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        By the <Dep to={sameActionRule}>rule of same action</Dep>, subtract <M>B</M> from both sides of
-                        the equation. Then in the left side <M>B</M> and <M>-B</M> will cancel each other out (the sum
-                        is <M>0</M>), and only <M>Ax</M> will remain there:
+                        Using the <Dep to={sameActionRule}>same action rule</Dep>, subtract <M>B</M> from both sides of
+                        the equation. Then on the left side, <M>B</M> and <M>-B</M> will cancel each other out (the sum
+                        is <M>0</M>), and only <M>Ax</M> will remain:
                     </P>
                     <BlockMath>{math`
                         \brand{- B} \ | \ Ax + B = 0 \ | \ \brand{- B} \\
@@ -1763,7 +1761,7 @@ export default defineProse({
             <SubProblem label="Condition">
                 <ProblemDescription>
                     <P>
-                        Why in the derivation of the formula was it stated that <M>A \neq 0</M>?
+                        Why was it stated in the derivation of the formula that <M>A \neq 0</M>?
                         <Br />
                         What will happen to the equation if <M>A = 0</M>?
                         <Br />
@@ -1779,18 +1777,18 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        Why guess? Let's just take and substitute <M>A = 0</M> into the formula:
+                        Why guess? Let's just substitute <M>A = 0</M> into the formula:
                     </P>
                     <BlockMath>{math`0 \cdot x + B = 0 \\ 0 + B = 0 \\ B = 0`}</BlockMath>
                     <P>
                         We get an interesting situation. The variable <M>x</M> completely "leaves" the equation and we
-                        get simply the equality <M>B = 0</M>. And here there are two options:
+                        simply get the equality <M>B = 0</M>. And here there are two options:
                     </P>
                     <List type="ol">
                         <Li>
                             <P>
                                 If <M>B</M> is indeed equal to <M>0</M>, then we get a true equality <M>0 = 0</M>{' '}
-                                regardless of what we substitute instead of <M>x</M>. That is, the equation{' '}
+                                regardless of what we substitute for <M>x</M>. That is, the equation{' '}
                                 <M>0\cdot x + 0 = 0</M> has infinitely many solutions.
                             </P>
                             <BlockMath>{math`0 \cdot 3 + 0 = 0 \rarr 0 \overset{\checkmark}{=} 0 >>{big} 0 \cdot -999 + 0 = 0 \rarr 0 \overset{\checkmark}{=} 0 >>{big} 0 \cdot \pi + 0 = 0 \rarr 0 \overset{\checkmark}{=} 0`}</BlockMath>
@@ -1798,7 +1796,7 @@ export default defineProse({
                         <Li>
                             <P>
                                 But if <M>B</M> is not equal to <M>0</M>, then there will always be a false equality{' '}
-                                <M>B = 0</M>, whatever we substitute instead of <M>x</M>. That is, the equation{' '}
+                                <M>B = 0</M>, whatever we substitute for <M>x</M>. That is, the equation{' '}
                                 <M>0\cdot x + B = 0</M> has no solutions at all.
                             </P>
                             <BlockMath>{math`0 \cdot 3 + 5 = 0 \rarr 5 \overset{\times}{=} 0 >>{big} 0 \cdot -999 + 7 = 0 \rarr 7 \overset{\times}{=} 0 >>{big} 0 \cdot \pi + 1 = 0 \rarr 1 \overset{\times}{=} 0`}</BlockMath>
@@ -1835,17 +1833,17 @@ export default defineProse({
                 <ProblemSection title="Everyday meaning">
                     <P>
                         In the article we constantly used the analogy with mechanical scales. Equality is scales. But
-                        the scales can always be simply <B>turned around</B>, and then the left bowl will become right,
-                        and the right one -- left! Nothing else changes. Just as the equality was true, it remains so
-                        after the scales are turned!
+                        the scales can always simply be <B>turned around</B>, and then the left bowl will become the
+                        right one, and the right one -- the left! Nothing else changes. Just as the equality was true,
+                        it remains so after the scales are turned!
                     </P>
                 </ProblemSection>
                 <ProblemSection title="Rigorous proof">
                     <P>
                         According to the <Dep to={equalityFalseTrue}>definition</Dep> of true equality, to the left and
-                        to the right of the equals sign stand expressions that denote the same object. If we swap the
-                        left and right sides of the equality, we will still have expressions standing to the left and to
-                        the right of the equals sign which denote the same object. Nothing has changed. The new and old
+                        to the right of the equals sign are expressions that denote the same object. If we swap the left
+                        and right sides of the equality, we will still have expressions standing to the left and to the
+                        right of the equals sign which denote the same object. Nothing has changed. The new and old
                         equalities are <B>absolutely</B> identical.
                     </P>
                     <P>{QED}</P>
@@ -1854,8 +1852,8 @@ export default defineProse({
                     <P>
                         You know, sometimes you just don't want to think... It would be nice to just hide the scary
                         expression behind some letter and forget about it. Well, this is exactly the case when you need
-                        to do so. We denote any left expression by the letter <M>A</M>, and any right one -- by the
-                        letter <M>B</M>. Then we get the following equality:
+                        to do so. We denote any expression on the left by the letter <M>A</M>, and any on the right by
+                        the letter <M>B</M>. Then we get the following equality:
                     </P>
                     <BlockMath>{math`A = B`}</BlockMath>
                     <P>
@@ -1922,10 +1920,10 @@ export default defineProse({
                     <P>
                         We have at least some data about how much Alina covered on the second and third days. Absolutely
                         nothing is known only about the first day. Therefore, let's denote by <M>x</M> the number of
-                        kilometers, that Alina covered on the first day. On the second day she covered <M>5</M>{' '}
+                        kilometers that Alina covered on the first day. On the second day she covered <M>5</M>{' '}
                         kilometers more, that is <M>x + 5</M> kilometers. And on the third day she covered <M>10</M>{' '}
-                        kilometers less than on the second, that is, from the kilometers of the second day (<M>x + 5</M>
-                        ) subtract <M>10</M> kilometers: <M>(x + 5) - 10</M> kilometers. It turns out that on the third
+                        kilometers less than on the second, that is, subtract <M>10</M> kilometers from the distance of
+                        the second day (<M>x + 5</M>): <M>(x + 5) - 10</M> kilometers. It turns out that on the third
                         day Alina covered <M>x - 5</M> kilometers.
                     </P>
                     <P>
@@ -1933,14 +1931,14 @@ export default defineProse({
                         make an equation:
                     </P>
                     <BlockMath>{math`\underbrace{x}_{\small D1} + \underbrace{(x+5)}_{\small D2} + \underbrace{(x-5)}_{\small D3} = 111`}</BlockMath>
-                    <P>Combine like terms in the left side:</P>
+                    <P>Combine like terms on the left side:</P>
                     <BlockMath>{math`
                         x + x + \cancel{5} + x - \cancel{5} = 111 \\
                         3x = 111
                     `}</BlockMath>
                     <P>
-                        To get <M>x</M> by itself, divide both sides of the equation by <M>3</M>. Then in the left side
-                        we can cancel <M>3</M> and <M>3</M> (<M>3 : 3 = 1</M>), and only <M>x</M> will remain there:
+                        To get <M>x</M> by itself, divide both sides of the equation by <M>3</M>. Then on the left side
+                        we can cancel <M>3</M> and <M>3</M> (<M>3 : 3 = 1</M>), and only <M>x</M> will remain:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 3} \ | \ 3x = 111 \ | \ \brand{\div 3} \\
@@ -1990,7 +1988,7 @@ export default defineProse({
                     <P>
                         But with the first day everything is more interesting. He covered half as much as on the second
                         and third days combined. Therefore, first add <M>x</M> and <M>x + 6</M> (this will be the number
-                        of kilometers, that Pavel covered on the second and third days combined), and then divide by{' '}
+                        of kilometers that Pavel covered on the second and third days combined), and then divide by{' '}
                         <M>2</M>:
                     </P>
                     <BlockMath>{math`\frac{x + x + 6}{2} = \frac{2x + 6}{2}`}</BlockMath>
@@ -2000,9 +1998,9 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`\underbrace{\frac{2x + 6}{2}}_{\small D1} + \underbrace{x}_{\small D2} + \underbrace{(x+6)}_{\small D3} = 42`}</BlockMath>
                     <P>
-                        Let's get rid of the denominator <M>2</M> of the fraction in the left side of the equation. To
-                        do this, by the <Dep to={sameActionRule}>rule</Dep> of same action multiply both sides of the
-                        equation by <M>2</M>. And don't forget to enclose the left side in parentheses, as this is a{' '}
+                        Let's get rid of the denominator <M>2</M> of the fraction on the left side of the equation. To
+                        do this, using the <Dep to={sameActionRule}>rule</Dep> of same action, multiply both sides of
+                        the equation by <M>2</M>. And don't forget to enclose the left side in parentheses, as this is a{' '}
                         <Dep to={alwaysGlobal}>global action</Dep>!
                     </P>
                     <BlockMath>{math`
@@ -2012,9 +2010,9 @@ export default defineProse({
                         6x + 18 = 84
                     `}</BlockMath>
                     <P>
-                        To get <M>x</M> alone, we need to get rid of multiplication by <M>6</M> and addition of{' '}
-                        <M>18</M>. First, let's get rid of adding <M>18</M>. To do this, subtract <M>18</M> from both
-                        sides of the equation:
+                        To get <M>x</M> alone, we need to get rid of multiplying by <M>6</M> and adding <M>18</M>.
+                        First, let's get rid of adding <M>18</M>. To do this, subtract <M>18</M> from both sides of the
+                        equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 18} \ | \ 6x + 18 = 84 \ | \ \brand{- 18} \\
@@ -2022,7 +2020,7 @@ export default defineProse({
                         6x = 66
                     `}</BlockMath>
                     <P>
-                        Now only multiplication by <M>6</M> prevents <M>x</M> from being alone. Divide both sides of the
+                        Now only multiplying by <M>6</M> prevents <M>x</M> from being alone. Divide both sides of the
                         equation by <M>6</M>.
                     </P>
                     <BlockMath>{math`
@@ -2061,7 +2059,7 @@ export default defineProse({
                     <P>
                         On the left we have two factors: <M>(x + 3)</M> and <M>(x - 2)</M>. The point is that if we can
                         make at least one of these brackets equal to zero, then the whole product will be equal to zero.
-                        For example, if we somehow managed to make the left bracket equal to zero, this is what happens:
+                        For example, if we somehow manage to make the left bracket equal to zero, this is what happens:
                     </P>
 
                     <BlockMath>{math`
@@ -2071,7 +2069,7 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        We automatically got a true equality! Moreover, it absolutely doesn't matter what ends up in the
+                        We automatically got a true equality! Moreover, it absolutely doesn't matter what is in the
                         bracket on the right. This "something" will be multiplied by <M>0</M> and will still result in{' '}
                         <M>0</M>. The same will happen if we make the right bracket equal to zero:
                     </P>
@@ -2083,8 +2081,8 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        It turns out that our equation splits into two sub-equations, the goal of each of which is to
-                        make its factor equal to zero:
+                        It turns out that our equation splits into two sub-equations, where the goal of each is to make
+                        its factor zero:
                     </P>
 
                     <BlockMath>{math`
@@ -2099,14 +2097,14 @@ export default defineProse({
 
                     <P>
                         We got two solutions to the equation: <M>-3</M> and <M>2</M>. Substituting either of them into
-                        the equation, one of the factors will become zero and multiply the rest by zero, making the
-                        equality true! When substituting <M>-3</M>, the bracket <M>(x + 3)</M> becomes zero, and when
+                        the equation makes one of the factors zero, multiplying the rest by zero, making the equality
+                        true! When substituting <M>-3</M>, the bracket <M>(x + 3)</M> becomes zero, and when
                         substituting <M>2</M> -- the bracket <M>(x - 2)</M>.
                     </P>
                 </ProblemSolution>
                 <ProblemNote>
-                    When you see equations entirely consisting of such brackets, you can avoid doing all these
-                    separations into sub-equations and immediately "see" the needed roots. These are the numbers after
+                    When you see equations consisting entirely of such brackets, you can avoid doing all these
+                    splittings into sub-equations and immediately "see" the needed roots. These are the numbers after
                     the unknown, taken with the opposite sign. In our case, after <M>x</M> there are <M>+3</M> and{' '}
                     <M>-2</M>, so the roots will be <M>-3</M> and <M>2</M>.
                 </ProblemNote>
@@ -2158,9 +2156,9 @@ export default defineProse({
                 </ProblemHint>
                 <ProblemSolution>
                     <P>
-                        So that <M>10</M> does not hinder us in solving the equation, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, we will divide both sides of the
-                        equation by <M>10</M>.
+                        To prevent <M>10</M> from hindering us in solving the equation, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, we divide both sides of the equation by{' '}
+                        <M>10</M>.
                     </P>
                     <BlockMath>{math`
                         \brand{\div 10} \ | \ 10(x+3)(2x-8)(8x+1) = 0 \ | \ \brand{\div 10} \\
@@ -2175,8 +2173,8 @@ export default defineProse({
                     <ProblemSection title="Second sub-equation">
                         <BlockMath>{math`2x - 8 = 0`}</BlockMath>
                         <P>
-                            To isolate <M>x</M>, we first get rid of subtraction of <M>8</M>; to do this using the rule
-                            of the same action, we add <M>8</M> to both sides of the equation:
+                            To isolate <M>x</M>, we first get rid of subtracting <M>8</M>; to do this using the rule of
+                            the same action, we add <M>8</M> to both sides of the equation:
                         </P>
                         <BlockMath>{math`
                             \brand{+ 8} \ | \ 2x - 8 = 0 \ | \ \brand{+ 8} \\
@@ -2195,9 +2193,9 @@ export default defineProse({
                     <ProblemSection title="Third sub-equation">
                         <BlockMath>{math`8x + 1 = 0`}</BlockMath>
                         <P>
-                            To isolate <M>x</M>, we need to get rid of multiplication by <M>8</M> and addition of{' '}
-                            <M>1</M>. First, let's get rid of addition of <M>1</M>. To do this, using the rule of the
-                            same action, we subtract <M>1</M> from both sides of the equation:
+                            To isolate <M>x</M>, we need to get rid of multiplying by <M>8</M> and adding <M>1</M>.
+                            First, let's get rid of adding <M>1</M>. To do this, using the rule of the same action, we
+                            subtract <M>1</M> from both sides of the equation:
                         </P>
                         <BlockMath>{math`
                             \brand{- 1} \ | \ 8x + 1 = 0 \ | \ \brand{- 1} \\
@@ -2239,14 +2237,13 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         On the right side of the equation we have two factors, each of which yields a root for the
-                        original equation. The root from the second factor is obtained elementarily, it is equal to{' '}
-                        <M>-1</M>. But to get the root from the first factor, we need to solve the equation:
+                        original equation. The root from the second factor is obtained easily, it is equal to <M>-1</M>.
+                        But to get the root from the first factor, we need to solve the equation:
                     </P>
                     <BlockMath>{math`x^2 - 4 = 0`}</BlockMath>
                     <P>
-                        To isolate <M>x^2</M>, we need to get rid of subtraction of <M>4</M>. To do this, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, we add <M>4</M> to both sides of the
-                        equation:
+                        To isolate <M>x^2</M>, we need to get rid of subtracting <M>4</M>. To do this, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, we add <M>4</M> to both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{+ 4} \ | \ x^2 - 4 = 0 \ | \ \brand{+ 4} \\
@@ -2276,9 +2273,9 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        To get rid of the fraction denominator, using the <Dep to={sameActionRule}>rule</Dep> of the
-                        same action, we multiply both sides of the equation by <M>17</M>. Then on the left side{' '}
-                        <M>17</M> and <M>17</M> will cancel out:
+                        To get rid of the fraction denominator, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, we multiply both sides of the equation by{' '}
+                        <M>17</M>. Then on the left side <M>17</M> and <M>17</M> will cancel out:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot 17} \ | \ \frac{\left(x + \frac{1}{2}\right)x}{17} = 0 \ | \ \brand{\cdot 17} \\
@@ -2287,8 +2284,8 @@ export default defineProse({
                     `}</BlockMath>
                     <P>
                         We have two factors, each of which gives a root for the original equation. The root from the
-                        second factor is obtained elementarily, it is equal to <M>0</M>. And to get the root from the
-                        first factor, it is enough to solve a trivial equation:
+                        second factor is obtained easily, it is equal to <M>0</M>. And to get the root from the first
+                        factor, it is enough to solve a trivial equation:
                     </P>
                     <BlockMath>{math`
                         x + \frac{1}{2} = 0 \\
@@ -2317,8 +2314,8 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         We have the same number <M>12</M> on both the left and right sides of the "equals" sign. We can
-                        greatly simplify the equation if, using the <Dep to={sameActionRule}>rule</Dep> of the same
-                        action, we subtract <M>12</M> from both sides of the equation:
+                        greatly simplify the equation if, using the <Dep to={sameActionRule}>same action rule</Dep>, we
+                        subtract <M>12</M> from both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 12} \ | \ (x+11)(x-1) + 12 = 12 \ | \ \brand{- 12} \\
@@ -2352,7 +2349,7 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         To start, let's simplify the equation by dividing both sides by <M>7</M> using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action:
+                        <Dep to={sameActionRule}>same action rule</Dep>:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 7} \ | \ 7x^2 = 42x \ | \ \brand{\div 7} \\
@@ -2407,11 +2404,10 @@ export default defineProse({
                 <ProblemSolution>
                     <BlockMath>{math`\frac{x+2}{3} = \frac{4}{2}`}</BlockMath>
                     <P>
-                        Now the variable <M>x</M> is hindered by addition with <M>2</M> and division by <M>3</M>. First,
-                        let's get rid of the division by <M>3</M>. To do this, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, we multiply both sides of the equation
-                        by <M>3</M>. Then on the left side <M>3</M> and <M>3</M> will cancel out, leaving only{' '}
-                        <M>x + 2</M>:
+                        Now the variable <M>x</M> is hindered by adding <M>2</M> and dividing by <M>3</M>. First, let's
+                        get rid of dividing by <M>3</M>. To do this, using the <Dep to={sameActionRule}>rule</Dep> of
+                        the same action, we multiply both sides of the equation by <M>3</M>. Then on the left side{' '}
+                        <M>3</M> and <M>3</M> will cancel out, leaving only <M>x + 2</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot \ 3} \ | \ \frac{x+2}{3} = \frac{4}{2} \ | \ \brand{\cdot 3} \\
@@ -2419,9 +2415,9 @@ export default defineProse({
                         x + 2 = 6
                     `}</BlockMath>
                     <P>
-                        Now the variable <M>x</M> is hindered only by addition with <M>2</M>. To get rid of it, we
-                        subtract <M>2</M> from both sides of the equation. Then on the left side <M>+2</M> and <M>-2</M>{' '}
-                        will mutually destroy each other (resulting in <M>0</M>), leaving only <M>x</M>:
+                        Now the variable <M>x</M> is hindered only by adding <M>2</M>. To get rid of it, we subtract{' '}
+                        <M>2</M> from both sides of the equation. Then on the left side <M>+2</M> and <M>-2</M> will
+                        cancel each other out (resulting in <M>0</M>), leaving only <M>x</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{- 2} \ | \ x + 2 = 6 \ | \ \brand{- 2} \\
@@ -2458,8 +2454,8 @@ export default defineProse({
                     </P>
                     <P>
                         It is inconvenient for us when <M>x</M> is at the bottom. Therefore, it must be pulled out from
-                        there. To do this, using the <Dep to={sameActionRule}>rule</Dep> of the same action, we multiply
-                        both sides of the equation by <M>x + 1</M>:
+                        there. To do this, using the <Dep to={sameActionRule}>same action rule</Dep>, we multiply both
+                        sides of the equation by <M>x + 1</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot (x + 1)} \ | \ \frac{1}{x+1} = \frac{2}{3} \ | \ \brand{\cdot (x + 1)} \\
@@ -2467,7 +2463,7 @@ export default defineProse({
                         1 = \frac{2(x + 1)}{3}
                     `}</BlockMath>
                     <P>
-                        Now we start "unloading" the right side. First, multiply both sides of the equation by <M>3</M>,
+                        Now we start simplifying the right side. First, multiply both sides of the equation by <M>3</M>,
                         which will allow us to get rid of the denominator:
                     </P>
                     <BlockMath>{math`
@@ -2476,8 +2472,8 @@ export default defineProse({
                         3 = 2(x + 1)
                     `}</BlockMath>
                     <P>
-                        Now let's get rid of multiplication by <M>2</M>. To do this, divide both sides of the equation
-                        by <M>2</M>:
+                        Now let's get rid of multiplying by <M>2</M>. To do this, divide both sides of the equation by{' '}
+                        <M>2</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 2} \ | \ 3 = 2(x + 1) \ | \ \brand{\div 2} \\
@@ -2485,8 +2481,8 @@ export default defineProse({
                         \frac{3}{2} = x + 1
                     `}</BlockMath>
                     <P>
-                        Finally, so that <M>x</M> remains alone, we need to get rid of addition with <M>1</M>. To do
-                        this, we subtract <M>1</M> from both sides of the equation:
+                        Finally, so that <M>x</M> remains alone, we need to get rid of adding <M>1</M>. To do this, we
+                        subtract <M>1</M> from both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 1} \ | \ \frac{3}{2} = x + 1 \ | \ \brand{- 1} \\
@@ -2501,9 +2497,9 @@ export default defineProse({
                     <P>Flip the fractions on both sides of the "equals" sign:</P>
                     <BlockMath>{math`\frac{x+1}{1} = \frac{3}{2} \\ x+1 = \frac{3}{2}`}</BlockMath>
                     <P>
-                        So that <M>x</M> remains alone, we need to get rid of addition with <M>1</M>. To do this, using
-                        the <Dep to={sameActionRule}>rule</Dep> of the same action, we subtract <M>1</M> from both sides
-                        of the equation:
+                        So that <M>x</M> remains alone, we need to get rid of adding <M>1</M>. To do this, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, we subtract <M>1</M> from both sides of the
+                        equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 1} \ | \ x + 1 = \frac{3}{2} \ | \ \brand{- 1} \\
@@ -2528,7 +2524,7 @@ export default defineProse({
                         <B>Solution by elementary actions:</B>
                     </P>
                     <P>
-                        Multiply both sides of the equation by <M>-1</M> to get rid of the minuses in both sides:
+                        Multiply both sides of the equation by <M>-1</M> to get rid of the minuses on both sides:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot (-1)} \ | \ -\frac{3}{10-x} = \frac{4}{-8} \ | \ \brand{\cdot (-1)} \\
@@ -2540,8 +2536,8 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`\frac{3}{10 - x} = \frac{1}{2}`}</BlockMath>
                     <P>
-                        Let's immediately take this two out of the denominator, by multiplying both sides of the
-                        equation by <M>2</M> using the <Dep to={sameActionRule}>rule</Dep> of the same action:
+                        Let's immediately remove this <M>2</M> from the denominator, by multiplying both sides of the
+                        equation by <M>2</M> using the <Dep to={sameActionRule}>same action rule</Dep>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot 2} \ | \ \frac{3}{10 - x} = \frac{1}{2} \ | \ \brand{\cdot 2} \\
@@ -2559,8 +2555,8 @@ export default defineProse({
                     `}</BlockMath>
                     <P>
                         So that <M>x</M> remains alone, we need to get rid of <M>10</M>. To do this, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, we subtract <M>10</M> from both sides of
-                        the equation:
+                        <Dep to={sameActionRule}>same action rule</Dep>, we subtract <M>10</M> from both sides of the
+                        equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 10} \ | \ 6 = 10 - x \ | \ \brand{- 10} \\
@@ -2580,13 +2576,13 @@ export default defineProse({
                     </P>
                     <P>
                         We see that <M>x</M> is at the bottom. This is inconvenient. Therefore, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, we apply "fraction flipping" to both
-                        sides of the equation:
+                        <Dep to={sameActionRule}>same action rule</Dep>, we apply "fraction flipping" to both sides of
+                        the equation:
                     </P>
                     <BlockMath>{math`-\frac{10-x}{3} = \frac{-8}{4}`}</BlockMath>
                     <P>
-                        The variable <M>x</M> is hindered by <M>10</M> and division by <M>3</M>. First, let's get rid of
-                        division by <M>3</M>. To do this, using the rule of the same action, we multiply both sides of
+                        The variable <M>x</M> is hindered by <M>10</M> and dividing by <M>3</M>. First, let's get rid of
+                        dividing by <M>3</M>. To do this, using the rule of the same action, we multiply both sides of
                         the equation by <M>3</M>. Then on the left side <M>3</M> and <M>3</M> will cancel out, leaving
                         only <M>10 - x</M>:
                     </P>
@@ -2597,9 +2593,9 @@ export default defineProse({
                         -10 + x = -6
                     `}</BlockMath>
                     <P>
-                        Now variable <M>x</M> is hindered only by addition with <M>-10</M>. To get rid of it, we add{' '}
-                        <M>10</M> to both sides of the equation. Then on the left side <M>-10</M> and <M>+10</M> will
-                        mutually destroy each other (resulting in <M>0</M>), leaving only <M>x</M>:
+                        Now variable <M>x</M> is hindered only by adding <M>-10</M>. To get rid of it, we add <M>10</M>{' '}
+                        to both sides of the equation. Then on the left side <M>-10</M> and <M>+10</M> will cancel each
+                        other out (resulting in <M>0</M>), leaving only <M>x</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{+ 10} \ | \ -10 + x = -6 \ | \ \brand{+ 10} \\
@@ -2622,9 +2618,9 @@ export default defineProse({
                         <B>Solution by elementary actions:</B>
                     </P>
                     <P>
-                        First, let's pull <M>x</M> up from the denominator of the left fraction. To do this, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, we multiply both sides of the equation
-                        by <M>x - 1</M>:
+                        First, let's remove <M>x</M> from the denominator of the left fraction. To do this, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, we multiply both sides of the equation by{' '}
+                        <M>x - 1</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\cdot (x - 1)} \ | \ \frac{1}{x-1} = \frac{2}{x + 2} \ | \ \brand{\cdot (x - 1)} \\
@@ -2632,7 +2628,7 @@ export default defineProse({
                         1 = \frac{2(x - 1)}{x + 2}
                     `}</BlockMath>
                     <P>
-                        Now let's pull <M>x</M> up from the denominator of the right fraction. To do this, multiply both
+                        Now let's remove <M>x</M> from the denominator of the right fraction. To do this, multiply both
                         sides of the equation by <M>x + 2</M>:
                     </P>
                     <BlockMath>{math`
@@ -2643,8 +2639,8 @@ export default defineProse({
                     <P>Expand the brackets on the right:</P>
                     <BlockMath>{math`x+2 = 2x - 2`}</BlockMath>
                     <P>
-                        Now let's group <M>x</M> in the right part of the equation. To do this, we get rid of <M>x</M>{' '}
-                        in the left part. Using the rule of the same action, we subtract <M>x</M> from both sides of the
+                        Now let's group <M>x</M>'s on the right side of the equation. To do this, we get rid of <M>x</M>{' '}
+                        on the left side. Using the rule of the same action, we subtract <M>x</M> from both sides of the
                         equation:
                     </P>
                     <BlockMath>{math`
@@ -2666,8 +2662,8 @@ export default defineProse({
                         <B>Solution by fraction flipping:</B>
                     </P>
                     <P>
-                        Using the <Dep to={sameActionRule}>rule</Dep> of the same action, we apply "fraction flipping"
-                        to both sides of the equation:
+                        Using the <Dep to={sameActionRule}>same action rule</Dep>, we apply "fraction flipping" to both
+                        sides of the equation:
                     </P>
                     <BlockMath>{math`x - 1 = \frac{x+2}{2}`}</BlockMath>
                     <P>
@@ -2679,8 +2675,8 @@ export default defineProse({
                         2x - 2 = x + 2
                     `}</BlockMath>
                     <P>
-                        Group <M>x</M> in the left part of the equation. To do this, we get rid of <M>x</M> in the right
-                        part. To do this, subtract <M>x</M> from both sides of the equation:
+                        Group <M>x</M>'s on the left side of the equation. To do this, we get rid of <M>x</M> on the
+                        right side. To do this, subtract <M>x</M> from both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- x} \ | \ 2x - 2 = x + 2 \ | \ \brand{- x} \\
@@ -2708,12 +2704,12 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         On both sides of the equation there are fractions and <M>x</M> is at the bottom. This is
-                        inconvenient. Therefore, using the <Dep to={sameActionRule}>rule</Dep> of the same action, we
-                        apply "fraction flipping" to both sides of the equation:
+                        inconvenient. Therefore, using the <Dep to={sameActionRule}>same action rule</Dep>, we apply
+                        "fraction flipping" to both sides of the equation:
                     </P>
                     <BlockMath>{math`\frac{x-15}{1} = \frac{4x+9}{4}`}</BlockMath>
                     <P>
-                        On the right we have a fraction with denominator <M>4</M>. To get rid of division by <M>4</M>,
+                        On the right we have a fraction with denominator <M>4</M>. To get rid of dividing by <M>4</M>,
                         multiply both sides of the equation by <M>4</M>. Then on the right side <M>4</M> and <M>4</M>{' '}
                         will cancel out, leaving only <M>4x + 9</M>. Don't forget about the{' '}
                         <Dep to={alwaysGlobal}>globality</Dep> of the action and enclose the left side in brackets:
@@ -2725,7 +2721,7 @@ export default defineProse({
                         4x - 60 = 4x + 9
                     `}</BlockMath>
                     <P>
-                        Let's group <M>x</M> in some part of the equation, for example, on the left. Then we need to get
+                        Let's group <M>x</M> on one side of the equation, for example, on the left. Then we need to get
                         rid of <M>4x</M> on the right. To do this, subtract <M>4x</M> from both sides of the equation.
                     </P>
                     <BlockMath>{math`
@@ -2734,11 +2730,10 @@ export default defineProse({
                         -60 = 9
                     `}</BlockMath>
                     <P>
-                        It so happened that the variable disappeared completely from the equation. Only the false
-                        equality <M>-60 = 9</M> remains, in which, as it turned out, <M>x</M> does not affect anything.
-                        Whatever number we substitute for <M>x</M>, after performing all the above actions, we will
-                        inevitably arrive at a false equality. No number will be a root of this equation. This equation
-                        has no solutions.
+                        The variable disappeared completely from the equation. Only the false equality <M>-60 = 9</M>{' '}
+                        remains, where, as it turned out, <M>x</M> does not affect anything. Whatever number we
+                        substitute for <M>x</M>, after performing all the above actions, we will inevitably arrive at a
+                        false equality. No number will be a root of this equation. This equation has no solutions.
                     </P>
                 </ProblemSolution>
             </SubProblem>
@@ -2771,9 +2766,9 @@ export default defineProse({
                 <P>Let's finish solving the equation using the "fraction flipping" action:</P>
                 <BlockMath>{math`\frac{1}{x} + \frac{1}{3} = \frac{2}{8} \quad \Rightarrow \quad x + 3 = \frac{8}{2}`}</BlockMath>
                 <P>
-                    On the left side, the variable <M>x</M> is hindered by addition with <M>3</M>. To get rid of it, we
+                    On the left side, the variable <M>x</M> is hindered by adding <M>3</M>. To get rid of it, we
                     subtract <M>3</M> from both sides of the equation. Then on the left side <M>+3</M> and <M>-3</M>{' '}
-                    will mutually destroy each other (resulting in <M>0</M>), leaving only <M>x</M>:
+                    will cancel each other out (resulting in <M>0</M>), leaving only <M>x</M>:
                 </P>
                 <BlockMath>{math`
                     x + 3 = \frac{8}{2} \\
@@ -2826,7 +2821,7 @@ export default defineProse({
                 `}</BlockMath>
                 <P>
                     It is inconvenient when <M>x + 3</M> is in the denominator. To "pull" it out from there, multiply
-                    both sides of the equation by <M>x + 3</M>. Then in the left side <M>x + 3</M> and <M>x + 3</M> will
+                    both sides of the equation by <M>x + 3</M>. Then on the left side <M>x + 3</M> and <M>x + 3</M> will
                     cancel out, leaving only <M>3x</M>:
                 </P>
                 <BlockMath>{math`
@@ -2837,8 +2832,8 @@ export default defineProse({
                 `}</BlockMath>
                 <P>
                     Let's group <M>x</M> on the left side. To do this, subtract <M>4x</M> from both sides of the
-                    equation. Then on the right side <M>4x</M> and <M>-4x</M> will mutually destroy each other
-                    (resulting in <M>0</M>), and there will remain only <M>12</M>:
+                    equation. Then on the right side <M>4x</M> and <M>-4x</M> will cancel each other out (resulting in{' '}
+                    <M>0</M>), and there will remain only <M>12</M>:
                 </P>
                 <BlockMath>{math`
                     \brand{- 4x} \ | \ 3x = 4x + 12 \ | \ \brand{- 4x} \\
@@ -2890,8 +2885,8 @@ export default defineProse({
                 <BlockMath>{math`-3p + 1 = 5p + 25`}</BlockMath>
                 <P>
                     Let's group <M>p</M> on the right side of the equation. To do this, we need to get rid of <M>-3p</M>{' '}
-                    on the left side. To do this, using the <Dep to={sameActionRule}>rule</Dep> of the same action, we
-                    add <M>3p</M> to both sides of the equation:
+                    on the left side. To do this, using the <Dep to={sameActionRule}>same action rule</Dep>, we add{' '}
+                    <M>3p</M> to both sides of the equation:
                 </P>
                 <BlockMath>{math`
                     \brand{+ 3p} \ | \ -3p + 1 = 5p + 25 \ | \ \brand{+ 3p} \\
@@ -2899,9 +2894,9 @@ export default defineProse({
                     1 = 8p + 25
                 `}</BlockMath>
                 <P>
-                    So that <M>p</M> remains alone, we need to get rid of multiplication by <M>8</M> and addition with{' '}
-                    <M>25</M>. First, let's get rid of addition with <M>25</M>. To do this, subtract <M>25</M> from both
-                    sides of the equation:
+                    So that <M>p</M> remains alone, we need to get rid of multiplying by <M>8</M> and adding <M>25</M>.
+                    First, let's get rid of adding <M>25</M>. To do this, subtract <M>25</M> from both sides of the
+                    equation:
                 </P>
                 <BlockMath>{math`
                     \brand{- 25} \ | \ 1 = 8p + 25 \ | \ \brand{- 25} \\
@@ -2909,7 +2904,7 @@ export default defineProse({
                     -24 = 8p
                 `}</BlockMath>
                 <P>
-                    Now let's get rid of multiplication by <M>8</M>. To do this, divide both sides of the equation by{' '}
+                    Now let's get rid of multiplying by <M>8</M>. To do this, divide both sides of the equation by{' '}
                     <M>8</M>:
                 </P>
                 <BlockMath>{math`
@@ -2956,7 +2951,7 @@ export default defineProse({
                 <P>
                     Let's group <M>x</M> on the right side. To do this, add <M>503x</M> to both sides of the equation.
                     Then on the left side, <M>-503x</M> and <M>+503x</M> will cancel each other out (the sum results in{' '}
-                    <M>0</M>), and no "xes" will remain there:
+                    <M>0</M>), and no <M>x</M>'s will remain:
                 </P>
                 <BlockMath>{math`
                     \brand{+ 503x} \ | \ 743 \ 639 - 503 x = 56 \ 700x \ | \ \brand{+ 503x} \\
@@ -2964,7 +2959,7 @@ export default defineProse({
                     743 \ 639 = 57 \ 203x
                 `}</BlockMath>
                 <P>
-                    Now only multiplication by <M>57 \ 203</M> interferes with the unknown. To get rid of it and leave{' '}
+                    Now only multiplying by <M>57 \ 203</M> interferes with the unknown. To get rid of it and leave{' '}
                     <M>x</M> alone, divide both sides of the equation by <M>57 \ 203</M>. Then on the right side, we can
                     perform reduction:
                 </P>
@@ -3003,15 +2998,13 @@ export default defineProse({
                     There is an "extra" number on the left side that will have to be gotten rid of.
                 </ProblemHint>
                 <ProblemAnswer>
-                    It is more profitable to group <M>x</M> on the right side of the equation. After that, the equation
-                    will be solved in one action. If <M>x</M> is grouped on the left, then two actions will have to be
-                    taken.
+                    It is better to group <M>x</M> on the right side of the equation. After that, the equation will be
+                    solved in one action. If <M>x</M> is grouped on the left, then two actions will have to be taken.
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        It is more profitable to group <M>x</M> on the right side of the equation, by subtracting{' '}
-                        <M>3x</M> from both sides of the equation using the <Dep to={sameActionRule}>rule</Dep> of the
-                        same action:
+                        It is better to group <M>x</M> on the right side of the equation, by subtracting <M>3x</M> from
+                        both sides of the equation using the <Dep to={sameActionRule}>same action rule</Dep>:
                     </P>
                     <BlockMath>{math`
                         \brand{- 3x} \ | \ 3x + 2 = x \ | \ \brand{- 3x} \\
@@ -3019,7 +3012,7 @@ export default defineProse({
                         2 = -2x
                     `}</BlockMath>
                     <P>
-                        In this situation, to solve the equation, it remains only to divide both parts by <M>-2</M> and
+                        In this situation, to solve the equation, it remains only to divide both sides by <M>-2</M> and
                         get the answer:
                     </P>
                     <BlockMath>{math`
@@ -3037,9 +3030,9 @@ export default defineProse({
                         2x + 2 = 0
                     `}</BlockMath>
                     <P>
-                        Now we have everything piled up on the left. To clear it up, we will have to get rid of addition
-                        with <M>2</M>, and then multiplication by <M>2</M>. That is, do two actions instead of one if we
-                        had grouped <M>x</M> on the right side!
+                        Now we have everything piled up on the left. To clear it up, we will have to get rid of adding{' '}
+                        <M>2</M>, and then multiplying by <M>2</M>. That is, do two actions instead of one if we had
+                        grouped <M>x</M> on the right side!
                     </P>
                 </ProblemSolution>
                 <ProblemNote>
@@ -3062,18 +3055,17 @@ export default defineProse({
                     </List>
                 </ProblemDescription>
                 <ProblemHint>
-                    Getting a negative coefficient before <M>x</M> is undesirable.
+                    Getting a negative coefficient of <M>x</M> is undesirable.
                 </ProblemHint>
                 <ProblemAnswer>
-                    It is more profitable to group <M>x</M> on the left side of the equation, because then the
-                    coefficient at <M>x</M> will turn out to be positive. If <M>x</M> is grouped on the right, then
-                    later an extra action will have to be done to get rid of the minus before <M>x</M>.
+                    It is better to group <M>x</M> on the left side of the equation, because then the coefficient of{' '}
+                    <M>x</M> will turn out to be positive. If <M>x</M> is grouped on the right, then later an extra
+                    action will have to be done to get rid of the minus sign before <M>x</M>.
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        It is more profitable to group <M>x</M> on the left side of the equation, by subtracting{' '}
-                        <M>5x</M> from both sides of the equation using the <Dep to={sameActionRule}>rule</Dep> of the
-                        same action:
+                        It is better to group <M>x</M> on the left side of the equation, by subtracting <M>5x</M> from
+                        both sides of the equation using the <Dep to={sameActionRule}>same action rule</Dep>:
                     </P>
                     <BlockMath>{math`
                         \brand{- 5x} \ | \ 7x - 2 = 5x + 10 \ | \ \brand{- 5x} \\
@@ -3081,7 +3073,7 @@ export default defineProse({
                         2x - 2 = 10
                     `}</BlockMath>
                     <P>
-                        Yes, here we have <M>2x</M> connected by subtraction of <M>2</M>, but the coefficient at{' '}
+                        Yes, here we have <M>2x</M> connected by subtraction of <M>2</M>, but the coefficient of{' '}
                         <M>x</M> is positive.
                     </P>
                     <P>
@@ -3094,15 +3086,15 @@ export default defineProse({
                         -2 = -2x + 10
                     `}</BlockMath>
                     <P>
-                        Here <M>-2x</M> is also connected with an extra number, with <M>10</M>, but in addition, the
-                        coefficient at <M>x</M> is negative. Because of this, in the end we will have to multiply both
-                        sides of the equation by <M>-1</M> to get rid of the minus before <M>x</M>.
+                        Here <M>-2x</M> is also associated with an extra number, with <M>10</M>, but in addition, the
+                        coefficient of <M>x</M> is negative. Because of this, in the end we will have to multiply both
+                        sides of the equation by <M>-1</M> to get rid of the minus sign before <M>x</M>.
                     </P>
                 </ProblemSolution>
                 <ProblemNote>
-                    Important conclusion -- if the solution can be greatly simplified, a negative coefficient at{' '}
+                    Important conclusion -- if the solution can be greatly simplified, a negative coefficient of{' '}
                     <M>x</M> can be tolerated. But if no strong simplification can be achieved, it is better to avoid
-                    negative coefficients and group so that the coefficient at <M>x</M> is positive.
+                    negative coefficients and group so that the coefficient of <M>x</M> is positive.
                 </ProblemNote>
             </SubProblem>
 
@@ -3121,8 +3113,8 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemHint>Use trick 1.</ProblemHint>
                 <ProblemAnswer>
-                    It is more profitable to group <M>x</M> on the left side. Then subtraction of <M>3</M> will not
-                    interfere with us.
+                    It is better to group <M>x</M> on the left side. Then subtracting <M>3</M> will not interfere with
+                    us.
                 </ProblemAnswer>
             </SubProblem>
 
@@ -3141,8 +3133,7 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemHint>Use trick 1.</ProblemHint>
                 <ProblemAnswer>
-                    It is more profitable to group <M>x</M> on the right side. Then addition with <M>11</M> will not
-                    interfere with us.
+                    It is better to group <M>x</M> on the right side. Then adding <M>11</M> will not interfere with us.
                 </ProblemAnswer>
             </SubProblem>
 
@@ -3161,8 +3152,8 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemHint>Use trick 2.</ProblemHint>
                 <ProblemAnswer>
-                    It is more profitable to group <M>x</M> on the right side. This way we get a positive coefficient at{' '}
-                    <M>x</M>.
+                    It is better to group <M>x</M> on the right side. This way we get a positive coefficient of <M>x</M>
+                    .
                 </ProblemAnswer>
             </SubProblem>
 
@@ -3181,8 +3172,7 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemHint>Use trick 2.</ProblemHint>
                 <ProblemAnswer>
-                    It is more profitable to group <M>x</M> on the left side. This way we get a positive coefficient at{' '}
-                    <M>x</M>.
+                    It is better to group <M>x</M> on the left side. This way we get a positive coefficient of <M>x</M>.
                 </ProblemAnswer>
             </SubProblem>
         </Problems>
@@ -3203,8 +3193,8 @@ export default defineProse({
                     `}</BlockMath>
                     <P>
                         We notice identical terms <M>-4x^2</M> on the left and right. We can get rid of them, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, by adding <M>4x^2</M> to both sides of
-                        the equation:
+                        <Dep to={sameActionRule}>same action rule</Dep>, by adding <M>4x^2</M> to both sides of the
+                        equation:
                     </P>
                     <BlockMath>{math`
                         \brand{+ 4x^2} \ | \ -4x^2 + 2x + 6 = -4x^2 + 3x + 3 \ | \ \brand{+ 4x^2} \\
@@ -3221,9 +3211,8 @@ export default defineProse({
                         -x + 6 = 3
                     `}</BlockMath>
                     <P>
-                        Now <M>x</M> prevents remaining alone multiplication by <M>-1</M> and addition with <M>6</M>.
-                        First, let's get rid of addition with <M>6</M>. To do this, subtract <M>6</M> from both sides of
-                        the equation:
+                        Now multiplying by <M>-1</M> and adding <M>6</M> prevent <M>x</M> from being alone. First, let's
+                        get rid of adding <M>6</M>. To do this, subtract <M>6</M> from both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 6} \ | \ -x + 6 = 3 \ | \ \brand{- 6} \\
@@ -3252,8 +3241,8 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         We will gradually isolate <M>x^2</M>. To begin with, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, subtract <M>35</M> from both sides of
-                        the equation:
+                        <Dep to={sameActionRule}>same action rule</Dep>, subtract <M>35</M> from both sides of the
+                        equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 35} \ | \ -\frac{5}{7}x^2 + 35 = 0 \ | \ \brand{- 35} \\
@@ -3298,7 +3287,7 @@ export default defineProse({
                     <BlockMath>{math`(x+11)^2 = (x-9)^2`}</BlockMath>
                 </ProblemDescription>
                 <ProblemCheck answer={-1} />
-                <ProblemHint>Expand the brackets and combine like terms on both sides of the equation.</ProblemHint>
+                <ProblemHint>Expand parentheses and combine like terms on both sides of the equation.</ProblemHint>
                 <ProblemHint>
                     On the left, use the formula for the square of the sum, and on the right -- the formula for the
                     square of the difference.
@@ -3316,9 +3305,9 @@ export default defineProse({
                         x^2 + 22x + 121 = x^2 - 18x + 81
                     `}</BlockMath>
                     <P>
-                        We notice identical terms <M>x^2</M> on the left and right. We can get rid of them, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, by subtracting <M>x^2</M> from both
-                        sides of the equation:
+                        We notice identical terms <M>x^2</M> on the left and right sides. We can remove them, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, by subtracting <M>x^2</M> from both sides of
+                        the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- x^2} \ | \ x^2 + 22x + 121 = x^2 - 18x + 81 \ | \ \brand{- x^2} \\
@@ -3326,8 +3315,8 @@ export default defineProse({
                         22x + 121 = -18x + 81
                     `}</BlockMath>
                     <P>
-                        Let's group <M>x</M> on the left side. To do this, we need to get rid of <M>-18x</M> on the
-                        right side. To do this, add <M>18x</M> to both sides of the equation:
+                        Let's group <M>x</M> on the left side. To do this, we need to remove <M>-18x</M> from the right
+                        side. Add <M>18x</M> to both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{+ 18x} \ | \ 22x + 121 = -18x + 81 \ | \ \brand{+ 18x} \\
@@ -3335,9 +3324,8 @@ export default defineProse({
                         40x + 121 = 81
                     `}</BlockMath>
                     <P>
-                        So that <M>x</M> stays alone, we need to get rid of multiplication by <M>40</M> and addition
-                        with <M>121</M>. First, let's get rid of addition with <M>121</M>. To do this, subtract{' '}
-                        <M>121</M> from both sides of the equation:
+                        To isolate <M>x</M>, we need to undo multiplying by <M>40</M> and adding <M>121</M>. First,
+                        let's undo adding <M>121</M>. To do this, subtract <M>121</M> from both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 121} \ | \ 40x + 121 = 81 \ | \ \brand{- 121} \\
@@ -3345,8 +3333,8 @@ export default defineProse({
                         40x = -40
                     `}</BlockMath>
                     <P>
-                        Finally, let's get rid of multiplication by <M>40</M>. To do this, divide both sides of the
-                        equation by <M>40</M>:
+                        Finally, let's undo multiplying by <M>40</M>. To do this, divide both sides of the equation by{' '}
+                        <M>40</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 40} \ | \ 40x = -40 \ | \ \brand{\div 40} \\
@@ -3362,13 +3350,13 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemCheck answers={['23/22']} />
                 <ProblemHint>
-                    In one action, make it so that the fractions are on both sides of the equation. Then use{' '}
+                    In one step, arrange the equation so that there is a fraction on each side. Then use{' '}
                     <Dep to={uniques.fractionsFlip}>fraction flipping</Dep>.
                 </ProblemHint>
                 <ProblemSolution>
                     <P>
-                        Let's make it so that the fractions are on both sides of the equation. To do this, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, add fractional{' '}
+                        Let's arrange the equation so that there is a fraction on each side. To do this, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, add the fraction{' '}
                         <M>{math`\frac{2}{4x - 1}`}</M> to both sides of the equation:
                     </P>
                     <BlockMath>{math`
@@ -3377,12 +3365,12 @@ export default defineProse({
                         \frac{7}{3x + 8} = \frac{2}{4x - 1}
                     `}</BlockMath>
                     <P>
-                        All x's stick out in the denominators. Disorder, and it is inconvenient to solve like this. We
-                        use <Dep to={uniques.fractionsFlip}>fraction flipping</Dep>:
+                        The x's are stuck in the denominators. This is messy and inconvenient. We use{' '}
+                        <Dep to={uniques.fractionsFlip}>fraction flipping</Dep>:
                     </P>
                     <BlockMath>{math`\frac{3x + 8}{7} = \frac{4x - 1}{2}`}</BlockMath>
                     <P>
-                        Getting rid of denominators by multiplying both sides of the equation by <M>7</M> and <M>2</M>.
+                        Eliminate the denominators by multiplying both sides of the equation by <M>7</M> and <M>2</M>.
                         And don't forget about the <Dep to={alwaysGlobal}>globality</Dep> of this action -- enclose both
                         sides of the equation in parentheses!
                     </P>
@@ -3391,10 +3379,10 @@ export default defineProse({
                         \frac{\cancel{7}\cdot 2\cdot (3x + 8)}{\cancel{7}} = \frac{ 7\cdot\cancel{2}\cdot (4x - 1)}{\cancel{2}} \\
                         2(3x + 8) = 7(4x - 1)
                     `}</BlockMath>
-                    <P>Expanding brackets:</P>
+                    <P>Expanding parentheses:</P>
                     <BlockMath>{math`6x + 16 = 28x - 7`}</BlockMath>
                     <P>
-                        Grouping <M>x</M> on the right side. To do this, subtract <M>6x</M> from both sides of the
+                        Group <M>x</M> on the right side. To do this, subtract <M>6x</M> from both sides of the
                         equation:
                     </P>
                     <BlockMath>{math`
@@ -3403,7 +3391,7 @@ export default defineProse({
                         16 = 22x - 7
                     `}</BlockMath>
                     <P>
-                        Adding <M>7</M> to both sides of the equation:
+                        Add <M>7</M> to both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{+ 7} \ | \ 16 = 22x - 7 \ | \ \brand{+ 7} \\
@@ -3411,7 +3399,7 @@ export default defineProse({
                         23 = 22x
                     `}</BlockMath>
                     <P>
-                        Dividing both sides of the equation by <M>22</M>:
+                        Divide both sides of the equation by <M>22</M>:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 22} \ | \ 23 = 22x \ | \ \brand{\div 22} \\
@@ -3426,18 +3414,18 @@ export default defineProse({
                     <BlockMath>{math`(2x-5)^2 = 4x^2`}</BlockMath>
                 </ProblemDescription>
                 <ProblemCheck answers={['5/4', '1.25']} />
-                <ProblemHint>Expand brackets on the left using the square of difference formula.</ProblemHint>
+                <ProblemHint>Expand parentheses on the left using the square of difference formula.</ProblemHint>
                 <ProblemSolution>
-                    <P>Expanding brackets on the left using the square of difference formula:</P>
+                    <P>Expanding parentheses on the left using the square of difference formula:</P>
                     <BlockMath>{math`
                         (2x - 5)^2 = 4x^2 \\
                         (2x)^2 - 2\cdot(2x)\cdot5 + 5^2 = 4x^2 \\
                         4x^2 - 20x + 25 = 4x^2
                     `}</BlockMath>
                     <P>
-                        We notice identical terms <M>4x^2</M> on the left and right. We can get rid of them, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, subtracting <M>4x^2</M> from both sides
-                        of the equation:
+                        We notice identical terms <M>4x^2</M> on the left and right sides. We can remove them, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, by subtracting <M>4x^2</M> from both sides of
+                        the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- 4x^2} \ | \ 4x^2 - 20x + 25 = 4x^2 \ | \ \brand{- 4x^2} \\
@@ -3453,7 +3441,7 @@ export default defineProse({
                         25 = 20x
                     `}</BlockMath>
                     <P>
-                        Finally, divide both sides of the equation by <M>20</M> to leave <M>x</M> alone on the right:
+                        Finally, divide both sides of the equation by <M>20</M> to isolate <M>x</M> on the right:
                     </P>
                     <BlockMath>{math`
                         \brand{\div 20} \ | \ 25 = 20x \ | \ \brand{\div 20} \\
@@ -3469,15 +3457,15 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemCheck set={[0, 4]} />
                 <ProblemHint>
-                    Group all <M>x</M> in one part of the equation and factor out common factors.
+                    Group all <M>x</M> terms on one side of the equation and factor out common factors.
                 </ProblemHint>
                 <ProblemHint>
                     Use the technique from the task <Dep to={uniques.zeroFactors}>Zero Factors</Dep>.
                 </ProblemHint>
                 <ProblemSolution>
                     <P>
-                        Let's pull <M>x-3</M> out of the denominator. To do this, using the{' '}
-                        <Dep to={sameActionRule}>rule</Dep> of the same action, multiply both sides of the equation by{' '}
+                        Let's remove <M>x-3</M> from the denominator. To do this, using the{' '}
+                        <Dep to={sameActionRule}>same action rule</Dep>, multiply both sides of the equation by{' '}
                         <M>x-3</M>:
                     </P>
                     <BlockMath>{math`
@@ -3486,8 +3474,8 @@ export default defineProse({
                         x^2 = 4x^2 - 12x
                     `}</BlockMath>
                     <P>
-                        Let's group all x's on the right side of the equation. To do this, subtract <M>x^2</M> from both
-                        sides of the equation:
+                        Let's group all <M>x</M> terms on the right side of the equation. To do this, subtract{' '}
+                        <M>x^2</M> from both sides of the equation:
                     </P>
                     <BlockMath>{math`
                         \brand{- x^2} \ | \ x^2 = 4x^2 - 12x \ | \ \brand{- x^2} \\
@@ -3499,7 +3487,7 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`0 = 3x(x - 4)`}</BlockMath>
                     <P>
-                        We got a product of factors that equals zero, just like in the task{' '}
+                        We have a product of factors equal to zero, just like in the task{' '}
                         <Dep to={uniques.zeroFactors}>Zero Factors</Dep>. This means this equation splits into two
                         sub-equations:
                     </P>
@@ -3530,12 +3518,12 @@ export default defineProse({
             </ProblemHint>
             <ProblemSolution>
                 <P>
-                    Working with fractions is inconvenient. We need to think about what to multiply both sides of the
-                    equation by to get rid of fractions at once. The least common denominator of these fractions is{' '}
-                    <M>12</M>. Multiplying both sides of the equation by <M>12</M> using the{' '}
-                    <Dep to={sameActionRule}>rule</Dep> of the same action, all fractions will be canceled. The main
-                    thing is to remember about the <Dep to={alwaysGlobal}>globality</Dep> of this action -- we enclose
-                    the left side in parentheses!
+                    Working with fractions is inconvenient. We need to find a value to multiply both sides of the
+                    equation by to eliminate the fractions immediately. The least common denominator of these fractions
+                    is <M>12</M>. Multiplying both sides of the equation by <M>12</M> using the{' '}
+                    <Dep to={sameActionRule}>same action rule</Dep>, all fractions will be eliminated. The main thing is
+                    to remember about the <Dep to={alwaysGlobal}>globality</Dep> of this action -- enclose the left side
+                    in parentheses!
                 </P>
                 <BlockMath>{math`
                     \brand{\cdot 12} \ | \ \frac{3z + 9}{6} + \frac{8z - 2}{4} = \frac{5 + 4z}{3} \ | \ \brand{\cdot 12} \\
@@ -3543,14 +3531,14 @@ export default defineProse({
                     12\cdot\frac{3z + 9}{6} + 12\cdot\frac{8z - 2}{4} = 12\cdot\frac{5 + 4z}{3} \\
                     2(3z + 9) + 3(8z - 2) = 4(5 + 4z)
                 `}</BlockMath>
-                <P> Expanding brackets and combining like terms:</P>
+                <P> Expanding parentheses and combining like terms:</P>
                 <BlockMath>{math`
                     6z + 18 + 24z - 6 = 20 + 16z \\
                     30z + 12 = 20 + 16z
                 `}</BlockMath>
                 <P>
-                    Let's group <M>z</M> on the left side. To do this, we need to get rid of <M>16z</M> on the right
-                    side. To do this, subtract <M>16z</M> from both sides of the equation:
+                    Let's group <M>z</M> on the left side. To do this, we need to remove <M>16z</M> from the right side.
+                    Subtract <M>16z</M> from both sides of the equation:
                 </P>
                 <BlockMath>{math`
                     \brand{- 16z} \ | \ 30z + 12 = 20 + 16z \ | \ \brand{- 16z} \\
@@ -3558,9 +3546,8 @@ export default defineProse({
                     14z + 12 = 20
                 `}</BlockMath>
                 <P>
-                    So that <M>z</M> remains alone, we need to get rid of multiplication by <M>14</M> and addition with{' '}
-                    <M>12</M>. First, let's get rid of addition with <M>12</M>. To do this, subtract <M>12</M> from both
-                    sides of the equation:
+                    To isolate <M>z</M>, we need to undo multiplying by <M>14</M> and adding <M>12</M>. First, let's
+                    undo adding <M>12</M>. To do this, subtract <M>12</M> from both sides of the equation:
                 </P>
                 <BlockMath>{math`
                     \brand{- 12} \ | \ 14z + 12 = 20 \ | \ \brand{- 12} \\
@@ -3568,8 +3555,8 @@ export default defineProse({
                     14z = 8
                 `}</BlockMath>
                 <P>
-                    Finally, let's get rid of multiplication by <M>14</M>. To do this, divide both sides of the equation
-                    by <M>14</M>:
+                    Finally, let's undo multiplying by <M>14</M>. To do this, divide both sides of the equation by{' '}
+                    <M>14</M>:
                 </P>
                 <BlockMath>{math`
                     \brand{\div 14} \ | \ 14z = 8 \ | \ \brand{\div 14} \\
@@ -3582,21 +3569,21 @@ export default defineProse({
         <Problem $={uniques.sameActionRuleFalse} title="Preservation of Equality Falsity" level="hard">
             <ProblemDescription>
                 <P>
-                    The <Dep to={sameActionRule}>rule</Dep> of the same action is about true equalities. But does it
-                    work for false equalities? Is it true that if the same action is performed on both sides of any
-                    false equality, the result will necessarily be a false equality?
+                    The <Dep to={sameActionRule}>same action rule</Dep> is about true equalities. But does it apply to
+                    false equalities? Is it true that if the same action is performed on both sides of any false
+                    equality, the result will necessarily be a false equality?
                 </P>
             </ProblemDescription>
             <ProblemHint>
-                It is enough to give an example of an action that will make a true equality out of a false one.
+                It is enough to give an example of an action that will turn a false equality into a true one.
             </ProblemHint>
             <ProblemHint>
                 Think if there are actions that can "destroy" the object on which they are performed.
             </ProblemHint>
             <ProblemSolution>
                 <P>
-                    At first glance, the rule of the same action also works for false equalities. Take, for example, the
-                    false equality <M>1 + 8 = 13</M> and add <M>4</M> to both sides.
+                    At first glance, the rule of the same action also works for false equalities. Consider, for example,
+                    the false equality <M>1 + 8 = 13</M> and add <M>4</M> to both sides.
                 </P>
                 <BlockMath>{math`
                     \brand{+ \ 4} \ | \ 1 + 8 = 13 \ | \ \brand{+ 4} \\
@@ -3609,18 +3596,18 @@ export default defineProse({
                 </P>
                 <ProblemSection title="Multiplication by 0">
                     <P>
-                        We need some action that can "destroy" information when applied. One such action is
-                        multiplication by <M>0</M>.
+                        We need some action that can "destroy" information when applied. One such action is multiplying
+                        by <M>0</M>.
                     </P>
                     <BlockMath>{math`
                     \brand{\cdot \ 0} \ | \ 1 + 8 = 13 \ | \ \brand{\cdot 0} \\
                     0 \cdot (1 + 8) = 0 \cdot 13 \\
                     0 = 0
                 `}</BlockMath>
-                    <P>We started with a false equality, and ended with a true equality.</P>
+                    <P>We started with a false equality and ended with a true one.</P>
                 </ProblemSection>
                 <ProblemSection title="Taking the Modulus">
-                    There is another interesting way to make a true equality out of a false one -- take the modulus of
+                    There is another interesting way to turn a false equality into a true one -- take the modulus of
                     both parts. Consider the false equality <M>2 = -2</M>. If we take the modulus of both parts, we get
                     the true equality <M>|2| = |-2|</M>, because the modulus "discards" the sign of the number, and{' '}
                     <M>2</M> and <M>-2</M> without a sign mean the same object.
@@ -3637,8 +3624,7 @@ export default defineProse({
             <ProblemDescription>
                 <P>
                     The three equations below have the form <M>Ax + B = 0</M> (they are called <I>linear</I>) and differ
-                    from each other only by a single factor by which all coefficients were multiplied. They all have one
-                    identical root{' '}
+                    from each other only by a constant factor. They all have one common root{' '}
                     <M>
                         -\frac{3}
                         {2}
@@ -3653,18 +3639,18 @@ export default defineProse({
                         \frac{3}
                         {2}
                     </M>
-                    , we will get the third equation. In short, all three equations can be reduced to each other by
-                    multiplying by some number.
+                    , we will get the third equation. In short, all three equations can be transformed into each other
+                    by multiplying by some number.
                 </P>
                 <P>
-                    Are there two equations with <B>identical roots</B> that cannot be reduced to each other by
+                    Are there two equations with <B>identical roots</B> that cannot be transformed into each other by
                     multiplying by some number? If they exist, give an example of such equations. If they do not exist,
                     strictly prove it.
                 </P>
             </ProblemDescription>
             <ProblemHint>
                 You need to get a contradiction to prove that such equations do not exist. Assume the opposite by
-                presenting two equations irreducible to each other with identical roots.
+                presenting two equations that are not multiples of each other with identical roots.
             </ProblemHint>
             <ProblemAnswer>
                 All linear equations with identical roots differ from each other only by a common factor.
@@ -3672,17 +3658,17 @@ export default defineProse({
             <ProblemSolution>
                 <ProblemSection title="Elegant Way">
                     <P>
-                        We will prove by contradiction. Assume that there <B>exist</B> two linear equations irreducible
-                        to each other with the same root:
+                        We will prove by contradiction. Assume that there <B>exist</B> two linear equations that are not
+                        multiples of each other with the same root:
                     </P>
                     <BlockMath>{math`A_1x + B_1 = 0 >>{big} A_2x + B_2 = 0`}</BlockMath>
                     <P>
-                        Let's factor out <M>A_1</M> in the first equation and <M>A_2</M> in the second:
+                        Factor out <M>A_1</M> in the first equation and <M>A_2</M> in the second:
                     </P>
                     <BlockMath>{math`A_1\left(x + \frac{B_1}{A_1}\right) = 0 >>{big} A_2\left(x + \frac{B_2}{A_2}\right) = 0`}</BlockMath>
                     <P>
-                        Let's pull a little trick with a minus so that inside the parentheses there is a general formula
-                        for solving a linear equation:
+                        Let's use a small trick with the minus sign so that inside the parentheses there is a general
+                        formula for solving a linear equation:
                     </P>
                     <BlockMath>{math`A_1\left( x - \left[-\frac{B_1}{A_1}\right] \right) = 0 >>{big} A_2\left( x - \left[ - \frac{B_2}{A_2} \right] \right) = 0`}</BlockMath>
                     <P>
@@ -3690,14 +3676,15 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`A_1(x - x') = 0 >>{big} A_2(x - x') = 0`}</BlockMath>
                     <P>
-                        We see that these records differ from each other only by coefficients <M>A_1</M> and <M>A_2</M>.
-                        But the coefficient <M>A_2</M> can <B>always</B> be obtained from <M>A_1</M> by multiplying by
-                        some number <M>k</M>.
+                        We see that these expressions differ from each other only by coefficients <M>A_1</M> and{' '}
+                        <M>A_2</M>. But the coefficient <M>A_2</M> can <B>always</B> be obtained from <M>A_1</M> by
+                        multiplying by some number <M>k</M>.
                     </P>
                     <BlockMath>{math`A_2 = k \cdot A_1`}</BlockMath>
                     <P>
-                        Therefore, it is enough to multiply both sides of the left equation by this very <M>k</M> using
-                        the <Dep to={sameActionRule}>rule of the same action</Dep> and we will get the right equation:
+                        Therefore, it is enough to multiply both sides of the left equation by this constant <M>k</M>{' '}
+                        using the <Dep to={sameActionRule}>rule of the same action</Dep> and we will get the right
+                        equation:
                     </P>
                     <BlockMath>{math`
                     A_1(x - x') = 0
@@ -3707,27 +3694,27 @@ export default defineProse({
                     A_2(x - x') = 0
                 `}</BlockMath>
                     <P>
-                        But this essentially means that both equations initially declared as "irreducible" are actually{' '}
-                        <B>reducible</B> to each other! We got a contradiction: the equations are simultaneously
-                        irreducible and reducible to each other! Since we came to a contradiction, our initial
-                        assumption about the existence of two linear equations irreducible to each other with identical
-                        roots is incorrect. Consequently, there <B>do not exist</B> two linear equations irreducible to
-                        each other with identical roots.
+                        But this essentially means that both equations initially declared as "not multiples" are
+                        actually <B>multiples</B> of each other! We got a contradiction: the equations are
+                        simultaneously not multiples and multiples of each other! Since we came to a contradiction, our
+                        initial assumption about the existence of two linear equations that are not multiples of each
+                        other with identical roots is incorrect. Consequently, there <B>do not exist</B> two linear
+                        equations that are not multiples of each other with identical roots.
                     </P>
                     <P>All linear equations with identical roots differ from each other only by a common factor!</P>
                     <P>{QED}</P>
                 </ProblemSection>
                 <ProblemSection title="Direct Way">
                     <P>
-                        We will prove by contradiction. Assume that there <B>exist</B> two linear equations irreducible
-                        to each other with the same root:
+                        We will prove by contradiction. Assume that there <B>exist</B> two linear equations that are not
+                        multiples of each other with the same root:
                     </P>
                     <BlockMath>{math`A_1x + B_1 = 0 >>{big} A_2x + B_2 = 0`}</BlockMath>
                     <P>
-                        Since these two equations are irreducible to each other, the coefficients <M>A_2</M> and{' '}
+                        Since these two equations are not multiples of each other, the coefficients <M>A_2</M> and{' '}
                         <M>B_2</M> cannot be obtained from <M>A_1</M> and <M>B_1</M> by multiplying by the same number,
-                        otherwise this common factor could simply be factored out. The multipliers must be different,
-                        for example <M>n</M> to obtain <M>A_2</M> and <M>m</M> to obtain <M>B_2</M>:
+                        otherwise this common factor could simply be divided out. The multipliers must be different, for
+                        example <M>n</M> to obtain <M>A_2</M> and <M>m</M> to obtain <M>B_2</M>:
                     </P>
                     <BlockMath>{math`A_1x + B_1 = 0 >>{big} \underbrace{nA_1}_{A_2}x + \underbrace{mB_1}_{B_2} = 0`}</BlockMath>
                     <P>
@@ -3745,7 +3732,7 @@ export default defineProse({
                     </P>
                     <BlockMath>{math`\frac{B_1}{A_1} = \frac{mB_1}{nA_1}`}</BlockMath>
                     <P>
-                        Multiply both sides by <M>A_1</M> to perform reduction in both parts:
+                        Multiply both sides by <M>A_1</M> to simplify both sides:
                     </P>
                     <BlockMath>{math`\cancel{A_1}\cdot\frac{B_1}{\cancel{A_1}} = \frac{mB_1}{n\cancel{A_1}} \cdot \cancel{A_1}`}</BlockMath>
                     <BlockMath>{math`B_1 = \frac{m}{n}B_1`}</BlockMath>
@@ -3755,14 +3742,14 @@ export default defineProse({
                     </P>
                     <P>
                         Stop! But <M>n</M> and <M>m</M> must be <B>different</B> numbers, because according to our
-                        assumption our linear equations are irreducible to each other!
+                        assumption our linear equations are not multiples of each other!
                     </P>
                     <P>
                         We got a contradiction: we need mutually opposite things to be fulfilled simultaneously, so that
                         both <M>n = m</M> and <M>n \neq m</M>! Since we came to a contradiction, our initial assumption
-                        about the existence of two linear equations irreducible to each other with identical roots is
-                        incorrect. Consequently, there <B>do not exist</B> two linear equations irreducible to each
-                        other with identical roots.
+                        about the existence of two linear equations that are not multiples of each other with identical
+                        roots is incorrect. Consequently, there <B>do not exist</B> two linear equations that are not
+                        multiples of each other with identical roots.
                     </P>
                     <P>All linear equations with identical roots differ from each other only by a common factor!</P>
                     <P>{QED}</P>
@@ -3788,18 +3775,14 @@ export default defineProse({
                 </P>
                 <Image src={rootClasses} width="600px" invert="dark">
                     <Caption>
-                        All linear equations are stuffed into "bags" with identical roots
-                        <CaptionSecondary>Equations in one bag differ only by a common factor</CaptionSecondary>
+                        All linear equations are grouped into "bags" with identical roots
+                        <CaptionSecondary>Equations in a bag differ only by a constant factor</CaptionSecondary>
                     </Caption>
                 </Image>
                 <P>
-                    This situation is similar to the fact that any fraction, for example{' '}
-                    <M>
-                        \frac{1}
-                        {2}
-                    </M>
-                    , forms a <B>whole class of fractions denoting the same thing</B>, which differ from each other only
-                    by multiplying the numerator and denominator by the same number:
+                    This situation is similar to the fact that any fraction, for example <M>{math`\frac{1}{2}`}</M>,
+                    forms a <B>whole class of equivalent fractions</B>, which differ from each other only by multiplying
+                    the numerator and denominator by the same number:
                 </P>
                 <BlockMath>{math`\frac{1}{2} = \frac{2}{4} = \frac{3}{6} = \cdots`}</BlockMath>
             </ProblemNote>
@@ -3808,23 +3791,23 @@ export default defineProse({
         <H1>Logic of Solving Equations</H1>
 
         <P>
-            Up to this point, we have solved equations quite loosely. We found solutions and sort of implicitly implied
-            that there were no other solutions. We treated equations with no solutions and with an infinite number of
+            Up to this point, we have solved equations quite loosely. We found solutions and implicitly assumed that
+            there were no other solutions. We treated equations with no solutions and with an infinite number of
             solutions just as loosely.
         </P>
         <P>
             It is absolutely normal and intuitively understandable to solve this way. But if you really want to dig a
-            little deeper and logically strictly and clearly justify the solution of equations, then solve the following
-            problems. Or at least read their solutions.
+            little deeper and provide a strict and clear logical justification for the solution of equations, then solve
+            the following problems. Or at least read their solutions.
         </P>
 
         <Problem title="No Solutions" level="hard" pretty>
             <ProblemDescription>
                 <P>
-                    When, as a result of transformations, we arrive at a false equality without a variable at all, we
-                    say that "the equation has no solutions". But if we arrived at a false equality, on what basis do we
-                    consider that the original equation has no solutions? After all, its truth is not clear, and for
-                    false equalities the rule of the same action{' '}
+                    When, as a result of transformations, we arrive at a false equality with no variable at all, we say
+                    that "the equation has no solutions". But if we arrived at a false equality, on what basis do we
+                    consider that the original equation has no solutions? After all, its truth value is not established,
+                    and for false equalities the rule of the same action{' '}
                     <Dep to={uniques.sameActionRuleFalse}>does not work</Dep>!
                 </P>
                 <P>
@@ -3833,13 +3816,13 @@ export default defineProse({
                     got the false equality <M>3 = -2</M>" implies that "the equation <M>x+3 = x-2</M> has no solutions".
                 </P>
             </ProblemDescription>
-            <ProblemHint>The logic is built on proof by contradiction.</ProblemHint>
+            <ProblemHint>The logic relies on proof by contradiction.</ProblemHint>
             <ProblemSolution>
                 <P>
                     In the section "Solving Equations" in the article, we said that initially we{' '}
-                    <B>make an assumption that the equation has solutions, and therefore is a true equality</B>. And
-                    only after this assumption do we have the right to transform the equation using the{' '}
-                    <Dep to={sameActionRule}>rule</Dep> of the same action. It guarantees that we will definitely get a{' '}
+                    <B>assume that the equation has solutions, and therefore is a true equality</B>. And only after this
+                    assumption do we have the right to transform the equation using the{' '}
+                    <Dep to={sameActionRule}>same action rule</Dep>. It guarantees that we will definitely get a{' '}
                     <B>true</B> equality after each step of transformations.
                 </P>
                 <P>If as a result of transformations we arrived at a false equality, then this can mean two things:</P>
@@ -3851,7 +3834,7 @@ export default defineProse({
                     </Li>
                 </List>
                 <P>
-                    Since we did not make mistakes in the chain of transformations, we can confidently assert that the
+                    Since we have not made mistakes in the chain of transformations, we can confidently assert that the
                     equation has no solutions. A beautiful example of applying "proof by contradiction".
                 </P>
                 <P>{QED}</P>
@@ -3864,8 +3847,7 @@ export default defineProse({
                     By definition, "to solve an equation is to find its roots and prove that there are no others". When
                     we, for example, by subtracting <M>5</M> from both sides of the equation <M>x + 5 = 10</M> arrive at
                     an equality like <M>x=5</M>, we say that we solved the equation and found its only solution <M>5</M>
-                    . Is it considered that we <B>proved</B> by these transformations that the equation has only one
-                    solution? What if there are some other roots?
+                    . Does this prove that the equation has only one solution? What if there are some other roots?
                 </P>
                 <P>
                     Is solving an equation by means of transformations according to the rule of the same action a proof
@@ -3876,13 +3858,12 @@ export default defineProse({
             <ProblemSolution>
                 <P>
                     Let's prove by contradiction. <B>Assume</B> that some equation has some root <M>x'</M>{' '}
-                    <B>different</B> from all those already found, which we did not take into account and did not obtain
-                    by applying the <Dep to={sameActionRule}>rule</Dep> of the same action. Replace <M>x</M> in the
-                    equation with our <M>x'</M>. Since <M>x'</M> is a root of the equation, then when substituting it we
-                    will get a true equality. And since it is true, we can repeat the same chain of transformations that
-                    we carried out when solving the equation. And we will again come to the fact that <M>x'</M> will
-                    become equal to one of the already found roots (for the example from the condition it is{' '}
-                    <M>x' = 5</M>).
+                    <B>different</B> from all those already found, which we missed and did not obtain by applying the{' '}
+                    <Dep to={sameActionRule}>same action rule</Dep>. Replace <M>x</M> in the equation with our <M>x'</M>
+                    . Since <M>x'</M> is a root of the equation, then when substituting it we will get a true equality.
+                    And since it is true, we can repeat the same chain of transformations that we carried out when
+                    solving the equation. And we will again come to the fact that <M>x'</M> will become equal to one of
+                    the already found roots (for the example from the condition it is <M>x' = 5</M>).
                 </P>
                 <P>
                     We came to a contradiction, because <M>x'</M> must be another root that we have not yet found. And
@@ -3890,8 +3871,8 @@ export default defineProse({
                     other unfound roots is incorrect.
                 </P>
                 <P>
-                    It turns out that when solving an equation using the <Dep to={sameActionRule}>rule</Dep> of the same
-                    action, we simultaneously find the roots of the equation and prove that there are no other roots.
+                    It turns out that when solving an equation using the <Dep to={sameActionRule}>same action rule</Dep>
+                    , we simultaneously find the roots of the equation and prove that there are no other roots.
                 </P>
                 <P>{QED}</P>
             </ProblemSolution>
@@ -3900,8 +3881,8 @@ export default defineProse({
         <Problem title="Infinitely Many Solutions" level="hard">
             <ProblemDescription>
                 <P>
-                    When, as a result of transformations, we arrive at a true equality generally without a variable, can
-                    we say that it has "infinitely many solutions"? That "any number will be its root"?
+                    When, as a result of transformations, we arrive at a true equality with no variable at all, can we
+                    say that it has "infinitely many solutions"? That "any number will be its root"?
                 </P>
                 <P>
                     For example, the equation <M>x+3 = x+3</M> as a result of subtracting <M>x</M> from both sides of
@@ -3917,9 +3898,9 @@ export default defineProse({
             <ProblemSolution>
                 <P>
                     No, you can't say that. When we showed that the rule of the same action{' '}
-                    <Dep to={uniques.sameActionRuleFalse}>does not work</Dep> for false equalities, we gave
-                    multiplication of both parts by <M>0</M> as an example. By the same logic, we can immediately reduce
-                    any equation to a true equality by multiplying both parts by <M>0</M>.
+                    <Dep to={uniques.sameActionRuleFalse}>does not work</Dep> for false equalities, we used multiplying
+                    both sides by <M>0</M> as an example. By the same logic, we can immediately reduce any equation to a
+                    true equality by multiplying both parts by <M>0</M>.
                 </P>
                 <P>
                     For example, take the equation <M>x = 5</M>. If we multiply both sides by <M>0</M>, we get the true
@@ -3927,15 +3908,15 @@ export default defineProse({
                     solutions. In fact, it has only one solution -- the number <M>5</M>.
                 </P>
                 <P>
-                    Therefore, when we get a true equality without a variable, it does not mean that the equation has
+                    Therefore, when we get a true equality with no variable, it does not mean that the equation has
                     infinitely many solutions. In each separate case, it is necessary to prove separately that the
                     equation has infinitely many solutions.
                 </P>
                 <P>
-                    For example, in the equation <M>x + 3 = x + 3</M> we can substitute absolutely any number instead of{' '}
+                    For example, in the equation <M>x + 3 = x + 3</M> we can substitute absolutely any number for{' '}
                     <M>x</M>. In the left and right parts, we simply add <M>3</M> to this number. According to the{' '}
-                    <Dep to={sameActionRule}>rule</Dep> of the same action, after adding <M>3</M> we get a new true
-                    equality. And this by definition means that <M>x</M> is a solution to the equation.
+                    <Dep to={sameActionRule}>same action rule</Dep>, after adding <M>3</M> we get a new true equality.
+                    And this by definition means that <M>x</M> is a solution to the equation.
                 </P>
                 <P>{QED}</P>
             </ProblemSolution>

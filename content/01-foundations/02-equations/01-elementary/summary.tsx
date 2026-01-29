@@ -25,11 +25,11 @@ export default defineProse()(() => (
         <H1>Solving equations</H1>
 
         <P>
-            Solving almost all equations comes down to sequentially <B>simplifying</B> the original equation, applying
+            Solving almost all equations comes down to sequentially <B>simplifying</B> the original equation by applying
             the same action
-            <Dep to={article.uniques.sameActionRule}>rule</Dep> time and again. Simplification continues until it
-            becomes clear what number the unknown represents. Usually, simplifications manage to reduce the equation to
-            the trivial form <M>{math`x = \ldots`}</M>
+            <Dep to={article.uniques.sameActionRule}>rule</Dep> repeatedly. Simplification continues until it becomes
+            clear what number the unknown represents. Usually, simplifications reduce the equation to the trivial form{' '}
+            <M>{math`x = \ldots`}</M>
         </P>
 
         <List type="ul">
@@ -64,8 +64,8 @@ export default defineProse()(() => (
         </List>
 
         <P>
-            Multiply and divide both sides carefully! Remember that these actions apply to the entire left and entire
-            right sides, not just where it suits you! Remember that:
+            Multiply and divide both sides carefully! Remember that these actions apply to the entire left and right
+            sides, not just where it is convenient! Remember that:
         </P>
 
         <Include toc>{article.uniques.alwaysGlobal}</Include>

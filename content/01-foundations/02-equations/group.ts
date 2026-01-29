@@ -2,8 +2,10 @@ export default defineGroup({
     separator: true,
     title: 'Equations',
     description: `
-        Analysis of the most popular equations: elementary, quadratic, systems, etc.
-        You will understand why they need to be solved at all and how they can be used to describe processes in real life.
-        We will also consider nuances: transformations, domain restrictions, "loss" and appearance of "extraneous" roots, and many others.
+        An overview of equations and equation solving: elementary equations,
+        quadratic equations, and systems of equations.
+        Learn why equations are solved and how they model real-world processes.
+        Includes transformations, domain restrictions, loss of solutions,
+        and extraneous roots.
     `,
 });

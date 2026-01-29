@@ -68,17 +68,17 @@ export default defineProse({
         <H1>Why so many words?</H1>
 
         <P>
-            It would seem like a primitive topic! What could be simpler than elementary equations? There really is
+            It might seem like a primitive topic! What could be simpler than elementary equations? There really is
             nothing complicated about them. However, for some reason, it always turns out that analyzing the simplest
-            questions requires the most thorough explanations. Because this is the base and foundation, which is
+            questions requires the most thorough explanations. This is because it is the base and foundation, which is
             critically important to understand correctly.
         </P>
 
         <P>
-            That is why everything is described here in such a way that you 100% understand the basic principles of
-            working with equalities and equations. So those basic actions do not cause you any contradictions or
-            misunderstandings. So that if necessary, you yourself could explain in detail every step of solving any
-            equation.
+            That is why everything is described here so that you 100% understand the basic principles of working with
+            equalities and equations. This ensures that those basic actions do not limit you with any contradictions or
+            misunderstandings. So that, if necessary, you could explain every step of solving any equation in detail
+            yourself.
         </P>
 
         <Video src={explainingMeme} width="400px" autoplay>
@@ -243,15 +243,16 @@ export default defineProse({
         </P>
 
         <P>
-            The analogy with mechanical scales will be very useful to us later, remember it. It not only well
-            illustrates the concept of equality itself, but also helps to visualize their transformations.
+            The analogy with mechanical scales will be very useful to us later, remember it. It not only illustrates the
+            concept of equality well, but also helps to visualize its transformations.
         </P>
+
         <H1>Equation</H1>
 
         <P>
             Now that we have dealt with the concept of equality, we can move on to equations. Everything is quite simple
-            here. It happens that an unknown number is present in an equality. Such an unknown number can be designated,
-            for example, with a question mark:
+            here. Sometimes, an unknown number is present in an equality. This unknown number can be designated, for
+            example, with a question mark:
         </P>
 
         <BlockMath>{math`
@@ -262,7 +263,7 @@ export default defineProse({
             It is easy to guess what numbers are hidden behind the question marks: <M>3</M>, <M>5</M>, <M>2</M> and{' '}
             <M>32</M>. In mathematics, it is customary to denote unknown numbers by letters, for example, <M>x</M>,{' '}
             <M>y</M>, <M>z</M> and so on. It is more convenient to write equations with several unknowns this way, and
-            you can show which unknowns are equal to each other. Compare yourself:
+            you can show which unknowns are equal to each other. Compare for yourself:
         </P>
 
         <BlockMath>{math`
@@ -270,10 +271,9 @@ export default defineProse({
         `}</BlockMath>
 
         <P>
-            On the left, you can't understand what is what. But on the right, it is clearly understood that there are
-            only two unknowns (<M>x</M> and <M>y</M>), and not four as it might seem from the left equality. And if we
-            find, for example,
-            <M>x</M>, then we can immediately substitute it in two places!
+            On the left, you can't tell what is what. But on the right, it is clearly understood that there are only two
+            unknowns (<M>x</M> and <M>y</M>), and not four as it might seem from the left equality. And if we find, for
+            example, <M>x</M>, then we can immediately substitute it in two places!
         </P>
 
         <Term
@@ -321,8 +321,9 @@ export default defineProse({
 
         <P>
             We realized that any equation is just an <Ref to={uniques.equality}>equality</Ref> with unknowns. Recall
-            that equality can be <Ref to={uniques.equalityFalseTrue}>true or false</Ref>. By substituting some numbers
-            into the equation instead of unknowns, we can obtain both true and false equalities. Consider this equation:
+            that an equality can be <Ref to={uniques.equalityFalseTrue}>true or false</Ref>. By substituting some
+            numbers into the equation instead of unknowns, we can obtain both true and false equalities. Consider this
+            equation:
         </P>
 
         <BlockMath>{math`
@@ -497,14 +498,12 @@ export default defineProse({
         <H1>Same Action Rule</H1>
 
         <P>
-            We have decided what equalities and equations are. But just inventing abstract objects so that later not to
-            do anything with them is absolutely useless. Usually different objects are invented to perform some actions
-            on them later.
+            We have defined what equalities and equations are. But inventing abstract objects just to do nothing with
+            them later is absolutely useless. Objects are usually invented to perform actions on them later.
         </P>
 
         <P>
-            For example, let's take a true equality <M>6 + 3 = 9</M>.<Br />
-            Let's depict it as scales:
+            For example, let's take a true equality <M>6 + 3 = 9</M>.<Br /> Let's depict it as scales:
         </P>
 
         <Image src={scalesBalance} width="450px" invert="dark" />
@@ -585,14 +584,14 @@ export default defineProse({
 
                 <P>
                     But it turned out that this is no joke. Previously, using this test, it was quite{' '}
-                    <Ref to={uniques.communistTest}>realistic to find out</Ref> if a person is a communist.
+                    <Ref to={uniques.communistTest}>feasible to determine</Ref> if a person was a communist.
                 </P>
 
                 <Details $={uniques.communistTest} title="Are you a communist?!">
                     <P>
                         The phrase "duck test" was <Ref to="https://en.wikipedia.org/wiki/Duck_test">first uttered</Ref>{' '}
                         by Richard Patterson, the US ambassador to Guatemala, in 1950. In his opinion, hidden communists
-                        should be calculated precisely by indirect signs, and not by direct statements:
+                        should be identified precisely by indirect signs, and not by direct statements:
                     </P>
 
                     <P center serif>
@@ -623,10 +622,10 @@ export default defineProse({
                 <P>Using this principle, we can prove the same action rule.</P>
 
                 <P>
-                    So we have a true equality. This means that identical objects lie on the sides of the <M>=</M> sign.
-                    We perform the same action on both of these objects, and they <B>"reacted" identically</B> to the
-                    action -- turned into another pair of <B>also identical</B> objects. Which means the new equality is
-                    also true!
+                    So we have a true equality. This means that identical objects lie on both sides of the <M>=</M>{' '}
+                    sign. We perform the same action on both of these objects, and they <B>"react" identically</B> to
+                    the action -- turning into another pair of <B>also identical</B> objects. This means the new
+                    equality is also true!
                 </P>
 
                 <P>{QED}</P>
@@ -788,9 +787,9 @@ export default defineProse({
         </Problems>
 
         <P>
-            So why do we need this rule? What's the point of these useless examples? The point is that it is this rule
-            that allows us to transform any equality. For example, to reduce complex equalities to elementary ones{' '}
-            <B>without changing their type</B>! Started with a true one? Transform it a hundred times, in the end it
+            So why do we need this rule? What's the point of these useless examples? The point is that this rule allows
+            us to transform any equality. For example, to reduce complex equalities to elementary ones{' '}
+            <B>without changing their truth</B>! Started with a true one? Transform it a hundred times, in the end it
             will still be a true equality!
         </P>
 
@@ -846,9 +845,9 @@ export default defineProse({
         </Image>
 
         <Important title="Simplifying to the Obvious">
-            Starting to solve an equation, we assume it is a <B accent>true</B> equality "in absentia". This allows
-            applying the same action rule time after time and obtaining simpler <B accent>true</B> equalities until it
-            becomes obvious what the unknown is equal to.
+            When starting to solve an equation, we assume it is a <B accent>true</B> equality from the start. This
+            allows applying the same action rule time after time and obtaining simpler <B accent>true</B> equalities
+            until it becomes obvious what the unknown is equal to.
         </Important>
 
         <P>
@@ -876,7 +875,7 @@ export default defineProse({
                 </ProblemDescription>
                 <ProblemCheck answer={1925} />
                 <ProblemHint>
-                    Addition with the number <M>100</M> prevents the variable <M>x</M> from remaining alone. How to get
+                    Addition of the number <M>100</M> prevents the variable <M>x</M> from remaining alone. How to get
                     rid of it?
                 </ProblemHint>
                 <ProblemAnswer>
@@ -884,11 +883,11 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        We want <M>x</M> to remain alone. Now the number <M>100</M> is interfering with it. To get rid
-                        of it, according to the
+                        We want <M>x</M> to remain alone. Currently, the number <M>100</M> is in the way. To get rid of
+                        it, according to the
                         <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract the number <M>100</M> from
-                        both sides of the equation. Then on the left <M>100</M> and <M>-100</M> will destroy each other,
-                        and only <M>x</M> will remain:
+                        both sides of the equation. Then on the left <M>100</M> and <M>-100</M> will cancel each other
+                        out, and only <M>x</M> will remain:
                     </P>
 
                     <BlockMath>{math`
@@ -917,7 +916,7 @@ export default defineProse({
                         We want <M>t</M> to remain alone. Now the number <M>-8</M> is interfering with it. To get rid of
                         it, according to the
                         <Dep to={uniques.sameActionRule}>same action rule</Dep>, add the number <M>8</M> to both sides
-                        of the equation. Then on the right <M>-8</M> and <M>+8</M> will destroy each other, and only{' '}
+                        of the equation. Then on the right <M>-8</M> and <M>+8</M> will cancel each other out, and only{' '}
                         <M>t</M> will remain:
                     </P>
 
@@ -929,11 +928,10 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Note that <Ref to={uniques.sideInvariance}>there is no difference</Ref> on which side, left or
-                        right, the variable remains. Many have an unconscious desire to make it so that the variable is
-                        on the left. Make it so that it is <B>convenient to simplify the equality</B>, and do not try to
-                        intentionally leave the variable in a certain part of the equality to the detriment of
-                        simplicity!
+                        Note that <Ref to={uniques.sideInvariance}>it makes no difference</Ref> on which side, left or
+                        right, the variable remains. Many have a subconscious desire to keep the variable on the left.
+                        Aim for <B>convenience in simplifying the equality</B>, and do not intentionally keep the
+                        variable on a specific side to the detriment of simplicity!
                     </P>
 
                     <Details $={uniques.sideInvariance} title='Swapping "scales"'>
@@ -959,7 +957,7 @@ export default defineProse({
                 <ProblemCheck answer={5} />
                 <ProblemHint>
                     The variable <M>y</M> is present on both sides of the equation. What action to apply to both sides
-                    of the equality to destroy <M>y</M>, say, on the left side of the equation?
+                    of the equality to eliminate <M>y</M>, say, on the left side of the equation?
                 </ProblemHint>
                 <ProblemAnswer>
                     <M>5</M>
@@ -973,8 +971,8 @@ export default defineProse({
 
                     <P>
                         According to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract <M>y</M> from
-                        both sides of the equation. Then on the left side <M>y</M> and <M>-y</M> will destroy each
-                        other, and only <M>5</M> will remain there:
+                        both sides of the equation. Then on the left side <M>y</M> and <M>-y</M> will cancel each other,
+                        and only <M>5</M> will remain there:
                     </P>
 
                     <BlockMath>{math`
@@ -984,7 +982,7 @@ export default defineProse({
                         \boxed{5 = y}
                     `}</BlockMath>
 
-                    <P>As you can see, you can "destroy" not only numbers, but also variables!</P>
+                    <P>As you can see, you can "eliminate" not only numbers, but also variables!</P>
                 </ProblemSolution>
             </SubProblem>
 
@@ -993,7 +991,7 @@ export default defineProse({
                     <BlockMath>{math`z + 20 = z`}</BlockMath>
                 </ProblemDescription>
                 <ProblemHint>
-                    What action to apply to both sides of the equality to destroy <M>z</M>, say, on the right side of
+                    What action to apply to both sides of the equality to eliminate <M>z</M>, say, on the right side of
                     the equation?
                 </ProblemHint>
                 <ProblemAnswer>The equation has no solutions.</ProblemAnswer>
@@ -1036,9 +1034,11 @@ export default defineProse({
         <H2>Multiplication and Division</H2>
 
         <P>
-            In addition and subtraction, we simplified equalities by "destroying" interfering pieces by reducing them to{' '}
-            <M>0</M>. With multiplication and division, there is a similar simplification tool. Instead of "destroying"
-            through zero, for these operations <B>reduction</B> (cancellation) is used:
+            In addition and subtraction, we simplified equalities by "eliminating" interfering pieces by reducing them
+            to <M>0</M>. With multiplication and division, there is a simeliminating" interfering pieces by reducing
+            them to <M>0</M>. With multiplication and division, there is a similar simplification tool. Instead of
+            "eliminating" through zero, for these operations <B>reduction</B> (or cancellation) is used to reduce
+            interfering pieces to <M>1</M>.
         </P>
 
         <Problems title="Equations with Multiplication and Division" level="easy">
@@ -1128,14 +1128,12 @@ export default defineProse({
 
         <P>
             All previous equations are elementary, and they can well be solved by trivial guessing. To solve them, we
-            used only one action with both sides of the equality. But no one forbids performing several actions one
-            after another or even a whole chain of actions on the equation!
+            used only one action with both sides and can be solved by trivial guessing. To solve them, we used only one
+            action with both sides of the equality. But no one forbids performing several actions one after another or
+            even a whole chain of actions on the equation!
         </P>
 
-        <P>
-            This is the whole power of the same action rule, with which you can solve even the most complex and
-            confusing equations! It's time to demonstrate this power with examples:
-        </P>
+        <P>This is the strength's time to demonstrate this power with examples:</P>
 
         <Problems $={uniques.chainExamples} title="Chains of Actions" level="easy">
             <P>
@@ -1160,7 +1158,7 @@ export default defineProse({
                         Now the variable <M>x</M> is in both parts of the equality at once. We need to make it so that
                         it remains only in one, it doesn't matter which. Let it be the left part. To do this, subtract
                         the number <M>x</M> from both sides of the equation according to the same action rule. Then in
-                        the right part <M>x</M> and <M>-x</M> will destroy each other, and only <M>5</M> will remain
+                        the right part <M>x</M> and <M>-x</M> will cancel each other out, and only <M>5</M> will remain
                         there:
                     </P>
 
@@ -1172,10 +1170,10 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        But our work is not finished yet! Now in the left part our <M>x</M> is hindered by
+                        But our work is not finished yet! Now on the left side our <M>x</M> is hindered by
                         multiplication by <M>3</M> and subtraction of <M>4</M>. To get rid of <M>-4</M>, according to
                         the same action rule add the number <M>4</M> to both sides of the equation. Then in the left
-                        part <M>-4</M> and <M>+4</M> will destroy each other, and only <M>3x</M> will remain there:
+                        part <M>-4</M> and <M>+4</M> will cancel each other out, and only <M>3x</M> will remain there:
                     </P>
 
                     <BlockMath>{math`
@@ -1186,7 +1184,7 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now in the left part our <M>x</M> is hindered only by multiplication by <M>3</M>. To get rid of
+                        Now on the left side our <M>x</M> is hindered only by multiplication by <M>3</M>. To get rid of
                         it, according to the same action rule divide both sides of the equation by the number <M>3</M>.
                         Then on the left <M>3</M> and <M>3</M> can be cancelled (<M>3 : 3 = 1</M>), and only <M>x</M>{' '}
                         will remain there:
@@ -1249,9 +1247,9 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now in the left part our <M>x</M> is hindered by addition with the number <M>10</M>. To get rid
+                        Now on the left side our <M>x</M> is hindered by addition with the number <M>10</M>. To get rid
                         of it, according to the same action rule subtract the number <M>10</M> from both sides of the
-                        equation. Then in the left part <M>+10</M> and <M>-10</M> will destroy each other, and only{' '}
+                        equation. Then on the left side <M>+10</M> and <M>-10</M> will cancel each other out, and only{' '}
                         <M>x</M> will remain there:
                     </P>
 
@@ -1296,8 +1294,8 @@ export default defineProse({
         <H2>Many Ways -- One Result</H2>
 
         <P>
-            Almost always equations can be solved in several ways. Some can be solved quickly, but using unusual actions
-            (exponentiation, taking roots, etc.). And some more cumbersomely, but using elementary arithmetic
+            Almost always equations can be solved in several ways. Some can be solved quickly using advanced actions
+            (exponentiation, taking roots, etc.), while others are more cumbersome but use elementary arithmetic
             operations.
         </P>
 
@@ -1321,11 +1319,11 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        The first time we left <M>x</M> in the left part of the equality. Now let's try to leave it in
+                        The first time we left <M>x</M> on the left side of the equality. Now let's try to leave it in
                         the right part. To do this, according to the{' '}
                         <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract <M>4x</M> from both sides of
-                        the equation. Then in the left part <M>4x</M> and <M>-4x</M> will destroy each other, and only{' '}
-                        <M>-4</M> will remain there:
+                        the equation. Then on the left side <M>4x</M> and <M>-4x</M> will cancel each other out, and
+                        only <M>-4</M> will remain there:
                     </P>
 
                     <BlockMath>{math`
@@ -1336,10 +1334,10 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now in the right part our <M>x</M> is hindered by the number <M>5</M>. To get rid of it,
+                        Now on the right side our <M>x</M> is hindered by the number <M>5</M>. To get rid of it,
                         according to the same action rule subtract the number <M>5</M> from both sides of the equation.
-                        Then in the right part <M>5</M> and <M>-5</M> will destroy each other, and only <M>-3x</M> will
-                        remain there:
+                        Then on the right side <M>5</M> and <M>-5</M> will cancel each other out, and only <M>-3x</M>{' '}
+                        will remain there:
                     </P>
 
                     <BlockMath>{math`
@@ -1350,9 +1348,9 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now in the right part our <M>x</M> is hindered by multiplication by <M>-3</M>. To get rid of it,
+                        Now on the right side our <M>x</M> is hindered by multiplication by <M>-3</M>. To get rid of it,
                         according to the same action rule divide both sides of the equation by the number <M>-3</M>.
-                        Then in the right part <M>-3</M> and <M>-3</M> can be cancelled (<M>-3 : -3 = 1</M>), and only{' '}
+                        Then on the right side <M>-3</M> and <M>-3</M> can be cancelled (<M>-3 : -3 = 1</M>), and only{' '}
                         <M>x</M> will remain there:
                     </P>
 
@@ -1385,10 +1383,10 @@ export default defineProse({
                 <ProblemSolution>
                     <P>
                         The first time we got rid of fractions in both parts of the equality by multiplying both parts
-                        by <M>8</M>. Now let's get rid only of the fraction in the right part. To do this, according to
+                        by <M>8</M>. Now let's get rid only of the fraction on the right side. To do this, according to
                         the <Dep to={uniques.sameActionRule}>same action rule</Dep>, add to both sides of the equation
-                        the fraction <M>{math`\frac{1}{8}`}</M>. Then in the right part <M>{math`-\frac{1}{8}`}</M> and{' '}
-                        <M>{math`\frac{1}{8}`}</M> will destroy each other, and only <M>0</M> will remain there:
+                        the fraction <M>{math`\frac{1}{8}`}</M>. Then on the right side <M>{math`-\frac{1}{8}`}</M> and{' '}
+                        <M>{math`\frac{1}{8}`}</M> will cancel each other out, and only <M>0</M> will remain there:
                     </P>
 
                     <BlockMath>{math`
@@ -1401,7 +1399,7 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now in the left part of the equality we have a fraction with a denominator of <M>8</M>. To get
+                        Now on the left side of the equality we have a fraction with a denominator of <M>8</M>. To get
                         rid of it, according to the same action rule multiply both parts by the number <M>8</M>. Then in
                         the left part of the equality it is possible to cancel by <M>8</M> (<M>8 : 8 = 1</M>):
                     </P>
@@ -1414,9 +1412,9 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now in the left part our <M>x</M> is hindered by addition with the number <M>11</M>. To get rid
+                        Now on the left side our <M>x</M> is hindered by addition with the number <M>11</M>. To get rid
                         of it, according to the same action rule subtract the number <M>11</M> from both sides of the
-                        equation. Then in the left part <M>+11</M> and <M>-11</M> will destroy each other, and only{' '}
+                        equation. Then on the left side <M>+11</M> and <M>-11</M> will cancel each other out, and only{' '}
                         <M>x</M> will remain there:
                     </P>
 
@@ -1445,9 +1443,9 @@ export default defineProse({
         <H2>Action is Always "Global"</H2>
 
         <P>
-            When you decide to multiply, divide, add, subtract or do something else with a part of the equality, this
-            action must be performed on the <B>entire part as a whole</B>, and not just on its individual elements. If
-            you multiply or divide, then do it with the <B>entire</B> part, placing it in brackets. You cannot
+            When you decide to multiply, divide, add, subtract or do something else with a side of the equality, this
+            action must be performed on the <B>entire side as a whole</B>, and not just on its individual elements. If
+            you multiply or divide, then do it to the <B>entire</B> side, enclosing it in brackets. You cannot
             multiply/divide only by one fraction or only by one term!
         </P>
 
@@ -1601,9 +1599,9 @@ export default defineProse({
                     <B>Solving equations "in a line"</B>
                 </P>
                 <P>
-                    Usually mathematical expressions can be transformed (perform cancellations, open brackets, collect
-                    like terms) in a line via a chain of equalities. For example, simplifying the expression{' '}
-                    <M>{math`\frac{6}{3} + 2 \cdot 4`}</M>, we can write:
+                    Mathematical expressions can usually be transformed (performing cancellations, opening brackets,
+                    collecting like terms) in a single line via a chain of equalities. For example, simplifying the
+                    expression <M>{math`\frac{6}{3} + 2 \cdot 4`}</M>, we can write:
                 </P>
                 <BlockMath>{math`
                     \frac{6}{3} + 2(4 + 1) = 2 + 2 \cdot 4 + 2 \cdot 1 = 2 + 8 + 2 = 12
@@ -1641,7 +1639,7 @@ export default defineProse({
                     \frac{8}{4}x = 7
                 `}</BlockMath>
                 <P>
-                    In the left part the fraction can be safely cancelled by <M>4</M> and get <M>2x = 7</M>. But
+                    on the left side the fraction can be safely cancelled by <M>4</M> and get <M>2x = 7</M>. But
                     students <B>are afraid</B> to do this, because if "if I cancel the fraction on the left, then
                     according to the rule of same action I have to cancel on the right too". And since on the right
                     nothing cancels with anything, it means you can't do that.
@@ -1667,8 +1665,9 @@ export default defineProse({
         <H1>The Mystery of "Flying" Numbers</H1>
 
         <P>
-            To our great regret, the vast majority of schoolchildren and students are not familiar with the concept of
-            equality as "scales" and the intuitively following from it <Ref to={uniques.sameActionRule}>rule</Ref> of
+            Unfortunately, the vast majority of schoolchildren and students are not familiar with the concept of
+            equality as "scales" and the <Ref to={uniques.sameActionRule}>rule</Ref> of the same action that intuitively
+            follows from itales" and the intuitively following from it <Ref to={uniques.sameActionRule}>rule</Ref> of
             the same action. Therefore, they solve equations according to a whole set of rote-learned rules: numbers
             with plus and minus fly across the equal sign with the opposite sign; fractions on different sides of the
             equality are aligned by the method of "cross multiplication" and other mystical stories straight from the
@@ -1678,9 +1677,9 @@ export default defineProse({
         <Image src={flyingNumbers} width="300px" />
 
         <P>
-            Naturally, a request to explain the essence of the actions performed almost always causes only surprised
-            blinking of eyes... "well, that's just the rule" -- that's the only answer they can give. Remember once and
-            for all:
+            sking them to explain the essence of the actions performed almost always results in surprised blinkinguest
+            to explain the essence of the actions performed almost always causes only surprised blinking of eyes...
+            "well, that's just the rule" -- that's the only answer they can give. Remember once and for all:
         </P>
 
         <P center serif>
@@ -1764,8 +1763,8 @@ export default defineProse({
         </H2>
 
         <P>
-            The most glaring, illustrative and funny example of the inability to work with equalities and equations,
-            when memorization is put above understanding -- the so-called "magic triangles of formulas" for "simple"
+            The most glaring, illustrative and funny example of the inability to work with equalities and equations—when
+            memorization is prioritized over understanding—is the so-called "magic triangles of formulas" for "simple"
             memorization of formulas in physics and even mathematics!
         </P>
 
@@ -1798,7 +1797,7 @@ export default defineProse({
         <P>
             That's all you need to know. And if the problem asks to find the distance? It means that in the equality
             above we need <M>S</M> to remain alone. By the <Dep to={uniques.sameActionRule}>rule</Dep> of the same
-            action multiply both sides of the equality by <M>t</M>. Then in the right part <M>t</M> and <M>t</M> will
+            action multiply both sides of the equality by <M>t</M>. Then on the right side <M>t</M> and <M>t</M> will
             cancel (<M>t : t = 1</M>), and only <M>S</M> will remain there:
         </P>
 
@@ -1828,7 +1827,7 @@ export default defineProse({
 
             <P>
                 Now we need to leave <M>t</M> alone on the left. To do this, according to the same action rule divide
-                both sides of the equation by <M>V</M>. Then in the left part <M>V</M> and <M>V</M> will cancel (
+                both sides of the equation by <M>V</M>. Then on the left side <M>V</M> and <M>V</M> will cancel (
                 <M>V : V = 1</M>), and only <M>t</M> will remain there:
             </P>
 
@@ -1897,24 +1896,23 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        In the problem there is an unknown quantity -- the very number of days during which Alina will
-                        save money so that she has enough for the phone. Let's imagine that we already know it and
-                        denote it with some letter, for example <M>t</M>. We can work with this letter exactly as with
-                        any numbers!
+                        In the problem there is an unknown quantity -- the exact number of days during which Alina will
+                        save money to have enough for the phone. Let's imagine that we already know it and denote it
+                        with some letter, for example <M>t</M>. We can work with this letter exactly as with any number!
                     </P>
 
                     <P>
                         Since <M>t</M> is exactly the number of days she saved, <M>{math`t \cdot 100`}</M> is the amount
                         of money she saved during these days. Since with this money she can definitely buy the phone,
-                        this amount of money is equal to the initial sum of the phone plus the inflation accumulated
+                        this amount of money is equal to the initial price of the phone plus the inflation accumulated
                         over the same <M>t</M> days:
                     </P>
 
                     <BlockMath>{math`t \cdot 100 = 10000 + t \cdot 20`}</BlockMath>
 
                     <P>
-                        Look, we compressed the text condition of the problem, a whole paragraph in size, into an
-                        elementary equation!
+                        Look, we compressed the problem statement, a whole paragraph in size, into an elementary
+                        equation!
                     </P>
 
                     <P>
@@ -1932,8 +1930,8 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now <M>t</M> is prevented from staying alone only by multiplication by <M>80</M>. To get rid of
-                        it, divide both parts of the equation by <M>80</M>:
+                        Now only multiplication by <M>80</M> prevents <M>t</M> from being alone. To get rid of it,
+                        divide both parts of the equation by <M>80</M>:
                     </P>
 
                     <BlockMath>{math`
@@ -2003,8 +2001,8 @@ export default defineProse({
                     `}</BlockMath>
 
                     <P>
-                        Now in the left part of the equation, addition with the number <M>2</M> and multiplication by{' '}
-                        <M>2</M> hinder us. Again, divide both parts of the equation by <M>2</M>. Then in the left part
+                        Now on the left side of the equation, addition with the number <M>2</M> and multiplication by{' '}
+                        <M>2</M> hinder us. Again, divide both parts of the equation by <M>2</M>. Then on the left side
                         in both terms <M>2</M> and <M>2</M> will cancel out (<M>2 : 2 = 1</M>), and only <M>x + 1</M>{' '}
                         will remain there:
                     </P>
@@ -2020,7 +2018,7 @@ export default defineProse({
                     <P>
                         Now our unknown quantity <M>x</M> is hindered by addition with the number <M>1</M>. To get rid
                         of it, by the rule of the same action, subtract the number <M>1</M> from both parts of the
-                        equation. Then on the left <M>+1</M> and <M>-1</M> will destroy each other, and only <M>x</M>{' '}
+                        equation. Then on the left <M>+1</M> and <M>-1</M> will cancel each other out, and only <M>x</M>{' '}
                         will remain there:
                     </P>
 
@@ -2139,7 +2137,7 @@ export default defineProse({
         </Problems>
 
         <P>
-            In fact, examples of applying equations in life can be cited endlessly. Above are shown only the most
+            In fact, examples of applying equations in real life are endless. The examples above are only the most
             elementary, but still useful situations. That is why it is so important to be able to solve equations!
         </P>
 
@@ -2170,8 +2168,8 @@ export default defineProse({
         `}</BlockMath>
 
         <P>
-            Not only numbers with letters can participate in equalities, but also entire functions. Then they can be,
-            for example, differentiated or their limits found:
+            Not only numbers and letters can participate in equalities, but also entire functions. Then they can be, for
+            example, differentiated or their limits found:
         </P>
 
         <BlockMath>{math`

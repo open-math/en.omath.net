@@ -3,9 +3,9 @@ import { authorContribution } from '#project/utils/contributions';
 export default defineTopic({
     title: 'Elementary Equations',
     description: `
-        We will learn how to solve elementary equations and transform equalities.
-        Simple, visual, with examples and without memorizing a bunch of strange rules.
-        This is a key and necessary skill in mathematics and all other exact sciences.
+        Learn how to solve elementary equations and transform equations step by step.
+        Simple and visual, with clear examples and without memorizing a bunch of obscure rules.
+        This is a key foundational skill in mathematics and the exact sciences.
     `,
     contributions: [
         {

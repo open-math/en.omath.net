@@ -7,6 +7,7 @@ description: 'Proofreading'
 You need to proofread the document.
 Keep the simple and direct writing style.
 The document context is math textbook so keep needed technical terms and phrasing.
+Don't break JSX layout.
 
 Restrictions:
 

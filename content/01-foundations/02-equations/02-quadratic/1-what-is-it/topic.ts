@@ -1,12 +1,10 @@
 import { authorContribution } from '#project/utils/contributions';
 
 export default defineTopic({
-    title: 'What is Quadratic Equation?',
+    title: 'What is a Quadratic Equation?',
     navTitle: 'What is it?',
     description: `
-        Let's figure out what a quadratic equation and a quadratic trinomial are.
-        How these terms appeared, how they are similar, and how they differ.
-        Learn to determine whether an equation is quadratic.
+        Learn what a quadratic equation and a quadratic trinomial are, how they are related, and how to determine whether an equation is quadratic.
     `,
     contributions: [
         {

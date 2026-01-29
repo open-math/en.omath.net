@@ -321,7 +321,10 @@ export default defineProse({
                 <B accent>quadratic equation</B>:
             </P>
             <BlockMath>{math`
-                -3x^2 + 6x + 9 = 0 >>{big} \underbrace{y^2 = 0}_{y^2 + 0y + 0 = 0} >>{big} \underbrace{(t+2)(5-t) = 0}_{-t^2 + 3t + 10 = 0}
+                -3x^2 + 6x + 9 = 0 >>{big}
+                \underbrace{80 + j = 5j^2 - 10}_{5j^2 - j - 90 = 0} >>{big}
+                \underbrace{y^2 = 0}_{y^2 + 0y + 0 = 0} >>{big}
+                \underbrace{(t+2)(5-t) = 0}_{-t^2 + 3t + 10 = 0}
             `}</BlockMath>
             <Details $={uniques._equivalenceExplain} title='What does "without changing roots" mean?'>
                 <P>
@@ -364,9 +367,8 @@ export default defineProse({
 
             <P>
                 Consider the example <M>-3 + 4x^2 - 2x = 0</M>. Remember that <M>A</M> is always before <M>x^2</M>, so
-                it is equal to <M>4</M>. <M>B</M>
-                is always before <M>x</M>, so it is equal to <M>-2</M>. <M>-3</M> stands alone; this is the coefficient{' '}
-                <M>C</M>.
+                it is equal to <M>4</M>. <M>B</M> is always before <M>x</M>, so it is equal to <M>-2</M>. <M>-3</M>{' '}
+                stands alone; this is the coefficient <M>C</M>.
             </P>
         </Important>
 
