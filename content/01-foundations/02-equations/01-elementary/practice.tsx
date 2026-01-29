@@ -25,7 +25,7 @@ import generalFormula from './scripts/general-formula';
 //
 // #endregion
 
-// #region Deps
+// #region Links
 //
 
 const equationSolution = $CONTENT.foundations.equations.elementary.article.$equationSolution;

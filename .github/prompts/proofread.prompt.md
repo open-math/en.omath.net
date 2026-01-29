@@ -15,10 +15,11 @@ Restrictions:
 - Do not touch math formulas!
 - Do not remove large chunks of text!
 - Do not remove swear words!
-- If you need to add emdash "—", add it as double dash "--"!
+- Do not add emdashes!
 
 Your task is to fix following:
 
+- Replace awkward and "non-native" phrases with more natural ones
 - Spelling errors
 - Grammar errors
 - Punctuation errors (but without replacing dashes, hyphens and quotes)

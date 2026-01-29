@@ -24,20 +24,21 @@ To do so:
 
 1. Install [Node.js](https://nodejs.org/en/download)
 2. Install [Bun](https://bun.sh/)
-3. Prepare a folder on your PC and copy this repository in it.<br>
-   While inside the target folder, this can be done via terminal command:
+3. [Fork](https://github.com/open-math/en.omath.net/fork) the Open Math GitHub repository
+4. Prepare a folder on your PC and copy your forked repository in it using GitHub Desktop app or directly.<br>
+   For example, while inside the target folder, this can be done via terminal command:
 
     ```bash
-    git clone https://github.com/open-math/en.omath.net.git ./
+    git clone https://github.com/__USERNAME__/en.omath.net.git ./
     ```
 
-4. Install dependencies:
+5. Install dependencies:
 
     ```bash
     bun install
     ```
 
-5. Build the project:
+6. Build the project (slow process, up to few minutes):
 
     ```bash
     bun run build

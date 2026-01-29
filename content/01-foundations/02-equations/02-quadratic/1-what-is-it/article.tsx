@@ -4,7 +4,6 @@
 import gardenProblem from './assets/garden-problem.webp';
 import impatientCyclist from './assets/impatient-cyclist.webp';
 import framingPhoto from './assets/framing-photo.webp';
-import quadraticPolynomialMeme from './assets/quadratic-polynomial-meme.webp';
 
 //
 // #endregion
@@ -20,21 +19,32 @@ const alwaysGlobal = $CONTENT.foundations.equations.elementary.article.$alwaysGl
 
 export default defineProse({
     uniques: {
-        problematicEquations: H1,
-        quadraticPolynomial: Term,
+        problematicEquations: Problems,
+        quadraticTrinomial: Term,
         quadraticEquation: Term,
         powerNotOrder: Important,
         quadraticOrNot: Problems,
-        _adultMeme: Details,
         _equivalenceExplain: Details,
     },
 })(({ uniques }) => (
     <>
-        <H1
+        <H1>Complicated square</H1>
+
+        <P>
+            We solve almost all <Ref to={$CONTENT.foundations.equations.elementary}>elementary equations</Ref> by
+            simplifying them step by step until we get a simple equality of the form <M>x = A</M> or <M>A = x</M> (which
+            is the same thing), where <M>A</M> is some number that is the solution to the equation. It might seem that
+            now we are all-powerful and can solve any equation! Well, let's check it out!
+        </P>
+
+        <Problems
+            title="Equations with a nuance..."
+            level="example"
+            applied
             $={uniques.problematicEquations}
             snippet={{
+                search: true,
                 quick: true,
-                seo: true,
                 title: 'Quadratic equations in real life',
                 description: `
                     Examples of various real-life situations that boil down to quadratic equations.
@@ -42,23 +52,12 @@ export default defineProse({
                 `,
             }}
         >
-            Complicated square
-        </H1>
-
-        <P>
-            We solve almost all <Ref to={$CONTENT.foundations.equations.elementary}>elementary equations</Ref> by
-            simplifying them step by step until we get a trivial equality of the form <M>x = A</M> or <M>A = x</M>{' '}
-            (which is the same thing), where <M>A</M> is some number that is the solution to the equation. It might seem
-            that now we are all-powerful and can solve any equations at all! Well, let's check it out!
-        </P>
-
-        <Problems title="Equations with a nuance..." level="example" applied>
             <SubProblem label="The Naughty Garden">
                 <ProblemDescription>
                     <P>
-                        An ancient Greek king (they were called basileus) ordered a luxurious garden to be built with an
-                        area of <M>36</M> square meters. At the same time, one of its sides must be <M>5</M> meters
-                        longer than the other. What should the length and width of the garden be?
+                        An ancient Greek king (they were called basileis) ordered a luxurious garden to be built with an
+                        area of <M>36</M> square meters. Also, one of its sides must be <M>5</M> meters longer than the
+                        other. What should be the length and width of the garden?
                     </P>
 
                     <Image src={gardenProblem} width="600px">
@@ -75,10 +74,10 @@ export default defineProse({
                     <BlockMath>{math`x(x+5) = 36`}</BlockMath>
 
                     <P>
-                        So what to do with this?
+                        So, what should we do with this?
                         <Br />
-                        You can open the brackets, you can group all the data on one side. But it seems like everything
-                        is only getting worse... Try to get the solution yourself.
+                        You can expand the brackets, you can group all the terms on one side. But it seems like
+                        everything is only getting worse... Try to find the solution yourself.
                     </P>
 
                     <BlockMath>{math`
@@ -87,9 +86,9 @@ export default defineProse({
 
                     <P>
                         No matter how you look at it, it is not possible to bring this equation to the form <M>x = A</M>{' '}
-                        and get a beautiful answer. After all, the variable occurs twice: raised to the second power{' '}
+                        and get a nice answer. After all, the variable appears twice: raised to the second power{' '}
                         <M>x^2</M> ("squared") and simply as <M>x</M>. They are <B>not</B> like terms, they cannot be
-                        combined. What to do with such monsters?! Is it really just trying to guess the answer?
+                        combined. What should we do with such monsters?! Is our only option simply to guess the answer?
                     </P>
                 </ProblemSolution>
             </SubProblem>
@@ -98,8 +97,8 @@ export default defineProse({
                 <ProblemDescription>
                     <P>
                         A cyclist went to visit his grandmother in the nearest city, located <M>60</M> kilometers away.
-                        If he had driven <M>2</M> km/h faster, he would have gotten there <M>1</M> hour earlier. With
-                        what speed was he driving initially?
+                        If he had driven <M>2</M> km/h faster, he would have gotten there <M>1</M> hour earlier. What
+                        was his initial speed?
                     </P>
                     <Image src={impatientCyclist} width="600px">
                         <Caption>And could have got there faster!</Caption>
@@ -113,7 +112,7 @@ export default defineProse({
                     <BlockMath>{math`t = \frac{60}{v}`}</BlockMath>
                     <P>
                         On the other hand, the same time, but one hour less (<M>t-1</M>), can be obtained by dividing
-                        the path by his increased speed (<M>v + 2</M>):
+                        the distance by his increased speed (<M>v + 2</M>):
                     </P>
                     <BlockMath>{math`t - 1 = \frac{60}{v + 2}`}</BlockMath>
                     <P>
@@ -129,7 +128,7 @@ export default defineProse({
                         \frac{60\cancel{v}(v+2)}{\cancel{v}} - v(v+2) = \frac{60v\cancel{(v+2)}}{\cancel{v+2}} \\
                         60(v+2) - v(v+2) = 60v
                     `}</BlockMath>
-                    <P>Open the brackets and collect like terms:</P>
+                    <P>Expand the brackets and collect like terms:</P>
                     <BlockMath>{math`60v + 120 - v^2 - 2v = 60v`}</BlockMath>
                     <P>
                         Notice the same terms <M>60v</M> in both parts. They can be eliminated by subtracting them from
@@ -163,7 +162,7 @@ export default defineProse({
                         its sides, that is:
                     </P>
                     <BlockMath>{math`(8 + 2w)(10 + 2w) = 160`}</BlockMath>
-                    <P>Open the brackets and collect like terms:</P>
+                    <P>Expand the brackets and collect like terms:</P>
                     <BlockMath>{math`
                         80 + 16w + 20w + 4w^2 = 160 \\
                         4w^2 + 36w + 80 = 160
@@ -177,17 +176,17 @@ export default defineProse({
         </Problems>
 
         <P>
-            As you can see, such equations occur regularly. This is not some unique case. Such equations, in which the
+            As you can see, such equations appear regularly. This is not some unique case. Such equations, in which the
             unknown is raised to the second power, are found everywhere. It is not good when damn gardens, picture
-            frames and simple motion problems can break our equations and lead us into a dead end! We urgently need to
+            frames and simple motion problems can break our equations and lead us to a dead end! We urgently need to
             figure out how to solve such equations!
         </P>
 
         <H1>Quadratic trinomial</H1>
 
         <P>
-            To solve such equations, we must first understand what we are dealing with. It seems obvious to consider
-            equations that have <M>x^2</M> as quadratic. But, as always, the most obvious solution may not be the best
+            To solve such equations, we must first understand what we are dealing with. It seems obvious to classify
+            equations that have <M>x^2</M> as quadratic. But, as always, the most obvious approach may not be the best
             one. This approach has serious drawbacks:
         </P>
 
@@ -198,7 +197,7 @@ export default defineProse({
                 </P>
                 <P>
                     In the examples about the garden and the picture frame above, we have already seen that an equation
-                    initially without any squares can turn out to be quadratic, but after transformations they appear.
+                    that initially has no squares can turn out to be quadratic; squares appear after transformations.
                 </P>
                 <BlockMath>{math`
                     x(x+5) = 36 \Rightarrow x^2 + 5x - 36 = 0 \\
@@ -210,7 +209,7 @@ export default defineProse({
                     <B>There may be a square, but the equation is not quadratic!</B>
                 </P>
                 <P>
-                    Sometimes the existing <M>x^2</M> is destroyed in the process of transformations and plays no role:
+                    Sometimes the existing <M>x^2</M> is eliminated in the process of transformations and plays no role:
                 </P>
                 <BlockMath>{math`
                     x^2 + x = x^2 + 5 \\
@@ -222,25 +221,25 @@ export default defineProse({
         </List>
 
         <P>
-            Our enemy is cunning and treacherous! Quadratic equations can mimic, hiding their square, or they can have
-            an explicit square and not be quadratic at all! But mathematicians are no fools either and were able to
-            figure the way to determine exactly which equations are quadratic and which are not.
+            Our enemy is cunning and treacherous! Quadratic equations can be disguised, hiding their square, or they can
+            have an explicit square and not be quadratic at all! But mathematicians are no fools either and were able to
+            figure out a way to determine exactly which equations are quadratic and which are not.
         </P>
 
         <P>
             As in any good detective story, first mathematicians analyzed all equations and identified a "modus
-            operandi", a general portrait that is characteristic of all quadratic equations. They quite vulgarly called
+            operandi", a general portrait that is characteristic of all quadratic equations. They quite simply called
             this portrait a <B>quadratic trinomial</B>.
         </P>
 
         <Term
-            $={uniques.quadraticPolynomial}
+            $={uniques.quadraticTrinomial}
             title="Quadratic trinomial"
             snippet={{
                 quick: true,
                 search: true,
                 description: `
-                    Polynomial with the maximum power of the unknown equal to two.
+                    Polynomial with the maximum power of the variable equal to two.
                     Acts as a "template" or "general form" for all quadratic equations.
                 `,
                 seo: {
@@ -265,7 +264,7 @@ export default defineProse({
                 <P>
                     <B>Why quadratic?</B>
                 </P>
-                <P>Because the maximum power of the variable in it is equal to two, that is, "variable squared".</P>
+                <P>Because the maximum power of the variable in it is two, that is, "variable squared".</P>
             </Li>
             <Li>
                 <P>
@@ -273,8 +272,8 @@ export default defineProse({
                 </P>
                 <P>
                     Because it consists of three terms (monomials): <M>Ax^2</M>, <M>Bx</M> and <M>C</M>. And even if
-                    there are fewer of them, as for example in <M>x^2 + 3</M>, the missing term can be considered equal
-                    to zero: <M>x^2 + 0x + 3</M>.
+                    there are fewer terms, as for example in <M>x^2 + 3</M>, the missing term can be considered equal to
+                    zero: <M>x^2 + 0x + 3</M>.
                 </P>
             </Li>
             <Li>
@@ -290,26 +289,12 @@ export default defineProse({
             </Li>
         </List>
 
-        <P>
-            It is quite natural that all these numerous mentions of "members" cause giggles, especially among teenagers
-            bored in lessons: monomial, binomial, trinomial, polynomial... Trinomials in this regard were the unluckiest
-            of all, because they and the quadratic equations resulting from them get the lion's share of study time. As
-            a result, as if in an act of desperate rebellion against the forced injection of knowledge, by the hands of
-            brilliant anonymous artists from the 7th grade "G", humanity received{' '}
-            <Ref to={uniques._adultMeme}>immortal works of art (18+)</Ref>
-            about quadratic trinomials. Once you see this, it is impossible to unsee...
-        </P>
-
-        <Details $={uniques._adultMeme} title="The art of the quadratic trinomial">
-            <Image src={quadraticPolynomialMeme} />
-        </Details>
-
         <H1>Quadratic equation</H1>
 
         <P>
-            Quadratic trinomials are a general name for mathematical expressions of a certain type. They are sometimes
-            used on their own, but now it is important that with their help we can formulate a solid and clear
-            definition of quadratic equations.
+            "Quadratic trinomial" is a general name for mathematical expressions of a certain type. They are sometimes
+            used on their own, but now it is important that they help us formulate a solid and clear definition of
+            quadratic equations.
         </P>
 
         <Term
@@ -321,14 +306,11 @@ export default defineProse({
                 description: `
                     Any equation that can be reduced to the form of a quadratic trinomial by transformations without losing roots.
                 `,
-                seo: {
-                    title: 'What is a quadratic equation?',
-                },
             }}
         >
             <P>
-                <B accent>The general form</B> of a quadratic equation is any equation in which there is a quadratic
-                trinomial on one side and zero on the other:
+                <B accent>The general form</B> of a quadratic equation is any equation that has a quadratic trinomial on
+                one side and zero on the other:
             </P>
             <BlockMath>{math`
                 \underbrace{\overbrace{Ax^2 + Bx + C}^{\text{Quadratic trinomial}} = 0}_{\text{Quadratic equation}}, \quad A \neq 0
@@ -336,20 +318,23 @@ export default defineProse({
             <P>
                 Any equation that has this general form or can be reduced to it by transformations{' '}
                 <Ref to={uniques._equivalenceExplain}>without changing the roots</Ref> is called a{' '}
-                <B accent>quadratic equation</B>.
+                <B accent>quadratic equation</B>:
             </P>
+            <BlockMath>{math`
+                -3x^2 + 6x + 9 = 0 >>{big} \underbrace{y^2 = 0}_{y^2 + 0y + 0 = 0} >>{big} \underbrace{(t+2)(5-t) = 0}_{-t^2 + 3t + 10 = 0}
+            `}</BlockMath>
             <Details $={uniques._equivalenceExplain} title='What does "without changing roots" mean?'>
                 <P>
                     You can transform equations using the same action <Ref to={sameActionRule}>rule</Ref>
-                    in different ways. You can, for example, add two on both sides or divide both sides by ten. With
+                    in different ways. You can, for example, add two to both sides or divide both sides by ten. With
                     such transformations, the resulting new equation has the same roots as the original one.
                 </P>
                 <P>
-                    But you can, for example, multiply both parts by <M>0</M> and get the equality <M>0=0</M>. It is
+                    But you can, for example, multiply both sides by <M>0</M> and get the equality <M>0=0</M>. It is
                     always true and naturally has no "roots". This is an example of "loss of roots". There are also
-                    actions that lead to the appearance of "extra roots". We will deal completely and in detail with
-                    these strange matters when we study{' '}
-                    <Ref to={$CONTENT.foundations.equations.equivalence}>equivalent</Ref> equations.
+                    actions that lead to the gaining of "extra roots". We will deal completely and in detail with these
+                    strange matters when we study <Ref to={$CONTENT.foundations.equations.equivalence}>equivalent</Ref>{' '}
+                    equations.
                 </P>
                 <P>
                     That is why the definition of a quadratic equation specifically states that reduction to the general
@@ -361,8 +346,8 @@ export default defineProse({
         <Important $={uniques.powerNotOrder} title="Power matters, not position">
             <P>
                 The vast majority of beginners get confused when determining the coefficients <M>A</M>, <M>B</M> and{' '}
-                <M>C</M> in a quadratic equation. Coefficients are attached to <M>x</M> and its power. But the positions
-                where they stand <B accent>do not matter</B>!
+                <M>C</M> in a quadratic equation. Coefficients are attached to the powers of <M>x</M>. But the positions
+                they occupy <B accent>do not matter</B>!
             </P>
 
             <List type="ol">
@@ -380,14 +365,14 @@ export default defineProse({
             <P>
                 Consider the example <M>-3 + 4x^2 - 2x = 0</M>. Remember that <M>A</M> is always before <M>x^2</M>, so
                 it is equal to <M>4</M>. <M>B</M>
-                is always before <M>x</M>, so it is equal to <M>-2</M>. <M>-3</M> stands alone, this is the coefficient{' '}
+                is always before <M>x</M>, so it is equal to <M>-2</M>. <M>-3</M> stands alone; this is the coefficient{' '}
                 <M>C</M>.
             </P>
         </Important>
 
         <P>
-            Now we know the enemy by sight and understand that the coefficients do not depend on the position in the
-            equation, but on what power of <M>x</M> they are next to. Let's practice determining whether equations are
+            Now we know the enemy by sight and understand that the coefficients depend not on the position in the
+            equation, but on the power of <M>x</M> they accompany. Let's practice determining whether equations are
             quadratic and finding their coefficients <M>A</M>, <M>B</M> and <M>C</M>.
         </P>
 
@@ -406,8 +391,8 @@ export default defineProse({
         >
             <P>
                 Check if the equation is quadratic or not. If the equation is quadratic, using the same action{' '}
-                <Dep to={sameActionRule}>rule</Dep>, bring it to the general form and find what its coefficients{' '}
-                <M>A</M>, <M>B</M> and <M>C</M> are equal to.
+                <Dep to={sameActionRule}>rule</Dep>, bring it to the general form and find the values of its
+                coefficients <M>A</M>, <M>B</M> and <M>C</M>.
             </P>
 
             <SubProblem>
@@ -493,7 +478,7 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        Group all data on the left side. To do this, we need to get rid of <M>5</M> on the right side.
+                        Group all terms on the left side. To do this, we need to get rid of <M>5</M> on the right side.
                         To do this, using the same action <Dep to={sameActionRule}>rule</Dep>, we subtract <M>5</M> from
                         both sides of the equation:
                     </P>
@@ -548,7 +533,7 @@ export default defineProse({
                     <BlockMath>{math` A = 1, \quad B = 1, \quad C = 0 `}</BlockMath>
                 </ProblemAnswer>
                 <ProblemSolution>
-                    <P>Open the brackets:</P>
+                    <P>Expand the brackets:</P>
                     <BlockMath>{math`x^2 + x = 0`}</BlockMath>
                     <P>
                         We got the same equation as in the previous example. It is quadratic. Coefficients: <M>A = 1</M>
@@ -571,14 +556,14 @@ export default defineProse({
                     <BlockMath>{math` A = 1, \quad B = 1, \quad C = -11 `}</BlockMath>
                 </ProblemAnswer>
                 <ProblemSolution>
-                    <P>Open the brackets on the left side and collect like terms:</P>
+                    <P>Expand the brackets on the left side and collect like terms:</P>
                     <BlockMath>{math`
                         (x - 2)(x + 3) = 5 \\
                         x^2 + 3x - 2x - 6 = 5 \\
                         x^2 + x - 6 = 5
                     `}</BlockMath>
                     <P>
-                        Now group all data on the left side. To do this, we need to get rid of <M>5</M> on the right
+                        Now group all terms on the left side. To do this, we need to get rid of <M>5</M> on the right
                         side. To do this, using the same action <Dep to={sameActionRule}>rule</Dep>, we subtract{' '}
                         <M>5</M> from both sides of the equation:
                     </P>
@@ -610,7 +595,7 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        This time group all data on the right side. To do this, we need to get rid of <M>3</M> on the
+                        This time, group all terms on the right side. To do this, we need to get rid of <M>3</M> on the
                         left side. To do this, using the same action <Dep to={sameActionRule}>rule</Dep>, we subtract{' '}
                         <M>3</M> from both sides of the equation:
                     </P>
@@ -654,7 +639,7 @@ export default defineProse({
                         x^2 + 1 = 2x
                     `}</BlockMath>
                     <P>
-                        Now group all data on the left side. To do this, we need to get rid of <M>2x</M> on the right
+                        Now group all terms on the left side. To do this, we need to get rid of <M>2x</M> on the right
                         side. To do this, we subtract <M>2x</M> from both sides of the equation:
                     </P>
                     <BlockMath>{math`
@@ -706,21 +691,42 @@ export default defineProse({
         </Problems>
 
         <P>
-            Beginners and people who generally poorly understand this topic regularly get confused and use the terms
-            "quadratic trinomial" and "quadratic equation" as synonyms. Just in case, let's clarify once again. A
-            quadratic trinomial and a quadratic equation are <B>NOT the same thing</B> at all, but completely different
-            mathematical objects! A quadratic trinomial is simply an expression of a certain type that can (and will
-            later) be used for a wide variety of purposes:
+            Beginners and those who struggle with this topic regularly get confused and use the terms "quadratic
+            trinomial" and "quadratic equation" as synonyms. Just in case, let's clarify once again. A quadratic
+            trinomial and a quadratic equation are <B>NOT the same thing</B> at all, but completely different
+            mathematical objects! A quadratic trinomial is just a type of mathematical expression and often appears as a
+            part of more complex expressions.
         </P>
 
+        <P>For example, there are three quadratic trinomials (colored) in the complex expression below:</P>
+
         <BlockMath>{math`
-            x^2 + 2x + 3 >>{big} y^2 - 3 >>{big} t^2
+            \frac{\brand{5x^2 + \dfrac{1}{\sqrt{2}}x - 8} - \sqrt{\dfrac{\brand{y + 2y^2 + 4}}{2}}}{\brand{z^2 - 3z + 1}}
         `}</BlockMath>
 
-        <P>Sometimes quadratic trinomials can occur in equations. Then we call such equations "quadratic":</P>
+        <P>
+            Sometimes quadratic trinomials can occur in equations. And if there is a way to transform this equation to a
+            form with only a quadratic trinomial on one side and zero on the other, then such an equation is called
+            "quadratic":
+        </P>
 
         <BlockMath>{math`
             \underbrace{\overbrace{10x^2 - 20x + 100}^{\text{Quadratic trinomial}} = 0}_{\text{Quadratic equation}}
         `}</BlockMath>
+
+        <H1>Why all the fuss?</H1>
+
+        <P>
+            Why exactly did we spend so much time defining quadratic trinomials, naming their coefficients, and doing
+            other things? There are two reasons for this:
+        </P>
+
+        <List type="ol">
+            <Li>Now we can decide for certain which equations are quadratic and which are not.</Li>
+            <Li>
+                We defined key terms that will be used to create formulas for solving quadratic equations and
+                discovering their interesting and useful properties.
+            </Li>
+        </List>
     </>
 ));
