@@ -1,7 +1,7 @@
 export default defineContributor({
     editor: true,
     displayName: 'Peter Radko',
-    short: 'Geniuses are not born — they become!',
+    short: 'Geniuses are not born -- they become!',
     links: {
         'My site [RU]': 'https://radkopeter.ru/',
         GitHub: 'https://github.com/Gwynerva',

@@ -39,7 +39,7 @@ export default defineProse()(() => (
         <Include toc>{article.uniques.quadraticTrinomial}</Include>
         <P>
             If an equation can be reduced without changing roots to a form where on one side there is a quadratic
-            trinomial, and on the other — zero, then such an equation is called "quadratic".
+            trinomial, and on the other -- zero, then such an equation is called "quadratic".
         </P>
         <Include toc>{article.uniques.quadraticEquation}</Include>
         <Include toc>{article.uniques.powerNotOrder}</Include>

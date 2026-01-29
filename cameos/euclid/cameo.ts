@@ -8,6 +8,6 @@ export default defineCameo({
         'Explained more interestingly and in more detail than mine! A sin not to support!',
         "So, did you sort out the fifth postulate here? Let's see...",
         "Pity I didn't have this thing in 300 BC...",
-        'There is no royal road to geometry! But there is a reliable guide — "Open Math"',
+        'There is no royal road to geometry! But there is a reliable guide -- "Open Math"',
     ],
 });

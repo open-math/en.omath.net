@@ -9,7 +9,7 @@ You’re welcome to propose any edits or improvements to the material, including
 - New problems or solutions to existing ones
 - Even entirely new articles!
 
-If your suggestions lead to adding new content **(except for typo reports!)**, we can add your information (name, photo, a short bio, and links) to the authors page—if you’d like us to.
+If your suggestions lead to adding new content **(except for typo reports!)**, we can add your information (name, photo, a short bio, and links) to the authors page — if you’d like us to.
 
 You can propose changes in two ways:
 
@@ -23,7 +23,7 @@ You should **not** create cross-references within the textbook materials if the 
 If a unique element is located in a different section, you may reference it in the new section **no more than once per “visibility area.”**
 For example, you can include one link in a paragraph of that section, and one additional link in each collapsible block section such as hints, solutions, etc.
 
-In problems, it is generally recommended that if a link does not appear directly in the problem statement, it should be duplicated as needed—once in each section where it is required (hints, solution, answer, notes).
+In problems, it is generally recommended that if a link does not appear directly in the problem statement, it should be duplicated as needed — once in each section where it is required (hints, solution, answer, notes).
 
 # Using “External Links”
 

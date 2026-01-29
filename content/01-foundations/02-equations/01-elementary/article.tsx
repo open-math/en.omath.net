@@ -86,9 +86,9 @@ export default defineProse({
         </Video>
 
         <P>
-            The article might seem too large for such a simple topic, but don't worry—there is nothing complicated here.
-            Most of the text is taken up by various examples ensuring that you understand everything correctly and will
-            not make typical mistakes.
+            The article might seem too large for such a simple topic, but don't worry -- there is nothing complicated
+            here. Most of the text is taken up by various examples ensuring that you understand everything correctly and
+            will not make typical mistakes.
         </P>
 
         <H1>Equality</H1>
@@ -121,7 +121,7 @@ export default defineProse({
         </List>
 
         <P>
-            The notations are different, but they all denote the same abstract object — "number three". To show that
+            The notations are different, but they all denote the same abstract object -- "number three". To show that
             different notations denote the same object, mathematics uses the equals sign <M>=</M>.
         </P>
 
@@ -187,7 +187,7 @@ export default defineProse({
                 search: ['true equality', 'false equality'],
                 title: 'True and false equality',
                 description: `
-                    If identical objects stand on the sides of the = sign, then the equality is true. If different — false.
+                    If identical objects stand on the sides of the = sign, then the equality is true. If different -- false.
                 `,
             }}
         >
@@ -207,7 +207,7 @@ export default defineProse({
         </P>
 
         <P>
-            On a playground, you can almost always find a seesaw — a construction consisting of a long board lying on a
+            On a playground, you can almost always find a seesaw -- a construction consisting of a long board lying on a
             support in the middle. If children of the same weight sit on both sides, the seesaw is in balance and does
             not tilt to either side. This is an example of true equality.
         </P>
@@ -215,7 +215,7 @@ export default defineProse({
         <P>
             True equality can also be obtained in a more interesting way: for example, an adult can sit on one side, and
             a couple of children on the other. Then to the left of the "equals sign" will be the weight of one adult,
-            and to the right — the sum of the weights of two children.
+            and to the right -- the sum of the weights of two children.
         </P>
 
         <Flex justify="space-around" flexes={['1 0 300px', '1 0 300px']}>
@@ -392,7 +392,7 @@ export default defineProse({
                 </ProblemAnswer>
                 <ProblemSolution>
                     <P>
-                        The equation has one root — the number <M>2</M>. Since only this number, when substituted
+                        The equation has one root -- the number <M>2</M>. Since only this number, when substituted
                         instead of the variable <M>x</M>, will turn the equation into a true equality:
                     </P>
                     <BlockMath>{math`
@@ -597,7 +597,7 @@ export default defineProse({
                     <P center serif>
                         <I>
                             "You often cannot prove judicially that a certain person is a communist. For such cases, I
-                            recommend a practical method — the duck test"
+                            recommend a practical method -- the duck test"
                         </I>
                     </P>
 
@@ -1763,9 +1763,9 @@ export default defineProse({
         </H2>
 
         <P>
-            The most glaring, illustrative and funny example of the inability to work with equalities and equations—when
-            memorization is prioritized over understanding—is the so-called "magic triangles of formulas" for "simple"
-            memorization of formulas in physics and even mathematics!
+            The most glaring, illustrative and funny example of the inability to work with equalities and equations,
+            when memorization is prioritized over understanding, is the so-called "magic triangles of formulas" for
+            "simple" memorization of formulas in physics and even mathematics!
         </P>
 
         <Image src={magicTrianglesEpidemic} width="600px">

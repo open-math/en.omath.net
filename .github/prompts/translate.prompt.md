@@ -12,5 +12,5 @@ Make sure to detect and replace not-native parts of text that do not make sense 
 
 Rules:
 
-- do not touch quotes and dashes — they are handled automatically by engine. Leave them "as is".
+- do not touch quotes and dashes "—" they are handled automatically by engine. Leave them "as is".
 - do not create or execute scripts, just replace given text with english translation.
