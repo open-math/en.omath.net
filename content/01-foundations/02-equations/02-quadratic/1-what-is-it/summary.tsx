@@ -14,15 +14,15 @@ export default defineProse()(() => (
       flowchart LR
           mathExpressions["
               **Expressions**
-              $$ x^2 \\ 18\sqrt{z} \\ (y - 1)y \\ m/n \\[2px] 8 - t^2 + 2t \\ k+3k^2 $$
+              $$ \begin{aligned} x^2 \\ 18\sqrt{z} \\ (y - 1)y \\ m/n \\[2px] 8 - t^2 + 2t \\ k+3k^2  \end{aligned} $$
           "]
           -->|Reducible to<br>$Ax^2 + Bx + C$<br>without changing roots| quadraticTrinomial["
               **Quadratic Trinomials**
-              $$ x^2 + 0x + 0 \\ y^2 - y + 0 \\[1px] -t^2 + 2t + 8 \\ 3k^2 + k + 0 $$
+              $$ \begin{aligned} x^2 + 0x + 0 \\ y^2 - y + 0 \\[1px] -t^2 + 2t + 8 \\ 3k^2 + k + 0 \end{aligned} $$
           "]
           -->|Is an equlity| quadraticEquation["
               **Quadratic Equations**
-              $$ x^2 = 0 \\ (y-1)y = 0 \\[2px] 8 + 2t = t^2 \\ 3k^2 = -k $$
+              $$ \begin{aligned} x^2 = 0 \\ (y-1)y = 0 \\[2px] 8 + 2t = t^2 \\ 3k^2 = -k \end{aligned} $$
           "]
     `}</Diagram>
     <Hr />
