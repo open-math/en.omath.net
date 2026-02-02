@@ -1,3 +1,3 @@
 export default defineGroup({
-    title: 'Core Math',
+  title: 'Core Math',
 });

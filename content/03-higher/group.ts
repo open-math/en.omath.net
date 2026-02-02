@@ -1,3 +1,3 @@
 export default defineGroup({
-    title: 'Higher Math',
+  title: 'Higher Math',
 });

@@ -1,8 +1,9 @@
 {
-    "emmet.showExpandedAbbreviation": "never",
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.quickSuggestions": {
-        "strings": "on"
-    }
+  "emmet.showExpandedAbbreviation": "never",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }

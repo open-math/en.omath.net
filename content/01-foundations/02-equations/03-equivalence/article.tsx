@@ -1,5 +1,5 @@
 export default defineProse()(() => (
-    <>
-        <P>Todo</P>
-    </>
+  <>
+    <P>Todo</P>
+  </>
 ));

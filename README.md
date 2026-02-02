@@ -28,21 +28,21 @@ To do so:
 4. Prepare a folder on your PC and copy your forked repository in it using GitHub Desktop app or directly.<br>
    For example, while inside the target folder, this can be done via terminal command:
 
-    ```bash
-    git clone https://github.com/__USERNAME__/en.omath.net.git ./
-    ```
+   ```bash
+   git clone https://github.com/__USERNAME__/en.omath.net.git ./
+   ```
 
 5. Install dependencies:
 
-    ```bash
-    bun install
-    ```
+   ```bash
+   bun install
+   ```
 
 6. Build the project (slow process, up to few minutes):
 
-    ```bash
-    bun run build
-    ```
+   ```bash
+   bun run build
+   ```
 
 You are ready to make any contributions now!
 All textbook content lies in `content` folder.
