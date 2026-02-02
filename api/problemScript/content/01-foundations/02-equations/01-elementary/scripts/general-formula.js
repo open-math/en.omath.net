@@ -84,16 +84,16 @@ var general_formula_default = defineProblemScript('__auto_generated__',{
           " in the equation:"
         ] }),
         /* @__PURE__ */ jsx(BlockMath, { children: math`
-                        A = ${A}, \enspace B = ${B}
-                    ` }),
+            A = ${A}, \enspace B = ${B}
+          ` }),
         /* @__PURE__ */ jsx(P, { children: "Substitute them into the general formula:" }),
         /* @__PURE__ */ jsx(BlockMath, { children: math`
-                        x = -\frac{B}{A}
-                        >>{big}
-                        x = -\frac{ ${B} }{ ${A} }
-                        >>{big}
-                        \boxed{x = ${root} }
-                    ` })
+            x = -\frac{B}{A}
+            >>{big}
+            x = -\frac{ ${B} }{ ${A} }
+            >>{big}
+            \boxed{x = ${root} }
+          ` })
       ] })
     ] })
   };
