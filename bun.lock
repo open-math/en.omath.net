@@ -6,7 +6,7 @@
       "name": "@open-math/en.omath.net",
       "dependencies": {
         "@open-math/shared": "open-math/shared",
-        "erudit": "4.0.0-dev.5",
+        "erudit": "4.0.1",
       },
       "devDependencies": {
         "prettier": "^3.8.1",
@@ -86,11 +86,11 @@
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.1.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ=="],
 
-    "@erudit-js/cli": ["@erudit-js/cli@4.0.0-dev.5", "", { "dependencies": { "@erudit-js/core": "4.0.0-dev.5", "chalk": "^5.6.2", "citty": "^0.2.0", "dotenv": "^17.2.3", "http-server": "^14.1.1" } }, "sha512-HZHGZx2olvv593Cr7+cg5PY9K+B+iInc70Zoe1XLgPdRazQ2bZT7xLaZGGMZIpG1G4iKgiPJ1a60Ijmm9burgA=="],
+    "@erudit-js/cli": ["@erudit-js/cli@4.0.1", "", { "dependencies": { "@erudit-js/core": "4.0.1", "chalk": "^5.6.2", "citty": "^0.2.0", "dotenv": "^17.2.3", "http-server": "^14.1.1" } }, "sha512-xiRinJATU601oIBi+PRpb3cIHUAJwGNvs1O1QqjdrTJBF68Cy4vOj/qMnI259OQnNDyLtTLNtSL64VdW0xmZgg=="],
 
-    "@erudit-js/core": ["@erudit-js/core@4.0.0-dev.5", "", { "dependencies": { "@jsprose/core": "^1.0.0", "gradient-string": "^3.0.0" } }, "sha512-ySC/CULzkkvkKRRghPbbqJ3yZ8taX1JeYMwPXgKxCLpr15799+7t/Rgg+h23wnpGPd1UGDinKkazyd1lL83/bg=="],
+    "@erudit-js/core": ["@erudit-js/core@4.0.1", "", { "dependencies": { "@jsprose/core": "^1.0.0", "gradient-string": "^3.0.0" } }, "sha512-bijG0wiNZ1vDydN/u6TBz0PM7E3MUT+2VGrpyD3R/MGN8p18eUU+6kHB5fCUIEkz+3FK2YUKbh1A1Xw3bpSNUQ=="],
 
-    "@erudit-js/prose": ["@erudit-js/prose@4.0.0-dev.5", "", { "dependencies": { "@erudit-js/core": "4.0.0-dev.5", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "image-size": "^2.0.2", "katex": "^0.16.28", "photoswipe": "^5.4.4", "vue": "^3.5.27" } }, "sha512-AeOC1ok7Hls5LElAEsmRnStmsfgNBn2ZFXuPW60n5lQvc7hiIjIRrCN0JX7j1LhLM9hM1pvcEyMcYmS/Ht1R8Q=="],
+    "@erudit-js/prose": ["@erudit-js/prose@4.0.1", "", { "dependencies": { "@erudit-js/core": "4.0.1", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "image-size": "^2.0.2", "katex": "^0.16.28", "photoswipe": "^5.4.4", "vue": "^3.5.27" } }, "sha512-kZEiAJi8KMEd4DiuDLlKm+aMPSx33uCYhn2djd7UC3R4FACqINojyOtkHGY7c4FGzpG1t3ylPzHVMNE/vBufXA=="],
 
     "@esbuild-kit/core-utils": ["@esbuild-kit/core-utils@3.3.2", "", { "dependencies": { "esbuild": "~0.18.20", "source-map-support": "^0.5.21" } }, "sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ=="],
 
@@ -766,7 +766,7 @@
 
     "errx": ["errx@0.1.0", "", {}, "sha512-fZmsRiDNv07K6s2KkKFTiD2aIvECa7++PKyD5NC32tpRw46qZA3sOz+aM+/V9V0GDHxVTKLziveV4JhzBHDp9Q=="],
 
-    "erudit": ["erudit@4.0.0-dev.5", "", { "dependencies": { "@erudit-js/cli": "4.0.0-dev.5", "@erudit-js/core": "4.0.0-dev.5", "@erudit-js/prose": "4.0.0-dev.5", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "@tailwindcss/vite": "^4.1.18", "better-sqlite3": "^12.6.2", "chalk": "^5.6.2", "chokidar": "^5.0.0", "consola": "^3.4.2", "drizzle-kit": "^0.31.8", "drizzle-orm": "^0.45.1", "esbuild": "^0.27.2", "flexsearch": "^0.8.212", "glob": "^13.0.0", "image-size": "^2.0.2", "jiti": "^2.6.1", "nuxt": "4.3.0", "nuxt-my-icons": "1.2.2", "perfect-debounce": "^2.1.0", "tailwindcss": "^4.1.18", "unslash": "^2.0.0", "vue": "^3.5.27", "vue-router": "^5.0.1" }, "bin": { "erudit": "bin/erudit.js" } }, "sha512-9A6OBX8FVmXLqlDrwHUA0XMydEiAojpG7iMX4BMsEH9gu4MTwPRQPtzEuqnTWq6J1OAyDcts82u0W6CwgrBDjg=="],
+    "erudit": ["erudit@4.0.1", "", { "dependencies": { "@erudit-js/cli": "4.0.1", "@erudit-js/core": "4.0.1", "@erudit-js/prose": "4.0.1", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "@tailwindcss/vite": "^4.1.18", "better-sqlite3": "^12.6.2", "chalk": "^5.6.2", "chokidar": "^5.0.0", "consola": "^3.4.2", "drizzle-kit": "^0.31.8", "drizzle-orm": "^0.45.1", "esbuild": "^0.27.2", "flexsearch": "^0.8.212", "glob": "^13.0.0", "image-size": "^2.0.2", "jiti": "^2.6.1", "nuxt": "4.3.0", "nuxt-my-icons": "1.2.2", "perfect-debounce": "^2.1.0", "tailwindcss": "^4.1.18", "unslash": "^2.0.0", "vue": "^3.5.27", "vue-router": "^5.0.2" }, "bin": { "erudit": "bin/erudit.js" } }, "sha512-immn8QDsoIfibHMooJXR1ePxeUIZw13sW6OvjgcieX3IO5ix6CnDAJqQKfQtXZzE7UNg5mSFgd/Xg8UdM0oGSw=="],
 
     "es-define-property": ["es-define-property@1.0.1", "", {}, "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g=="],
 

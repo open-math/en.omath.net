@@ -18,14 +18,19 @@ const alwaysGlobal = $CONTENT.foundations.equations.elementary.article.$alwaysGl
 // #endregion
 
 type CoefficientAnswer = string | number | Array<string | number>;
-export function quadraticOrNot(quadratic: true, A: CoefficientAnswer, B: CoefficientAnswer, C: CoefficientAnswer): any;
-export function quadraticOrNot(quadratic: false): any;
+export function quadraticOrNot(
+  quadratic: true,
+  A: CoefficientAnswer,
+  B: CoefficientAnswer,
+  C: CoefficientAnswer,
+): AnyProseElement;
+export function quadraticOrNot(quadratic: false): AnyProseElement;
 export function quadraticOrNot(
   quadratic?: boolean,
   A?: CoefficientAnswer,
   B?: CoefficientAnswer,
   C?: CoefficientAnswer,
-) {
+): AnyProseElement {
   return (
     <ProblemCheck
       label="Quadratic"
