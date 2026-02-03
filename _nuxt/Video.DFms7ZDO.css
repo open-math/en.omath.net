@@ -1,0 +1,1 @@
+:is(:root[data-theme=dark] ._invertDark_1wd39_5,:root[data-theme=light] ._invertLight_1wd39_3)::-webkit-media-controls-panel{filter:invert(1) hue-rotate(180deg)}
