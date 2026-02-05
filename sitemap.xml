@@ -13,6 +13,9 @@
         <loc>https://en.omath.net/sponsors/</loc>
     </url>
     <url>
+        <loc>https://en.omath.net/page/faq/</loc>
+    </url>
+    <url>
         <loc>https://en.omath.net/book/foundations/</loc>
     </url>
     <url>
@@ -71,6 +74,27 @@
     </url>
     <url>
         <loc>https://en.omath.net/group/foundations/equations/quadratic/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/summary/foundations/equations/quadratic/incomplete/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/practice/foundations/equations/quadratic/incomplete/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/#quadratic-missing-terms</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/#solving-such-equations</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/summary/foundations/equations/quadratic/incomplete/#all-formulas</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/practice/foundations/equations/quadratic/incomplete/#solving-incomplete-equations</loc>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/</loc>
