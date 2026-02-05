@@ -7,12 +7,6 @@ export default defineBook({
   `,
   externals: [
     {
-      type: 'physical',
-      title: 'Algebra Word Problems',
-      info: 'Anita Harnadek',
-      reason: 'Huge collection of word problems which lead to an equations with detailed solutions.',
-    },
-    {
       type: 'web',
       title: 'LibreTexts Mathematics',
       info: 'An open and free online collection of mathematics educational materials.',
