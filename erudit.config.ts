@@ -64,23 +64,9 @@ export default defineEruditConfig({
     branch: 'main',
   },
   analytics: {
-    yandex: {
-      verification: '7d97dac84bd592c6',
-      metricsId: '106425766',
-    },
     google: {
       verification: 'hbTull_8pcvJm4alie8PVq6-f87heZXqSGp6DVFsJPk',
       gtag: 'G-9CF498N3Q1',
-    },
-  },
-  ads: {
-    aside: {
-      provider: 'yandex',
-      blockId: 'R-A-18528824-1',
-    },
-    bottom: {
-      provider: 'yandex',
-      blockId: 'R-A-18528824-2',
     },
   },
   elements: defaultElements,
