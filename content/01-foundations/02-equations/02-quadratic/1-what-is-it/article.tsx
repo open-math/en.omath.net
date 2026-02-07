@@ -31,22 +31,17 @@ export function quadraticOrNot(
   B?: CoefficientAnswer,
   C?: CoefficientAnswer,
 ): AnyProseElement {
-  return (
-    <ProblemCheck
-      label="Quadratic"
-      hint="Yes/No"
-      answer={quadratic ? /^yes$/iu : /^no$/iu}
-      children={
-        quadratic
-          ? [
-              <ProblemCheck label="Coefficient A" answers={Array.isArray(A) ? A : [A]} />,
-              <ProblemCheck label="Coefficient B" answers={Array.isArray(B) ? B : [B]} />,
-              <ProblemCheck label="Coefficient C" answers={Array.isArray(C) ? C : [C]} />,
-            ]
-          : undefined
-      }
-    />
-  );
+  if (quadratic) {
+    return (
+      <ProblemCheck label="Quadratic" yes>
+        <ProblemCheck label="Coefficient A" answers={Array.isArray(A) ? A : [A!]} />
+        <ProblemCheck label="Coefficient B" answers={Array.isArray(B) ? B : [B!]} />
+        <ProblemCheck label="Coefficient C" answers={Array.isArray(C) ? C : [C!]} />
+      </ProblemCheck>
+    );
+  } else {
+    return <ProblemCheck label="Quadratic" no />;
+  }
 }
 
 export default defineProse({

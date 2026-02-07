@@ -117,7 +117,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>x^2 + x = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, -1]} />
+        <ProblemCheck label={rootsLabel} answers={[0, -1]} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>-1</M>.
         </ProblemAnswer>
@@ -143,7 +143,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>3y=7y^2</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, '3/7']} />
+        <ProblemCheck label={rootsLabel} answers={[0, '3/7']} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>{math`\dfrac{3}{7}`}</M>.
         </ProblemAnswer>
@@ -171,7 +171,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`0=-\frac{18}{\sqrt{3}}z^2 -\frac{9}{\sqrt{3}}z`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, ['-1/2', -0.5]]} />
+        <ProblemCheck label={rootsLabel} answers={[0, ['-1/2', -0.5]]} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>{math`-\dfrac{1}{2}`}</M>.
         </ProblemAnswer>
@@ -207,7 +207,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`\frac{1}{2}t + t^2 = -9t^2 - \frac{2}{4}t`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, ['-1/10', -0.1]]} />
+        <ProblemCheck label={rootsLabel} answers={[0, ['-1/10', -0.1]]} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>{math`-\dfrac{1}{10}`}</M>.
         </ProblemAnswer>
@@ -248,8 +248,8 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>x^2 - 100 = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} answer={/^да$/}>
-          <ProblemCheck label={rootsLabel} set={[10, -10]} />
+        <ProblemCheck label={hasRootsLabel} yes>
+          <ProblemCheck label={rootsLabel} answers={[10, -10]} />
         </ProblemCheck>
         <ProblemAnswer>
           Equation roots: <M>10</M> and <M>-10</M>.
@@ -274,8 +274,8 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>0 = 9r^2 - 16</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} answer={/^да$/}>
-          <ProblemCheck label={rootsLabel} set={['-4/3', '4/3']} />
+        <ProblemCheck label={hasRootsLabel} yes>
+          <ProblemCheck label={rootsLabel} answers={['-4/3', '4/3']} />
         </ProblemCheck>
         <ProblemAnswer>
           Equation roots: <M>{math`\dfrac{4}{3}`}</M> and <M>{math`-\dfrac{4}{3}`}</M>.
@@ -307,7 +307,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`\frac{64}{\sqrt{111}} + \frac{16}{\sqrt{111}}j^2 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} answer={/^нет$/} />
+        <ProblemCheck label={hasRootsLabel} no />
         <ProblemAnswer>The equation has no roots.</ProblemAnswer>
         <ProblemSolution>
           <P>Using the same action rule, we get rid of the term without a variable:</P>
@@ -342,8 +342,8 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`\frac{21}{4}m^2 - 10 = 6 - 7m^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} answer={/^да$/}>
-          <ProblemCheck label={rootsLabel} set={['8/7', '-8/7']} />
+        <ProblemCheck label={hasRootsLabel} yes>
+          <ProblemCheck label={rootsLabel} answers={['8/7', '-8/7']} />
         </ProblemCheck>
         <ProblemAnswer>
           Equation roots: <M>{math`\dfrac{8}{7}`}</M> and <M>{math`-\dfrac{8}{7}`}</M>.
@@ -377,8 +377,8 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>(30k + 2)k + 42k^2 = 72 + 2k</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} answer={/^да$/}>
-          <ProblemCheck label={rootsLabel} set={[1, -1]} />
+        <ProblemCheck label={hasRootsLabel} yes>
+          <ProblemCheck label={rootsLabel} answers={[1, -1]} />
         </ProblemCheck>
         <ProblemAnswer>
           Equation roots: <M>1</M> and <M>-1</M>.
@@ -422,10 +422,10 @@ export default defineProse()(() => (
           -4x^2 - 1 + 10 = 0
         `}</BlockMath>
       </ProblemDescription>
-      <ProblemCheck label="Equation 1. Has solutions?" answer={/^нет$/} />
-      <ProblemCheck label="Equation 2. Has solutions?" answer={/^да$/} />
-      <ProblemCheck label="Equation 3. Has solutions?" answer={/^нет$/} />
-      <ProblemCheck label="Equation 4. Has solutions?" answer={/^да$/} />
+      <ProblemCheck label="Equation 1. Has solutions?" no />
+      <ProblemCheck label="Equation 2. Has solutions?" yes />
+      <ProblemCheck label="Equation 3. Has solutions?" no />
+      <ProblemCheck label="Equation 4. Has solutions?" yes />
       <ProblemHint>
         Use the <Dep to={article.uniques.b0Roots}>general root formula</Dep> for an incomplete quadratic equation when{' '}
         <M>B=0</M>.

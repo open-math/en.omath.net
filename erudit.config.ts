@@ -11,16 +11,18 @@ export default defineEruditConfig({
     current: 'en',
     translations,
   },
-  site: {
-    title: 'Open Math',
-    short: 'Clear and interesting',
-    logotype: defaultAssets.logotype,
-    style: {
-      brandColor: 'light-dark(#1879d9, #4e94d9)',
+  asideMajor: {
+    siteInfo: {
+      title: 'Open Math',
+      short: 'Clear and interesting',
+      logotype: defaultAssets.logotype,
     },
-    favicon: defaultAssets.favicon,
-    loadingSvg: defaultAssets.loadingSvg,
   },
+  style: {
+    brandColor: 'light-dark(#1879d9, #4e94d9)',
+  },
+  favicon: defaultAssets.favicon,
+  loadingSvg: defaultAssets.loadingSvg,
   seo: {
     siteTitle: 'Open Math',
     useBookSiteTitle: true,

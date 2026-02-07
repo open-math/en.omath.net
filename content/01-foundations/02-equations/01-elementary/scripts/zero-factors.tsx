@@ -37,7 +37,7 @@ export default defineProblemScript({
             ${firstFactor}${secondFactor} = 0
           `}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[solution1, solution2]} />
+        <ProblemCheck label="Equation roots" answers={[solution1, solution2]} />
         <ProblemAnswer>
           <M>{solution1}</M> and <M>{solution2}</M>
         </ProblemAnswer>

@@ -1326,7 +1326,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x^2 - 121 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck set={[11, -11]} hint="Comma separated" />
+        <ProblemCheck answers={[11, -11]} />
         <ProblemHint>This equation has two solutions.</ProblemHint>
         <ProblemAnswer>
           The equation has two roots: <M>11</M> and <M>-11</M>.
@@ -1470,7 +1470,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{6}{x^2 - 19} = 1`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Roots of the equation" hint="Comma separated" set={[5, -5]} />
+        <ProblemCheck label="Roots of the equation" answers={[5, -5]} />
         <ProblemHint>
           Think about how to get rid of <M>x^2 - 19</M> in the denominator with one action. What to multiply both sides
           of the equation by?
@@ -1996,7 +1996,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`(x + 3)(x - 2) = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[2, -3]} />
+        <ProblemCheck label="Equation roots" answers={[2, -3]} />
         <ProblemHint>
           If we can make at least one of the factors equal to zero, then the whole product will become zero.
         </ProblemHint>
@@ -2066,7 +2066,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`x(x + 7)(x - 11) = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[0, -7, 11]} />
+        <ProblemCheck label="Equation roots" answers={[0, -7, 11]} />
         <ProblemHint>
           Here there are three factors, so there are three sub-equations, and thus three solutions to the original
           equation.
@@ -2096,7 +2096,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`10(x+3)(2x-8)(8x+1) = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[-3, 4, [-0.125, '-1/8']]} />
+        <ProblemCheck label="Equation roots" answers={[-3, 4, [-0.125, '-1/8']]} />
         <ProblemHint>
           Get rid of <M>10</M>, then solve the sub-equations for each factor.
         </ProblemHint>
@@ -2174,7 +2174,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`0 = (x^2 - 4)(x + 1)`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[-2, 2, -1]} />
+        <ProblemCheck label="Equation roots" answers={[-2, 2, -1]} />
         <ProblemHint>Two factors on the right side lead to two sub-equations.</ProblemHint>
         <ProblemHint>The first sub-equation has two roots.</ProblemHint>
         <ProblemAnswer>
@@ -2210,7 +2210,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`\frac{\left(x + \frac{1}{2}\right)x}{17} = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[0, [-0.5, '-1/2']]} />
+        <ProblemCheck label="Equation roots" answers={[0, [-0.5, '-1/2']]} />
         <ProblemHint>
           First, get rid of the denominator <M>17</M>. Then solve the sub-equations for each factor.
         </ProblemHint>
@@ -2250,7 +2250,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`(x+11)(x-1) + 12 = 12`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[-11, 1]} />
+        <ProblemCheck label="Equation roots" answers={[-11, 1]} />
         <ProblemHint>
           Think about how you can get rid of <M>12</M> on both sides of the equation in one action.
         </ProblemHint>
@@ -2285,7 +2285,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`7x^2 = 42x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" hint="Comma separated" set={[0, 6]} />
+        <ProblemCheck label="Equation roots" answers={[0, 6]} />
         <ProblemHint>Simplify the equation.</ProblemHint>
         <ProblemHint>Group the x's on one side, for example, on the left.</ProblemHint>
         <ProblemHint>Factor out the common factor.</ProblemHint>
@@ -3148,7 +3148,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`-\frac{5}{7}x^2 + 35 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck set={[7, -7]} />
+        <ProblemCheck answers={[7, -7]} />
         <ProblemHint>
           Isolate (leave alone) <M>x^2</M>.
         </ProblemHint>
@@ -3363,7 +3363,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{x^2}{x-3} = 4x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck set={[0, 4]} />
+        <ProblemCheck answers={[0, 4]} />
         <ProblemHint>
           Group all <M>x</M> terms on one side of the equation and factor out common factors.
         </ProblemHint>

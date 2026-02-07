@@ -1897,7 +1897,7 @@ export default defineProse({
             speed of the first. What is the speed of each cyclist?
           </P>
         </ProblemDescription>
-        <ProblemCheck label="Cyclists' speed" hint="Comma separated!" set={[19, 21]} />
+        <ProblemCheck label="Cyclists' speed" answers={[19, 21]} />
         <ProblemHint>
           Denote the speed of the first cyclist with the letter <M>x</M>. Since the speed of the second is <M>2</M> km/h
           higher, his speed can be written in terms of the first one's speed as <M>x + 2</M>. Then set up an equation

@@ -164,7 +164,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>x^2 + 5x = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, -5]} />
+        <ProblemCheck label={rootsLabel} answers={[0, -5]} />
         <ProblemHint>
           Factor <M>x</M> out.
         </ProblemHint>
@@ -198,7 +198,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>8x=x^2</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, 8]} />
+        <ProblemCheck label={rootsLabel} answers={[0, 8]} />
         <ProblemHint>
           Group the x's in one part of the equation using the <Dep to={sameActionRule}>same action rule</Dep>.
         </ProblemHint>
@@ -224,7 +224,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>2x^2 - 7x = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, [3.5, '7/2']]} />
+        <ProblemCheck label={rootsLabel} answers={[0, [3.5, '7/2']]} />
         <ProblemAnswer>
           <M>{math`x_1 = 0, \quad x_2 = \dfrac{7}{2}`}</M>
         </ProblemAnswer>
@@ -251,7 +251,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{2}{7}x - \frac{1}{35}x^2 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} set={[0, -10]} />
+        <ProblemCheck label={rootsLabel} answers={[0, -10]} />
         <ProblemAnswer>
           <M>{math`x_1 = 0, \quad x_2 = -10`}</M>
         </ProblemAnswer>
@@ -353,8 +353,8 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>2x^2 - 18 = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} hint="Yes/No" answer={/^yes$/iu}>
-          <ProblemCheck label={rootsLabel} set={[-3, 3]} />
+        <ProblemCheck label={hasRootsLabel} yes>
+          <ProblemCheck label={rootsLabel} answers={[-3, 3]} />
         </ProblemCheck>
         <ProblemHint>
           Isolate <M>x^2</M> on the left side of the equation. Then use the understanding of what a square root is.
@@ -385,7 +385,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`5=-\frac{1}{20}x^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} hint="Yes/No" answer={/^no$/iu} />
+        <ProblemCheck label={hasRootsLabel} no />
         <ProblemHint>
           To leave <M>x^2</M> alone in the right part, multiply both parts of the equation by <M>-20</M>.
         </ProblemHint>
@@ -413,8 +413,8 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{x^2}{4} - 9 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} hint="Yes/No" answer={/^yes$/iu}>
-          <ProblemCheck label={rootsLabel} set={[-6, 6]} />
+        <ProblemCheck label={hasRootsLabel} yes>
+          <ProblemCheck label={rootsLabel} answers={[-6, 6]} />
         </ProblemCheck>
         <ProblemHint>
           Multiply both parts of the equation by <M>4</M> to get rid of the fraction. Then isolate <M>x^2</M> and
@@ -447,7 +447,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`0 = - 3x^2 - 12`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} hint="Yes/No" answer={/^no$/iu} />
+        <ProblemCheck label={hasRootsLabel} no />
         <ProblemAnswer>
           <M>x_1 = -2, \quad x_2 = 2</M>
         </ProblemAnswer>
@@ -478,7 +478,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x^2 = 3`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} hint="Yes/No" answer={/^yes$/iu} />
+        <ProblemCheck label={hasRootsLabel} yes />
         <ProblemHint>Please note that the answer is not always beautiful...</ProblemHint>
         <ProblemAnswer>
           <M>{math`x_1 = -\sqrt{3}, \quad x_2 = \sqrt{3}`}</M>
