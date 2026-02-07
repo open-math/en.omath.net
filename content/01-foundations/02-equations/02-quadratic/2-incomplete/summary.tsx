@@ -47,8 +47,8 @@ export default defineProse({
     `}</Diagram>
 
     <BlockMath>{math`
-      \overbrace{5x^2 = 0}^{B = 0 \ \text{and} \ C = 0} \\ \boxed{x = 0} >>{big}
-      \overbrace{x^2 + 3x = 0}^{C = 0} \\ \boxed{x_1 = 0} \\ \boxed{x_2 = -\frac{3}{1} = -3} >>{big}
+      \overbrace{5x^2 = 0}^{B = 0 \ \text{and} \ C = 0} \\ \boxed{x = 0} >>{big}{top}
+      \overbrace{x^2 + 3x = 0}^{C = 0} \\ \boxed{x_1 = 0} \\ \boxed{x_2 = -\frac{3}{1} = -3} >>{big}{top}
       \overbrace{2x^2 - 8 = 0}^{B = 0} \\ x_{1,2} = \pm \sqrt{-\frac{-8}{2}} \\ x_{1,2} = \pm \sqrt{4} \\ \boxed{x_{1,2} = \pm 2}
     `}</BlockMath>
 
