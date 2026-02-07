@@ -1,1 +1,0 @@
-import{aK as a}from"./DCWVk_ez.js";import{a as e}from"./D5t-KDmw.js";const s=Symbol();function n(){return a(s)}async function u(r){const o=n(),t=e(r);if(r.storageKey&&(t.createStorage&&(o[r.storageKey]=await t.createStorage(r)),r.storageKey in o))return o[r.storageKey]}export{s as p,u};

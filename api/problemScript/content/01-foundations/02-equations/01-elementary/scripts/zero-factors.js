@@ -37,7 +37,7 @@ var zero_factors_default = defineProblemScript('__auto_generated__',{
             ${firstFactor}${secondFactor} = 0
           ` })
       ] }),
-      /* @__PURE__ */ jsx(ProblemCheck, { label: "Equation roots", hint: "Comma separated", set: [solution1, solution2] }),
+      /* @__PURE__ */ jsx(ProblemCheck, { label: "Equation roots", answers: [solution1, solution2] }),
       /* @__PURE__ */ jsxs(ProblemAnswer, { children: [
         /* @__PURE__ */ jsx(M, { children: solution1 }),
         " and ",
