@@ -26,7 +26,7 @@ export default defineProse()(() => (
 
     <P>
       Solving almost all equations comes down to sequentially <B>simplifying</B> the original equation by applying the
-      same action <Dep to={article.uniques.sameActionRule}>rule</Dep> repeatedly. Simplification continues until it
+      same action <Dep on={article.uniques.sameActionRule}>rule</Dep> repeatedly. Simplification continues until it
       becomes clear what number the unknown represents. Usually, simplifications reduce the equation to the trivial form{' '}
       <M>{math`x = \ldots`}</M>
     </P>

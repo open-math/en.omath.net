@@ -147,7 +147,7 @@ export default defineProse({
           <BlockMath>{math`\frac{60}{v} - 1 = \frac{60}{v + 2}`}</BlockMath>
           <P>
             Let's pull <M>v</M> out of the denominators. To do this, using the same action{' '}
-            <Dep to={sameActionRule}>rule</Dep> we multiply both sides of the equation by <M>v(v+2)</M>:
+            <Dep on={sameActionRule}>rule</Dep> we multiply both sides of the equation by <M>v(v+2)</M>:
           </P>
           <BlockMath>{math`
             \brand{v(v+2)} \cdot \left( \frac{60}{v} - 1 \right) = \left( \frac{60}{v + 2} \right) \cdot \brand{v(v+2)} \\
@@ -419,7 +419,7 @@ export default defineProse({
     >
       <P>
         Check if the equation is quadratic or not. If the equation is quadratic, using the same action{' '}
-        <Dep to={sameActionRule}>rule</Dep>, bring it to the general form and find the values of its coefficients{' '}
+        <Dep on={sameActionRule}>rule</Dep>, bring it to the general form and find the values of its coefficients{' '}
         <M>A</M>, <M>B</M> and <M>C</M>.
       </P>
 
@@ -456,7 +456,7 @@ export default defineProse({
           <BlockMath>{math`0x^2 + 3x + 5 = 0`}</BlockMath>
           <P>
             Coefficients: <M>A = 0</M>, <M>B = 3</M> and <M>C = 5</M>. But{' '}
-            <Dep to={uniques.quadraticEquation}>by definition</Dep> of the general form of a quadratic equation,
+            <Dep on={uniques.quadraticEquation}>by definition</Dep> of the general form of a quadratic equation,
             coefficient <M>A</M> cannot be equal to <M>0</M>. So this equation is not quadratic!
           </P>
         </ProblemSolution>
@@ -494,7 +494,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             Group all terms on the left side. To do this, we need to get rid of <M>5</M> on the right side. To do this,
-            using the same action <Dep to={sameActionRule}>rule</Dep>, we subtract <M>5</M> from both sides of the
+            using the same action <Dep on={sameActionRule}>rule</Dep>, we subtract <M>5</M> from both sides of the
             equation:
           </P>
           <BlockMath>{math`
@@ -570,7 +570,7 @@ export default defineProse({
           `}</BlockMath>
           <P>
             Now group all terms on the left side. To do this, we need to get rid of <M>5</M> on the right side. To do
-            this, using the same action <Dep to={sameActionRule}>rule</Dep>, we subtract <M>5</M> from both sides of the
+            this, using the same action <Dep on={sameActionRule}>rule</Dep>, we subtract <M>5</M> from both sides of the
             equation:
           </P>
           <BlockMath>{math`
@@ -598,7 +598,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             This time, group all terms on the right side. To do this, we need to get rid of <M>3</M> on the left side.
-            To do this, using the same action <Dep to={sameActionRule}>rule</Dep>, we subtract <M>3</M> from both sides
+            To do this, using the same action <Dep on={sameActionRule}>rule</Dep>, we subtract <M>3</M> from both sides
             of the equation:
           </P>
           <BlockMath>{math`
@@ -625,9 +625,9 @@ export default defineProse({
         <ProblemSolution>
           <P>
             We need to pull <M>x</M> out of the denominator on the left side. To do this, using{' '}
-            <Dep to={sameActionRule}>the rule</Dep> of the same action, we multiply both sides of the equation by{' '}
+            <Dep on={sameActionRule}>the rule</Dep> of the same action, we multiply both sides of the equation by{' '}
             <M>x</M>. We put the left side in brackets, since any action on the equation is{' '}
-            <Dep to={alwaysGlobal}>global</Dep>.
+            <Dep on={alwaysGlobal}>global</Dep>.
           </P>
 
           <BlockMath>{math`
@@ -663,7 +663,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             On the left and right, we notice identical terms <M>x^2</M>. To get rid of them, using the same action{' '}
-            <Dep to={sameActionRule}>rule</Dep>, we subtract <M>x^2</M> from both sides of the equation:
+            <Dep on={sameActionRule}>rule</Dep>, we subtract <M>x^2</M> from both sides of the equation:
           </P>
           <BlockMath>{math`
             \brand{- x^2} \ | \ x^2 + 2x = x^2 \ | \ \brand{- x^2} \\
@@ -674,7 +674,7 @@ export default defineProse({
           <BlockMath>{math`0x^2 + 2x + 0 = 0`}</BlockMath>
           <P>
             Coefficients: <M>A = 0</M>, <M>B = 2</M> and <M>C = 0</M>. But{' '}
-            <Dep to={uniques.quadraticEquation}>by definition</Dep> of the general form of a quadratic equation,
+            <Dep on={uniques.quadraticEquation}>by definition</Dep> of the general form of a quadratic equation,
             coefficient <M>A</M> cannot be equal to <M>0</M>.
           </P>
         </ProblemSolution>

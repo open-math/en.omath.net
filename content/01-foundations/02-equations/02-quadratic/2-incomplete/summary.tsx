@@ -15,7 +15,7 @@ export default defineProse({
 })(({ uniques }) => (
   <>
     <P>
-      When you come across a <Dep to={whatIsQuadratic}>quadratic equation</Dep>, don't rush to use complex methods right
+      When you come across a <Dep on={whatIsQuadratic}>quadratic equation</Dep>, don't rush to use complex methods right
       away. It might turn out that the equation is incomplete:
     </P>
 

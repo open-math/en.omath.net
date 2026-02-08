@@ -34,7 +34,7 @@ export default defineProse()(() => (
         <P>Max needs to solve the following equation at the blackboard:</P>
         <BlockMath>4x^2 = 80x</BlockMath>
         <P>
-          He remembered the <Dep to={article.uniques.c0Roots}>general formula</Dep> for solving incomplete quadratic
+          He remembered the <Dep on={article.uniques.c0Roots}>general formula</Dep> for solving incomplete quadratic
           equations when <M>C = 0</M> and used it:
         </P>
         <BlockMath>{math`
@@ -46,7 +46,7 @@ export default defineProse()(() => (
         </P>
       </ProblemDescription>
       <ProblemHint>
-        This is somehow related to the <Dep to={quadraticEquation}>general form</Dep> of a quadratic equation.
+        This is somehow related to the <Dep on={quadraticEquation}>general form</Dep> of a quadratic equation.
       </ProblemHint>
       <ProblemAnswer>
         <P>
@@ -54,7 +54,7 @@ export default defineProse()(() => (
         </P>
         <P>
           Max's mistake was that he did not bring the quadratic equation to the{' '}
-          <Dep to={quadraticEquation}>general form</Dep> (trinomial on one side, zero on the other). Therefore, he used
+          <Dep on={quadraticEquation}>general form</Dep> (trinomial on one side, zero on the other). Therefore, he used
           the coefficient <M>B</M> with a plus sign instead of a minus!
         </P>
       </ProblemAnswer>
@@ -85,7 +85,7 @@ export default defineProse()(() => (
           <P>
             Max used the general formula but completely forgot the <B>form</B> of the quadratic equation for which it
             was derived. It was derived for the form <M>Ax^2 + Bx = 0</M>, that is, for the{' '}
-            <Dep to={quadraticEquation}>general form</Dep> of a quadratic equation!
+            <Dep on={quadraticEquation}>general form</Dep> of a quadratic equation!
           </P>
           <P>
             However, in this problem, the equation was in the form <M>4x^2 = 80x</M>, which is not reduced to the
@@ -111,7 +111,7 @@ export default defineProse()(() => (
     >
       <P>
         First, solve the incomplete quadratic equation manually. After that, be sure to find the roots using the{' '}
-        <Dep to={summary.uniques.allFormulas}>general formulas</Dep> and compare the results.
+        <Dep on={summary.uniques.allFormulas}>general formulas</Dep> and compare the results.
       </P>
       <SubProblem>
         <ProblemDescription>
@@ -427,7 +427,7 @@ export default defineProse()(() => (
       <ProblemCheck label="Equation 3. Has solutions?" no />
       <ProblemCheck label="Equation 4. Has solutions?" yes />
       <ProblemHint>
-        Use the <Dep to={article.uniques.b0Roots}>general root formula</Dep> for an incomplete quadratic equation when{' '}
+        Use the <Dep on={article.uniques.b0Roots}>general root formula</Dep> for an incomplete quadratic equation when{' '}
         <M>B=0</M>.
       </ProblemHint>
       <ProblemAnswer>
@@ -436,7 +436,7 @@ export default defineProse()(() => (
       <ProblemSolution>
         <ProblemSection title="Proof">
           <P>
-            Recall the <Dep to={article.uniques.b0Roots}>general root formula</Dep> for an incomplete quadratic equation
+            Recall the <Dep on={article.uniques.b0Roots}>general root formula</Dep> for an incomplete quadratic equation
             when <M>B=0</M>:
           </P>
           <BlockMath>{math`x_{1,2} = \pm\sqrt{-\frac{C}{A}}`}</BlockMath>
@@ -554,7 +554,7 @@ export default defineProse()(() => (
         </P>
         <BlockMath>2x^2 + 3x = 0</BlockMath>
         <P>
-          She decided to use the <Dep to={sameActionRule}>same action rule</Dep> and divided both sides of the equation
+          She decided to use the <Dep on={sameActionRule}>same action rule</Dep> and divided both sides of the equation
           by <M>x</M>:
         </P>
         <BlockMath>2x + 3 = 0</BlockMath>
@@ -572,7 +572,7 @@ export default defineProse()(() => (
           be <B>checked separately</B>!
         </P>
         <P>
-          Since she found only one root, she <Dep to={equationSolution}>did not solve</Dep> the equation!
+          Since she found only one root, she <Dep on={equationSolution}>did not solve</Dep> the equation!
         </P>
       </ProblemAnswer>
       <ProblemSolution>

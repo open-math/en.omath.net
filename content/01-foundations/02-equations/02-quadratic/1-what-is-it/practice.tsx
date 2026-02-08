@@ -23,7 +23,7 @@ export default defineProse()(() => (
   <>
     <Problems title="Playing with quadratic trinomials" level="easy">
       <P>
-        Reduce the expression to the form of a <Dep to={quadraticTrinomial}>quadratic trinomial</Dep>, if possible.
+        Reduce the expression to the form of a <Dep on={quadraticTrinomial}>quadratic trinomial</Dep>, if possible.
         Determine the values of its coefficients <M>A</M>, <M>B</M> and <M>C</M>.
       </P>
 
@@ -80,7 +80,7 @@ export default defineProse()(() => (
         <ProblemSolution>
           <P>
             To bring it to such a form, we would need to set coefficient <M>A</M> to <M>0</M>, which contradicts the{' '}
-            <Dep to={quadraticTrinomial}>definition</Dep> of a quadratic trinomial:
+            <Dep on={quadraticTrinomial}>definition</Dep> of a quadratic trinomial:
           </P>
           <BlockMath>{math`\underbrace{0\cdot z^2}_{\text{Impossible!}} + 99z - 5`}</BlockMath>
         </ProblemSolution>
@@ -157,7 +157,7 @@ export default defineProse()(() => (
           <P>The expression cannot be reduced to the form of a quadratic trinomial. To bring it to such a form,</P>
           <P>
             we would need to set coefficient <M>A</M> to <M>0</M>, which contradicts the{' '}
-            <Dep to={quadraticTrinomial}>definition</Dep> of a quadratic trinomial:
+            <Dep on={quadraticTrinomial}>definition</Dep> of a quadratic trinomial:
           </P>
           <BlockMath>{math`\underbrace{0\cdot y^2}_{\text{Impossible!}} - 6y + 1`}</BlockMath>
         </ProblemSolution>
@@ -235,7 +235,7 @@ export default defineProse()(() => (
 
     <Problems title="Quadratic or not?" level="easy">
       <P>
-        Determine if the given equation is <Dep to={quadraticEquation}>quadratic</Dep>. If so, bring it to the{' '}
+        Determine if the given equation is <Dep on={quadraticEquation}>quadratic</Dep>. If so, bring it to the{' '}
         <B>general form</B> of a quadratic equation. Determine the values of its coefficients <M>A</M>, <M>B</M> and{' '}
         <M>C</M>.
       </P>
@@ -264,7 +264,7 @@ export default defineProse()(() => (
         </ProblemAnswer>
         <ProblemSolution>
           <P>
-            Using the <Dep to={sameActionRule}>same action rule</Dep>, subtract <M>y</M> from both sides:
+            Using the <Dep on={sameActionRule}>same action rule</Dep>, subtract <M>y</M> from both sides:
           </P>
           <BlockMath>{math`0 = y^2 - y + 10`}</BlockMath>
           <P>Determine the coefficients:</P>
@@ -280,7 +280,7 @@ export default defineProse()(() => (
         <ProblemAnswer>The equation is not quadratic.</ProblemAnswer>
         <ProblemSolution>
           <P>
-            Using the <Dep to={sameActionRule}>same action rule</Dep>, subtract <M>{math`\frac{6}{2}z^2`}</M> from both
+            Using the <Dep on={sameActionRule}>same action rule</Dep>, subtract <M>{math`\frac{6}{2}z^2`}</M> from both
             sides:
           </P>
           <BlockMath>{math`3z^2 - \frac{6}{2}z^2 + 1 = -999z`}</BlockMath>
@@ -293,7 +293,7 @@ export default defineProse()(() => (
           `}</BlockMath>
           <P>
             This equation is not quadratic because it lacks a term with <M>z^2</M>. And we cannot add it with a zero
-            coefficient because it contradicts the <Dep to={quadraticTrinomial}>definition</Dep> of a quadratic
+            coefficient because it contradicts the <Dep on={quadraticTrinomial}>definition</Dep> of a quadratic
             trinomial:
           </P>
           <BlockMath>{math`\underbrace{0\cdot z^2}_{\text{Impossible!}} + 1 = -999z`}</BlockMath>
@@ -313,7 +313,7 @@ export default defineProse()(() => (
         </ProblemAnswer>
         <ProblemSolution>
           <P>
-            Using the <Dep to={sameActionRule}>same action rule</Dep>, "pull" <M>t</M> out of the denominator by
+            Using the <Dep on={sameActionRule}>same action rule</Dep>, "pull" <M>t</M> out of the denominator by
             multiplying both sides by <M>t</M>:
           </P>
           <BlockMath>{math`1 = t^2`}</BlockMath>
@@ -342,8 +342,8 @@ export default defineProse()(() => (
         <ProblemSolution>
           <P>
             We see a fraction with <M>x^2</M> in the denominator on both sides. We can get rid of the fractions in one
-            step by multiplying both sides by <M>x^2</M>, using the <Dep to={sameActionRule}>same action rule</Dep>, not
-            forgetting the <Dep to={alwaysGlobal}>global nature</Dep> of this action:
+            step by multiplying both sides by <M>x^2</M>, using the <Dep on={sameActionRule}>same action rule</Dep>, not
+            forgetting the <Dep on={alwaysGlobal}>global nature</Dep> of this action:
           </P>
           <BlockMath>{math`x^2\left(\frac{11}{x^2} + x + 2\right) = x^2\left(\frac{x^3 - 10}{x^2}\right)`}</BlockMath>
           <P>Expand the brackets and cancel out:</P>

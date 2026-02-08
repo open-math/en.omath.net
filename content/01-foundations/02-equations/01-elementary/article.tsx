@@ -286,7 +286,7 @@ export default defineProse({
       }}
     >
       <P>
-        <Dep to={uniques.equality}>Equality</Dep> in which there is one or more <B>unknowns</B> or <B>variables</B>.
+        <Dep on={uniques.equality}>Equality</Dep> in which there is one or more <B>unknowns</B> or <B>variables</B>.
       </P>
 
       <BlockMath>{math`
@@ -785,7 +785,7 @@ export default defineProse({
     <BlockMath>{math`x + 3 = 10`}</BlockMath>
 
     <P>
-      Recall that <Dep to={uniques.equationSolution}>"solving an equation"</Dep> means finding numbers that turn it into
+      Recall that <Dep on={uniques.equationSolution}>"solving an equation"</Dep> means finding numbers that turn it into
       a true equality.{' '}
       <B>
         We will assume "in advance" or "on credit" that the equation has solutions, and therefore we are working with a
@@ -843,7 +843,7 @@ export default defineProse({
 
     <Problems title="Equations with Addition and Subtraction" level="easy">
       <P>
-        Solve the equations using the <Dep to={uniques.sameActionRule}>same action rule</Dep>:
+        Solve the equations using the <Dep on={uniques.sameActionRule}>same action rule</Dep>:
       </P>
 
       <SubProblem>
@@ -860,7 +860,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             We want <M>x</M> to remain alone. Currently, the number <M>100</M> is in the way. To get rid of it,
-            according to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract the number <M>100</M>{' '}
+            according to the <Dep on={uniques.sameActionRule}>same action rule</Dep>, subtract the number <M>100</M>{' '}
             from both sides of the equation. Then on the left <M>100</M> and <M>-100</M> will cancel each other out, and
             only <M>x</M> will remain:
           </P>
@@ -888,7 +888,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             We want <M>t</M> to remain alone. Now the number <M>-8</M> is interfering with it. To get rid of it,
-            according to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, add the number <M>8</M> to both
+            according to the <Dep on={uniques.sameActionRule}>same action rule</Dep>, add the number <M>8</M> to both
             sides of the equation. Then on the right <M>-8</M> and <M>+8</M> will cancel each other out, and only{' '}
             <M>t</M> will remain:
           </P>
@@ -942,7 +942,7 @@ export default defineProse({
           </P>
 
           <P>
-            According to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract <M>y</M> from both sides
+            According to the <Dep on={uniques.sameActionRule}>same action rule</Dep>, subtract <M>y</M> from both sides
             of the equation. Then on the left side <M>y</M> and <M>-y</M> will cancel each other, and only <M>5</M> will
             remain there:
           </P>
@@ -970,7 +970,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             Again, our unknown <M>z</M> is on two "scale pans" at once. We need it to remain only on one. According to
-            the <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract <M>z</M> from both sides of the
+            the <Dep on={uniques.sameActionRule}>same action rule</Dep>, subtract <M>z</M> from both sides of the
             equation:
           </P>
 
@@ -1014,7 +1014,7 @@ export default defineProse({
 
     <Problems title="Equations with Multiplication and Division" level="easy">
       <P>
-        Solve the equations using the <Dep to={uniques.sameActionRule}>same action rule</Dep>:
+        Solve the equations using the <Dep on={uniques.sameActionRule}>same action rule</Dep>:
       </P>
 
       <SubProblem>
@@ -1032,7 +1032,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             We want <M>x</M> to remain alone. Now the number <M>20</M> is interfering with it. To get rid of it,
-            according to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, divide both sides of the equation
+            according to the <Dep on={uniques.sameActionRule}>same action rule</Dep>, divide both sides of the equation
             by the number <M>20</M>. Then on the left <M>20</M> in the numerator and <M>20</M> in the denominator can be
             cancelled (<M>20 : 20 = 1</M>), and only <M>x</M> will remain there:
           </P>
@@ -1060,7 +1060,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             We want <M>y</M> to remain alone. Now the number <M>3</M> is interfering with it. To get rid of it,
-            according to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, multiply both sides of the
+            according to the <Dep on={uniques.sameActionRule}>same action rule</Dep>, multiply both sides of the
             equation by the number <M>3</M>. Then on the right <M>3</M> in the numerator and <M>3</M> in the denominator
             can be cancelled (<M>3 : 3 = 1</M>
             ), and only <M>y</M> will remain there:
@@ -1104,7 +1104,7 @@ export default defineProse({
 
     <Problems $={uniques.chainExamples} title="Chains of Actions" level="easy">
       <P>
-        Solve the equations using the <Dep to={uniques.sameActionRule}>same action rule</Dep>:
+        Solve the equations using the <Dep on={uniques.sameActionRule}>same action rule</Dep>:
       </P>
 
       <SubProblem>
@@ -1279,7 +1279,7 @@ export default defineProse({
         <ProblemSolution>
           <P>
             The first time we left <M>x</M> on the left side of the equality. Now let's try to leave it in the right
-            part. To do this, according to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, subtract{' '}
+            part. To do this, according to the <Dep on={uniques.sameActionRule}>same action rule</Dep>, subtract{' '}
             <M>4x</M> from both sides of the equation. Then on the left side <M>4x</M> and <M>-4x</M> will cancel each
             other out, and only <M>-4</M> will remain there:
           </P>
@@ -1340,7 +1340,7 @@ export default defineProse({
           <P>
             The first time we got rid of fractions in both parts of the equality by multiplying both parts by <M>8</M>.
             Now let's get rid only of the fraction on the right side. To do this, according to the{' '}
-            <Dep to={uniques.sameActionRule}>same action rule</Dep>, add to both sides of the equation the fraction{' '}
+            <Dep on={uniques.sameActionRule}>same action rule</Dep>, add to both sides of the equation the fraction{' '}
             <M>{math`\frac{1}{8}`}</M>. Then on the right side <M>{math`-\frac{1}{8}`}</M> and{' '}
             <M>{math`\frac{1}{8}`}</M> will cancel each other out, and only <M>0</M> will remain there:
           </P>
@@ -1422,7 +1422,7 @@ export default defineProse({
       <ProblemSolution>
         <ProblemSection title="Incorrect Solution">
           <P>
-            According to the <Dep to={uniques.sameActionRule}>same action rule</Dep>, multiply both sides of the
+            According to the <Dep on={uniques.sameActionRule}>same action rule</Dep>, multiply both sides of the
             equation by <M>3</M>:
           </P>
 
@@ -1584,7 +1584,7 @@ export default defineProse({
           <B>Confusion with equivalent transformations</B>
         </P>
         <P>
-          Regularly after studying the <Dep to={uniques.sameActionRule}>rule</Dep> of the same action on equations and
+          Regularly after studying the <Dep on={uniques.sameActionRule}>rule</Dep> of the same action on equations and
           equalities students start confusing it with ordinary expression transformations. Consider this example:
         </P>
         <BlockMath>{math`
@@ -1653,7 +1653,7 @@ export default defineProse({
           x - \cancel{5} + \cancel{5} = 8{' '}
         </M>
         . By adding <M>5</M> on the left, we disturbed the balance. Having done something with one part of the equality,
-        the same action must be performed with the other, then it will <Dep to={uniques.sameActionRule}>preserve</Dep>{' '}
+        the same action must be performed with the other, then it will <Dep on={uniques.sameActionRule}>preserve</Dep>{' '}
         its truth. Therefore, add <M>5</M> on the right too: <M>x = 8 + 5</M>. The answer is <M>13</M>.
       </Li>
     </List>
@@ -1740,7 +1740,7 @@ export default defineProse({
 
     <P>
       That's all you need to know. And if the problem asks to find the distance? It means that in the equality above we
-      need <M>S</M> to remain alone. By the <Dep to={uniques.sameActionRule}>rule</Dep> of the same action multiply both
+      need <M>S</M> to remain alone. By the <Dep on={uniques.sameActionRule}>rule</Dep> of the same action multiply both
       sides of the equality by <M>t</M>. Then on the right side <M>t</M> and <M>t</M> will cancel (<M>t : t = 1</M>),
       and only <M>S</M> will remain there:
     </P>
@@ -1858,7 +1858,7 @@ export default defineProse({
 
           <P>
             Now let's solve this equation. We have <M>t</M> on both sides of the equation. Therefore, by the{' '}
-            <Dep to={uniques.sameActionRule}>rule</Dep> of the same action, let's subtract <M>t \cdot 20</M> from both
+            <Dep on={uniques.sameActionRule}>rule</Dep> of the same action, let's subtract <M>t \cdot 20</M> from both
             parts of the equation. On the right, <M>20</M> "t's" will cancel out, and on the left <M>100t - 20t</M> will
             leave <M>80t</M>:
           </P>
@@ -1926,9 +1926,9 @@ export default defineProse({
           `}</BlockMath>
 
           <P>
-            According to the <Dep to={uniques.sameActionRule}>rule</Dep>, let's divide both parts of the equation by
+            According to the <Dep on={uniques.sameActionRule}>rule</Dep>, let's divide both parts of the equation by
             $2$. At the same time, do not forget that on the left, division happens{' '}
-            <Dep to={uniques.alwaysGlobal}>over the entire</Dep> part!
+            <Dep on={uniques.alwaysGlobal}>over the entire</Dep> part!
           </P>
 
           <BlockMath>{math`
@@ -2024,7 +2024,7 @@ export default defineProse({
 
           <P>
             We see that the unknown <M>v</M> is in both parts of the equation. Let's make it stay only in one part, for
-            example, the right one. To do this, by the <Dep to={uniques.sameActionRule}>rule</Dep> of the same action,
+            example, the right one. To do this, by the <Dep on={uniques.sameActionRule}>rule</Dep> of the same action,
             subtract <M>18v</M> from both parts of the equation:
           </P>
 
@@ -2091,7 +2091,7 @@ export default defineProse({
     </List>
 
     <P>
-      And for all of them, naturally, the <Dep to={uniques.sameActionRule}>rule</Dep> of the same action works!
+      And for all of them, naturally, the <Dep on={uniques.sameActionRule}>rule</Dep> of the same action works!
     </P>
 
     <BlockMath>{math`

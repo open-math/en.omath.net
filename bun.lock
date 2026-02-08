@@ -6,7 +6,7 @@
       "name": "@open-math/en.omath.net",
       "dependencies": {
         "@open-math/shared": "open-math/shared",
-        "erudit": "4.1.0",
+        "erudit": "4.1.1",
       },
       "devDependencies": {
         "prettier": "^3.8.1",
@@ -86,11 +86,11 @@
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.1.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ=="],
 
-    "@erudit-js/cli": ["@erudit-js/cli@4.1.0", "", { "dependencies": { "@erudit-js/core": "4.1.0", "chalk": "^5.6.2", "citty": "^0.2.0", "dotenv": "^17.2.3", "http-server": "^14.1.1" } }, "sha512-K+YWYgbUwwBIqObbf00aewFKqj8+cDHfTjmdM/RYlzzOWuIX8wt3756hCUjnEn/mDJyPmByJLIyCxOAtRWhO4Q=="],
+    "@erudit-js/cli": ["@erudit-js/cli@4.1.1", "", { "dependencies": { "@erudit-js/core": "4.1.1", "chalk": "^5.6.2", "citty": "^0.2.0", "dotenv": "^17.2.3", "http-server": "^14.1.1" } }, "sha512-Y9jcZlQtr8XLMPsmfHNMgVQUAlFisJ5oX1DLqu4vAoNWpp4LKHVOoNlVbuW2UntXVcjhvdR+wOS6bHhdmEwNzA=="],
 
-    "@erudit-js/core": ["@erudit-js/core@4.1.0", "", { "dependencies": { "@jsprose/core": "^1.0.0", "gradient-string": "^3.0.0" } }, "sha512-WLJuBaAIZswmtHBLL3H/faVD5visMUi6Pl+WFzfYCENIOf7+o8P56Ws+Rr7iOdmQVUwKLz57S+jp51Acb5TDgQ=="],
+    "@erudit-js/core": ["@erudit-js/core@4.1.1", "", { "dependencies": { "@jsprose/core": "^1.0.0", "gradient-string": "^3.0.0" } }, "sha512-HkK2yfwVx1PSG8V6U5gdzpny9+Gv8sFzpGW4AVInk0vGnuAs5n/jCfBEW5VWjKEUYOoyUgs2DKDPue3oHslaYQ=="],
 
-    "@erudit-js/prose": ["@erudit-js/prose@4.1.0", "", { "dependencies": { "@erudit-js/core": "4.1.0", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "image-size": "^2.0.2", "katex": "^0.16.28", "photoswipe": "^5.4.4", "vue": "^3.5.27" } }, "sha512-mr1qJY0YDAA+NwjHhRPHIZSQIX72fNPPsH6WnYJrLpOZpjCit9WaZKpNPruZASkLV5pHpSTAw6j8x4kWDDLQpQ=="],
+    "@erudit-js/prose": ["@erudit-js/prose@4.1.1", "", { "dependencies": { "@erudit-js/core": "4.1.1", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "image-size": "^2.0.2", "katex": "^0.16.28", "photoswipe": "^5.4.4", "vue": "^3.5.27" } }, "sha512-M2Zx0hJXlGs75W10Z5lrjk0Q9+KfCETAfCEN+BUkQDGSi/fNbJ7tEqi+NBrwDi6PIp8MwdGrljoMf7MrooAdrw=="],
 
     "@esbuild-kit/core-utils": ["@esbuild-kit/core-utils@3.3.2", "", { "dependencies": { "esbuild": "~0.18.20", "source-map-support": "^0.5.21" } }, "sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ=="],
 
@@ -766,7 +766,7 @@
 
     "errx": ["errx@0.1.0", "", {}, "sha512-fZmsRiDNv07K6s2KkKFTiD2aIvECa7++PKyD5NC32tpRw46qZA3sOz+aM+/V9V0GDHxVTKLziveV4JhzBHDp9Q=="],
 
-    "erudit": ["erudit@4.1.0", "", { "dependencies": { "@erudit-js/cli": "4.1.0", "@erudit-js/core": "4.1.0", "@erudit-js/prose": "4.1.0", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "@tailwindcss/vite": "^4.1.18", "better-sqlite3": "^12.6.2", "chalk": "^5.6.2", "chokidar": "^5.0.0", "consola": "^3.4.2", "drizzle-kit": "^0.31.8", "drizzle-orm": "^0.45.1", "esbuild": "^0.27.2", "flexsearch": "^0.8.212", "glob": "^13.0.0", "image-size": "^2.0.2", "jiti": "^2.6.1", "nuxt": "4.3.0", "nuxt-my-icons": "1.2.2", "perfect-debounce": "^2.1.0", "tailwindcss": "^4.1.18", "unslash": "^2.0.0", "vue": "^3.5.27", "vue-router": "^5.0.2" }, "bin": { "erudit": "bin/erudit.js" } }, "sha512-yPoXN5IB+GnCjHtxCCAqmMItQWh+P6QsVZrxOukEj0VuNy53dAxnuzgSK0xUy693QbOObhjdfwpylV68l89mQg=="],
+    "erudit": ["erudit@4.1.1", "", { "dependencies": { "@erudit-js/cli": "4.1.1", "@erudit-js/core": "4.1.1", "@erudit-js/prose": "4.1.1", "@floating-ui/vue": "^1.1.10", "@jsprose/core": "^1.0.0", "@tailwindcss/vite": "^4.1.18", "better-sqlite3": "^12.6.2", "chalk": "^5.6.2", "chokidar": "^5.0.0", "consola": "^3.4.2", "drizzle-kit": "^0.31.8", "drizzle-orm": "^0.45.1", "esbuild": "^0.27.2", "flexsearch": "^0.8.212", "glob": "^13.0.0", "image-size": "^2.0.2", "jiti": "^2.6.1", "nuxt": "4.3.0", "nuxt-my-icons": "1.2.2", "perfect-debounce": "^2.1.0", "tailwindcss": "^4.1.18", "unslash": "^2.0.0", "vue": "^3.5.27", "vue-router": "^5.0.2" }, "bin": { "erudit": "bin/erudit.js" } }, "sha512-9nu8TN43RC77H7BKYglHgPY5qSU4k8RBJMmIdoG2iAmkx2cuGoNzttnqccceg4YgJczHdvqc6rNHq8tdZBac+Q=="],
 
     "es-define-property": ["es-define-property@1.0.1", "", {}, "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g=="],
 

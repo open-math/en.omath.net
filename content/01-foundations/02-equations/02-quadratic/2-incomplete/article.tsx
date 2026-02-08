@@ -37,7 +37,7 @@ export default defineProse({
     <H1>What is it?</H1>
 
     <P>
-      You have already met and learned to recognize <Dep to={whatIsQuadratic}>quadratic equations</Dep>. Now it is time
+      You have already met and learned to recognize <Dep on={whatIsQuadratic}>quadratic equations</Dep>. Now it is time
       to learn how to solve them. Before tackling full quadratic equations of general form, let's start with something
       simpler. Sometimes, a quadratic equation is missing some parts of the general form. Such quadratic equations are
       called incomplete.
@@ -56,7 +56,7 @@ export default defineProse({
       }}
     >
       <P>
-        <Dep to={quadraticEquation}>Quadratic equation</Dep>, in which coefficient <M>B</M> or <M>C</M> or both are
+        <Dep on={quadraticEquation}>Quadratic equation</Dep>, in which coefficient <M>B</M> or <M>C</M> or both are
         zero:
       </P>
 
@@ -144,7 +144,7 @@ export default defineProse({
         <P>
           Whatever coefficient <M>A</M> is, substituting <M>x = 0</M> into the equation literally multiplies it by zero
           and results in a true equality <M>0 = 0</M>. Therefore <M>x = 0</M> -- is the only{' '}
-          <Dep to={equationSolution}>solution to the equation</Dep>.
+          <Dep on={equationSolution}>solution to the equation</Dep>.
         </P>
         <P>{QED}</P>
       </StatementProof>
@@ -154,8 +154,8 @@ export default defineProse({
 
     <P>
       The next type of incomplete quadratic equations -- when coefficient <M>C</M> is zero. To solve them, it's enough
-      to master the <Dep to={sameActionRule}>same action rule</Dep> and the ability to solve equations using the{' '}
-      <Dep to={zeroFactors}>set of factors equal to zero</Dep>.
+      to master the <Dep on={sameActionRule}>same action rule</Dep> and the ability to solve equations using the{' '}
+      <Dep on={zeroFactors}>set of factors equal to zero</Dep>.
     </P>
 
     <Problems title='Quadratic equations when "C" = 0' level="easy">
@@ -177,7 +177,7 @@ export default defineProse({
           </P>
           <BlockMath>x(x + 5) = 0</BlockMath>
           <P>
-            We have already <Dep to={zeroFactors}>solved</Dep> similar equations involving a set of factors equal to
+            We have already <Dep on={zeroFactors}>solved</Dep> similar equations involving a set of factors equal to
             zero. It is enough to find separately for which <M>x</M> each of the factors becomes zero. After all, if at
             least one of them becomes zero, it will be multiplied by all other factors, and the entire left side will
             become zero.
@@ -200,7 +200,7 @@ export default defineProse({
         </ProblemDescription>
         <ProblemCheck label={rootsLabel} answers={[0, 8]} />
         <ProblemHint>
-          Group the x's in one part of the equation using the <Dep to={sameActionRule}>same action rule</Dep>.
+          Group the x's in one part of the equation using the <Dep on={sameActionRule}>same action rule</Dep>.
         </ProblemHint>
         <ProblemAnswer>
           <M>x_1 = 0, \quad x_2 = 8</M>
@@ -312,7 +312,7 @@ export default defineProse({
           x(Ax + B) = 0
         `}</BlockMath>
         <P>
-          We get a <Dep to={zeroFactors}>standard equation form</Dep> with a set of factors on one side and zero on the
+          We get a <Dep on={zeroFactors}>standard equation form</Dep> with a set of factors on one side and zero on the
           other. Such an equation can be split into two sub-equations and solved separately. In the first case, we get
           the obvious root <M>x = 0</M>. In the second case, we get an elementary equation <M>Ax + B = 0</M> and solve
           it for <M>x</M> (since coefficients <M>A</M> and <M>B</M> are known to us).

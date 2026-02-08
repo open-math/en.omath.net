@@ -27,7 +27,7 @@ export default defineProse()(() => (
     `}</Diagram>
     <Hr />
     <P>
-      The <Dep to={sameActionRule}>Same Action Rule</Dep> is, of course, a very powerful tool that allows one to easily
+      The <Dep on={sameActionRule}>Same Action Rule</Dep> is, of course, a very powerful tool that allows one to easily
       handle simple equations by reducing them to the trivial form <M>x = A</M> or <M>A = x</M>. However, there are
       often equations that cannot be simplified to such form:
     </P>
