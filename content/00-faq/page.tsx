@@ -8,7 +8,7 @@ import variantsToDonate from './assets/variants-to-donate.webp';
 export const page = definePage({
   title: 'About "Open Math"',
   description: `
-    Answers to frequently asked questions: what is this site? who is it for?
+    Answers to frequently asked questions: what is this site, who is it for?
     Recommendations for effectively using the site features to learn math.
     If you just arrived at this site, start here.
   `,
@@ -70,7 +70,7 @@ export const content = defineProse({
         <P>
           Many tutors, online schools, and universities create "web textbooks" specifically with free materials. The
           goal is to appear in search engines for math-related queries and advertise their services/courses/training.
-          "Open Math" is <B>NOT</B> and will never <B>BE</B> such a project.
+          "Open Math" is <B>NOT</B> and will <B>never BE</B> such a project.
         </P>
       </Li>
       <Li>
