@@ -1,1 +1,0 @@
-import{_ as s,O as t,Q as n,am as o}from"./DMCot7wp.js";const _={},a={class:"absolute top-0 left-0 h-full w-full"};function c(e,r){return t(),n("div",a,[o(e.$slots,"default")])}const f=Object.assign(s(_,[["render",c]]),{__name:"AsideMinorPane"});export{f as _};
