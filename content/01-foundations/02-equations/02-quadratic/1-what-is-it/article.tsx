@@ -203,9 +203,11 @@ export default defineProse({
     <P>
       As you can see, such equations appear regularly. This is not some unique case. Such equations, in which the
       unknown is raised to the second power, are found everywhere. It is not good when damn gardens, picture frames and
-      simple motion problems can break our equations and lead us to a dead end! We urgently need to figure out how to
-      solve such equations!
+      simple motion problems can break our equations and lead us to a dead end! For now you just remember these
+      bastards. In this topic we leave them unsolved, but we do deal with them later!
     </P>
+
+    <P>Let's focus on ways to 100% identify such problematic equations.</P>
 
     <H1>Quadratic trinomial</H1>
 
