@@ -1,0 +1,1 @@
+const i={__TSPROSE_walkStop:!0},l={};function e(n){return n===i}function u(n){return n===l}function a(n,t){const r=t(n);if(e(r))return i;if(u(r))return;const c=n.children;if(c)for(const s of c){const o=a(s,t);if(e(o))return i}}async function f(n,t){const r=[],c=n.children;if(c)for(const s of c){const o=await f(s,t);if(e(o))return i;r.push(o)}return t(n,r)}export{a,e as i,f as w};

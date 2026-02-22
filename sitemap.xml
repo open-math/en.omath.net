@@ -16,22 +16,22 @@
         <loc>https://en.omath.net/page/faq/</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/page/faq/#goal</loc>
+        <loc>https://en.omath.net/page/faq/?element=goal</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/page/faq/#no-cheating</loc>
+        <loc>https://en.omath.net/page/faq/?element=no-cheating</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/page/faq/#links-to-materials</loc>
+        <loc>https://en.omath.net/page/faq/?element=links-to-materials</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/page/faq/#how-to-learn</loc>
+        <loc>https://en.omath.net/page/faq/?element=how-to-learn</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/page/faq/#how-to-support-the-project</loc>
+        <loc>https://en.omath.net/page/faq/?element=how-to-support-the-project</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/page/faq/#who-is-in-charge-here</loc>
+        <loc>https://en.omath.net/page/faq/?element=who-is-in-charge-here</loc>
     </url>
     <url>
         <loc>https://en.omath.net/book/foundations/</loc>
@@ -49,49 +49,73 @@
         <loc>https://en.omath.net/practice/foundations/equations/elementary/</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#equality</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=equality</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#equality-false-true</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=equality-false-true</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#equalities-in-real-life</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=equalities-in-real-life</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#equation</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=equation</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#equation-solution</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=equation-solution</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#same-action-rule</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=same-action-rule</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#solving-elementary-equations</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=elementary-equations</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#common-mistakes</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=common-mistakes</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#why-solve-equations-1</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=why-solve-equations</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#triangle-of-formulas</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=the-idiot-s-triangle</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/elementary/#equations-in-life</loc>
+        <loc>https://en.omath.net/article/foundations/equations/elementary/?element=equations-in-life</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/practice/foundations/equations/elementary/#linear-root</loc>
+        <loc>https://en.omath.net/practice/foundations/equations/elementary/?element=linear-root</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/practice/foundations/equations/elementary/#logic-of-solving-equations</loc>
+        <loc>https://en.omath.net/practice/foundations/equations/elementary/?element=logic-of-solving-equations</loc>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/equivalence/</loc>
     </url>
     <url>
         <loc>https://en.omath.net/group/foundations/equations/quadratic/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/completing-the-square/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/summary/foundations/equations/quadratic/completing-the-square/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/practice/foundations/equations/quadratic/completing-the-square/</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/completing-the-square/?element=what-is-it</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/completing-the-square/?element=why-bother</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/completing-the-square/?element=completing-with-incomplete-terms</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/completing-the-square/?element=solving-quadratic-equations</loc>
+    </url>
+    <url>
+        <loc>https://en.omath.net/summary/foundations/equations/quadratic/completing-the-square/?element=process-visualization</loc>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/</loc>
@@ -103,16 +127,16 @@
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/incomplete/</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/#quadratic-missing-terms</loc>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/?element=quadratic-missing-terms</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/#solving-such-equations</loc>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/incomplete/?element=solving-incomplete-quadratic-equations</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/summary/foundations/equations/quadratic/incomplete/#all-formulas</loc>
+        <loc>https://en.omath.net/summary/foundations/equations/quadratic/incomplete/?element=all-formulas</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/practice/foundations/equations/quadratic/incomplete/#solving-incomplete-equations</loc>
+        <loc>https://en.omath.net/practice/foundations/equations/quadratic/incomplete/?element=solving-incomplete-equations</loc>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/</loc>
@@ -124,15 +148,15 @@
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/what-is-it/</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/#problematic-equations</loc>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/?element=problematic-equations</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/#quadratic-trinomial</loc>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/?element=quadratic-trinomial</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/#quadratic-equation</loc>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/?element=quadratic-equation</loc>
     </url>
     <url>
-        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/#quadratic-or-not</loc>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/?element=quadratic-or-not</loc>
     </url>
 </urlset>

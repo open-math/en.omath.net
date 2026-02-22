@@ -1,10 +1,19 @@
-// utils/letter.ts
+// node_modules/@open-math/shared/dist/utils/letter.js
 function getRandomLatinLetter(random, casing = "any") {
   const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
   const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const letters = casing === "lower" ? lowerLetters : casing === "upper" ? upperLetters : lowerLetters + upperLetters;
   return random.arrayElement(letters.split(""));
 }
+
+// node_modules/@open-math/shared/dist/utils/qed.js
+var _jsx = globalThis["_jsx"];
+var P2 = globalThis["P"];
+var M2 = globalThis["M"];
+
+// node_modules/@open-math/shared/dist/utils/roots.js
+var _jsx2 = globalThis["_jsx"];
+var ProblemCheck = globalThis["ProblemCheck"];
 
 // jsx-runtime-shim:jsx-runtime-shim
 var jsx = globalThis.jsx;
