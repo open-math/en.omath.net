@@ -1,3 +1,5 @@
+import { RootsCheck } from '#project/utils/roots';
+
 export default defineProblemScript({
   isGenerator: true,
 })(({ random }) => {
@@ -70,6 +72,10 @@ export default defineProblemScript({
     }
   }
 
+  const plainRoot = root
+    .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '$1/$2')
+    .replace(/^-?\\frac/, (m) => (m.includes('-') ? '-' : ''));
+
   return {
     problemContent: (
       <>
@@ -77,12 +83,7 @@ export default defineProblemScript({
           <P>Solve the equation using the previously derived general formula:</P>
           <BlockMath>{equation}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck
-          label="Root of the equation"
-          answer={root
-            .replace(/\\frac\{([^}]+)\}\{([^}]+)\}/g, '$1/$2')
-            .replace(/^-?\\frac/, (m) => (m.includes('-') ? '-' : ''))}
-        />
+        <RootsCheck root={plainRoot} />
         <ProblemAnswer>
           <BlockMath>{root}</BlockMath>
         </ProblemAnswer>

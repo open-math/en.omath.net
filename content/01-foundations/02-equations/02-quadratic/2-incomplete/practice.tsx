@@ -1,6 +1,7 @@
-import { QED } from '#project/utils/qed';
+import { QED } from '@open-math/shared/utils';
+import { RootsCheck } from '#project/utils/roots';
 
-import article, { hasRootsLabel, rootsLabel } from './article';
+import article from './article';
 import summary from './summary';
 
 // #region Links
@@ -117,7 +118,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>x^2 + x = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, -1]} />
+        <RootsCheck roots={[0, -1]} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>-1</M>.
         </ProblemAnswer>
@@ -143,7 +144,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>3y=7y^2</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, '3/7']} />
+        <RootsCheck roots={[0, '3/7']} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>{math`\dfrac{3}{7}`}</M>.
         </ProblemAnswer>
@@ -171,7 +172,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`0=-\frac{18}{\sqrt{3}}z^2 -\frac{9}{\sqrt{3}}z`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, ['-1/2', -0.5]]} />
+        <RootsCheck roots={[0, ['-1/2', -0.5]]} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>{math`-\dfrac{1}{2}`}</M>.
         </ProblemAnswer>
@@ -207,7 +208,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`\frac{1}{2}t + t^2 = -9t^2 - \frac{2}{4}t`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, ['-1/10', -0.1]]} />
+        <RootsCheck roots={[0, ['-1/10', -0.1]]} />
         <ProblemAnswer>
           Equation roots: <M>0</M> and <M>{math`-\dfrac{1}{10}`}</M>.
         </ProblemAnswer>
@@ -234,7 +235,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`0=\frac{\sqrt{2}}{999}x^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answer={0} />
+        <RootsCheck root={0} />
         <ProblemAnswer>
           The equation has only one root: <M>0</M>.
         </ProblemAnswer>
@@ -248,9 +249,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>x^2 - 100 = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} yes>
-          <ProblemCheck label={rootsLabel} answers={[10, -10]} />
-        </ProblemCheck>
+        <RootsCheck has roots={[10, -10]} />
         <ProblemAnswer>
           Equation roots: <M>10</M> and <M>-10</M>.
         </ProblemAnswer>
@@ -274,9 +273,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>0 = 9r^2 - 16</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} yes>
-          <ProblemCheck label={rootsLabel} answers={['-4/3', '4/3']} />
-        </ProblemCheck>
+        <RootsCheck has roots={['-4/3', '4/3']} />
         <ProblemAnswer>
           Equation roots: <M>{math`\dfrac{4}{3}`}</M> and <M>{math`-\dfrac{4}{3}`}</M>.
         </ProblemAnswer>
@@ -307,7 +304,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`\frac{64}{\sqrt{111}} + \frac{16}{\sqrt{111}}j^2 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} no />
+        <RootsCheck empty />
         <ProblemAnswer>The equation has no roots.</ProblemAnswer>
         <ProblemSolution>
           <P>Using the same action rule, we get rid of the term without a variable:</P>
@@ -342,9 +339,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`\frac{21}{4}m^2 - 10 = 6 - 7m^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} yes>
-          <ProblemCheck label={rootsLabel} answers={['8/7', '-8/7']} />
-        </ProblemCheck>
+        <RootsCheck has roots={['8/7', '-8/7']} />
         <ProblemAnswer>
           Equation roots: <M>{math`\dfrac{8}{7}`}</M> and <M>{math`-\dfrac{8}{7}`}</M>.
         </ProblemAnswer>
@@ -377,9 +372,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>(30k + 2)k + 42k^2 = 72 + 2k</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} yes>
-          <ProblemCheck label={rootsLabel} answers={[1, -1]} />
-        </ProblemCheck>
+        <RootsCheck has roots={[1, -1]} />
         <ProblemAnswer>
           Equation roots: <M>1</M> and <M>-1</M>.
         </ProblemAnswer>
@@ -448,7 +441,7 @@ export default defineProse()(() => (
           <P>
             Consider all possible variants of signs of <M>C</M> and <M>A</M>.
           </P>
-          <List type="ul">
+          <List unordered>
             <Li>
               <P>
                 <M>C</M> and <M>A</M> are both positive numbers. Then their quotient is also a positive number.
@@ -486,7 +479,7 @@ export default defineProse()(() => (
           <P>{QED}</P>
         </ProblemSection>
         <ProblemSection title="Checking for Solutions">
-          <List type="ol">
+          <List ordered>
             <Li>
               Coefficients <M>3</M> and <M>5</M>. Signs are the same. No solutions.
             </Li>
@@ -515,7 +508,7 @@ export default defineProse()(() => (
         will begin. What is the maximum distance from the central axis that a point on the beam can reach without
         deforming?
       </ProblemDescription>
-      <ProblemCheck label={rootsLabel} answer={4} />
+      <RootsCheck root={4} />
       <ProblemHint>Write down the equation to find the critical deflection of the beam and solve it.</ProblemHint>
       <ProblemAnswer>
         The maximum must be no more than <M>4</M>.

@@ -1,4 +1,5 @@
-import { QED } from '#project/utils/qed';
+import { QED } from '@open-math/shared/utils';
+import { RootsCheck } from '#project/utils/roots';
 
 // #region Links
 //
@@ -21,9 +22,6 @@ const zeroFactors = $CONTENT.foundations.equations.elementary.practice.$zeroFact
 
 //
 // #endregion
-
-export const hasRootsLabel = 'Has solutions?';
-export const rootsLabel = 'Equation roots';
 
 export default defineProse({
   uniques: {
@@ -48,7 +46,7 @@ export default defineProse({
       title="Incomplete quadratic equation"
       snippet={{
         search: true,
-        quick: true,
+        key: true,
         seo: 'What is an incomplete quadratic equation?',
         description: `
           A quadratic equation in which coefficient B or C or both are zero.
@@ -86,7 +84,7 @@ export default defineProse({
 
     <H1
       snippet={{
-        quick: true,
+        key: true,
         seo: 'How to solve incomplete quadratic equations?',
         title: 'Solving such equations',
         description: `
@@ -164,7 +162,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>x^2 + 5x = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, -5]} />
+        <RootsCheck roots={[0, -5]} />
         <ProblemHint>
           Factor <M>x</M> out.
         </ProblemHint>
@@ -198,7 +196,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>8x=x^2</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, 8]} />
+        <RootsCheck roots={[0, 8]} />
         <ProblemHint>
           Group the x's in one part of the equation using the <Dep on={sameActionRule}>same action rule</Dep>.
         </ProblemHint>
@@ -224,7 +222,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>2x^2 - 7x = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, [3.5, '7/2']]} />
+        <RootsCheck roots={[0, [3.5, '7/2']]} />
         <ProblemAnswer>
           <M>{math`x_1 = 0, \quad x_2 = \dfrac{7}{2}`}</M>
         </ProblemAnswer>
@@ -251,7 +249,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{2}{7}x - \frac{1}{35}x^2 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={rootsLabel} answers={[0, -10]} />
+        <RootsCheck roots={[0, -10]} />
         <ProblemAnswer>
           <M>{math`x_1 = 0, \quad x_2 = -10`}</M>
         </ProblemAnswer>
@@ -353,9 +351,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>2x^2 - 18 = 0</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} yes>
-          <ProblemCheck label={rootsLabel} answers={[-3, 3]} />
-        </ProblemCheck>
+        <RootsCheck has roots={[-3, 3]} />
         <ProblemHint>
           Isolate <M>x^2</M> on the left side of the equation. Then use the understanding of what a square root is.
         </ProblemHint>
@@ -385,7 +381,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`5=-\frac{1}{20}x^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} no />
+        <RootsCheck empty />
         <ProblemHint>
           To leave <M>x^2</M> alone in the right part, multiply both parts of the equation by <M>-20</M>.
         </ProblemHint>
@@ -413,9 +409,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{x^2}{4} - 9 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} yes>
-          <ProblemCheck label={rootsLabel} answers={[-6, 6]} />
-        </ProblemCheck>
+        <RootsCheck has roots={[-6, 6]} />
         <ProblemHint>
           Multiply both parts of the equation by <M>4</M> to get rid of the fraction. Then isolate <M>x^2</M> and
           extract the square root.
@@ -447,7 +441,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`0 = - 3x^2 - 12`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} no />
+        <RootsCheck empty />
         <ProblemAnswer>
           <M>x_1 = -2, \quad x_2 = 2</M>
         </ProblemAnswer>
@@ -478,7 +472,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x^2 = 3`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={hasRootsLabel} yes />
+        <ProblemCheck label="Has roots?" yes />
         <ProblemHint>Please note that the answer is not always beautiful...</ProblemHint>
         <ProblemAnswer>
           <M>{math`x_1 = -\sqrt{3}, \quad x_2 = \sqrt{3}`}</M>

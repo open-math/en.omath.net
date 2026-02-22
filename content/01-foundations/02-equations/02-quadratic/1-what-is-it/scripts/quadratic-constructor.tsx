@@ -1,4 +1,4 @@
-import { getRandomLatinLetter } from '#project/utils/letter';
+import { getRandomLatinLetter } from '@open-math/shared/utils';
 
 export default defineProblemScript({
   isGenerator: true,

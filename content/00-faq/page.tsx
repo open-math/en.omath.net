@@ -45,7 +45,7 @@ export const content = defineProse({
       $={uniques.goal}
       title='Goal of "Open Math"'
       snippet={{
-        quick: 'Project goal',
+        key: 'Project goal',
         seo: 'Goal of "Open Math"',
         description: `
           To become the ideal and unified resource for self-study of mathematics.
@@ -62,7 +62,7 @@ export const content = defineProse({
 
     <P>Key project principles:</P>
 
-    <List type="ul" $={uniques._principles}>
+    <List unordered $={uniques._principles}>
       <Li>
         <P>
           <B>This is not an ad.</B>
@@ -79,7 +79,8 @@ export const content = defineProse({
         </P>
         <P>
           No "trial periods", paid subscriptions, or other bullshit. All project materials are always available to
-          anyone. We <B accent>smash obstacles</B> to access knowledge, not create new ones.
+          anyone. No "it's free, just register to see the content (so we could flood your email with ads)" dump
+          nonsense. We <B accent>smash obstacles</B> to access knowledge, not create new ones.
         </P>
       </Li>
       <Li>
@@ -109,7 +110,7 @@ export const content = defineProse({
     <P
       $={uniques.noCheating}
       snippet={{
-        quick: true,
+        key: true,
         seo: '"Open Math" is not a cheat sheet!',
         title: 'This is not a cheat sheet!',
         description: `
@@ -147,7 +148,7 @@ export const content = defineProse({
 
     <H1
       snippet={{
-        quick: 'Links anywhere',
+        key: 'Links anywhere',
         description: `
           You can link not only to the page entirely, but to any element inside it!
         `,
@@ -171,7 +172,7 @@ export const content = defineProse({
     <H1
       $={uniques.howToLearn}
       snippet={{
-        quick: 'How to learn?',
+        key: 'How to learn?',
         description: `
           Theory (Understand) → Summary (Memorize) → Practice (Consolidate).
           Solve all problems.
@@ -198,7 +199,7 @@ export const content = defineProse({
       <Caption>"Open Math" topics structure</Caption>
     </Diagram>
 
-    <List type="ol">
+    <List ordered>
       <Li>
         <B>Article.</B> A detailed and interesting narrative. Its goal is to convey the material to you in every way
         possible: through examples, different formulations, jokes, and so on. At this stage, you just immerse yourself
@@ -217,7 +218,7 @@ export const content = defineProse({
     </List>
 
     <Details $={uniques._morePracticeAdvices} title="More practice tips">
-      <List type="ul">
+      <List unordered>
         <Li>
           So you (think you have) solved the problem. Follow the chain of buttons under the problem, from left to right:
           "Check" → "Hint" → "Answer" → "Solution". Do not rush to open, for example, "Answer" immediately. First, try
@@ -267,7 +268,7 @@ export const content = defineProse({
 
     <H1
       snippet={{
-        quick: 'Support the project!',
+        key: 'Support the project!',
         description: `Help us become even better! Suggest content or make a donation.`,
       }}
     >
@@ -293,7 +294,7 @@ export const content = defineProse({
       <B>Help make the best math content! 🤝</B>
     </P>
 
-    <H1 snippet={{ quick: 'How to contact?' }}>Who is in charge here?</H1>
+    <H1 snippet={{ key: 'How to contact?' }}>Who is in charge here?</H1>
 
     <P>
       "The Boss" is Peter Radko. I developed the engine of this site (and many of its previous iterations), and also

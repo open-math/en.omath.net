@@ -28,7 +28,7 @@ export default defineProse({
       toc
       snippet={{
         search: true,
-        quick: 'General formulas',
+        key: 'General formulas',
         seo: 'General formulas for solving incomplete quadratic equations',
         title: 'General formulas for incomplete quadratic equations',
         description: `

@@ -1,4 +1,5 @@
-import { QED } from '#project/utils/qed';
+import { QED } from '@open-math/shared/utils';
+import { RootsCheck } from '#project/utils/roots';
 
 // #region Media
 //
@@ -1470,7 +1471,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{6}{x^2 - 19} = 1`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Roots of the equation" answers={[5, -5]} />
+        <RootsCheck roots={[5, -5]} />
         <ProblemHint>
           Think about how to get rid of <M>x^2 - 19</M> in the denominator with one action. What to multiply both sides
           of the equation by?
@@ -1671,7 +1672,7 @@ export default defineProse({
       title="Linear equations formula"
       level="medium"
       snippet={{
-        quick: true,
+        key: true,
         search: true,
         description: `
           Formula by which you can very quickly find the root of any equation of the form Ax + B = 0.
@@ -1743,7 +1744,7 @@ export default defineProse({
             We get an interesting situation. The variable <M>x</M> completely "leaves" the equation and we simply get
             the equality <M>B = 0</M>. And here there are two options:
           </P>
-          <List type="ol">
+          <List ordered>
             <Li>
               <P>
                 If <M>B</M> is indeed equal to <M>0</M>, then we get a true equality <M>0 = 0</M> regardless of what we
@@ -1772,7 +1773,7 @@ export default defineProse({
         <BlockMath>{math`ax^2 + bx + c = y^3 - t`}</BlockMath>
         <P>Now let's take and simply swap the left and right sides of the equality:</P>
         <BlockMath>{math`y^3 - t = ax^2 + bx + c`}</BlockMath>
-        <List type="ol">
+        <List ordered>
           <Li>Strictly prove that any equality can be reversed and it will remain true.</Li>
           <Li>
             Strictly prove that any equality can be reversed using the <Dep on={sameActionRule}>same action rule</Dep>.
@@ -1996,7 +1997,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`(x + 3)(x - 2) = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" answers={[2, -3]} />
+        <RootsCheck roots={[2, -3]} />
         <ProblemHint>
           If we can make at least one of the factors equal to zero, then the whole product will become zero.
         </ProblemHint>
@@ -2066,7 +2067,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`x(x + 7)(x - 11) = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" answers={[0, -7, 11]} />
+        <RootsCheck roots={[0, -7, 11]} />
         <ProblemHint>
           Here there are three factors, so there are three sub-equations, and thus three solutions to the original
           equation.
@@ -2096,7 +2097,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`10(x+3)(2x-8)(8x+1) = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" answers={[-3, 4, [-0.125, '-1/8']]} />
+        <RootsCheck roots={[-3, 4, [-0.125, '-1/8']]} />
         <ProblemHint>
           Get rid of <M>10</M>, then solve the sub-equations for each factor.
         </ProblemHint>
@@ -2174,7 +2175,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`0 = (x^2 - 4)(x + 1)`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" answers={[-2, 2, -1]} />
+        <RootsCheck roots={[-2, 2, -1]} />
         <ProblemHint>Two factors on the right side lead to two sub-equations.</ProblemHint>
         <ProblemHint>The first sub-equation has two roots.</ProblemHint>
         <ProblemAnswer>
@@ -2210,7 +2211,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`\frac{\left(x + \frac{1}{2}\right)x}{17} = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" answers={[0, [-0.5, '-1/2']]} />
+        <RootsCheck roots={[0, [-0.5, '-1/2']]} />
         <ProblemHint>
           First, get rid of the denominator <M>17</M>. Then solve the sub-equations for each factor.
         </ProblemHint>
@@ -2250,7 +2251,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`(x+11)(x-1) + 12 = 12`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" answers={[-11, 1]} />
+        <RootsCheck roots={[-11, 1]} />
         <ProblemHint>
           Think about how you can get rid of <M>12</M> on both sides of the equation in one action.
         </ProblemHint>
@@ -2285,7 +2286,7 @@ export default defineProse({
           <P>Solve the equation:</P>
           <BlockMath>{math`7x^2 = 42x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Equation roots" answers={[0, 6]} />
+        <RootsCheck roots={[0, 6]} />
         <ProblemHint>Simplify the equation.</ProblemHint>
         <ProblemHint>Group the x's on one side, for example, on the left.</ProblemHint>
         <ProblemHint>Factor out the common factor.</ProblemHint>
@@ -2904,7 +2905,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`3x + 2 = x`}</BlockMath>
           <P>Actions:</P>
-          <List type="ol">
+          <List ordered>
             <Li>
               Group <M>x</M> on the left side of the equation.
             </Li>
@@ -2962,7 +2963,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`7x - 2 = 5x + 10`}</BlockMath>
           <P>Actions:</P>
-          <List type="ol">
+          <List ordered>
             <Li>
               Group <M>x</M> on the left side of the equation.
             </Li>
@@ -3019,7 +3020,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x = 8x - 3`}</BlockMath>
           <P>Actions:</P>
-          <List type="ol">
+          <List ordered>
             <Li>
               Group <M>x</M> on the left side of the equation.
             </Li>
@@ -3038,7 +3039,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`11 + 9x = 20x`}</BlockMath>
           <P>Actions:</P>
-          <List type="ol">
+          <List ordered>
             <Li>
               Group <M>x</M> on the left side of the equation.
             </Li>
@@ -3057,7 +3058,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`3x + 2 = 5x - 10`}</BlockMath>
           <P>Actions:</P>
-          <List type="ol">
+          <List ordered>
             <Li>
               Group <M>x</M> on the left side of the equation.
             </Li>
@@ -3076,7 +3077,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`76x + 10 = 46x - 12`}</BlockMath>
           <P>Actions:</P>
-          <List type="ol">
+          <List ordered>
             <Li>
               Group <M>x</M> on the left side of the equation.
             </Li>
@@ -3719,7 +3720,7 @@ export default defineProse({
           equality after each step of transformations.
         </P>
         <P>If as a result of transformations we arrived at a false equality, then this can mean two things:</P>
-        <List type="ol">
+        <List ordered>
           <Li>We made a mistake in the chain of transformations.</Li>
           <Li>
             Our initial assumption that the equation has a solution was incorrect, and in fact it has no solutions.

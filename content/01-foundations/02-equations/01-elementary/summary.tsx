@@ -31,7 +31,7 @@ export default defineProse()(() => (
       <M>{math`x = \ldots`}</M>
     </P>
 
-    <List type="ul">
+    <List unordered>
       <Li>
         <P>
           <B>Addition</B> is neutralized by <B>subtraction</B> and vice versa, to get <M>0</M>:

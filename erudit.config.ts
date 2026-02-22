@@ -4,7 +4,7 @@ import {
   defaultElements,
   defaultCountElements,
   sharedPublicAugmentation,
-} from '@open-math/shared/index';
+} from '@open-math/shared/config';
 
 export default defineEruditConfig({
   language: {

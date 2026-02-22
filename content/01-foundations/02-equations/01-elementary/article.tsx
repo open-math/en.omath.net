@@ -1,4 +1,4 @@
-import { QED } from '#project/utils/qed';
+import { QED } from '@open-math/shared/utils';
 
 // #region Media
 //
@@ -102,7 +102,7 @@ export default defineProse({
       written in an infinite number of different ways:
     </P>
 
-    <List type="ul">
+    <List unordered>
       <Li>
         <M>3</M>
       </Li>
@@ -135,7 +135,7 @@ export default defineProse({
       $={uniques.equality}
       title="Equality"
       snippet={{
-        quick: true,
+        key: true,
         search: ['Equals'],
         seo: 'What is equality?',
         description: `
@@ -166,7 +166,7 @@ export default defineProse({
       there. Therefore, equalities are divided into two categories: true and false.
     </P>
 
-    <List type="ol">
+    <List ordered>
       <Li>
         <B>True</B> equality is an equality in which expressions to the left and right of the equals sign denote the
         same object.
@@ -180,7 +180,7 @@ export default defineProse({
     <Diagram
       $={uniques.equalityFalseTrue}
       snippet={{
-        quick: true,
+        key: true,
         search: ['True equality', 'False equality'],
         title: 'True and false equality',
         description: `
@@ -277,7 +277,7 @@ export default defineProse({
       $={uniques.equation}
       title="Equation"
       snippet={{
-        quick: true,
+        key: true,
         search: true,
         seo: 'What is an equation?',
         description: `
@@ -344,7 +344,7 @@ export default defineProse({
       $={uniques.equationSolution}
       title="Solving an Equation"
       snippet={{
-        quick: true,
+        key: true,
         search: ['Root of equation'],
         seo: 'What does it mean to solve an equation?',
         description: `
@@ -526,7 +526,7 @@ export default defineProse({
       $={uniques.sameActionRule}
       title="Same Action Rule"
       snippet={{
-        quick: true,
+        key: true,
         search: true,
         description: `
           If the same action is performed on both sides of a true equality, the resulting equality will also be true.
@@ -1164,7 +1164,7 @@ export default defineProse({
 
           <P> So, to solve this equation we needed three consecutive actions:</P>
 
-          <List type="ol">
+          <List ordered>
             <Li>
               Subtracting <M>x</M>
             </Li>
@@ -1224,7 +1224,7 @@ export default defineProse({
 
           <P>So, to solve this equation we needed two consecutive actions:</P>
 
-          <List type="ol">
+          <List ordered>
             <Li>
               Multiplying by <M>8</M>
             </Li>
@@ -1502,10 +1502,10 @@ export default defineProse({
     </P>
 
     <List
-      type="ul"
+      unordered
       $={uniques.commonMistakes}
       snippet={{
-        quick: true,
+        key: true,
         search: true,
         title: 'Mistakes when solving equations',
         seo: 'Common mistakes when solving equations',
@@ -1641,7 +1641,7 @@ export default defineProse({
       Compare two approaches when solving the equation <M>x - 5 = 8</M>:
     </P>
 
-    <List type="ol">
+    <List ordered>
       <Li>
         We dance with a tambourine, jump over a fire three times and move <M>-5</M> to the right with the opposite sign.
         We get <M>x = 8 + 5</M>. The answer is <M>13</M>. And why and how it happened, don't even think...
@@ -1677,7 +1677,7 @@ export default defineProse({
 
     <H1
       snippet={{
-        quick: true,
+        key: true,
         description: `
           A set of examples requiring the ability to solve equations to work with.
         `,
@@ -1695,7 +1695,7 @@ export default defineProse({
 
     <H2
       snippet={{
-        quick: true,
+        key: true,
         search: ['Magic triangle'],
         title: 'Triangle of Formulas',
         seo: 'Magic triangle of formulas',
@@ -1798,7 +1798,7 @@ export default defineProse({
     <H2
       snippet={{
         search: true,
-        quick: true,
+        key: true,
         seo: 'Where are equations used in life?',
         description: `
           A selection of problems and situations from real life that can be solved if translated into equations.
@@ -2082,7 +2082,7 @@ export default defineProse({
       and division. But in mathematics there is a huge variety of other actions:
     </P>
 
-    <List type="ul">
+    <List unordered>
       <Li>Exponentiation</Li>
       <Li>Root extraction</Li>
       <Li>Taking logarithm</Li>

@@ -71,7 +71,7 @@ export default defineProse({
       $={uniques.problematicEquations}
       snippet={{
         search: true,
-        quick: true,
+        key: true,
         title: 'Quadratic equations in real life',
         description: `
           Examples of various real-life situations that boil down to quadratic equations.
@@ -217,7 +217,7 @@ export default defineProse({
       approach has serious drawbacks:
     </P>
 
-    <List type="ol">
+    <List ordered>
       <Li>
         <P>
           <B>There may be no square, but the equation is still quadratic!</B>
@@ -263,7 +263,7 @@ export default defineProse({
       $={uniques.quadraticTrinomial}
       title="Quadratic trinomial"
       snippet={{
-        quick: true,
+        key: true,
         search: true,
         description: `
           Polynomial with the maximum power of the variable equal to two.
@@ -286,7 +286,7 @@ export default defineProse({
       `}</BlockMath>
     </Term>
 
-    <List type="ul">
+    <List unordered>
       <Li>
         <P>
           <B>Why quadratic?</B>
@@ -328,7 +328,7 @@ export default defineProse({
       $={uniques.quadraticEquation}
       title="Quadratic equation"
       snippet={{
-        quick: true,
+        key: true,
         search: true,
         description: `
           Any equation that can be reduced to the form of a quadratic trinomial by transformations without losing roots.
@@ -379,7 +379,7 @@ export default defineProse({
         <B accent>do not matter</B>!
       </P>
 
-      <List type="ol">
+      <List ordered>
         <Li>
           Coefficient <M>A</M> <B accent>always stands</B> next to <M>x^2</M>.
         </Li>
@@ -711,7 +711,7 @@ export default defineProse({
       things? There are two reasons for this:
     </P>
 
-    <List type="ol">
+    <List ordered>
       <Li>Now we can decide for certain which equations are quadratic and which are not.</Li>
       <Li>
         We defined key terms that will be used to create formulas for solving quadratic equations and discovering their
