@@ -329,12 +329,8 @@ export default defineProse()(() => (
               x^2 - 2\cdot x\cdot \frac{11}{2}
             `}</BlockMath>
             <P>
-              For a complete square, we are missing{' '}
-              <M>
-                \left(\frac{11}
-                {2}\right)^2
-              </M>
-              . Let's add and subtract it:
+              For a complete square, we are missing <M>{math`\left(\frac{11}{2}\right)^2`}</M>. Let's add and subtract
+              it:
             </P>
             <BlockMath>{math`
               x^2 - 2\cdot x\cdot \frac{11}{2} + \yellow{\left(\frac{11}{2}\right)^2} - \yellow{\left(\frac{11}{2}\right)^2}
@@ -351,12 +347,8 @@ export default defineProse()(() => (
               t^2 + 2\cdot t\cdot \frac{5}{2} - 6
             `}</BlockMath>
             <P>
-              For the square of the sum, we are missing{' '}
-              <M>
-                \left(\frac{5}
-                {2}\right)^2
-              </M>
-              . Let's add and subtract it:
+              For the square of the sum, we are missing <M>{math`\left(\frac{5}{2}\right)^2`}</M>. Let's add and
+              subtract it:
             </P>
             <BlockMath>{math`
               t^2 + 2\cdot t\cdot \frac{5}{2} + \yellow{\left(\frac{5}{2}\right)^2} - \yellow{\left(\frac{5}{2}\right)^2} - 6
@@ -379,12 +371,8 @@ export default defineProse()(() => (
               (3x)^2 - 2\cdot 3x\cdot \frac{5}{6} + 7
             `}</BlockMath>
             <P>
-              For the square of the difference, we are missing{' '}
-              <M>
-                \left(\frac{5}
-                {6}\right)^2
-              </M>
-              . Let's add and subtract it:
+              For the square of the difference, we are missing <M>{math`\left(\frac{5}{6}\right)^2`}</M>. Let's add and
+              subtract it:
             </P>
             <BlockMath>{math`
               (3x)^2 - 2\cdot 3x\cdot \frac{5}{6} + \yellow{\left(\frac{5}{6}\right)^2} - \yellow{\left(\frac{5}{6}\right)^2} + 7
@@ -668,7 +656,7 @@ export default defineProse()(() => (
         After such a long journey, it's finally time to deal with{' '}
         <Ref to={$CONTENT.foundations.equations.quadratic.whatIsIt.article.$problematicEquations}>
           real-life situations
-        </Ref>
+        </Ref>{' '}
         where quadratic equations arise. Solve each of these problems.
       </P>
       <SubProblem label="The Naughty Garden">
@@ -737,8 +725,7 @@ export default defineProse()(() => (
           <BlockMath>v^2 + 2v - 120 = 0</BlockMath>
           <P>
             Here we can complete the square almost instantly. There is already a <M>2</M> in the middle term, so we just
-            need a<M>1</M> as
-            <M>b^2</M>. Add it and immediately subtract it:
+            need a<M>1</M> as <M>b^2</M>. Add it and immediately subtract it:
           </P>
           <BlockMath>v^2 + 2v + 1 - 1 - 120 \\ (v + 1)^2 - 121 = 0 \\ (v + 1)^2 = 121</BlockMath>
           <P>

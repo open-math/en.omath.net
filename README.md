@@ -54,10 +54,14 @@ bun launch
 
 After that you can see the local project site on adress: http://localhost:3000
 
-When you fill you are ready, just create a pull request with your changes.
+Alternatively, you can use `bun run dev` command to launch the project in development mode, which will automatically rebuild the project on every content change.
+The result is the same, but the site might react slower to changes.
+
+When you feel you are ready, just create a pull request with your changes.
 
 ## Technologies used
 
-All "Open Math" content is written using [JSX](https://www.typescriptlang.org/docs/handbook/jsx.html) syntax, which is just a syntax sugar for writing content in XML-like markup. All JSX content is handled via [`@jsprose/core`](https://github.com/jsprose/core) package. It translates all tags to plain data objects, collects toc/search/unique elements and etc.
+All "Open Math" content is written using [TSX](https://www.typescriptlang.org/docs/handbook/jsx.html) syntax, which is just a syntax sugar for writing content in XML-like markup inside TypeScript files.
+This TSX content is handled via [`tsprose`](https://github.com/Gwynerva/tsprose) package. It transforms all tags to plain data objects, collects toc/search/unique elements and etc.
 
 The [Erudit](https://github.com/erudit-js/erudit) CMS handles everything else: watching content changes, building frontend, providing default prose tags and many many more...

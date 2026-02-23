@@ -89,7 +89,7 @@ export const content = defineProse({
         </P>
         <P>
           Authors are everyone who has written or proposed decent content. If you have something to add: an interesting
-          problem, a real-life example, a clearer explanation — don't keep it to yourself,{' '}
+          problem, a real-life example, a clearer explanation -- don't keep it to yourself,{' '}
           <Ref to="/contributors/">make</Ref> "Open Math" even better!
         </P>
       </Li>
@@ -119,7 +119,7 @@ export const content = defineProse({
         `,
       }}
     >
-      For those who love to cheat — <B>"Open Math" is not a solutions manual!</B> You can quickly peek at formulas in
+      For those who love to cheat -- <B>"Open Math" is not a solutions manual!</B> You can quickly peek at formulas in
       Summaries, verify answers to problems in Practicums. But you won't find any "homework answers pdf" or "math
       answers for grade 7". Our goal is to teach you to understand the material yourself, derive formulas, and solve
       problems, not to give ready-made answers!
@@ -212,8 +212,8 @@ export const content = defineProse({
       <Li>
         <B>Practice.</B> Various problems that will teach you to correctly apply theory in practice. Try to solve
         everything, even "sub-problems" (they get trickier the further you go)! If you couldn't solve a problem and
-        looked at the solution — definitely solve it again immediately and then again the next day! There are more tips,{' '}
-        <Ref to={uniques._morePracticeAdvices}>but not all fit</Ref>...
+        looked at the solution -- definitely solve it again immediately and then again the next day! There are more
+        tips, <Ref to={uniques._morePracticeAdvices}>but not all fit</Ref>...
       </Li>
     </List>
 
@@ -233,7 +233,7 @@ export const content = defineProse({
           facts.
         </Li>
         <Li>
-          If you cannot repeat the solution of a problem without peeking into the solution — you have not mastered the
+          If you cannot repeat the solution of a problem without peeking into the solution -- you have not mastered the
           material. <B>Repeat until you solve it yourself!</B>
         </Li>
         <Li>
@@ -259,7 +259,7 @@ export const content = defineProse({
 
     <P>
       Get a notebook for solving problems to write everything out by hand, solve, correct, and mark what's important!
-      Just not some lame, flimsy notebook with <M>25</M> pages, but a Notebook with a capital N — with <M>80</M> pages!
+      Just not some lame, flimsy notebook with <M>25</M> pages, but a Notebook with a capital N -- with <M>80</M> pages!
     </P>
 
     <Image src={rightNotebook} width="800px">

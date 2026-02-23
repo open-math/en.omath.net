@@ -56,8 +56,8 @@ export default defineProse({
   <>
     <P>
       We have already learned to determine whether an equation is <Dep on={quadraticEquation}>quadratic</Dep>. We even
-      learned to solve their simplified forms — <Ref to={incompleteQuadratics}>incomplete</Ref> quadratic equations. But
-      enough half-measures! It's time to learn how to solve any quadratic equation! And the process called{' '}
+      learned to solve their simplified forms -- <Ref to={incompleteQuadratics}>incomplete</Ref> quadratic equations.
+      But enough half-measures! It's time to learn how to solve any quadratic equation! And the process called{' '}
       <B>completing the square</B> will help us with this.
     </P>
 
@@ -75,7 +75,7 @@ export default defineProse({
     `}</BlockMath>
 
     <P>
-      These are two of the three special products formulas. You can verify their correctness if you simply
+      These are two of the three special products formulas. You can verify their correctness if you simply{' '}
       <Ref to={uniques._expandBrackets}>expand</Ref> the parentheses on the left side of the equation and combine like
       terms.
     </P>
@@ -112,7 +112,7 @@ export default defineProse({
 
     <P>
       Using one of these formulas, we "unpack" the squared expression, getting an expanded one. But since the expression
-      can be "unpacked" into a long one, is it possible to reverse the process — <B>"pack"</B> a long expression into a
+      can be "unpacked" into a long one, is it possible to reverse the process -- <B>"pack"</B> a long expression into a
       squared one? It is possible. Such a process is called <B>completing the square</B>!
     </P>
 
@@ -174,7 +174,7 @@ export default defineProse({
       <Li>
         <P>
           This allows simplifying expressions! Before completing the square, the unknown occurs in the expression twice
-          — in the second and first degree.
+          -- in the second and first degree.
         </P>
         <BlockMath>{math`9\underset{\text{One}}{\red{x^2}} + 6\underset{\text{Two}}{\red{x}} + 1`}</BlockMath>
         <P>
@@ -185,7 +185,7 @@ export default defineProse({
       </Li>
     </List>
 
-    <Important title="Different notations — Same value">
+    <Important title="Different notations -- Same value">
       <P>
         Packed and unpacked forms denote <B accent>the same object</B>, just written differently. All three of the
         following expressions are essentially the same:
@@ -193,7 +193,7 @@ export default defineProse({
       <BlockMath>9z^2 + 6z = 3z(3z + 2) = (3z + 1)^2 - 1</BlockMath>
       <P>
         The first is the "unpacked" form, the second with <M>3z</M> factored out, and the third with the completed
-        square. Just as numbers <M>{math`\frac{1}{2}`}</M>, <M>{math`\frac{2}{4}`}</M> and <M>0.5</M> — are different
+        square. Just as numbers <M>{math`\frac{1}{2}`}</M>, <M>{math`\frac{2}{4}`}</M> and <M>0.5</M> -- are different
         notations for the same value. In different situations, it is convenient to use different forms of notation!
       </P>
     </Important>
@@ -251,7 +251,7 @@ export default defineProse({
 
     <P>
       The total area of this large square is <M>(p + 3)\cdot(p+3) = (p+3)^2</M>. We didn't add or remove anything, only
-      cut and rearranged the figures. So, the original sum of areas <M>p^2 + 6p + 9</M> and the resulting area
+      cut and rearranged the figures. So, the original sum of areas <M>p^2 + 6p + 9</M> and the resulting area{' '}
       <M>(p + 3)^2</M> are the same!
     </P>
 
@@ -320,8 +320,7 @@ export default defineProse({
     <P>
       We have successfully reduced the expression to the form of the expanded square of a difference. Notice that the
       role of <M>a</M> is played by <M>5p</M>, and <M>b</M> by the number <M>2</M>. So we can pack this expression into
-      the square of a difference
-      <M>(a-b)^2</M>:
+      the square of a difference <M>(a-b)^2</M>:
     </P>
 
     <BlockMath>{math`(\underset{a}{5p} - \underset{b}{2})^2`}</BlockMath>
@@ -520,7 +519,7 @@ export default defineProse({
 
     <P>
       We see a plus, which means we can try to pack this expression into the square of a sum <M>(a+b)^2</M>. To do this,
-      it must be brought to the form <M>a^2 + 2ab + b^2</M>. On the left we already have <M>x^2</M>, which means
+      it must be brought to the form <M>a^2 + 2ab + b^2</M>. On the left we already have <M>x^2</M>, which means{' '}
       <M>a = x</M>. But then problems begin. We don't have a two for <M>2ab</M>, as well as <M>b</M> and <M>b^2</M>.
       Such situations are encountered constantly.
     </P>
@@ -534,8 +533,8 @@ export default defineProse({
 
     <Details $={uniques._compensate} title="Adding and compensating">
       <P>
-        Let's take for example the number <M>5</M>. We can add anything to it. If we take it back—that is, compensate—it
-        will remain the number <M>5</M>.
+        Let's take for example the number <M>5</M>. We can add anything to it. If we take it back, that is, compensate,
+        it will remain the number <M>5</M>.
       </P>
       <BlockMath>{math`
         5 = \yellow{2} \cdot 5 \cdot \yellow{\frac{1}{2}} = \cancel{2} \cdot 5 \cdot \frac{1}{\cancel{2}} = 5 \\
@@ -666,8 +665,8 @@ export default defineProse({
           <Hr />
           <P>
             Notice that in the solution above, we added two twos and then compensated for them. Because of this, we had
-            to simplify afterwards. It was possible (and <B>necessary</B>) to do it more simply—take these two twos from
-            the already existing number <M>28</M>!
+            to simplify afterwards. It was possible (and <B>necessary</B>) to do it more simply -- take these two twos
+            from the already existing number <M>28</M>!
           </P>
           <BlockMath>{math`
             4y^2 + 28y = \\
@@ -851,15 +850,14 @@ export default defineProse({
       <I>
         <B>t</B>emporary
       </I>{' '}
-      — but actually any letter could have been chosen):
+      -- but actually any letter could have been chosen):
     </P>
 
     <BlockMath>t^2 = 16</BlockMath>
 
     <P>
-      Now let's use our brains a bit. A number <M>t</M> is squared—that is, multiplied by itself—and we get
-      <M>16</M>. What number is this? Of course, it's either <M>4</M>, or <M>-4</M>! So we get two possible values for{' '}
-      <M>t</M>:
+      Now let's use our brains a bit. A number <M>t</M> is squared, that is, multiplied by itself, and we get <M>16</M>.
+      What number is this? Of course, it's either <M>4</M>, or <M>-4</M>! So we get two possible values for <M>t</M>:
     </P>
 
     <BlockMath>{math`t_1 = 4 >>{big} t_2 = -4`}</BlockMath>
@@ -876,7 +874,7 @@ export default defineProse({
 
     <P>
       Congratulations, you just solved your first full quadratic equation! The equation <M>x^2 + 6x - 7 = 0</M> has two
-      solutions: <M>1</M> and <M>-7</M>. You can verify the correctness of this solution by
+      solutions: <M>1</M> and <M>-7</M>. You can verify the correctness of this solution by{' '}
       <Ref to={uniques._checkRoots}>substituting</Ref> them into the original equation and checking for a true equality.
     </P>
 
@@ -998,8 +996,8 @@ export default defineProse({
             At first glance, it doesn't look like we can complete the square here or fit it into the square of a sum or
             difference formula. But notice that if we change all the signs in the expression on the left to their
             opposites, then we get an expression suspiciously similar to the expanded form of the square of a
-            difference. Let's multiply both sides of the equation by
-            <M>-1</M> according to the <Dep on={sameActionRule}>same action rule</Dep>:
+            difference. Let's multiply both sides of the equation by <M>-1</M> according to the{' '}
+            <Dep on={sameActionRule}>same action rule</Dep>:
           </P>
           <BlockMath>z^2 - 5z + 9 = 0</BlockMath>
           <P>Complete the square on the left:</P>
