@@ -1,24 +1,22 @@
+var { B, P, ProblemDescription, ProblemAnswer, BlockMath, M, math, jsx, jsxs, Fragment, defineProblemScript } = globalThis.ERUDIT_GLOBAL;
 // node_modules/@open-math/shared/dist/utils/letter.js
-function getRandomLatinLetter(random, casing = "any") {
+var DEFAULT_SKIP = ["i", "f", "g", "e", "z"];
+function getRandomLatinLetter(random, options) {
+  const { casing = "any", skip = DEFAULT_SKIP } = options ?? {};
   const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
   const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  const letters = casing === "lower" ? lowerLetters : casing === "upper" ? upperLetters : lowerLetters + upperLetters;
-  return random.arrayElement(letters.split(""));
+  const skipLower = new Set(skip.map((l) => l.toLowerCase()));
+  const pool = casing === "lower" ? lowerLetters : casing === "upper" ? upperLetters : lowerLetters + upperLetters;
+  const filtered = pool.split("").filter((ch) => !skipLower.has(ch.toLowerCase()));
+  return random.arrayElement(filtered);
 }
 
 // node_modules/@open-math/shared/dist/utils/qed.js
-var _jsx = globalThis["_jsx"];
-var P2 = globalThis["P"];
-var M2 = globalThis["M"];
 
 // node_modules/@open-math/shared/dist/utils/roots.js
-var _jsx2 = globalThis["_jsx"];
-var ProblemCheck = globalThis["ProblemCheck"];
 
-// jsx-runtime-shim:jsx-runtime-shim
-var jsx = globalThis.jsx;
-var jsxs = globalThis.jsxs;
-var Fragment = globalThis.Fragment;
+// node_modules/@open-math/shared/dist/utils/math.js
+
 
 // content/01-foundations/02-equations/02-quadratic/1-what-is-it/scripts/quadratic-constructor.tsx
 var quadratic_constructor_default = defineProblemScript('__auto_generated__',{
@@ -101,7 +99,7 @@ var quadratic_constructor_default = defineProblemScript('__auto_generated__',{
       return ` + ${coeffStr} ${variable}`;
     }
   };
-  const letter = getRandomLatinLetter(random, "lower");
+  const letter = getRandomLatinLetter(random, { casing: "lower" });
   let equation = formatCoeff(A, true, `${letter}^2`);
   const bTerm = formatCoeff(B, false, `${letter}`);
   if (bTerm) equation += bTerm;

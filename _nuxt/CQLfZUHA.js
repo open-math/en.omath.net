@@ -1,1 +1,0 @@
-import{a}from"./BNb11sOQ.js";import{aR as e}from"./D76aFgnu.js";const s=Symbol();function n(){return e(s)}async function u(r){const o=n(),t=a(r);if(r.storageKey&&(t.createStorage&&(o[r.storageKey]=await t.createStorage(r)),r.storageKey in o))return o[r.storageKey]}export{s as p,u};

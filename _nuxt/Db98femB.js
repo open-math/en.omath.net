@@ -1,1 +1,0 @@
-import{_ as n}from"./Bat7L94X.js";import{W as t,N as m,a0 as l}from"./D76aFgnu.js";const s=t({__name:"SubProblem",props:{element:{}},setup(e){return(a,i)=>(m(),l(n,{element:e.element,initialElements:e.element.children},null,8,["element","initialElements"]))}});export{s as _};
