@@ -1,6 +1,6 @@
 ---
-agent: agent
-model: Gemini 3 Pro (Preview) (copilot)
+agent: Plan
+model: GPT-5.2 (copilot)
 description: 'Proofreading'
 ---
 

@@ -99,7 +99,7 @@ export default defineProblemScript({
     }
   };
 
-  const letter = getRandomLatinLetter(random, 'lower');
+  const letter = getRandomLatinLetter(random, { casing: 'lower' });
 
   // Build LaTeX equation
   let equation = formatCoeff(A, true, `${letter}^2`);

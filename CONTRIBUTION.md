@@ -1,6 +1,6 @@
 # Improving the Material
 
-You’re welcome to propose any edits or improvements to the material, including:
+You're welcome to propose any edits or improvements to the material, including:
 
 - Fixing typos
 - Pointing out interesting resources that could enrich the content
@@ -9,7 +9,7 @@ You’re welcome to propose any edits or improvements to the material, including
 - New problems or solutions to existing ones
 - Even entirely new articles!
 
-If your suggestions lead to adding new content **(except for typo reports!)**, we can add your information (name, photo, a short bio, and links) to the authors page — if you’d like us to.
+If your suggestions lead to adding new content **(except for typo reports!)**, we can add your information (name, photo, a short bio, and links) to the authors page — if you'd like us to.
 
 You can propose changes in two ways:
 
@@ -24,6 +24,37 @@ If a unique element is located in a different section, you may reference it in t
 For example, you can include one link in a paragraph of that section, and one additional link in each collapsible block section such as hints, solutions, etc.
 
 In problems, it is generally recommended that if a link does not appear directly in the problem statement, it should be duplicated as needed — once in each section where it is required (hints, solution, answer, notes).
+
+# How to Address the Reader
+
+In most cases, address the reader as "you":
+
+- "As you can see ..."
+- "After this formula, nothing will stop you ..."
+- "You might have thought ..."
+
+Never construct sentences that assume the reader's gender.
+Always rephrase them.
+
+You don't have to play nice or be polite.
+Feel free to hit hard: "a real bear will eat you alive without choking ...", "you will bang your head against the wall until you understand ...".
+
+# How to Refer to "Yourself, the Author"?
+
+**You Don't.**
+Never mention yourself in the first or third person.
+No "I ..." or "the author of this article ...".
+You are writing on behalf of the "Open Math author community," not as a specific individual, so comments "from yourself" are inappropriate, as the reader has no idea who this "I" is when an article has a dozen different contributors.
+
+However, it is acceptable and even recommended to unite yourself with the reader using "we," "our," and similar terms:
+
+- "We have already seen that ..."
+- "Our next observation ..."
+- "Let's square our equation ..."
+
+Once again, not "we" as "the collective of authors recommend ...", but "we" as "the author and the reader together have already seen ...".
+
+If you really want to separate yourself from the reader, you can use impersonal constructions like "but you were warned ...".
 
 # Using “External Links”
 
@@ -45,7 +76,7 @@ You can simply link to genuinely useful resources, even without borrowing anythi
 - A link to a social media post from which an interesting problem was taken.
   _There is no useful information there beyond the already copied problem._
 - A link to a biographical website from which an image was taken for an article.
-  _Again, the rest of the site’s content is unrelated to the article._
+  _Again, the rest of the site's content is unrelated to the article._
 
 Once again — if an external resource does not contain anything that truly complements the existing material, **do not add it!**
 
@@ -53,7 +84,7 @@ In cases where a link **must be added by law** (for example, when required by th
 
 ```md
 In the image below, you can see the first sketches of Saturn and its moons, which at the time were believed to form its “ring”.
-These are scans from Huygens’ book _Systema Saturnium_, taken from the <Ref to="https://www.lindahall.org/about/news/scientist-of-the-day/christiaan-huygens-2/">Linda Hall Library</Ref> website.
+These are scans from Huygens' book _Systema Saturnium_, taken from the <Ref to="https://www.lindahall.org/about/news/scientist-of-the-day/christiaan-huygens-2/">Linda Hall Library</Ref> website.
 ```
 
-Yes, it’s not particularly “nice” not to link to every source that inspired an idea or from which material was used in some form. However, this approach avoids spending a lot of time searching for the true original source (instead of reposts), checking that links are still working, and similar "reference-handling" hell.
+Yes, it's not particularly “nice” not to link to every source that inspired an idea or from which material was used in some form. However, this approach avoids spending a lot of time searching for the true original source (instead of reposts), checking that links are still working, and similar "reference-handling" hell.

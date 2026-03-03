@@ -1,6 +1,3 @@
-import { QED } from '@open-math/shared/utils';
-import { RootsCheck } from '#project/utils/roots';
-
 import article from './article';
 import summary from './summary';
 

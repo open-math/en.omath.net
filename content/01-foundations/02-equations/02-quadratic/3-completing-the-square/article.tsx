@@ -1,7 +1,3 @@
-import { mathRegexp } from '@open-math/shared/utils';
-import { QED } from '@open-math/shared/utils';
-import { RootsCheck } from '#project/utils/roots';
-
 // #region Assets
 //
 
@@ -46,9 +42,9 @@ export default defineProse({
     completeSimple: Problems,
     completeHard: Problems,
     solvingQuadratics: Problems,
+    compensate: Details,
     _expandBrackets: Details,
     _checkGeometric: Details,
-    _compensate: Details,
     _completeForEquation: Details,
     _checkRoots: Details,
   },
@@ -341,7 +337,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>x^2 + 10x + 25</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(x + 5)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(x + 5)^2')} />
         <ProblemHint>
           Pay attention to <M>25</M>. This is the square of the number <M>5</M>.
         </ProblemHint>
@@ -372,7 +368,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>y^2 - 4y + 4</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(y - 2)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(y - 2)^2')} />
         <ProblemHint>
           Pay attention to <M>4</M>. This is the square of the number <M>2</M>.
         </ProblemHint>
@@ -403,7 +399,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>4z^2 - 12z + 9</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(2z - 3)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(2z - 3)^2')} />
         <ProblemHint>
           The left side can be represented as the square of <M>2z</M>, and the right side as the square of <M>3</M>.
         </ProblemHint>
@@ -435,7 +431,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>144 + 48t + 4t^2</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(12 + 2t)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(12 + 2t)^2')} />
         <ProblemHint>
           The left side can be represented as the square of <M>12</M>, and the right side as the square of <M>2t</M>.
         </ProblemHint>
@@ -467,7 +463,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{k^2}{4} + k + 1`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(1/2k + 1)^2', '(k/2 + 1)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(1/2k + 1)^2')} />
         <ProblemHint>
           The left side represents the square of <M>k/2</M>, and the right side represents the square of <M>1</M>.
         </ProblemHint>
@@ -526,12 +522,12 @@ export default defineProse({
 
     <P>
       Fortunately, nothing prevents us from adding missing terms and immediately{' '}
-      <Ref to={uniques._compensate}>compensating</Ref> for them, so that the total value of the expression remains
+      <Ref to={uniques.compensate}>compensating</Ref> for them, so that the total value of the expression remains
       unchanged. For example, we can multiply by <M>2</M> and divide by <M>2</M> right there. The final value has not
       changed, but <B>we have added the necessary terms</B>:
     </P>
 
-    <Details $={uniques._compensate} title="Adding and compensating">
+    <Details $={uniques.compensate} title="Adding and compensating">
       <P>
         Let's take for example the number <M>5</M>. We can add anything to it. If we take it back, that is, compensate,
         it will remain the number <M>5</M>.
@@ -591,7 +587,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>x^2-x</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(x - 1/2)^2 - 1/4')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(x - 1/2)^2 - 1/4')} />
         <ProblemHint>
           A two from one can be obtained if one is represented as <M>{math`2\cdot\frac{1}{2}`}</M>.
         </ProblemHint>
@@ -625,7 +621,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>4y^2 + 28y</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(2y + 7)^2 - 49')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(2y + 7)^2 - 49')} />
         <ProblemHint>
           In the center we must "reserve" two twos: one from <M>4y^2</M>, and the other required by the square of a sum
           formula.
@@ -684,7 +680,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>16t^2 + 24t - 20</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(4t + 3)^2 - 29')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(4t + 3)^2 - 29')} />
         <ProblemHint>
           Just ignore the <M>-20</M> at the end.
         </ProblemHint>
@@ -716,7 +712,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>-5-7k+25k^2</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(5k - 7/10)^2 - 549/100')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(5k - 7/10)^2 - 549/100')} />
         <ProblemHint>
           To confuse you, the entire expression was reversed. Just rearrange the terms so that the term with the squared
           unknown is first.
@@ -761,7 +757,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>3p^2 - 8p</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(sqrt(3)p - 4/sqrt(3))^2 - 16/3')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(sqrt(3)p - 4/sqrt(3))^2 - 16/3')} />
         <ProblemHint>Square root of three won't be clean. Take the "messy" root.</ProblemHint>
         <ProblemAnswer>
           <BlockMath>{math`\left(\sqrt{3}p - \frac{4}{\sqrt{3}}\right)^2 - \frac{16}{3}`}</BlockMath>

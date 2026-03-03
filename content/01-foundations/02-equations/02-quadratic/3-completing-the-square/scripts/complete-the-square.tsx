@@ -103,10 +103,10 @@ const completeSquare = (A: number, B: number, C: number, v: string) => {
 export default defineProblemScript({
   isGenerator: true,
 })(({ random }) => {
-  const v1 = getRandomLatinLetter(random, 'lower');
-  const v2 = getRandomLatinLetter(random, 'lower');
-  const v3 = getRandomLatinLetter(random, 'lower');
-  const v4 = getRandomLatinLetter(random, 'lower');
+  const v1 = getRandomLatinLetter(random, { casing: 'lower' });
+  const v2 = getRandomLatinLetter(random, { casing: 'lower' });
+  const v3 = getRandomLatinLetter(random, { casing: 'lower' });
+  const v4 = getRandomLatinLetter(random, { casing: 'lower' });
 
   const p1 = random.integer(2, 15);
   const A1 = 1;

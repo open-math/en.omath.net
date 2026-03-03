@@ -49,7 +49,7 @@ export default defineProse()(() => (
     <Include toc>{article.uniques.completeSimple}</Include>
     <P>
       But often the expression is incomplete. Then you have to add the missing parts yourself, but don't forget to{' '}
-      <Ref to={article.uniques._compensate}>compensate</Ref>:
+      <Ref to={article.uniques.compensate}>compensate</Ref>:
     </P>
     <Include toc>{article.uniques.completeHard}</Include>
     <P>Completing the square allows solving any quadratic equation:</P>

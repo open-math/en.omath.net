@@ -1,5 +1,3 @@
-import { QED } from '@open-math/shared/utils';
-
 // #region Media
 //
 

@@ -4,6 +4,7 @@ import {
   defaultElements,
   defaultCountElements,
   sharedPublicAugmentation,
+  openMathDependencies,
 } from '@open-math/shared/config';
 
 export default defineEruditConfig({
@@ -28,6 +29,8 @@ export default defineEruditConfig({
     useBookSiteTitle: true,
     image: defaultAssets.ogImage,
   },
+  problemChecks: ['@open-math/shared/checks/mValueCheck', '@open-math/shared/checks/mExprCheck'],
+  autoImports: ['./globals'],
   indexPage: {
     title: 'Open Math',
     short: 'Theory, summaries, and problem book all in one',
@@ -74,4 +77,7 @@ export default defineEruditConfig({
   elements: defaultElements,
   countElements: defaultCountElements,
   nuxtAugmentations: [sharedPublicAugmentation],
+  dependencies: {
+    ...openMathDependencies,
+  },
 });

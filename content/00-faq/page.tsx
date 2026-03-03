@@ -211,14 +211,23 @@ export const content = defineProse({
       </Li>
       <Li>
         <B>Practice.</B> Various problems that will teach you to correctly apply theory in practice. Try to solve
-        everything, even "sub-problems" (they get trickier the further you go)! If you couldn't solve a problem and
-        looked at the solution -- definitely solve it again immediately and then again the next day! There are more
+        everything, including all "sub-problems" (they get trickier the further you go)! If you couldn't solve a problem
+        and looked at the solution -- definitely solve it again immediately and then again the next day! There are more
         tips, <Ref to={uniques._morePracticeAdvices}>but not all fit</Ref>...
       </Li>
     </List>
 
     <Details $={uniques._morePracticeAdvices} title="More practice tips">
       <List unordered>
+        <Li>
+          Practice is a mandatory part of learning! Never ever skip it. Without problem solving{' '}
+          <B>all the information</B> you have red will vanish from your head in a matter of days. If you don't want to
+          solve problems, then you don't want to learn math. Drop it and save your time for something else.
+        </Li>
+        <Li>
+          If the problem allows to generate "similar" variants, solve at least three of them. If you made a mistake,
+          solve one more.
+        </Li>
         <Li>
           So you (think you have) solved the problem. Follow the chain of buttons under the problem, from left to right:
           "Check" → "Hint" → "Answer" → "Solution". Do not rush to open, for example, "Answer" immediately. First, try

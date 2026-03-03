@@ -1,6 +1,3 @@
-import { mathRegexp } from '@open-math/shared/utils';
-import { RootsCheck } from '#project/utils/roots';
-
 import completeTheSquare from './scripts/complete-the-square';
 
 const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
@@ -16,7 +13,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`x^2 + 2xy + y^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(x + y)^2', '(y + x)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(x + y)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(x + y)^2`}</BlockMath>
         </ProblemAnswer>
@@ -35,7 +32,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`a^2 + 2a + 1`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(a + 1)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(a + 1)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(a + 1)^2`}</BlockMath>
         </ProblemAnswer>
@@ -52,7 +49,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`n^2 + m^2 + 2mn`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(n + m)^2', '(m + n)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(n + m)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(n + m)^2`}</BlockMath>
         </ProblemAnswer>
@@ -68,7 +65,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`-2xy + x^2 + y^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(x - y)^2', '(y - x)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(x - y)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(x - y)^2`}</BlockMath>
         </ProblemAnswer>
@@ -84,7 +81,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`81 - 18t + t^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(9 - t)^2', '(t - 9)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(9 - t)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(9 - t)^2`}</BlockMath>
         </ProblemAnswer>
@@ -100,7 +97,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`z^2 - 12z + 36`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(z - 6)^2', '(6 - z)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(z - 6)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(z - 6)^2`}</BlockMath>
         </ProblemAnswer>
@@ -116,7 +113,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`49 + 14x + x^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(7 + x)^2', '(x + 7)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(7 + x)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(7 + x)^2`}</BlockMath>
         </ProblemAnswer>
@@ -132,7 +129,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`4i^2 - 4i + 1`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(2i - 1)^2', '(1 - 2i)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(2i - 1)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(2i - 1)^2`}</BlockMath>
         </ProblemAnswer>
@@ -148,7 +145,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`1 + 10x + 25x^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(1 + 5x)^2', '(5x + 1)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(1 + 5x)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(1 + 5x)^2`}</BlockMath>
         </ProblemAnswer>
@@ -164,7 +161,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`9x^2 - 6x + 1`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(3x - 1)^2', '(1 - 3x)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(3x - 1)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(3x - 1)^2`}</BlockMath>
         </ProblemAnswer>
@@ -180,7 +177,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`9 - 12x + 4x^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(3 - 2x)^2', '(2x - 3)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(3 - 2x)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(3 - 2x)^2`}</BlockMath>
         </ProblemAnswer>
@@ -196,7 +193,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`9x^2 + 30x + 25`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(3x + 5)^2', '(5 + 3x)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(3x + 5)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(3x + 5)^2`}</BlockMath>
         </ProblemAnswer>
@@ -212,7 +209,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`9t^2 - 30tm + 25m^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(3t - 5m)^2', '(5m - 3t)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(3t - 5m)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(3t - 5m)^2`}</BlockMath>
         </ProblemAnswer>
@@ -228,7 +225,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`49 + 36y^2 + 84y`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(7 + 6y)^2', '(6y + 7)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(7 + 6y)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(7 + 6y)^2`}</BlockMath>
         </ProblemAnswer>
@@ -246,7 +243,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`4 + 49x^2 - 28x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(7x - 2)^2', '(2 - 7x)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(7x - 2)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(7x - 2)^2`}</BlockMath>
         </ProblemAnswer>
@@ -264,7 +261,7 @@ export default defineProse()(() => (
         <ProblemDescription>
           <BlockMath>{math`4n^2 + 36nm + 81m^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label={compactFormLabel} answer={mathRegexp('(2n + 9m)^2', '(9m + 2n)^2')} />
+        <ProblemCheck label={compactFormLabel} answer={mExprCheck('(2n + 9m)^2')} />
         <ProblemAnswer>
           <BlockMath>{math`(2n + 9m)^2`}</BlockMath>
         </ProblemAnswer>
@@ -289,10 +286,10 @@ export default defineProse()(() => (
               4)\enspace 9x^2 - 5x + 7
           `}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck label="Expression 1" answer={mathRegexp('(m - 12)^2 - 144')} />
-        <ProblemCheck label="Expression 2" answer={mathRegexp('(x - 11/2)^2 - 121/4')} />
-        <ProblemCheck label="Expression 3" answer={mathRegexp('(t + 5/2)^2 - 49/4')} />
-        <ProblemCheck label="Expression 4" answer={mathRegexp('(3x - 5/6)^2 + 227/36')} />
+        <ProblemCheck label="Expression 1" answer={mExprCheck('(m - 12)^2 - 144')} />
+        <ProblemCheck label="Expression 2" answer={mExprCheck('(x - 11/2)^2 - 121/4')} />
+        <ProblemCheck label="Expression 3" answer={mExprCheck('(t + 5/2)^2 - 49/4')} />
+        <ProblemCheck label="Expression 4" answer={mExprCheck('(3x - 5/6)^2 + 227/36')} />
         <ProblemHint>
           <P>Factor the existing expression as either a square of a sum or a square of a difference:</P>
           <BlockMath>{math`a^2 \pm 2ab + b^2 = (a\pm b)^2`}</BlockMath>

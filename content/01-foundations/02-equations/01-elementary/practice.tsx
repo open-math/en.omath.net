@@ -1,6 +1,3 @@
-import { QED } from '@open-math/shared/utils';
-import { RootsCheck } from '#project/utils/roots';
-
 // #region Media
 //
 
@@ -2722,16 +2719,8 @@ export default defineProse({
         <P>
           When we perform an action on a part of an equality, we must apply it to the entire part as a{' '}
           <Dep on={alwaysGlobal}>single whole</Dep>! On the right side, the action is applied correctly and the fraction{' '}
-          <M>
-            \frac{2}
-            {8}
-          </M>{' '}
-          turns into{' '}
-          <M>
-            \frac{8}
-            {2}
-          </M>
-          . But on the left, the correct application of the rule would look like this:
+          <M>{math`\frac{2}{8}`}</M> turns into <M>{math`\frac{8}{2}`}</M>. But on the left, the correct application of
+          the rule would look like this:
         </P>
         <BlockMath>{math`\frac{1}{\frac{1}{3} + \frac{1}{x}} = \frac{8}{2}`}</BlockMath>
         <P>
@@ -3525,23 +3514,14 @@ export default defineProse({
       <ProblemDescription>
         <P>
           The three equations below have the form <M>Ax + B = 0</M> (they are called <I>linear</I>) and differ from each
-          other only by a constant factor. They all have one common root{' '}
-          <M>
-            -\frac{3}
-            {2}
-          </M>
-          :
+          other only by a constant factor. They all have one common root <M>{math`-\frac{3}{2}`}</M>:
         </P>
         <BlockMath>{math`\underset{\text{Original}}{2x + 3 = 0} >>{big} \underset{\text{Multiplied by } 2}{4x + 6 = 0} >>{big} \underset{\text{Multiplied by } 3}{6x + 9 = 0}`}</BlockMath>
         <P>
           Dividing both sides of the second equation by <M>2</M>, and the third by <M>3</M>, we will again get the
-          original first equation. Multiplying both sides of the second equation by{' '}
-          <M>
-            \frac{3}
-            {2}
-          </M>
-          , we will get the third equation. In short, all three equations can be transformed into each other by
-          multiplying by some number.
+          original first equation. Multiplying both sides of the second equation by <M>{math`\frac{3}{2}`}</M>, we will
+          get the third equation. In short, all three equations can be transformed into each other by multiplying by
+          some number.
         </P>
         <P>
           Are there two equations with <B>identical roots</B> that cannot be transformed into each other by multiplying
