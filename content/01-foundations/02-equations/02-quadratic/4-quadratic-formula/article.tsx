@@ -862,7 +862,7 @@ export default defineProse({
     <H2>Is infinity not the limit?</H2>
 
     <P>
-      Since things are going so well, can we find general root formulas for equations of any degree? Surprisingly,
+      Since things are going so well, can we find general root formulas for equations of any degree? Surprisingly,{' '}
       <B>no</B>! Fourth-degree equations are the absolute maximum for which universal methods exist.
     </P>
 

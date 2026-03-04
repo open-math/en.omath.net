@@ -248,6 +248,12 @@ export default defineProblemScript({
           <BlockMath>{smallEquation}</BlockMath>
           <P>Now solve the resulting quadratic equation in the usual way.</P>
         </ProblemSolution>
+        <ProblemNote>
+          The title of the problem refers to the biblical story of how the young shepherd David defeated the giant
+          Goliath using a sling. Here, the supposedly invincible "giant" is an equation with enormous coefficients, and
+          the "sling" is the process of successive division by common divisors, which allows one to "defeat" the
+          equation and find its roots.
+        </ProblemNote>
       </>
     ),
   };
