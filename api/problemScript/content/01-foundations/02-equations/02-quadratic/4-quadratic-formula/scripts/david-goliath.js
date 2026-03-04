@@ -1,4 +1,4 @@
-var { B, P, ProblemDescription, ProblemHint, ProblemSolution, ProblemAnswer, BlockMath, M, math, jsx, jsxs, Fragment, defineProblemScript, RootsCheck } = globalThis.ERUDIT_GLOBAL;
+var { B, P, ProblemDescription, ProblemHint, ProblemSolution, ProblemAnswer, ProblemNote, BlockMath, M, math, jsx, jsxs, Fragment, defineProblemScript, RootsCheck } = globalThis.ERUDIT_GLOBAL;
 // node_modules/@open-math/shared/dist/utils/letter.js
 var DEFAULT_SKIP = ["i", "f", "g", "e", "z"];
 function getRandomLatinLetter(random, options) {
@@ -245,7 +245,8 @@ var david_goliath_default = defineProblemScript('__auto_generated__',{
         /* @__PURE__ */ jsx(P, { children: "After simplifying, we get the equation:" }),
         /* @__PURE__ */ jsx(BlockMath, { children: smallEquation }),
         /* @__PURE__ */ jsx(P, { children: "Now solve the resulting quadratic equation in the usual way." })
-      ] })
+      ] }),
+      /* @__PURE__ */ jsx(ProblemNote, { children: 'The title of the problem refers to the biblical story of how the young shepherd David defeated the giant Goliath using a sling. Here, the supposedly invincible "giant" is an equation with enormous coefficients, and the "sling" is the process of successive division by common divisors, which allows one to "defeat" the equation and find its roots.' })
     ] })
   };
 });
