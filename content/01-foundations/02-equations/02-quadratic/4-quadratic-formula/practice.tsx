@@ -801,8 +801,12 @@ export default defineProse({
             Go back to the original variable <M>x</M>:
           </P>
           <BlockMath>{math`
-            t_1 = x^4 = 16 \\ x = \sqrt[4]{16} \\ x_{1,2} = \pm 2 >>
-            t_2 = x^4 = -1 \\ \\text{ (no roots)}
+            t_1 = x^4 = 16 \\
+            x = \sqrt[4]{16} \\
+            x_{1,2} = \pm 2
+            >>
+            t_2 = x^4 = -1 \\
+            \text{(no roots)}
           `}</BlockMath>
           <P>
             When you raise a number to the 4th power, you can't get a negative result, so there is no way to get{' '}
@@ -1183,7 +1187,7 @@ export default defineProse({
             x^2 + 1 = -x \\
             x^2 + x + 1 = 0 \\
             D = 1 - 4 = -3 < 0 \\
-            \\text{ (no roots)}
+            \text{(no roots)}
           `}</BlockMath>
           <P>
             So the original equation has two roots: <M>x_1 = 2</M> and <M>{math`x_2 = \dfrac{1}{2}`}</M>.
@@ -1403,7 +1407,7 @@ export default defineProse({
             x^2 + 1 = -x \\
             x^2 + x + 1 = 0 \\
             D = 1 - 4 = -3 < 0 \\
-            \\text{ (no roots)}
+            \text{(no roots)}
           `}</BlockMath>
           <P>
             Go back to <M>x</M> for root <M>t_2</M>:
