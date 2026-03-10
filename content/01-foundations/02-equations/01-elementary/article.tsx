@@ -401,9 +401,9 @@ export default defineProse({
         <ProblemHint>
           What number multiplied by itself gives <M>16</M>?
         </ProblemHint>
-        <ProblemCheck answer={4} />
+        <ProblemCheck answers={[4, -4]} />
         <ProblemAnswer>
-          <M>4</M>
+          <M>4</M> and <M>-4</M>
         </ProblemAnswer>
         <ProblemSolution>
           <P>

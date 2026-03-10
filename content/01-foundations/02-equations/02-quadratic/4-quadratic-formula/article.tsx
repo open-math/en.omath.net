@@ -859,7 +859,7 @@ export default defineProse({
       waiting for you in the Practicum... 👀
     </Reference>
 
-    <H2>Is infinity not the limit?</H2>
+    <H2>To infinity and beyond?</H2>
 
     <P>
       Since things are going so well, can we find general root formulas for equations of any degree? Surprisingly,{' '}
