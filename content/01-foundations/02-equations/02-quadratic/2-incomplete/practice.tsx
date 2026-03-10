@@ -473,7 +473,7 @@ export default defineProse()(() => (
             So we have proved that such incomplete quadratic equations will have roots only if the remaining two
             coefficients have different signs.
           </P>
-          <P>{QED}</P>
+          <QED />
         </ProblemSection>
         <ProblemSection title="Checking for Solutions">
           <List ordered>

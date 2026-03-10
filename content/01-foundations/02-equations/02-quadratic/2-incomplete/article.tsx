@@ -141,7 +141,7 @@ export default defineProse({
           and results in a true equality <M>0 = 0</M>. Therefore <M>x = 0</M> -- is the only{' '}
           <Dep on={equationSolution}>solution to the equation</Dep>.
         </P>
-        <P>{QED}</P>
+        <QED />
       </StatementProof>
     </Statement>
 
@@ -318,7 +318,7 @@ export default defineProse({
             base -->|Sub-equation 2| factor2[$$ Ax + B = 0 $$] --> solution2[$$ x = -\frac{B}{A} $$]
             class factor1,solution2 fill
         `}</Diagram>
-        <P>{QED}</P>
+        <QED />
       </StatementProof>
     </Statement>
 
@@ -514,7 +514,7 @@ export default defineProse({
           x = \pm \sqrt{-\frac{C}{A}}
         `}</BlockMath>
         <P>If the square root cannot be extracted, then this equation has no solutions either.</P>
-        <P>{QED}</P>
+        <QED />
       </StatementProof>
     </Statement>
 

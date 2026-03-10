@@ -1799,7 +1799,7 @@ export default defineProse({
             equality, we will still have expressions standing to the left and to the right of the equals sign which
             denote the same object. Nothing has changed. The new and old equalities are <B>absolutely</B> identical.
           </P>
-          <P>{QED}</P>
+          <QED />
         </ProblemSection>
         <ProblemSection title="Manual reversal">
           <P>
@@ -1838,7 +1838,7 @@ export default defineProse({
             Voila, we manually achieved the same effect as if we had turned the scales! Moreover, this can be done with
             any equality! So, any equality can be reversed! That's the power of abstractions!
           </P>
-          <P>{QED}</P>
+          <QED />
         </ProblemSection>
       </ProblemSolution>
     </Problem>
@@ -3579,7 +3579,7 @@ export default defineProse({
             <B>do not exist</B> two linear equations that are not multiples of each other with identical roots.
           </P>
           <P>All linear equations with identical roots differ from each other only by a common factor!</P>
-          <P>{QED}</P>
+          <QED />
         </ProblemSection>
         <ProblemSection title="Direct Way">
           <P>
@@ -3628,7 +3628,7 @@ export default defineProse({
             identical roots.
           </P>
           <P>All linear equations with identical roots differ from each other only by a common factor!</P>
-          <P>{QED}</P>
+          <QED />
         </ProblemSection>
       </ProblemSolution>
       <ProblemNote>
@@ -3710,7 +3710,7 @@ export default defineProse({
           Since we have not made mistakes in the chain of transformations, we can confidently assert that the equation
           has no solutions. A beautiful example of applying "proof by contradiction".
         </P>
-        <P>{QED}</P>
+        <QED />
       </ProblemSolution>
     </Problem>
 
@@ -3747,7 +3747,7 @@ export default defineProse({
           It turns out that when solving an equation using the <Dep on={sameActionRule}>same action rule</Dep>, we
           simultaneously find the roots of the equation and prove that there are no other roots.
         </P>
-        <P>{QED}</P>
+        <QED />
       </ProblemSolution>
     </Problem>
 
@@ -3790,7 +3790,7 @@ export default defineProse({
           <Dep on={sameActionRule}>same action rule</Dep>, after adding <M>3</M> we get a new true equality. And this by
           definition means that <M>x</M> is a solution to the equation.
         </P>
-        <P>{QED}</P>
+        <QED />
       </ProblemSolution>
     </Problem>
   </>

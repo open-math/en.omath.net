@@ -614,7 +614,7 @@ export default defineProse({
           into another pair of <B>also identical</B> objects. This means the new equality is also true!
         </P>
 
-        <P>{QED}</P>
+        <QED />
       </StatementSection>
     </Statement>
 
