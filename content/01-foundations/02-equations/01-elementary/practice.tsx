@@ -92,7 +92,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x + 100 = 1`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-99} />
+        <MathValueCheck answer={-99} />
         <ProblemAnswer>
           <M>-99</M>
         </ProblemAnswer>
@@ -115,7 +115,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`76 = 3 + x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={73} />
+        <MathValueCheck answer={73} />
         <ProblemAnswer>
           <M>73</M>
         </ProblemAnswer>
@@ -138,7 +138,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`-x = -666`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={666} />
+        <MathValueCheck answer={666} />
         <ProblemAnswer>
           <M>666</M>
         </ProblemAnswer>
@@ -160,7 +160,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`40 = 10 - x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-30} />
+        <MathValueCheck answer={-30} />
         <ProblemAnswer>
           <M>-30</M>
         </ProblemAnswer>
@@ -193,7 +193,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`8x = 80`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={10} />
+        <MathValueCheck answer={10} />
         <ProblemAnswer>
           <M>10</M>
         </ProblemAnswer>
@@ -215,7 +215,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`100 = \frac{x}{20}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={2000} />
+        <MathValueCheck answer={2000} />
         <ProblemAnswer>
           <M>2000</M>
         </ProblemAnswer>
@@ -238,7 +238,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x+3 = -9x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={['-0.3', '-3/10']} />
+        <MathValueCheck answer={'-3/10'} />
         <ProblemAnswer>
           <M>{math`-\frac{3}{10}`}</M>
         </ProblemAnswer>
@@ -309,7 +309,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{2}{7}x = 6\frac{2}{7}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={22} />
+        <MathValueCheck answer={22} />
         <ProblemHint>Convert the mixed fraction to improper fraction on the right side of the equation.</ProblemHint>
         <ProblemAnswer>
           <M>22</M>
@@ -348,7 +348,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`2 + 3x = -7x - 5`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={['-0.7', '-7/10']} />
+        <MathValueCheck answer={'-7/10'} />
         <ProblemAnswer>
           <M>{math`-\frac{7}{10}`}</M>
         </ProblemAnswer>
@@ -431,7 +431,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`10(x+2) = -7`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={['-2.7', '-27/10']} />
+        <MathValueCheck answer={'-27/10'} />
         <ProblemAnswer>
           <M>{math`-\frac{27}{10}`}</M>
         </ProblemAnswer>
@@ -466,7 +466,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`8 -5(2x-3) = 13 - 6x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={['2.5', '5/2']} />
+        <MathValueCheck answer={'5/2'} />
         <ProblemAnswer>
           <M>{math`\frac{5}{2}`}</M>
         </ProblemAnswer>
@@ -523,7 +523,7 @@ export default defineProse({
 
         <BlockMath>{math`14x + 15 = 71`}</BlockMath>
       </ProblemDescription>
-      <ProblemCheck answer={4} />
+      <MathValueCheck answer={4} />
       <ProblemAnswer>
         <M>4</M>
       </ProblemAnswer>
@@ -565,7 +565,7 @@ export default defineProse({
           How much does the axe weigh?
         </P>
       </ProblemDescription>
-      <ProblemCheck answer={2} />
+      <MathValueCheck answer={2} />
       <ProblemAnswer>
         The axe weighs <M>2</M> kilograms.
       </ProblemAnswer>
@@ -683,7 +683,7 @@ export default defineProse({
         Denote the tree height as 🌲, and the cat height as 🐱. Using these variables, look at each picture and write
         down what is depicted on it in the form of an equation.
       </ProblemHint>
-      <ProblemCheck answer={50} />
+      <MathValueCheck answer={50} />
       <ProblemAnswer>
         <M>50</M>
       </ProblemAnswer>
@@ -773,7 +773,7 @@ export default defineProse({
           number?
         </P>
       </ProblemDescription>
-      <ProblemCheck answer={45} />
+      <MathValueCheck answer={45} />
       <ProblemHint>
         Denote this number as <M>x</M> and mathematically write all actions performed on it in the form of an equation.
       </ProblemHint>
@@ -821,7 +821,7 @@ export default defineProse({
           First try to solve the problem quickly in your head. Then solve it using an equation and compare the results.
         </P>
       </ProblemDescription>
-      <ProblemCheck answer={5} />
+      <MathValueCheck answer={5} />
       <ProblemHint>
         Denote the cost of the ball as <M>x</M> rubles.
       </ProblemHint>
@@ -883,8 +883,8 @@ export default defineProse({
           sand. How much cement and sand do you need if you want to mix <M>100</M> kg of concrete?
         </P>
       </ProblemDescription>
-      <ProblemCheck answer={25} label="Cement" />
-      <ProblemCheck answer={75} label="Sand" />
+      <MathValueCheck answer={25} label="Cement" />
+      <MathValueCheck answer={75} label="Sand" />
       <ProblemHint>
         Denote the mass of cement as <M>x</M>. Then the mass of sand will be <M>3x</M>.
       </ProblemHint>
@@ -1162,8 +1162,8 @@ export default defineProse({
             old are Vanya and Liza?
           </P>
         </ProblemDescription>
-        <ProblemCheck label="Liza's age" answer={8} />
-        <ProblemCheck label="Vanya's age" answer={16} />
+        <MathValueCheck label="Liza's age" answer={8} />
+        <MathValueCheck label="Vanya's age" answer={16} />
         <ProblemAnswer>
           Liza is <M>8</M> years old, and Vanya is <M>16</M> years old.
         </ProblemAnswer>
@@ -1201,8 +1201,8 @@ export default defineProse({
             <M>40</M> years. How old are Peter and Maria now?
           </P>
         </ProblemDescription>
-        <ProblemCheck label="Maria's age" answer={15} />
-        <ProblemCheck label="Peter's age" answer={21} />
+        <MathValueCheck label="Maria's age" answer={15} />
+        <MathValueCheck label="Peter's age" answer={21} />
         <ProblemAnswer>
           Maria is <M>15</M> years old, and Peter is <M>21</M> years old.
         </ProblemAnswer>
@@ -1253,7 +1253,7 @@ export default defineProse({
           When I was <M>14</M>, my father was three times older than me. He is now twice as old as me. How old am I?
         </P>
       </ProblemDescription>
-      <ProblemCheck answer={28} />
+      <MathValueCheck answer={28} />
       <ProblemHint>Calculate the age difference between you and your father using the data from the past.</ProblemHint>
       <ProblemHint>Use this difference to construct an equation connecting your ages now.</ProblemHint>
       <ProblemAnswer>
@@ -1324,7 +1324,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x^2 - 121 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={[11, -11]} />
+        <MathValueCheck answers={[11, -11]} />
         <ProblemHint>This equation has two solutions.</ProblemHint>
         <ProblemAnswer>
           The equation has two roots: <M>11</M> and <M>-11</M>.
@@ -1353,7 +1353,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`-x - 4 + 5(x+3) = 5(-1 -x) - 2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-2} />
+        <MathValueCheck answer={-2} />
         <ProblemHint>Before solving the equation, expand the brackets and combine like terms.</ProblemHint>
         <ProblemAnswer>
           <M>-2</M>
@@ -1399,7 +1399,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x - \frac{x}{11} = \frac{50}{11}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={5} />
+        <MathValueCheck answer={5} />
         <ProblemHint>
           Think about how to get rid of <M>11</M> in the denominators with one action.
         </ProblemHint>
@@ -1507,7 +1507,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{9x+6}{7} + 3 = \frac{7x}{6}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-32.4} />
+        <MathValueCheck answer={-32.4} />
         <ProblemHint>
           Think about how to get rid of <M>7</M> and <M>6</M> in the denominators with one action.
         </ProblemHint>
@@ -1608,7 +1608,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{12}{x+5} = -\frac{12}{5}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-10} />
+        <MathValueCheck answer={-10} />
         <ProblemHint>The fractions have equal numerators. They can be eliminated in one action.</ProblemHint>
         <ProblemAnswer>
           <M>-10</M>
@@ -1852,9 +1852,9 @@ export default defineProse({
             kilometers less than on the second. How many kilometers did Alina cover every day?
           </P>
         </ProblemDescription>
-        <ProblemCheck label="First day" answer={37} />
-        <ProblemCheck label="Second day" answer={42} />
-        <ProblemCheck label="Third day" answer={32} />
+        <MathValueCheck label="First day" answer={37} />
+        <MathValueCheck label="Second day" answer={42} />
+        <MathValueCheck label="Third day" answer={32} />
         <ProblemHint>
           Denote by <M>x</M> the number of kilometers that Alina covered on the first day.
         </ProblemHint>
@@ -1911,9 +1911,9 @@ export default defineProse({
             kilometers more than on the second. How many kilometers did Pavel cover every day?
           </P>
         </ProblemDescription>
-        <ProblemCheck label="First day" answer={14} />
-        <ProblemCheck label="Second day" answer={11} />
-        <ProblemCheck label="Third day" answer={17} />
+        <MathValueCheck label="First day" answer={14} />
+        <MathValueCheck label="Second day" answer={11} />
+        <MathValueCheck label="Third day" answer={17} />
         <ProblemHint>
           Denote by <M>x</M> the number of kilometers that Pavel covered on the second day.
         </ProblemHint>
@@ -2340,7 +2340,7 @@ export default defineProse({
           <BlockMath>{math`\frac{3}{x+2} = \frac{2}{4} \quad \Rightarrow \quad \frac{x+2}{3} = \frac{4}{2}`}</BlockMath>
           <P>Solve this equation to the end and verify by substitution that the obtained root is indeed correct.</P>
         </ProblemDescription>
-        <ProblemCheck answer={4} />
+        <MathValueCheck answer={4} />
         <ProblemSolution>
           <BlockMath>{math`\frac{x+2}{3} = \frac{4}{2}`}</BlockMath>
           <P>
@@ -2385,7 +2385,7 @@ export default defineProse({
           <P>Solve the equation in two ways, first by elementary actions, and then using "fraction flipping":</P>
           <BlockMath>{math`\frac{1}{x+1} = \frac{2}{3}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={['0.5', '1/2']} />
+        <MathValueCheck answer={'1/2'} />
         <ProblemSolution>
           <P>
             <B>Solution by elementary actions:</B>
@@ -2452,7 +2452,7 @@ export default defineProse({
           <P>Solve the equation in two ways, first by elementary actions, and then using "fraction flipping":</P>
           <BlockMath>{math`-\frac{3}{10-x} = \frac{4}{-8}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={4} />
+        <MathValueCheck answer={4} />
         <ProblemSolution>
           <P>
             <B>Solution by elementary actions:</B>
@@ -2540,7 +2540,7 @@ export default defineProse({
           <P>Solve the equation in two ways, first by elementary actions, and then using "fraction flipping":</P>
           <BlockMath>{math`\frac{1}{x-1} = \frac{2}{x + 2}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={4} />
+        <MathValueCheck answer={4} />
         <ProblemSolution>
           <P>
             <B>Solution by elementary actions:</B>
@@ -2772,7 +2772,7 @@ export default defineProse({
           these opposite numbers.
         </P>
       </ProblemDescription>
-      <ProblemCheck answers={['-3', '-10', '10']} />
+      <MathValueCheck answers={['-3', '-10', '10']} />
       <ProblemHint>
         Opposite numbers are numbers that differ only in sign. So one can be obtained from the other simply by
         multiplying it by <M>-1</M>.
@@ -2844,7 +2844,7 @@ export default defineProse({
         </P>
         <BlockMath>{math`\frac{x + 743 \ 639}{28} - 18x = 2025x`}</BlockMath>
       </ProblemDescription>
-      <ProblemCheck answer={13} />
+      <MathValueCheck answer={13} />
       <ProblemSolution>
         <P>
           First, let's get rid of the fraction. To do this, using the <Dep on={sameActionRule}>same action rule</Dep>,
@@ -3088,7 +3088,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`-4x^2 + 2x + 6 = -2x^2 + 3x -(-3 + 2x^2)`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={3} />
+        <MathValueCheck answer={3} />
         <ProblemHint>Expand the brackets and combine like terms on the right side of the equation.</ProblemHint>
         <ProblemSolution>
           <P>On the right side, expand the brackets and combine like terms:</P>
@@ -3138,7 +3138,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`-\frac{5}{7}x^2 + 35 = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={[7, -7]} />
+        <MathValueCheck answers={[7, -7]} />
         <ProblemHint>
           Isolate (leave alone) <M>x^2</M>.
         </ProblemHint>
@@ -3188,7 +3188,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`(x+11)^2 = (x-9)^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-1} />
+        <MathValueCheck answer={-1} />
         <ProblemHint>Expand parentheses and combine like terms on both sides of the equation.</ProblemHint>
         <ProblemHint>
           On the left, use the formula for the square of the sum, and on the right -- the formula for the square of the
@@ -3248,7 +3248,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{7}{3x + 8} - \frac{2}{4x - 1} = 0`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={['23/22']} />
+        <MathValueCheck answer={'23/22'} />
         <ProblemHint>
           In one step, arrange the equation so that there is a fraction on each side. Then use{' '}
           <Dep on={uniques.fractionsFlip}>fraction flipping</Dep>.
@@ -3312,7 +3312,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`(2x-5)^2 = 4x^2`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={['5/4', '1.25']} />
+        <MathValueCheck answer={'5/4'} />
         <ProblemHint>Expand parentheses on the left using the square of difference formula.</ProblemHint>
         <ProblemSolution>
           <P>Expanding parentheses on the left using the square of difference formula:</P>
@@ -3353,7 +3353,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{x^2}{x-3} = 4x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answers={[0, 4]} />
+        <MathValueCheck answers={[0, 4]} />
         <ProblemHint>
           Group all <M>x</M> terms on one side of the equation and factor out common factors.
         </ProblemHint>
@@ -3407,7 +3407,7 @@ export default defineProse({
         <P>Solve the equation:</P>
         <BlockMath>{math`\frac{3z + 9}{6} + \frac{8z - 2}{4} = \frac{5 + 4z}{3}`}</BlockMath>
       </ProblemDescription>
-      <ProblemCheck answers={['4/7']} />
+      <MathValueCheck answer={'4/7'} />
       <ProblemHint>
         The least common denominator of these fractions is <M>12</M>. Multiplying both parts by <M>12</M> will cancel
         all denominators.

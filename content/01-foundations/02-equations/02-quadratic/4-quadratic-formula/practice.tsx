@@ -658,6 +658,7 @@ export default defineProse({
       $={uniques.quadraticInF}
       title="Trinomial equations"
       level="hard"
+      method
       snippet={{
         title: 'Trinomial equation',
         description: `
@@ -1077,6 +1078,7 @@ export default defineProse({
       $={uniques.palindromials}
       title="Reciprocal equations"
       level="hard"
+      method
       snippet={{
         title: 'Reciprocal equation',
         description: `

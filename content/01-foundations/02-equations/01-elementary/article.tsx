@@ -376,7 +376,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`x + 3 = 5`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={2} />
+        <MathValueCheck answer={2} />
         <ProblemHint>
           What needs to be added to <M>3</M> to get <M>5</M>?
         </ProblemHint>
@@ -401,7 +401,7 @@ export default defineProse({
         <ProblemHint>
           What number multiplied by itself gives <M>16</M>?
         </ProblemHint>
-        <ProblemCheck answers={[4, -4]} />
+        <MathValueCheck answers={[4, -4]} />
         <ProblemAnswer>
           <M>4</M> and <M>-4</M>
         </ProblemAnswer>
@@ -848,7 +848,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`100 + x = 2025`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={1925} />
+        <MathValueCheck answer={1925} />
         <ProblemHint>
           Addition of the number <M>100</M> prevents the variable <M>x</M> from remaining alone. How to get rid of it?
         </ProblemHint>
@@ -876,7 +876,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`-8 = -8 + t`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={0} />
+        <MathValueCheck answer={0} />
         <ProblemHint>
           Addition with the number <M>-8</M> prevents the variable <M>t</M> from remaining alone. How to get rid of it?
         </ProblemHint>
@@ -924,7 +924,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`5 + y = 2y`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={5} />
+        <MathValueCheck answer={5} />
         <ProblemHint>
           The variable <M>y</M> is present on both sides of the equation. What action to apply to both sides of the
           equality to eliminate <M>y</M>, say, on the left side of the equation?
@@ -1019,7 +1019,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`20x = 500`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={25} />
+        <MathValueCheck answer={25} />
         <ProblemHint>
           Multiplication by the number <M>20</M> prevents the variable <M>x</M> from remaining alone. How to get rid of
           it?
@@ -1048,7 +1048,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`-5 = \frac{y}{3}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-15} />
+        <MathValueCheck answer={-15} />
         <ProblemHint>
           Division by the number <M>3</M> prevents the variable <M>y</M> from remaining alone. How to get rid of it?
         </ProblemHint>
@@ -1109,7 +1109,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`4x - 4 = 5 + x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={3} />
+        <MathValueCheck answer={3} />
         <ProblemHint>
           Here you first need to perform some action so that the variable <M>x</M> remains only in some one part of the
           equation. And then you will need to get rid of the interfering numbers. Use the same action rule several times
@@ -1186,7 +1186,7 @@ export default defineProse({
         <ProblemDescription>
           <BlockMath>{math`\frac{x + 10}{8} = -\frac{1}{8}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-11} />
+        <MathValueCheck answer={-11} />
         <ProblemHint>
           First get rid of division by <M>8</M>. Then "free" the variable <M>x</M> from addition with <M>10</M>.
         </ProblemHint>
@@ -1270,7 +1270,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`4x - 4 = 5 + x`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={3} />
+        <MathValueCheck answer={3} />
         <ProblemAnswer>
           <M>3</M>
         </ProblemAnswer>
@@ -1330,7 +1330,7 @@ export default defineProse({
 
           <BlockMath>{math`\frac{x + 10}{8} = -\frac{1}{8}`}</BlockMath>
         </ProblemDescription>
-        <ProblemCheck answer={-11} />
+        <MathValueCheck answer={-11} />
         <ProblemAnswer>
           <M>-11</M>
         </ProblemAnswer>
@@ -1829,7 +1829,7 @@ export default defineProse({
             to save money to accumulate the necessary amount?
           </P>
         </ProblemDescription>
-        <ProblemCheck answer={125} />
+        <MathValueCheck answer={125} />
         <ProblemHint>
           Imagine that you already know the exact number of days needed to save money. Donate this number of days with
           the letter <M>t</M>. How do you get the amount of accumulated money from this <M>t</M>?
@@ -1895,7 +1895,7 @@ export default defineProse({
             speed of the first. What is the speed of each cyclist?
           </P>
         </ProblemDescription>
-        <ProblemCheck label="Cyclists' speed" answers={[19, 21]} />
+        <MathValueCheck label="Cyclists' speed" answers={[19, 21]} />
         <ProblemHint>
           Denote the speed of the first cyclist with the letter <M>x</M>. Since the speed of the second is <M>2</M> km/h
           higher, his speed can be written in terms of the first one's speed as <M>x + 2</M>. Then set up an equation
@@ -1981,7 +1981,7 @@ export default defineProse({
             before the deadline. How many cars was the factory supposed to produce according to the order?
           </P>
         </ProblemDescription>
-        <ProblemCheck answer={480} />
+        <MathValueCheck answer={480} />
         <ProblemHint>
           Denote the standard speed of car manufacturing per day as <M>v</M>.
         </ProblemHint>
