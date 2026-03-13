@@ -1,4 +1,4 @@
-var { B, P, ProblemDescription, ProblemAnswer, BlockMath, math, jsx, jsxs, Fragment, defineProblemScript, MathExpressionCheck, RootsCheck } = globalThis.ERUDIT_GLOBAL;
+var { B, Dep, P, ProblemDescription, ProblemHint, ProblemAnswer, BlockMath, M, math, jsx, jsxs, Fragment, defineProblemScript, MathExpressionCheck, RootsCheck } = globalThis.ERUDIT_GLOBAL;
 // node_modules/@open-math/shared/dist/utils/number.js
 function gcd(a, b) {
   a = Math.abs(a);
@@ -109,11 +109,32 @@ var factor_quadratic_default = defineProblemScript('__auto_generated__',{
   let factoredLatex;
   let factoredPlain;
   let roots;
+  const quadraticFormula = {"__ERUDIT_globalContentItem":true,"__path":"foundations/equations/quadratic/quadratic-formula/article/$formula"};
+  const factoredFormula = {"__ERUDIT_globalContentItem":true,"__path":"foundations/equations/quadratic/factoring/article/$generalFactoring"};
+  let hint = /* @__PURE__ */ jsxs(ProblemHint, { children: [
+    "Find the roots using the ",
+    /* @__PURE__ */ jsx(Dep, { on: quadraticFormula, children: "quadratic formula" }),
+    ". Use these roots to factor the quadratic trinomial via ",
+    /* @__PURE__ */ jsx(Dep, { on: factoredFormula, children: "factoring formula" }),
+    "."
+  ] });
   if (type === 0) {
     const A = random.integer(1, 5);
-    let r1 = random.integer(-10, 10);
-    let r2 = random.integer(-10, 10);
-    while (r2 === r1) r2 = random.integer(-10, 10);
+    const subType = random.integer(0, 9);
+    let r1;
+    let r2;
+    if (subType <= 1) {
+      r1 = random.integer(1, 10);
+      r2 = -r1;
+    } else if (subType === 2) {
+      r1 = 0;
+      r2 = random.integer(-10, 10);
+      while (r2 === 0) r2 = random.integer(-10, 10);
+    } else {
+      r1 = random.integer(-10, 10);
+      r2 = random.integer(-10, 10);
+      while (r2 === r1) r2 = random.integer(-10, 10);
+    }
     if (r1 > r2) [r1, r2] = [r2, r1];
     const B = -A * (r1 + r2);
     const C = A * r1 * r2;
@@ -125,6 +146,17 @@ var factor_quadratic_default = defineProblemScript('__auto_generated__',{
     const f2p = formatFactorPlain(r2, 1, v);
     factoredPlain = A === 1 ? `${f1p}${f2p}` : `${A}${f1p}${f2p}`;
     roots = [r1, r2];
+    if (r1 === 0 || r2 === 0) {
+      hint = /* @__PURE__ */ jsxs(ProblemHint, { children: [
+        "Factor out ",
+        /* @__PURE__ */ jsx(M, { children: "x" }),
+        "."
+      ] });
+    } else if (r1 + r2 === 0 && A === 1) {
+      hint = /* @__PURE__ */ jsx(ProblemHint, { children: "Use the difference of squares formula." });
+    } else if (r1 + r2 === 0) {
+      hint = /* @__PURE__ */ jsx(ProblemHint, { children: "Factor out the common factor first, then use the difference of squares formula." });
+    }
   } else if (type === 1) {
     const denoms = [2, 3, 4, 5];
     const d1 = denoms[random.integer(0, denoms.length - 1)];
@@ -194,6 +226,7 @@ var factor_quadratic_default = defineProblemScript('__auto_generated__',{
       ] }),
       /* @__PURE__ */ jsx(MathExpressionCheck, { label: "Factored form", answer: factoredPlain }),
       /* @__PURE__ */ jsx(RootsCheck, { roots }),
+      hint,
       /* @__PURE__ */ jsx(ProblemAnswer, { children: /* @__PURE__ */ jsx(BlockMath, { children: factoredLatex }) })
     ] })
   };
