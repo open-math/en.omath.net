@@ -5,6 +5,8 @@ import {
   defaultCountElements,
   sharedPublicAugmentation,
   openMathDependencies,
+  omathOgImage,
+  omathStyle,
 } from '@open-math/shared/config';
 
 export default defineEruditConfig({
@@ -19,15 +21,21 @@ export default defineEruditConfig({
       logotype: defaultAssets.logotype,
     },
   },
-  style: {
-    brandColor: 'light-dark(#1879d9, #4e94d9)',
-  },
+  style: omathStyle,
   favicon: defaultAssets.favicon,
   loadingSvg: defaultAssets.loadingSvg,
   seo: {
     siteTitle: 'Open Math',
     useBookSiteTitle: true,
-    image: defaultAssets.ogImage,
+    ogImage: {
+      ...omathOgImage,
+      siteName: 'Open Math',
+      siteShort: 'Theory, summaries, and problem book',
+      phrases: {
+        learn: 'Learn',
+        open: 'Open',
+      },
+    },
   },
   problemChecks: ['@open-math/shared/checks/mValueCheck', '@open-math/shared/checks/mExprCheck'],
   autoImports: ['./globals'],
