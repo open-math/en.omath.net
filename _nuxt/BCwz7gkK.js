@@ -1,0 +1,1 @@
+const p=e=>e.replace(new RegExp("(\\p{Lu}{2,})(\\p{Ll})","gu"),"$1-$2").replace(new RegExp("(\\p{Ll})(\\p{Lu})","gu"),"$1-$2").replace(new RegExp("(\\p{L})(\\d)","gu"),"$1-$2").replace(new RegExp("(\\d)(\\p{L})","gu"),"$1-$2").toLowerCase().replace(/[^\p{L}0-9]/gu,"-").replace(/-+/g,"-").replace(/^-|-$/g,"");export{p as default};
