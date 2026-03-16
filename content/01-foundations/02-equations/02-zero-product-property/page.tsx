@@ -44,8 +44,8 @@ export const page = definePage({
 
 export const content = defineProse({
   uniques: {
-    zeroFactorsMethod: Statement,
-    zeroFactorsExamples: Problems,
+    zeroProductMethod: Statement,
+    zeroProductExamples: Problems,
   },
 })(({ uniques }) => (
   <>
@@ -192,7 +192,7 @@ export const content = defineProse({
     </P>
 
     <Statement
-      $={uniques.zeroFactorsMethod}
+      $={uniques.zeroProductMethod}
       title="Zero Product Property"
       snippet={{
         key: true,
@@ -224,7 +224,7 @@ export const content = defineProse({
     </Statement>
 
     <Problems
-      $={uniques.zeroFactorsExamples}
+      $={uniques.zeroProductExamples}
       title="Practicing zero product property"
       level="easy"
       snippet={{
