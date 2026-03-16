@@ -3,7 +3,7 @@
 
 const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
 const linearFormula = $CONTENT.foundations.equations.elementary.practice.$linearRoot;
-const zeroFactors = $CONTENT.foundations.equations.elementary.practice.$zeroFactors;
+const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty;
 const whatIsQuadratic = $CONTENT.foundations.equations.quadratic.whatIsIt.article.$quadraticEquation;
 const completingTheSquare = $CONTENT.foundations.equations.quadratic.completingTheSquare;
 const compensate = $CONTENT.foundations.equations.quadratic.completingTheSquare.article.$compensate;
@@ -172,7 +172,7 @@ export default defineProse({
         <ProblemCheck label="Roots for (A, C) = (-5, 3)" answers={[15, 3]} />
         <ProblemCheck label="Roots for (A, C) = (-3, -10)" answers={[9, -10]} />
         <ProblemHint>
-          Review the solution to <Dep on={zeroFactors}>Zero factors</Dep>.
+          Review the <Dep on={zeroProductProperty}>Zero product property</Dep>.
         </ProblemHint>
         <ProblemAnswer>
           <P>General solution formulas:</P>

@@ -33,7 +33,7 @@ import palindromial from './assets/palindromial.svg';
 //
 //
 
-const zeroFactors = $CONTENT.foundations.equations.elementary.practice.$zeroFactors;
+const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty;
 
 //
 //
@@ -910,8 +910,8 @@ export default defineProse({
             x^2(x^6 - 3x^4 + 2) = 0
           `}</BlockMath>
           <P>
-            This is the standard case of a product of factors equal to zero (see{' '}
-            <Dep on={zeroFactors}>Zero factors</Dep>). The equation splits into two sub-equations:
+            This is the standard case for the <Dep on={zeroProductProperty}>Zero product property</Dep>. The equation
+            splits into two sub-equations:
           </P>
           <BlockMath>{math`
             x^2 = 0 >> x^6 - 3x^4 + 2 = 0
@@ -1128,9 +1128,9 @@ export default defineProse({
             x^2\left[ 2x^2 - 3x - 1 - \frac{3}{x} + \frac{2}{x^2} \right] = 0
           `}</BlockMath>
           <P>
-            This is the standard case of <Dep on={zeroFactors}>Zero factors</Dep>. As we've already checked, the root{' '}
-            <M>x = 0</M> coming from <M>x^2</M> is not a solution, so we can ignore it and set the bracketed part to
-            zero:
+            This is the standard case for the <Dep on={zeroProductProperty}>Zero product property</Dep>. As we've
+            already checked, the root <M>x = 0</M> coming from <M>x^2</M> is not a solution, so we can ignore it and set
+            the bracketed part to zero:
           </P>
           <BlockMath>{math`
             2x^2 - 3x - 1 - \frac{3}{x} + \frac{2}{x^2} = 0

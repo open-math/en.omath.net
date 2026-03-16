@@ -19,7 +19,7 @@ import quadraticTrinomialPlane from './assets/quadratic-trinomial-plane.svg';
 //
 //
 
-const zeroFactors = $CONTENT.foundations.equations.elementary.practice.$zeroFactors;
+const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty;
 const quadraticPolynomial = $CONTENT.foundations.equations.quadratic.whatIsIt.article.$quadraticTrinomial;
 const quadraticEquation = $CONTENT.foundations.equations.quadratic.whatIsIt.article.$quadraticEquation;
 const incompleteQuadratic = $CONTENT.foundations.equations.quadratic.incomplete.article.$quadraticMissingTerms;
@@ -204,8 +204,8 @@ export default defineProse({
         </P>
         <P>
           Writing a quadratic trinomial as a product of factors lets you immediately see the roots of its "equation." In
-          that form it falls under <Dep on={zeroFactors}>Zero factors</Dep> -- you just set each factor equal to zero
-          separately and get a true equality <M>0 = 0</M>:
+          that form it falls under the <Dep on={zeroProductProperty}>Zero product property</Dep> -- you just set each
+          factor equal to zero separately and get a true equality <M>0 = 0</M>:
         </P>
         <Diagram>{math`
           flowchart TD

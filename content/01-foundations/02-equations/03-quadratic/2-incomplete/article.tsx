@@ -5,7 +5,7 @@ const whatIsQuadratic = $CONTENT.foundations.equations.quadratic.whatIsIt;
 const quadraticEquation = $CONTENT.foundations.equations.quadratic.whatIsIt.article.$quadraticEquation;
 const equationSolution = $CONTENT.foundations.equations.elementary.article.$equationSolution;
 const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
-const zeroFactors = $CONTENT.foundations.equations.elementary.practice.$zeroFactors;
+const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty;
 
 //
 // #endregion
@@ -150,7 +150,7 @@ export default defineProse({
     <P>
       The next type of incomplete quadratic equations -- when coefficient <M>C</M> is zero. To solve them, it's enough
       to master the <Dep on={sameActionRule}>same action rule</Dep> and the ability to solve equations using the{' '}
-      <Dep on={zeroFactors}>set of factors equal to zero</Dep>.
+      <Dep on={zeroProductProperty}>Zero product property</Dep>.
     </P>
 
     <Problems title='Quadratic equations when "C" = 0' level="easy">
@@ -172,10 +172,10 @@ export default defineProse({
           </P>
           <BlockMath>x(x + 5) = 0</BlockMath>
           <P>
-            We have already <Dep on={zeroFactors}>solved</Dep> similar equations involving a set of factors equal to
-            zero. It is enough to find separately for which <M>x</M> each of the factors becomes zero. After all, if at
-            least one of them becomes zero, it will be multiplied by all other factors, and the entire left side will
-            become zero.
+            We have already <Dep on={zeroProductProperty}>used this idea</Dep> on similar equations where a product of
+            factors equals zero. It is enough to find separately for which <M>x</M> each factor becomes zero. After all,
+            if at least one of them becomes zero, it will be multiplied by all other factors, and the entire left side
+            will become zero.
           </P>
           <Diagram>{math`
             flowchart TD
@@ -307,10 +307,10 @@ export default defineProse({
           x(Ax + B) = 0
         `}</BlockMath>
         <P>
-          We get a <Dep on={zeroFactors}>standard equation form</Dep> with a set of factors on one side and zero on the
-          other. Such an equation can be split into two sub-equations and solved separately. In the first case, we get
-          the obvious root <M>x = 0</M>. In the second case, we get an elementary equation <M>Ax + B = 0</M> and solve
-          it for <M>x</M> (since coefficients <M>A</M> and <M>B</M> are known to us).
+          We get the standard <Dep on={zeroProductProperty}>zero-product form</Dep>: a bunch of factors on one side and
+          zero on the other. Such an equation can be split into two sub-equations and solved separately. In the first
+          case, we get the obvious root <M>x = 0</M>. In the second case, we get an elementary equation{' '}
+          <M>Ax + B = 0</M> and solve it for <M>x</M> (since coefficients <M>A</M> and <M>B</M> are known to us).
         </P>
         <Diagram>{math`
           flowchart TD

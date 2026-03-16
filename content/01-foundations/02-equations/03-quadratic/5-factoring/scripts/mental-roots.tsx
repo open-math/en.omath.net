@@ -89,7 +89,7 @@ export default defineProblemScript({
         <RootsCheck roots={[root1.checkValue, root2.checkValue]} />
         <ProblemHint>
           The roots are the opposites of the numbers next to <M>x</M> in each bracket. See the full explanation in the{' '}
-          <Dep on={$CONTENT.foundations.equations.elementary.practice.$zeroFactors}>Zero factors</Dep> problem.
+          <Dep on={$CONTENT.foundations.equations.zeroProductProperty}>Zero product property</Dep> page.
         </ProblemHint>
         <ProblemAnswer>
           <BlockMath>{`x_1 = ${root1.answerLatex}, \\enspace x_2 = ${root2.answerLatex}`}</BlockMath>
