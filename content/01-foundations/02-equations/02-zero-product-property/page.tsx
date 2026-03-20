@@ -46,6 +46,7 @@ export const content = defineProse({
   uniques: {
     zeroProductMethod: Statement,
     zeroProductExamples: Problems,
+    _whyNoOtherOptions: Details,
   },
 })(({ uniques }) => (
   <>
@@ -202,25 +203,64 @@ export const content = defineProse({
         `,
       }}
     >
-      <P>
-        <B>Any</B> equation made of factors (brackets) whose product is zero can be solved by{' '}
-        <B accent>setting each factor equal to zero separately</B>.
-      </P>
-      <Diagram>{math`
-        flowchart TD
-          sourceEquation["**Original equation**<br />$$ 11x(x-8)(x^2 - 4)\cdots = 0 $$"]
+      <StatementMain>
+        <P>
+          <B>Any</B> equation made of factors (brackets) whose product is zero can be solved by{' '}
+          <B accent>setting each factor equal to zero separately</B>.
+        </P>
+        <Diagram>{math`
+          flowchart TD
+            sourceEquation["**Original equation**<br />$$ 11x(x-8)(x^2 - 4)\cdots = 0 $$"]
 
-          sourceEquation --> sub1["**Sub-equation 1**<br />$$ x = 0 $$"]
-          sourceEquation --> sub2["**Sub-equation 2**<br />$$ x-8 = 0 $$"]
-          sourceEquation --> sub3["**Sub-equation 3**<br />$$ x^2 - 4 = 0 $$"]
-          sourceEquation --> subN["**Sub-equation N**<br />$$ \ldots $$"]
+            sourceEquation --> sub1["**Sub-equation 1**<br />$$ x = 0 $$"]
+            sourceEquation --> sub2["**Sub-equation 2**<br />$$ x-8 = 0 $$"]
+            sourceEquation --> sub3["**Sub-equation 3**<br />$$ x^2 - 4 = 0 $$"]
+            sourceEquation --> subN["**Sub-equation N**<br />$$ \ldots $$"]
 
-          sub1 --> sol1["$$ x_1 = 0 $$"]
-          sub2 --> sol2["$$ x_2 = 8 $$"]
-          sub3 --> sol3["$$ x_{3,4} = \pm 2 $$"]
+            sub1 --> sol1["$$ x_1 = 0 $$"]
+            sub2 --> sol2["$$ x_2 = 8 $$"]
+            sub3 --> sol3["$$ x_{3,4} = \pm 2 $$"]
 
-          class sol1,sol2,sol3,sol4 fill
-      `}</Diagram>
+            class sol1,sol2,sol3,sol4 fill
+        `}</Diagram>
+      </StatementMain>
+      <StatementProof>
+        <P>
+          We found a way to get the roots, but to <Dep on={equationSolution}>"solve an equation"</Dep> you have to do
+          more than just find roots. You also have to prove that <B>there are no other roots</B> besides the ones you
+          already found.
+        </P>
+        <P>
+          So let's assume there is some extra root we missed <M>x'</M> because it is impossible to find it using the
+          zero product property. By definition, plugging that root into the equation must produce a true equality:
+        </P>
+        <BlockMath>{math`
+          11x'(x'-8)(x'^2 - 4)\cdots = 0 \\
+        `}</BlockMath>
+        <P>
+          In our case, a "true equality" means the whole product on the left becomes zero. And when can a product of
+          factors become zero? Only if one of those factors is equal to zero. It is the{' '}
+          <Ref to={uniques._whyNoOtherOptions}>only way</Ref>.
+        </P>
+        <Details $={uniques._whyNoOtherOptions} title="Why is it the only way?">
+          <P>
+            Suppose in the equality <M>a \cdot b = 0</M>, neither <M>a</M> nor <M>b</M> is zero. Divide both sides by{' '}
+            <M>a</M>. Then you get <M>b = 0 / a</M>. Zero divided by any nonzero number is still zero. So <M>b = 0</M>.
+            That's a contradiction: <M>b</M> is both zero and not zero at the same time. So our assumption that both
+            numbers <M>a</M> and <M>b</M> are nonzero was wrong -- in such products, at least one factor <B>must</B> be
+            equal to zero.
+          </P>
+          <QED />
+        </Details>
+        <P>
+          If substituting <M>x'</M> turns one of the factors into zero, then we were required to find it beforehand. We
+          get mutually exclusive claims, nonsense: the root <M>x'</M> was missed by us and at the same time could not
+          possibly have been missed. So our original assumption that an "extra" root <M>x'</M> exists is false. There
+          are no extra roots, and by setting the factors equal to zero we found <B>all</B> possible roots of the
+          equation.
+        </P>
+        <QED />
+      </StatementProof>
     </Statement>
 
     <Problems
@@ -505,7 +545,7 @@ export const content = defineProse({
         </ProblemAnswer>
         <ProblemSolution>
           <P>
-            Pull <M>x-3</M> out of the denominator. To do that, use the <Dep on={sameActionRule}>same action rule</Dep>
+            Pull <M>x-3</M> out of the denominator. To do that, use the <Dep on={sameActionRule}>same action rule</Dep>{' '}
             and multiply both sides of the equation by <M>x-3</M>:
           </P>
           <BlockMath>{math`

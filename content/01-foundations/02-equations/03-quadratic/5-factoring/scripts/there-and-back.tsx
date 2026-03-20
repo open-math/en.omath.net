@@ -55,8 +55,8 @@ export default defineProblemScript({
         <MathExpressionCheck label="2) Expanded form" answer={trinomial2} />
         <ProblemHint>
           For factoring, review the{' '}
-          <Dep on={$CONTENT.foundations.equations.quadratic.factoring.article.$manualFactoring}>examples</Dep> from the
-          article.
+          <Dep on={$CONTENT.foundations.equations.quadratic.factoring.article.$manualFactoringExamples}>examples</Dep>{' '}
+          from the article.
         </ProblemHint>
         <ProblemAnswer>
           <BlockMath>{math`1) \enspace ${factored1} >>{big} 2) \enspace ${trinomial2}`}</BlockMath>

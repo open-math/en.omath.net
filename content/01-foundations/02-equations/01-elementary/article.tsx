@@ -353,7 +353,7 @@ export default defineProse({
     >
       <P>
         <B accent>Solutions</B> or <B accent>roots</B> of an equation are numbers that, when substituted for unknowns,
-        turn it into a true equality.
+        turn it into a <Dep on={uniques.equalityFalseTrue}>true equality</Dep>.
       </P>
 
       <P>

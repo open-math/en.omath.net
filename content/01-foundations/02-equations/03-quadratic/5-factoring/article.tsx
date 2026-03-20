@@ -9,7 +9,7 @@ import factoringStep1 from './assets/factoring-step-1.svg';
 import factoringStep2 from './assets/factoring-step-2.svg';
 import factoringStep3 from './assets/factoring-step-3.svg';
 import virginChad from './assets/virgin-chad.webp';
-import quadraticTrinomialPlane from './assets/quadratic-trinomial-plane.svg';
+import rootsPlane from './assets/roots-plane.svg';
 
 //
 //
@@ -58,10 +58,12 @@ export const RootsFactoringCheck = (
 export default defineProse({
   uniques: {
     whyFactoring: List,
-    manualFactoring: Problems,
+    manualFactoring: H1,
+    manualFactoringExamples: Problems,
     generalFactoring: Statement,
     generalFactoringExamples: Problems,
-    trinomialsPlane: H1,
+    quadraticFromAny: Important,
+    rootsPlane: H1,
   },
 })(({ uniques }) => (
   <>
@@ -273,7 +275,10 @@ export default defineProse({
       quadratic equation: <M>-3</M> and <M>-5</M>.
     </P>
 
-    <H1 snippet={{ key: true, description: 'A method for factoring "simple" quadratic trinomials by hand.' }}>
+    <H1
+      $={uniques.manualFactoring}
+      snippet={{ key: true, description: 'A method for factoring "simple" quadratic trinomials by hand.' }}
+    >
       Factoring by hand
     </H1>
 
@@ -322,7 +327,7 @@ export default defineProse({
       of them yourself.
     </P>
 
-    <Problems $={uniques.manualFactoring} title="Examples of hand factoring" level="example">
+    <Problems $={uniques.manualFactoringExamples} title="Examples of hand factoring" level="example">
       <P>Factor the quadratic trinomial and find the roots of the corresponding quadratic equation:</P>
       <SubProblem>
         <ProblemDescription>
@@ -852,28 +857,70 @@ export default defineProse({
       </SubProblem>
     </Problems>
 
-    <H1 $={uniques.trinomialsPlane}>"Rectangular" quadratic trinomials</H1>
-
     <P>
-      Factoring a quadratic trinomial can be pictured as assembling one full rectangle from several smaller pieces; we
-      already saw that. But that visualization can also be extended to negative numbers <M>t</M> and <M>k</M>, which are
-      the numbers we split coefficients <M>B</M> and <M>C</M> into. To do that, we place both numbers on a coordinate
-      plane where <M>t</M> is the horizontal axis and <M>k</M> is the vertical axis, or vice versa.
+      The general formula for writing any quadratic trinomial as a product of factors gives us one very neat and
+      interesting fact about quadratic trinomials and quadratic equations:
     </P>
 
+    <Important
+      $={uniques.quadraticFromAny}
+      title="Any two numbers can be roots!"
+      snippet={{
+        key: true,
+        seo: 'Any pair of numbers can be the roots of a quadratic trinomial',
+        description: `
+          The general factorization formula implies that any two numbers are roots of some quadratic trinomial.
+        `,
+      }}
+    >
+      <P>
+        The mere fact that the formula <M>A(x-x_1)(x-x_2)</M> exists means that{' '}
+        <B accent>for any two numbers there are infinitely many quadratic trinomials</B> whose roots are exactly those
+        numbers!
+      </P>
+      <P>
+        Take the numbers <M>5</M> and <M>-2</M>. Plug them in for <M>x_1</M> and <M>x_2</M> in the factorization
+        formula, and by choosing any values you want for <M>A</M>, you can write down as many quadratic trinomials as
+        you like:
+      </P>
+      <BlockMath>{math`
+        A = 1, \quad (x - 5)(x - (-2)) = \boxed{x^2 - 3x - 10} \\
+        A = -3, \quad -3(x - 5)(x - (-2)) = \boxed{-3x^2 + 9x + 30} \\
+      `}</BlockMath>
+    </Important>
+
+    <H1
+      $={uniques.rootsPlane}
+      snippet={{
+        key: true,
+        seo: 'Coordinate plane of roots of quadratic equations',
+        title: 'Roots plane',
+        description: `
+          A geometric visualization of the fact that absolutely any two numbers can be roots of some quadratic trinomial.
+        `,
+      }}
+    >
+      The roots plane of quadratic equations
+    </H1>
+
     <P>
-      Every point on that coordinate plane represents some quadratic trinomial. So we can even name the plane
-      accordingly, for example, the plane of "rectangular" trinomials. Not bad, huh? 😎
+      That cool fact that <Dep on={uniques.quadraticFromAny}>any two numbers</Dep> produce a quadratic trinomial can be
+      visualized in an equally cool way. You can draw a pair of numbers, that is, roots, as a point on a coordinate
+      plane where one axis is responsible for the "first" roots and the other for the "second" ones. Every point on that
+      plane represents some quadratic trinomial. Let's call this picture the "roots plane of quadratic trinomials."
+      Nice, right? 😎
     </P>
 
-    <Image src={quadraticTrinomialPlane} invert="dark" width="550px" />
+    <Image src={rootsPlane} invert="dark" width="550px" />
 
     <P>
-      We ignore coefficient <M>A</M> because you can always factor it out and get a trinomial without coefficient{' '}
-      <M>A</M>. Those even have their own name: <B>monic</B> quadratic trinomials.
+      We can ignore coefficient <M>A</M> because it cannot affect the roots in any way. All it does is scale the
+      resulting coefficients up or down:
     </P>
 
-    <BlockMath>{math`Ax^2 + Bx + C = A\left( x^2 + \frac{B}{A}x + \frac{C}{A} \right)`}</BlockMath>
+    <BlockMath>{math`
+      A(x-x_1)(x-x_2) = A\left( x^2 - (x_1 + x_2)x + x_1x_2 \right)
+    `}</BlockMath>
 
     <P>So all quadratic trinomials split into two categories:</P>
 
@@ -883,15 +930,18 @@ export default defineProse({
           <B>"Rectangular" quadratic trinomials</B>
         </P>
         <P>
-          These quadratic trinomials have either two roots or one root. They can be factored and represented as a
-          rectangle or a line.
+          These quadratic trinomials have two roots or one root, can be factored, and appear as a rectangle or a line on
+          the roots plane.
         </P>
       </Li>
       <Li>
         <P>
           <B>"Wrong" quadratic trinomials</B>
         </P>
-        <P>These quadratic trinomials have no roots, cannot be factored, and do not form a rectangle or a line.</P>
+        <P>
+          These quadratic trinomials have no roots, cannot be factored, and do not form a rectangle or a line on the
+          roots plane.
+        </P>
       </Li>
     </List>
   </>

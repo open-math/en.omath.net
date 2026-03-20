@@ -4,8 +4,8 @@ import article from './article';
 //
 //
 
-import interestingDots from './assets/plane-interesting-dots.svg';
-import planeSymmetry from './assets/plane-symmetry.svg';
+import interestingDots from './assets/roots-plane-interesting-dots.svg';
+import planeSymmetry from './assets/roots-plane-symmetry.svg';
 
 //
 //
@@ -18,6 +18,7 @@ import planeSymmetry from './assets/plane-symmetry.svg';
 import mentalRoots from './scripts/mental-roots';
 import thereAndBack from './scripts/there-and-back';
 import factoring from './scripts/factor-quadratic';
+import zeroSum from './scripts/zero-sum';
 
 //
 //
@@ -27,13 +28,18 @@ import factoring from './scripts/factor-quadratic';
 //
 //
 
+const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty.$zeroProductMethod;
 const biquadraticEquation = $CONTENT.foundations.equations.quadratic.quadraticFormula.article.$biquadratic;
 
 //
 //
 // #endregion
 
-export default defineProse()(() => (
+export default defineProse({
+  uniques: {
+    zeroSum: Problems,
+  },
+})(({ uniques }) => (
   <>
     <Problem title="No-brainer roots" level="easy" script={mentalRoots()} />
 
@@ -50,6 +56,82 @@ export default defineProse()(() => (
       }}
       script={factoring()}
     />
+
+    <Problems $={uniques.zeroSum} title="Zero-sum game" level="easy" pretty method>
+      <SubProblem label="Roots of the equation" standalone>
+        <ProblemDescription>
+          <P>
+            What are the roots of a quadratic equation if the sum of its coefficients is equal to <M>0</M>?
+          </P>
+          <BlockMath>A + B + C = 0</BlockMath>
+        </ProblemDescription>
+        <MathExpressionCheck label="Roots of the equation" answers={[1, 'C/A']} />
+        <ProblemHint>
+          Use the condition that the sum of coefficients is zero to express one of the coefficients, then substitute it
+          into the standard form of the quadratic equation.
+        </ProblemHint>
+        <ProblemHint>
+          Try factoring something out. Maybe not from all terms at once, maybe only from two of them.
+        </ProblemHint>
+        <ProblemAnswer>
+          <BlockMath>{math`x_1 = 1 >>{big} x_2 = \frac{C}{A}`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>
+            Let's express one coefficient, say <M>B</M>, through the others using the zero-sum condition:
+          </P>
+          <BlockMath>{math`
+            A + B + C = 0 \\
+            B = - A - C
+          `}</BlockMath>
+          <P>
+            Now substitute the expression on the right in place of <M>B</M> in the standard quadratic equation:
+          </P>
+          <BlockMath>{math`
+            Ax^2 + Bx + C = 0 \\
+            Ax^2 + (-A - C)x + C = 0 \\
+            Ax^2 - Ax - Cx + C = 0
+          `}</BlockMath>
+          <P>
+            Factor <M>Ax</M> out of the first two terms and <M>-C</M> out of the last two:
+          </P>
+          <BlockMath>{math`
+            Ax(x - 1) - C(x - 1) = 0 \\
+            (Ax - C)(x - 1) = 0
+          `}</BlockMath>
+          <P>
+            We got an equation made of factors whose product is zero. By the{' '}
+            <Dep on={zeroProductProperty}>zero product property</Dep>, we solve it by setting each factor equal to zero
+            separately:
+          </P>
+          <BlockMath>{math`
+            Ax - C = 0 \\
+            Ax = C \\
+            \boxed{x = \frac{C}{A}}
+            >>{big}{top}
+            x - 1 = 0 \\
+            \boxed{x = 1}
+          `}</BlockMath>
+          <P>
+            Nice result: if the sum of coefficients of a quadratic equation is zero, then one root is definitely equal
+            to <M>1</M>, and the other is <M>C/A</M>.
+          </P>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem label="Not just plus signs">
+        <ProblemDescription>
+          <P>And what are the roots of quadratic equations whose coefficients satisfy this relation:</P>
+          <BlockMath>A - B + C = 0</BlockMath>
+        </ProblemDescription>
+        <MathExpressionCheck label="Roots of the equation" answers={[-1, '-C/A']} />
+        <ProblemAnswer>
+          <BlockMath>{math`x_1 = -1 >>{big} x_2 = -\frac{C}{A}`}</BlockMath>
+        </ProblemAnswer>
+      </SubProblem>
+
+      <SubProblem label="Practice" script={zeroSum()} />
+    </Problems>
 
     <Problems title="Bracket chaos" level="medium">
       <P>Simplify the equation down to a product of factors and find the roots:</P>
@@ -425,7 +507,7 @@ export default defineProse()(() => (
 
     <Problems title="Exploring the trinomial plane" level="hard">
       <P>
-        Let's explore the <Dep on={article.uniques.trinomialsPlane}>coordinate plane</Dep> of "rectangular" quadratic
+        Let's explore the <Dep on={article.uniques.rootsPlane}>coordinate plane</Dep> of "rectangular" quadratic
         trinomials together:
       </P>
       <SubProblem label="Special cases">

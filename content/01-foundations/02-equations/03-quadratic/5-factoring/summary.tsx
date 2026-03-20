@@ -61,7 +61,7 @@ export default defineProse()(() => (
 
     <Image src={factoringAlgorithm} invert="dark" />
 
-    <Include toc>{article.uniques.manualFactoring}</Include>
+    <Include toc>{article.uniques.manualFactoringExamples}</Include>
 
     <H1>Factoring in the general case</H1>
 
@@ -210,5 +210,7 @@ export default defineProse()(() => (
     <Include toc>{article.uniques.generalFactoring}</Include>
 
     <Include toc>{article.uniques.generalFactoringExamples}</Include>
+
+    <Include toc>{article.uniques.quadraticFromAny}</Include>
   </>
 ));

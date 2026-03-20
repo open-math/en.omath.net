@@ -3,7 +3,7 @@ const quadraticFormula = $CONTENT.foundations.equations.quadratic.quadraticFormu
 export default (
   <>
     <P>
-      New article about the <Ref to={quadraticFormula}>quadratic formula</Ref>! A universal solving algorithm, super
+      New topic about the <Ref to={quadraticFormula}>quadratic formula</Ref>! A universal solving algorithm, super
       detailed explanations of every step, and interesting problems!
     </P>
   </>
