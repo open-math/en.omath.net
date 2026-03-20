@@ -218,6 +218,8 @@ export default defineProse({
           to <M>2p</M> and <M>{math`\dfrac{q}{2}`}</M>?
         </P>
       </ProblemDescription>
+      <MathValueCheck label="p" answer={1} />
+      <MathValueCheck label="q" answer={-6} />
       <ProblemAnswer>
         <BlockMath>{math`p = 1, \enspace q = -6`}</BlockMath>
       </ProblemAnswer>
@@ -282,13 +284,14 @@ export default defineProse({
       </ProblemSolution>
     </Problem>
 
-    <Problems title="Root acrobatics" level="medium">
+    <Problems title="Balancing the roots" level="medium">
       <SubProblem>
         <ProblemDescription>
           <P>
             In the equation <M>{math`x^2-4x+a=0`}</M>, the sum of the squares of the roots is <M>16</M>. Find <M>a</M>.
           </P>
         </ProblemDescription>
+        <MathValueCheck answer={0} />
         <ProblemHint>The sum of squares can be completed into the identity called the square of a sum.</ProblemHint>
         <ProblemAnswer>
           <M>a = 0</M>
@@ -345,6 +348,7 @@ export default defineProse({
             <M>a</M>.
           </P>
         </ProblemDescription>
+        <MathValueCheck answer={-3} />
         <ProblemHint>
           The square of the difference can be completed into the identity called the square of a sum.
         </ProblemHint>
@@ -422,6 +426,9 @@ export default defineProse({
           .
         </P>
       </ProblemDescription>
+      <MathExpressionCheck label="Opposite roots equation" answer="3x^2+x-1=0" />
+      <MathExpressionCheck label="Reciprocal roots equation" answer="-x^2-x+3=0" />
+      <MathExpressionCheck label="5× roots equation" answer="3x^2-5x-25=0" />
       <ProblemHint>
         Introduce new roots <M>{math`x_1'`}</M> and <M>{math`x_2'`}</M> and relate them to the old ones. Build new{' '}
         <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new roots.
@@ -629,6 +636,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`x_1 + \dfrac{1}{x_2}`}</M> and <M>{math`x_2 + \dfrac{1}{x_1}`}</M>
         </ProblemDescription>
+        <MathExpressionCheck label="New equation" answer="6x^2-7x-1=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -702,6 +710,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`x_1^2x_2`}</M> and <M>{math`x_1x_2^2`}</M>
         </ProblemDescription>
+        <MathExpressionCheck label="New equation" answer="8x^2+42x-27=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -780,6 +789,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`\dfrac{1}{x_1^2}`}</M> and <M>{math`\dfrac{1}{x_2^2}`}</M>
         </ProblemDescription>
+        <MathExpressionCheck label="New equation" answer="9x^2-61x+4=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -859,6 +869,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`\dfrac{x_1}{x_2} + 1`}</M> and <M>{math`\dfrac{x_2}{x_1} + 1`}</M>
         </ProblemDescription>
+        <MathExpressionCheck label="New equation" answer="6x^2+49x-49=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -920,7 +931,7 @@ export default defineProse({
       </SubProblem>
     </Problems>
 
-    <Problems title="Acrobat roots" level="medium">
+    <Problems title="Acrobatic roots" level="medium">
       <SubProblem>
         <ProblemDescription>
           <P>
@@ -928,6 +939,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`x_1^2 + x_2^2`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'70/9'} />
         <ProblemHint>
           <P>Use the square-of-a-sum formula:</P>
           <BlockMath>{math`(a + b)^2 = a^2 + 2ab + b^2`}</BlockMath>
@@ -978,6 +990,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`x_1x_2^3 + x_2x_1^3`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'-70/27'} />
         <ProblemHint>Factor out the common factor.</ProblemHint>
         <ProblemAnswer>
           <M>{math`-\frac{70}{27}`}</M>
@@ -1007,6 +1020,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`\frac{x_1}{x_2^2} + \frac{x_2}{x_1^2}`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'-584/3'} />
         <ProblemHint>
           <P>Use the cube-of-a-sum formula:</P>
           <BlockMath>{math`(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3`}</BlockMath>
@@ -1083,6 +1097,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`x_1^4 + x_2^4`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'4882/81'} />
         <ProblemHint>
           <P>
             Path 1 -- derive the fourth-power formula for <M>{math`(a + b)^4`}</M> with your own hands by multiplying
@@ -1142,6 +1157,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`\frac{1}{x_1^2} + \frac{1}{x_2^2}`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'41/16'} />
         <ProblemHint>
           Bring the fractions to a common denominator. We already expressed the sum of squares in the numerator in the
           first subproblem.
@@ -1193,6 +1209,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`x_1x_2^4 + x_2x_1^4`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'-245/4'} />
         <ProblemHint>
           Factor out the common factor. We already expressed the sum of cubes in the third subproblem.
         </ProblemHint>
@@ -1233,6 +1250,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`\frac{x_1}{x_2^3} + \frac{x_2}{x_1^3}`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'-2441/324'} />
         <ProblemHint>
           Bring the fractions to a common denominator. We already expressed the sum of fourth powers in the fourth
           subproblem.
@@ -1274,6 +1292,7 @@ export default defineProse({
           </P>
           <BlockMath>{math`x_1^6 + x_2^6`}</BlockMath>
         </ProblemDescription>
+        <MathValueCheck answer={'61049/64'} />
         <ProblemHint>
           <P>
             Make a variable substitution: <M>{math`n = x_1^2`}</M> and <M>{math`m = x_2^2`}</M>. Use the formulas from
@@ -1333,6 +1352,9 @@ export default defineProse({
             of the equation <M>{math`x^2 - 7x + 3a - 6 = 0`}</M>. Find <M>a</M> and the roots of each equation.
           </P>
         </ProblemDescription>
+        <MathValueCheck label="a" answer={6} />
+        <MathValueCheck label="Roots of 1st equation" answers={[2, 3]} />
+        <MathValueCheck label="Roots of 2nd equation" answers={[3, 4]} />
         <ProblemHint>
           Write down <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for the product for both equations.
         </ProblemHint>
@@ -1415,6 +1437,10 @@ export default defineProse({
             roots of each equation.
           </P>
         </ProblemDescription>
+        <MathValueCheck label="a" answer={-5} />
+        <MathValueCheck label="b" answer={36} />
+        <MathValueCheck label="Roots of 1st equation" answers={[4, 9]} />
+        <MathValueCheck label="Roots of 2nd equation" answers={[2, 3]} />
         <ProblemHint>
           First find <M>b</M>, then the roots of both equations, and then <M>a</M>.
         </ProblemHint>
@@ -1645,6 +1671,7 @@ export default defineProse({
         </P>
         <BlockMath>{math`(a^2 - 5a + 3)x^2 + (3a-1)x + 2 = 0`}</BlockMath>
       </ProblemDescription>
+      <MathValueCheck answer={'2/3'} />
       <ProblemHint>
         Write down <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for this equation.
       </ProblemHint>

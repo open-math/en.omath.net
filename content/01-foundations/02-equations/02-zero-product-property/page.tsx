@@ -269,6 +269,7 @@ export const content = defineProse({
       level="easy"
       snippet={{
         key: 'Usage examples',
+        seo: 'How to use zero product property?',
         description: `
           Practice problems for the zero product property with detailed solutions.
         `,
