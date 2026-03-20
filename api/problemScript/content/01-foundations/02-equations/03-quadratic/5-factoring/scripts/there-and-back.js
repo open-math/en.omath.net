@@ -47,8 +47,9 @@ var there_and_back_default = defineProblemScript('__auto_generated__',{
       /* @__PURE__ */ jsxs(ProblemHint, { children: [
         "For factoring, review the",
         " ",
-        /* @__PURE__ */ jsx(Dep, { on: {"__ERUDIT_globalContentItem":true,"__path":"foundations/equations/quadratic/factoring/article/$manualFactoring"}, children: "examples" }),
-        " from the article."
+        /* @__PURE__ */ jsx(Dep, { on: {"__ERUDIT_globalContentItem":true,"__path":"foundations/equations/quadratic/factoring/article/$manualFactoringExamples"}, children: "examples" }),
+        " ",
+        "from the article."
       ] }),
       /* @__PURE__ */ jsx(ProblemAnswer, { children: /* @__PURE__ */ jsx(BlockMath, { children: math`1) \enspace ${factored1} >>{big} 2) \enspace ${trinomial2}` }) })
     ] })
