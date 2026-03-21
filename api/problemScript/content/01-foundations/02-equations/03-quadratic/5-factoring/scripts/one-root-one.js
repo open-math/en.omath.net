@@ -53,8 +53,8 @@ function formatTrinomial(A, B, C, v, highPow, lowPow) {
   return parts.join("") + " = 0";
 }
 
-// content/01-foundations/02-equations/03-quadratic/5-factoring/scripts/zero-sum.tsx
-var zero_sum_default = defineProblemScript('__auto_generated__',{
+// content/01-foundations/02-equations/03-quadratic/5-factoring/scripts/one-root-one.tsx
+var one_root_one_default = defineProblemScript('__auto_generated__',{
   isGenerator: true
 })(({ random }) => {
   const roll = random.integer(0, 15);
@@ -99,7 +99,7 @@ var zero_sum_default = defineProblemScript('__auto_generated__',{
   return {
     problemContent: /* @__PURE__ */ jsxs(Fragment, { children: [
       /* @__PURE__ */ jsxs(ProblemDescription, { children: [
-        /* @__PURE__ */ jsx(P, { children: "Solve the quadratic equation using the derived root formulas:" }),
+        /* @__PURE__ */ jsx(P, { children: "Solve the quadratic equation in your head using the coefficient relations and the formulas for the second root:" }),
         /* @__PURE__ */ jsx(BlockMath, { children: equation })
       ] }),
       isDoubleRoot ? /* @__PURE__ */ jsx(RootsCheck, { roots: root1 }) : /* @__PURE__ */ jsx(RootsCheck, { roots: [root1, root2Check] }),
@@ -108,5 +108,5 @@ var zero_sum_default = defineProblemScript('__auto_generated__',{
   };
 });
 export {
-  zero_sum_default as default
+  one_root_one_default as default
 };
