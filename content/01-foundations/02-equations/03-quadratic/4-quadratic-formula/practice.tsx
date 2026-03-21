@@ -51,7 +51,7 @@ export default defineProse({
       title="Quadratic equations"
       level="easy"
       snippet={{
-        seo: 'quadratic equation practice problems',
+        seo: 'Quadratic equation practice problems',
         description: 'Practice solving quadratic equations with the quadratic formula.',
       }}
     >
@@ -67,7 +67,7 @@ export default defineProse({
       title="Biquadratic equations"
       level="easy"
       snippet={{
-        seo: 'biquadratic equation practice problems',
+        seo: 'Biquadratic equation practice problems',
         description: 'Practice solving biquadratic equations by reducing them to quadratics.',
       }}
     >
@@ -85,7 +85,7 @@ export default defineProse({
       title="Even coefficient"
       level="medium"
       snippet={{
-        seo: 'quadratic equation with even B coefficient',
+        seo: 'Quadratic equation with even B coefficient',
         key: true,
         description: 'A simpler root formula for quadratics when the coefficient B is even.',
       }}
@@ -335,7 +335,7 @@ export default defineProse({
       snippet={{
         key: true,
         search: true,
-        seo: 'quadratic formula: Sridhara method',
+        seo: 'Sridhara method for deriving the quadratic formula',
         description: 'A faster way to derive the quadratic formula, with one small trick.',
       }}
       pretty
