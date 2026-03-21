@@ -411,7 +411,7 @@ export default defineProse({
     <Problem title="Twisted sum" level="medium">
       <ProblemDescription>
         <P>
-          Two different numbers <M>a</M> and <M>b</M> satisfy the following chain of equalities:
+          Two distinct numbers <M>a</M> and <M>b</M> satisfy the following chain of equalities:
         </P>
         <BlockMath>a^2 + 3a + 1 = b^2 + 3b + 1 = 0</BlockMath>
         <P>Find the value of the following expression:</P>
@@ -432,7 +432,7 @@ export default defineProse({
         <P>To make the chain easier to look at, split it into two separate true equalities:</P>
         <BlockMath>{math`a^2 + 3a + 1 = 0 >>{big} b^2 + 3b + 1 = 0`}</BlockMath>
         <P>
-          The problem says that <M>a</M> and <M>b</M> are different. Plugging them into the same quadratic trinomial
+          The problem says that <M>a</M> and <M>b</M> are distinct. Plugging them into the same quadratic trinomial
           gives two true equalities, with the same coefficients both times. That means <M>a</M> and <M>b</M> are the
           roots of the quadratic equation <M>x^2 + 3x + 1 = 0</M>! Since they are roots, we can write down{' '}
           <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for them:
@@ -1629,7 +1629,7 @@ export default defineProse({
         <ProblemDescription>
           <P>
             Using <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> and the result of the previous
-            subproblem, prove that the <Dep on={quadraticFormula}>general quadratic formula</Dep> really works:
+            subproblem, prove that the <Dep on={quadraticFormula}>quadratic formula</Dep> really works:
           </P>
           <BlockMath>{math`
             \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}
@@ -1667,7 +1667,7 @@ export default defineProse({
             + : \frac{(n + m) + (n - m)}{2} = \frac{1}{2}\cdot 2n = n >>
             - : \frac{(n + m) - (n - m)}{2} = \frac{1}{2}\cdot 2m = m
           `}</BlockMath>
-          <P>The root formula really does work.</P>
+          <P>The quadratic formula really does work.</P>
           <QED />
         </ProblemSolution>
       </SubProblem>
