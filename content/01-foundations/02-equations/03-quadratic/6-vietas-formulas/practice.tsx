@@ -6,6 +6,7 @@ import article from './article';
 
 const oneRootOne = $CONTENT.foundations.equations.quadratic.factoring.practice.$oneRootOne;
 const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
+const quadraticFormula = $CONTENT.foundations.equations.quadratic.quadraticFormula.article.$formula;
 
 //
 //
@@ -406,6 +407,59 @@ export default defineProse({
         </ProblemSolution>
       </SubProblem>
     </Problems>
+
+    <Problem title="Twisted sum" level="medium">
+      <ProblemDescription>
+        <P>
+          Two different numbers <M>a</M> and <M>b</M> satisfy the following chain of equalities:
+        </P>
+        <BlockMath>a^2 + 3a + 1 = b^2 + 3b + 1 = 0</BlockMath>
+        <P>Find the value of the following expression:</P>
+        <BlockMath>{math`\frac{a}{b} + \frac{b}{a}`}</BlockMath>
+      </ProblemDescription>
+      <MathValueCheck label="Value of the expression" answer={7} />
+      <ProblemHint>
+        The numbers <M>a</M> and <M>b</M> are the two roots of the quadratic equation <M>x^2 + 3x + 1 = 0</M>, so you
+        can write down <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for them.
+      </ProblemHint>
+      <ProblemHint>
+        Rewrite the sum you need so that the numerator and denominator look like expressions from Vieta's formulas.
+      </ProblemHint>
+      <ProblemAnswer>
+        <M>7</M>
+      </ProblemAnswer>
+      <ProblemSolution>
+        <P>To make the chain easier to look at, split it into two separate true equalities:</P>
+        <BlockMath>{math`a^2 + 3a + 1 = 0 >>{big} b^2 + 3b + 1 = 0`}</BlockMath>
+        <P>
+          The problem says that <M>a</M> and <M>b</M> are different. Plugging them into the same quadratic trinomial
+          gives two true equalities, with the same coefficients both times. That means <M>a</M> and <M>b</M> are the
+          roots of the quadratic equation <M>x^2 + 3x + 1 = 0</M>! Since they are roots, we can write down{' '}
+          <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for them:
+        </P>
+        <BlockMath>{math`
+          \begin{cases}
+            a + b = -3 \\
+            ab = 1
+          \end{cases}
+        `}</BlockMath>
+        <P>Now rewrite the sum we need so that we can plug values from Vieta's formulas into it:</P>
+        <BlockMath>{math`
+          \frac{a}{b} + \frac{b}{a} = \frac{a^2 + b^2}{ab} = \ldots
+        `}</BlockMath>
+        <P>
+          In the numerator we have a sum of squares. We can add double the product and subtract it right away, so
+          nothing really changes. Then the numerator turns into a perfect square:
+        </P>
+        <BlockMath>{math`
+          \ldots = \frac{\overbrace{a^2 + b^2 + \yellow{2ab}}^{\small (a + b)^2} - \yellow{2ab}}{ab} = \frac{(a + b)^2 - 2ab}{ab} = \ldots
+        `}</BlockMath>
+        <P>Plug in the data from Vieta's formulas:</P>
+        <BlockMath>{math`
+          \ldots = \frac{(-3)^2 - 2\cdot 1}{1} = \frac{9 - 2}{1} = 7
+        `}</BlockMath>
+      </ProblemSolution>
+    </Problem>
 
     <Problem $={uniques.rootFromRoot} title="A root from a root" level="medium" method>
       <ProblemDescription>
@@ -1523,6 +1577,102 @@ export default defineProse({
       </SubProblem>
     </Problems>
 
+    <Problems title="Checking the quadratic formula" level="hard">
+      <SubProblem label="Warm-up">
+        <ProblemDescription>
+          <P>
+            Let the roots of a quadratic equation be denoted by <M>n</M> and <M>m</M>. Express the following expression,
+            built from the coefficients of that same equation, in terms of those roots:
+          </P>
+          <BlockMath>{math`
+            \frac{B^2 - 4AC}{A^2}
+          `}</BlockMath>
+        </ProblemDescription>
+        <MathExpressionCheck label="Expression in terms of the roots" answer="(n-m)^2" />
+        <ProblemHint>
+          Rewrite the expression so that the fractions <M>-B/A</M> and <M>C/A</M> appear in it. Then substitute the sum
+          and product of the roots from <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> into those
+          fractions.
+        </ProblemHint>
+        <ProblemAnswer>
+          <BlockMath>{math`\frac{B^2 - 4AC}{A^2} = (n - m)^2`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>
+            Rewrite the expression so that fractions from{' '}
+            <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> show up:
+          </P>
+          <BlockMath>{math`
+            \frac{B^2 - 4AC}{A^2} =
+            \frac{B^2}{A^2} - \frac{4\cancel{A}C}{A^{\cancel{2}}} =
+            \left(\frac{B}{A}\right)^2 - 4\cdot\frac{C}{A} =
+            \left(-\frac{B}{A}\right)^2 - 4\cdot\frac{C}{A} = \ldots
+          `}</BlockMath>
+          <P>
+            Now substitute the sum and product of the roots from Vieta's formulas for those fractions, expand the
+            brackets, and simplify:
+          </P>
+          <BlockMath>{math`
+            \ldots = \left(n + m\right)^2 - 4nm = \\
+            = n^2 + 2nm + m^2 - 4nm = \\
+            = n^2 - 2nm + m^2 = \\
+            = (n - m)^2
+          `}</BlockMath>
+          <P>Strip out the middle steps, and you get the final equality:</P>
+          <BlockMath>{math`
+            \frac{B^2 - 4AC}{A^2} = (n - m)^2
+          `}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem label="Check">
+        <ProblemDescription>
+          <P>
+            Using <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> and the result of the previous
+            subproblem, prove that the <Dep on={quadraticFormula}>general quadratic formula</Dep> really works:
+          </P>
+          <BlockMath>{math`
+            \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}
+          `}</BlockMath>
+        </ProblemDescription>
+        <ProblemHint>
+          Factor <M>1/2</M> out of the root formula and split the big fraction into two smaller ones.
+        </ProblemHint>
+        <ProblemHint>
+          Rewrite the fraction with the root so that the expression from the previous subproblem appears under the root
+          sign.
+        </ProblemHint>
+        <ProblemSolution>
+          <P>
+            Let's rewrite the formula so that we get a fraction from Vieta's formulas and the expression from the
+            previous subproblem:
+          </P>
+          <BlockMath>{math`
+            \frac{-B \pm \sqrt{B^2 - 4AC}}{2A} = \frac{1}{2}\left[ \frac{-B \pm \sqrt{B^2 - 4AC}}{A} \right] = \\
+            = \frac{1}{2}\left[ -\frac{B}{A} \pm \frac{\sqrt{B^2 - 4AC}}{A} \right] =
+            \frac{1}{2}\left[ -\frac{B}{A} \pm \sqrt{\frac{B^2 - 4AC}{A^2}} \right] = \ldots
+          `}</BlockMath>
+          <P>
+            Substitute the sum of the roots from Vieta's formulas into the left fraction, and the expression we got in
+            the previous subproblem under the root sign:
+          </P>
+          <BlockMath>{math`
+            \ldots = \frac{1}{2}\left[ (n + m) \pm \sqrt{(n - m)^2} \right]
+            = \frac{(n + m) \pm (n - m)}{2}
+          `}</BlockMath>
+          <P>
+            Depending on which sign you pick in place of <M>\pm</M>, you get the two roots of the equation:
+          </P>
+          <BlockMath>{math`
+            + : \frac{(n + m) + (n - m)}{2} = \frac{1}{2}\cdot 2n = n >>
+            - : \frac{(n + m) - (n - m)}{2} = \frac{1}{2}\cdot 2m = m
+          `}</BlockMath>
+          <P>The root formula really does work.</P>
+          <QED />
+        </ProblemSolution>
+      </SubProblem>
+    </Problems>
+
     <Problem title="Root difference" level="hard">
       <ProblemDescription>
         <P>
@@ -1738,6 +1888,101 @@ export default defineProse({
         <P>
           So, when <M>{math`a = \frac{2}{3}`}</M>, one root of the quadratic equation is twice the other.
         </P>
+      </ProblemSolution>
+    </Problem>
+
+    <Problem title="I'm out of root-themed titles" level="hard">
+      <ProblemDescription>
+        <P>
+          The numbers <M>n</M> and <M>m</M> are the roots of the quadratic equation <M>x^2 + 5x + 3 = 0</M>. Without
+          calculating the values of those roots, determine what quadratic equation will have the following roots:
+        </P>
+        <BlockMath>{math`
+          \left( n - \frac{1}{n} \right)^2 \quad \text{and} \quad \left( m - \frac{1}{m} \right)^2
+        `}</BlockMath>
+      </ProblemDescription>
+      <ProblemHint>
+        <P>
+          Write down <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for the original equation and for
+          the new one. In the new formulas, do the transformations needed so that expressions from the old Vieta
+          formulas show up. It's pretty tedious, but that's the job. Then plug them in and compute.
+        </P>
+      </ProblemHint>
+      <ProblemAnswer>
+        <BlockMath>{math`
+          9x^2 - 154x + 81 = 0
+        `}</BlockMath>
+      </ProblemAnswer>
+      <ProblemSolution>
+        <P>
+          Write down <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for the roots of the original
+          equation:
+        </P>
+        <BlockMath>{math`
+          \begin{cases}
+          n + m = -5 \\
+          nm = 3
+          \end{cases}
+        `}</BlockMath>
+        <P>Now write down Vieta's formulas for the new roots:</P>
+        <BlockMath>{math`
+          \begin{cases}
+          \left( n - \frac{1}{n} \right)^2 + \left( m - \frac{1}{m} \right)^2 = \text{?} \\
+          \left( n - \frac{1}{n} \right)^2 \cdot \left( m - \frac{1}{m} \right)^2 = \text{?}
+          \end{cases}
+        `}</BlockMath>
+        <P>
+          Our job is to transform each of these new Vieta formulas until we can stick expressions from the old Vieta
+          formulas into them. Let's go.
+        </P>
+        <ProblemSection title="Sum of the new roots">
+          <P>
+            Rewrite the formula for the sum of the new roots. We'll turn it into a square of a sum by adding and
+            compensating the needed terms:
+          </P>
+          <BlockMath>{math`
+            \left( n - \frac{1}{n} \right)^2 + \left( m - \frac{1}{m} \right)^2 = \\
+            = \left( n - \frac{1}{n} \right)^2 + \yellow{ 2\left(n - \frac{1}{n}\right)\left(m - \frac{1}{m}\right)} + \left( m - \frac{1}{m} \right)^2 - \yellow{2\left(n - \frac{1}{n}\right)\left(m - \frac{1}{m}\right)} = \\
+            = \left( n - \frac{1}{n} + m - \frac{1}{m} \right)^2 - 2\left(n - \frac{1}{n}\right)\left(m - \frac{1}{m}\right) = \\
+            = \left[(n + m) - \frac{m + n}{nm}\right]^2 - 2\left(nm - n\cdot\frac{1}{m} - m\cdot\frac{1}{n} + \frac{1}{nm}\right) = \\
+            = \left[(n + m) - \frac{m + n}{nm}\right]^2 - 2\left(nm - \frac{n^2 + m^2}{nm} + \frac{1}{nm}\right) = \\
+            = \left[(n + m) - \frac{m + n}{nm}\right]^2 - 2\left(nm - \frac{(n^2 + \yellow{2nm} + m^2) - \yellow{2nm}}{nm} + \frac{1}{nm}\right) = \\
+            = \left[(n + m) - \frac{m + n}{nm}\right]^2 - 2\left(nm - \frac{(n + m)^2 - 2nm}{nm} + \frac{1}{nm}\right) = \ldots
+          `}</BlockMath>
+          <P>Now plug in the numbers and compute:</P>
+          <BlockMath>{math`
+            \ldots = \left[(-5) - \frac{-5}{3}\right]^2 - 2\left(3 - \frac{(-5)^2 - 2\cdot 3}{3} + \frac{1}{3}\right) = \\
+            = \left(-\frac{10}{3}\right)^2 - 2\left(3 - \frac{25 - 6}{3} + \frac{1}{3}\right) = \frac{100}{9} - 2\left(3 - \frac{19}{3} + \frac{1}{3}\right) = \\
+              = \frac{100}{9} - 2\left(3 - \frac{18}{3}\right) = \frac{100}{9} - 2\cdot(-3) = \frac{100}{9} + 6 = \frac{100}{9} + \frac{54}{9} = \boxed{\frac{154}{9}}
+          `}</BlockMath>
+        </ProblemSection>
+        <ProblemSection title="Product of the new roots">
+          <P>Now rewrite the formula for the product of the new roots:</P>
+          <BlockMath>{math`
+            \left( n - \frac{1}{n} \right)^2 \cdot \left( m - \frac{1}{m} \right)^2 = \left[ \left(n - \frac{1}{n}\right)\left(m - \frac{1}{m}\right) \right]^2 \\
+            = \left(nm - n\cdot\frac{1}{m} - m\cdot\frac{1}{n} + \frac{1}{nm}\right)^2 = \\
+            = \left(nm - \frac{n^2 + m^2}{nm} + \frac{1}{nm}\right)^2 = \\
+            = \left(nm - \frac{(n^2 + \yellow{2nm} + m^2) - \yellow{2nm}}{nm} + \frac{1}{nm}\right)^2 = \\
+            = \left(nm - \frac{(n + m)^2 - 2nm}{nm} + \frac{1}{nm}\right)^2 = \ldots
+          `}</BlockMath>
+          <P>Plug in the numbers and compute:</P>
+          <BlockMath>{math`
+            \ldots = \left(3 - \frac{(-5)^2 - 2\cdot 3}{3} + \frac{1}{3}\right)^2 = \left(3 - \frac{25 - 6}{3} + \frac{1}{3}\right)^2 = \\
+              = \left(3 - \frac{19}{3} + \frac{1}{3}\right)^2 = \left(3 - \frac{18}{3}\right)^2 = (-3)^2 = \boxed{9}
+          `}</BlockMath>
+        </ProblemSection>
+        <ProblemSection title="Final equation">
+          <P>Let's sort out the sum-of-roots formula for the new equation:</P>
+          <BlockMath>{math`
+              -\frac{B}{A} = \frac{154}{9} = -\frac{-154}{9}
+          `}</BlockMath>
+          <P>Now let's sort out the product-of-roots formula:</P>
+          <BlockMath>{math`
+              \frac{C}{A} = 9 = \frac{81}{9}
+          `}</BlockMath>
+          <P>So the final quadratic equation with the new roots is:</P>
+          <BlockMath>9x^2 - 154x + 81 = 0</BlockMath>
+        </ProblemSection>
       </ProblemSolution>
     </Problem>
 
