@@ -7,6 +7,7 @@ import {
   openMathDependencies,
   omathOgImage,
   omathStyle,
+  omathChecks,
 } from '@open-math/shared/config';
 
 export default defineEruditConfig({
@@ -37,7 +38,7 @@ export default defineEruditConfig({
       },
     },
   },
-  problemChecks: ['@open-math/shared/checks/mValueCheck', '@open-math/shared/checks/mExprCheck'],
+  problemChecks: omathChecks,
   autoImports: ['./globals'],
   indexPage: {
     title: 'Open Math',

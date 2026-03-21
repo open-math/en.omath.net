@@ -480,9 +480,9 @@ export default defineProse({
           .
         </P>
       </ProblemDescription>
-      <MathExpressionCheck label="Opposite roots equation" answer="3x^2+x-1=0" />
-      <MathExpressionCheck label="Reciprocal roots equation" answer="-x^2-x+3=0" />
-      <MathExpressionCheck label="5× roots equation" answer="3x^2-5x-25=0" />
+      <MathEqualityCheck label="Opposite roots equation" answer="3x^2+x-1=0" />
+      <MathEqualityCheck label="Reciprocal roots equation" answer="-x^2-x+3=0" />
+      <MathEqualityCheck label="5× roots equation" answer="3x^2-5x-25=0" />
       <ProblemHint>
         Introduce new roots <M>{math`x_1'`}</M> and <M>{math`x_2'`}</M> and relate them to the old ones. Build new{' '}
         <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new roots.
@@ -690,7 +690,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`x_1 + \dfrac{1}{x_2}`}</M> and <M>{math`x_2 + \dfrac{1}{x_1}`}</M>
         </ProblemDescription>
-        <MathExpressionCheck label="New equation" answer="6x^2-7x-1=0" />
+        <MathEqualityCheck label="Quadratic equation" answer="6x^2-7x-1=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -764,7 +764,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`x_1^2x_2`}</M> and <M>{math`x_1x_2^2`}</M>
         </ProblemDescription>
-        <MathExpressionCheck label="New equation" answer="8x^2+42x-27=0" />
+        <MathEqualityCheck label="Quadratic equation" answer="8x^2+42x-27=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -843,7 +843,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`\dfrac{1}{x_1^2}`}</M> and <M>{math`\dfrac{1}{x_2^2}`}</M>
         </ProblemDescription>
-        <MathExpressionCheck label="New equation" answer="9x^2-61x+4=0" />
+        <MathEqualityCheck label="Quadratic equation" answer="9x^2-61x+4=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -923,7 +923,7 @@ export default defineProse({
         <ProblemDescription>
           <M>{math`\dfrac{x_1}{x_2} + 1`}</M> and <M>{math`\dfrac{x_2}{x_1} + 1`}</M>
         </ProblemDescription>
-        <MathExpressionCheck label="New equation" answer="6x^2+49x-49=0" />
+        <MathEqualityCheck label="Quadratic equation" answer="6x^2+49x-49=0" />
         <ProblemHint>
           Use the trick of building new <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> from the new
           roots from the problem <Ref to={uniques.rootFromRoot}>A root from a root</Ref>.
@@ -1901,6 +1901,7 @@ export default defineProse({
           \left( n - \frac{1}{n} \right)^2 \quad \text{and} \quad \left( m - \frac{1}{m} \right)^2
         `}</BlockMath>
       </ProblemDescription>
+      <MathEqualityCheck label="Quadratic equation" answer="9x^2-154x+81=0" />
       <ProblemHint>
         <P>
           Write down <Dep on={article.uniques.vietasFormulas}>Vieta's formulas</Dep> for the original equation and for
