@@ -18,7 +18,7 @@ import planeSymmetry from './assets/roots-plane-symmetry.svg';
 import mentalRoots from './scripts/mental-roots';
 import thereAndBack from './scripts/there-and-back';
 import factoring from './scripts/factor-quadratic';
-import zeroSum from './scripts/zero-sum';
+import oneRootOne from './scripts/one-root-one';
 
 //
 //
@@ -29,6 +29,7 @@ import zeroSum from './scripts/zero-sum';
 //
 
 const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty.$zeroProductMethod;
+const quadraticEquation = $CONTENT.foundations.equations.quadratic.whatIsIt.article.$quadraticEquation;
 const biquadraticEquation = $CONTENT.foundations.equations.quadratic.quadraticFormula.article.$biquadratic;
 
 //
@@ -37,7 +38,7 @@ const biquadraticEquation = $CONTENT.foundations.equations.quadratic.quadraticFo
 
 export default defineProse({
   uniques: {
-    zeroSum: Problems,
+    oneRootOne: Problems,
   },
 })(({ uniques }) => (
   <>
@@ -57,28 +58,42 @@ export default defineProse({
       script={factoring()}
     />
 
-    <Problems $={uniques.zeroSum} title="Zero-sum game" level="easy" pretty method>
-      <SubProblem label="Roots of the equation" standalone>
+    <Problems $={uniques.oneRootOne} title="One root is one" level="medium" pretty method>
+      <SubProblem label="Root 1">
         <ProblemDescription>
-          <P>
-            What are the roots of a quadratic equation if the sum of its coefficients is equal to <M>0</M>?
-          </P>
-          <BlockMath>A + B + C = 0</BlockMath>
+          If one of the roots of a quadratic equation is equal to <M>1</M>, how are its coefficients related? What is
+          the second root in that case?
         </ProblemDescription>
-        <MathExpressionCheck label="Roots of the equation" answers={[1, 'C/A']} />
+        <MathExpressionCheck label="Second root" answer="C/A" />
         <ProblemHint>
-          Use the condition that the sum of coefficients is zero to express one of the coefficients, then substitute it
-          into the standard form of the quadratic equation.
+          Plug one into the <Dep on={quadraticEquation}>standard form</Dep> of a quadratic equation.
         </ProblemHint>
         <ProblemHint>
-          Try factoring something out. Maybe not from all terms at once, maybe only from two of them.
+          From the coefficient relation you get, express one coefficient through the others and substitute it back into
+          the <Dep on={quadraticEquation}>standard form</Dep> of the quadratic equation.
+        </ProblemHint>
+        <ProblemHint>
+          Factor step by step. You don't have to pull out a common factor from all terms at once. Pulling it out from
+          just two terms can be enough.
         </ProblemHint>
         <ProblemAnswer>
-          <BlockMath>{math`x_1 = 1 >>{big} x_2 = \frac{C}{A}`}</BlockMath>
+          If one root is equal to one, then the second root is <M>C/A</M>.
         </ProblemAnswer>
         <ProblemSolution>
           <P>
-            Let's express one coefficient, say <M>B</M>, through the others using the zero-sum condition:
+            Since we know for sure that <M>1</M> is a root, we can just plug it into the{' '}
+            <Dep on={quadraticEquation}>standard form</Dep> of a quadratic equation:
+          </P>
+          <BlockMath>{math`
+            A \cdot 1^2 + B \cdot 1 + C = 0 \\
+            A + B + C = 0
+          `}</BlockMath>
+          <P>
+            So if one of the roots is one, then the sum of the coefficients of the quadratic equation is zero. Nice,
+            simple, and handy if you want to solve easy quadratics in your head.
+          </P>
+          <P>
+            To find the second root, express one coefficient from the zero-sum condition, say <M>B</M>:
           </P>
           <BlockMath>{math`
             A + B + C = 0 \\
@@ -113,24 +128,26 @@ export default defineProse({
             \boxed{x = 1}
           `}</BlockMath>
           <P>
-            Nice result: if the sum of coefficients of a quadratic equation is zero, then one root is definitely equal
-            to <M>1</M>, and the other is <M>C/A</M>.
+            So we get a neat result: if the sum of coefficients of a quadratic equation is zero, then one root must be
+            <M>1</M>, and the other is <M>C/A</M>.
           </P>
         </ProblemSolution>
       </SubProblem>
 
-      <SubProblem label="Not just plus signs">
+      <SubProblem label="Root -1">
         <ProblemDescription>
-          <P>And what are the roots of quadratic equations whose coefficients satisfy this relation:</P>
-          <BlockMath>A - B + C = 0</BlockMath>
+          If one of the roots of a quadratic equation is equal to <M>-1</M>, how are its coefficients related? What is
+          the second root in that case?
         </ProblemDescription>
-        <MathExpressionCheck label="Roots of the equation" answers={[-1, '-C/A']} />
+        <MathExpressionCheck label="Second root" answer="-C/A" />
+        <ProblemHint>This works exactly the same way as the previous subproblem.</ProblemHint>
         <ProblemAnswer>
-          <BlockMath>{math`x_1 = -1 >>{big} x_2 = -\frac{C}{A}`}</BlockMath>
+          If one of the roots is <M>-1</M>, then the coefficients satisfy <M>A - B + C = 0</M>, and the second root is{' '}
+          <M>-C/A</M>.
         </ProblemAnswer>
       </SubProblem>
 
-      <SubProblem label="Practice" script={zeroSum()} />
+      <SubProblem label="Practice" script={oneRootOne()} />
     </Problems>
 
     <Problems title="Bracket chaos" level="medium">

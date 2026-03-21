@@ -2,7 +2,7 @@ import { gcd, simplifyFraction } from '@open-math/shared/utils';
 import { formatTrinomial, fractionLatex } from '../../4-quadratic-formula/scripts/quadratic-shared';
 
 //
-// Zero-sum quadratics:
+// One-root-is-one quadratics:
 //   50% -> A + B + C = 0, roots: x1 = 1, x2 = C/A
 //   50% -> A - B + C = 0, roots: x1 = -1, x2 = -C/A
 //
@@ -65,7 +65,10 @@ export default defineProblemScript({
     problemContent: (
       <>
         <ProblemDescription>
-          <P>Solve the quadratic equation using the derived root formulas:</P>
+          <P>
+            Solve the quadratic equation in your head using the coefficient relations and the formulas for the second
+            root:
+          </P>
           <BlockMath>{equation}</BlockMath>
         </ProblemDescription>
         {isDoubleRoot ? <RootsCheck roots={root1} /> : <RootsCheck roots={[root1, root2Check]} />}

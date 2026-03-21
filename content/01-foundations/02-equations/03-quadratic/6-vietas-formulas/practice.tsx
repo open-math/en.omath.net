@@ -4,7 +4,7 @@ import article from './article';
 //
 //
 
-const zeroSum = $CONTENT.foundations.equations.quadratic.factoring.practice.$zeroSum;
+const oneRootOne = $CONTENT.foundations.equations.quadratic.factoring.practice.$oneRootOne;
 const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
 
 //
@@ -1741,10 +1741,10 @@ export default defineProse({
       </ProblemSolution>
     </Problem>
 
-    <Problem title="Zero-sum game again" level="hard">
+    <Problem title="Zero-sum game" level="hard">
       <ProblemDescription>
-        Solve the <Ref to={zeroSum}>Zero-sum game</Ref> problem in the coefficient-sum version using only Vieta's
-        formulas.
+        Using <B>only</B> Vieta's formulas, figure out what the roots of a quadratic equation are if the sum of its
+        coefficients is equal to zero.
       </ProblemDescription>
       <MathExpressionCheck label="Roots of the equation" answers={[1, 'C/A']} />
       <ProblemHint>
@@ -1757,6 +1757,8 @@ export default defineProse({
         <BlockMath>{math`x_1 = 1 >>{big} x_2 = \frac{C}{A}`}</BlockMath>
       </ProblemAnswer>
       <ProblemSolution>
+        <P>The problem tells us that the sum of the coefficients is zero:</P>
+        <BlockMath>{math`A + B + C = 0`}</BlockMath>
         <P>Express one coefficient through the others using the zero-sum equality:</P>
         <BlockMath>-B = A + C</BlockMath>
         <P>
@@ -1845,6 +1847,10 @@ export default defineProse({
           <M>1</M>, and the other one is <M>C/A</M>!
         </P>
       </ProblemSolution>
+      <ProblemNote>
+        This problem fully repeats <Ref to={oneRootOne}>One root is one</Ref>, the result is just reached by a different
+        route. There we used factoring, and here we used Vieta's formulas.
+      </ProblemNote>
     </Problem>
   </>
 ));

@@ -67,7 +67,7 @@ export default defineProse({
   },
 })(({ uniques }) => (
   <>
-    <H1>The plus way and the multiplication way</H1>
+    <H1>The way of sum and product</H1>
 
     <P>
       Any number can be written in infinitely many different ways. All those ways split into two categories: writing it
