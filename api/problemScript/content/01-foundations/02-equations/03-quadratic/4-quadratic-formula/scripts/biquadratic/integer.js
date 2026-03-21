@@ -46,6 +46,19 @@ function simplifySqrt(n) {
 
 // node_modules/@open-math/shared/dist/utils/roots.js
 
+// node_modules/@erudit-js/core/dist/problemCheck.js
+function defineProblemCheck(name) {
+  function finalizeProblemCheck() {
+    return {
+      name
+    };
+  }
+  return finalizeProblemCheck;
+}
+
+// node_modules/@open-math/shared/dist/checks/mEqualityCheck.js
+var mathEqualityCheckDefinition = defineProblemCheck("math-equality")();
+
 // node_modules/@open-math/shared/dist/utils/math.js
 
 
