@@ -58,6 +58,208 @@ export default defineProse({
       script={factoring()}
     />
 
+    <Problems title="Equation architect" level="easy" method>
+      <P>Build a quadratic equation with the given roots.</P>
+
+      <SubProblem>
+        <ProblemDescription>
+          Roots <M>2</M> and <M>3</M>. Coefficient <M>A = 1</M>.
+        </ProblemDescription>
+        <MathEqualityCheck label="Quadratic equation" answer="x^2-5x+6=0" />
+        <ProblemHint>
+          Use the fact that <Dep on={article.uniques.quadraticFromAny}>any two numbers can produce</Dep> a quadratic
+          trinomial.
+        </ProblemHint>
+        <ProblemAnswer>
+          <BlockMath>{math`x^2 - 5x + 6 = 0`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>Plug the data into the factoring formula:</P>
+          <BlockMath>{math`
+            A(x - x_1)(x - x_2) = 0 \\
+            1 \cdot (x - 2)(x - 3) = 0
+          `}</BlockMath>
+          <P>Expand the brackets:</P>
+          <BlockMath>{math`
+            (x - 2)(x - 3) = x^2 - 3x - 2x + 6 = x^2 - 5x + 6
+          `}</BlockMath>
+          <P>So the quadratic equation is:</P>
+          <BlockMath>{math`x^2 - 5x + 6 = 0`}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Roots <M>{math`1\frac{1}{3}`}</M> and <M>2</M>. Coefficient <M>A = 3</M>.
+        </ProblemDescription>
+        <MathEqualityCheck label="Quadratic equation" answer="3x^2-10x+8=0" />
+        <ProblemAnswer>
+          <BlockMath>{math`3x^2 - 10x + 8 = 0`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>
+            Convert <M>{math`1\frac{1}{3}`}</M> into an improper fraction:
+          </P>
+          <BlockMath>{math`1\frac{1}{3} = \frac{4}{3}`}</BlockMath>
+          <P>Now plug it into the factoring formula:</P>
+          <BlockMath>{math`
+            3\left(x - \frac{4}{3}\right)(x - 2) = 0
+          `}</BlockMath>
+          <P>
+            You can shove the <M>3</M> into the first bracket by multiplying each term in it by <M>3</M>:
+          </P>
+          <BlockMath>{math`
+            \left(3x - \frac{4}{\cancel{3}} \cdot \cancel{3}\right)(x - 2) = (3x - 4)(x - 2) = 0
+          `}</BlockMath>
+          <P>Expand the brackets:</P>
+          <BlockMath>{math`
+            (3x - 4)(x - 2) = 3x^2 - 6x - 4x + 8 = 3x^2 - 10x + 8
+          `}</BlockMath>
+          <P>So the quadratic equation is:</P>
+          <BlockMath>{math`3x^2 - 10x + 8 = 0`}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Both roots are equal to <M>{math`-2\frac{2}{3}`}</M>. Coefficient <M>A = 9</M>.
+        </ProblemDescription>
+        <MathEqualityCheck label="Quadratic equation" answer="9x^2+48x+64=0" />
+        <ProblemAnswer>
+          <BlockMath>{math`9x^2 + 48x + 64 = 0`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>
+            Convert <M>{math`-2\frac{2}{3}`}</M> into an improper fraction:
+          </P>
+          <BlockMath>{math`
+            -2\frac{2}{3} = -\left(2 + \frac{2}{3}\right) = -\frac{8}{3}
+          `}</BlockMath>
+          <P>Plug it into the factoring formula. Since the roots are the same, both brackets are identical:</P>
+          <BlockMath>{math`
+            9\left(x + \frac{8}{3}\right)\left(x + \frac{8}{3}\right) = 9\left(x + \frac{8}{3}\right)^2 = 0
+          `}</BlockMath>
+          <P>
+            Notice that <M>9 = 3^2</M>. Shove a <M>3</M> into each bracket:
+          </P>
+          <BlockMath>{math`
+            \left(3\left(x + \frac{8}{3}\right)\right)^2 = \left(3x + 8\right)^2 = 0
+          `}</BlockMath>
+          <P>Expand the square of a sum:</P>
+          <BlockMath>{math`
+            (3x + 8)^2 = 9x^2 + 48x + 64
+          `}</BlockMath>
+          <P>So the quadratic equation is:</P>
+          <BlockMath>{math`9x^2 + 48x + 64 = 0`}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Both roots are equal to <M>{math`\sqrt{3}`}</M>. Coefficient <M>A = 1</M>.
+        </ProblemDescription>
+        <MathEqualityCheck label="Quadratic equation" answer="x^2-2sqrt(3)x+3=0" />
+        <ProblemAnswer>
+          <BlockMath>{math`x^2 - 2\sqrt{3}x + 3 = 0`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>Plug the data into the factoring formula. Since the roots are the same, we get a square:</P>
+          <BlockMath>{math`
+            1 \cdot (x - \sqrt{3})(x - \sqrt{3}) = (x - \sqrt{3})^2 = 0
+          `}</BlockMath>
+          <P>Expand the square of a difference:</P>
+          <BlockMath>{math`
+            (x - \sqrt{3})^2 = x^2 - 2\sqrt{3} \cdot x + \left(\sqrt{3}\right)^2 = x^2 - 2\sqrt{3}x + 3
+          `}</BlockMath>
+          <P>So the quadratic equation is:</P>
+          <BlockMath>{math`x^2 - 2\sqrt{3}x + 3 = 0`}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Roots <M>{math`\sqrt{3}`}</M> and <M>{math`-\sqrt{5}`}</M>. Coefficient <M>A = 1</M>.
+        </ProblemDescription>
+        <MathEqualityCheck label="Quadratic equation" answer="x^2-(sqrt(3)-sqrt(5))x-sqrt(15)=0" />
+        <ProblemAnswer>
+          <BlockMath>{math`x^2 - (\sqrt{3} - \sqrt{5})x - \sqrt{15} = 0`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>Plug the data into the factoring formula:</P>
+          <BlockMath>{math`
+            1 \cdot (x - \sqrt{3})(x - (-\sqrt{5})) = (x - \sqrt{3})(x + \sqrt{5}) = 0
+          `}</BlockMath>
+          <P>Expand the brackets:</P>
+          <BlockMath>{math`
+            (x - \sqrt{3})(x + \sqrt{5}) = \\
+            = x^2 + \sqrt{5}x - \sqrt{3}x - \sqrt{3} \cdot \sqrt{5} = \\
+            = x^2 + (\sqrt{5} - \sqrt{3})x - \sqrt{15} = \\
+            = x^2 - (\sqrt{3} - \sqrt{5})x - \sqrt{15}
+          `}</BlockMath>
+          <P>So the quadratic equation is:</P>
+          <BlockMath>{math`x^2 - (\sqrt{3} - \sqrt{5})x - \sqrt{15} = 0`}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Roots <M>{math`3 - \sqrt{5}`}</M> and <M>{math`3 + \sqrt{5}`}</M>. Coefficient <M>A = 2</M>.
+        </ProblemDescription>
+        <MathEqualityCheck label="Quadratic equation" answer="2x^2-12x+8=0" />
+        <ProblemAnswer>
+          <BlockMath>{math`2x^2 - 12x + 8 = 0`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>Plug the data into the factoring formula:</P>
+          <BlockMath>{math`
+            2(x - (3 - \sqrt{5}))(x - (3 + \sqrt{5})) = 0
+          `}</BlockMath>
+          <P>Regroup what sits inside the brackets:</P>
+          <BlockMath>{math`
+            2((x - 3) + \sqrt{5})((x - 3) - \sqrt{5}) = 0
+          `}</BlockMath>
+          <P>
+            Inside the brackets we now have a difference of squares, <M>{math`(a + b)(a - b) = a^2 - b^2`}</M>, where{' '}
+            <M>a = x - 3</M> and <M>{math`b = \sqrt{5}`}</M>:
+          </P>
+          <BlockMath>{math`
+            2\left((x - 3)^2 - (\sqrt{5})^2\right) = 2\left((x - 3)^2 - 5\right) = 0
+          `}</BlockMath>
+          <P>Expand the square and simplify:</P>
+          <BlockMath>{math`
+            2(x^2 - 6x + 9 - 5) = 2(x^2 - 6x + 4) = 2x^2 - 12x + 8
+          `}</BlockMath>
+          <P>So the quadratic equation is:</P>
+          <BlockMath>{math`2x^2 - 12x + 8 = 0`}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Roots <M>{math`2 - \sqrt{7}`}</M> and <M>{math`\sqrt{7}`}</M>. Coefficient <M>A = 1</M>.
+        </ProblemDescription>
+        <MathEqualityCheck label="Quadratic equation" answer="x^2-2x+2sqrt(7)-7=0" />
+        <ProblemAnswer>
+          <BlockMath>{math`x^2 - 2x + (2\sqrt{7} - 7) = 0`}</BlockMath>
+        </ProblemAnswer>
+        <ProblemSolution>
+          <P>Plug the data into the factoring formula:</P>
+          <BlockMath>{math`
+            1 \cdot (x - (2 - \sqrt{7}))(x - \sqrt{7}) = (x - 2 + \sqrt{7})(x - \sqrt{7}) = 0
+          `}</BlockMath>
+          <P>Expand the brackets:</P>
+          <BlockMath>{math`
+            (x - 2 + \sqrt{7})(x - \sqrt{7}) = \\
+            = x^2 - \sqrt{7}x - 2x + 2\sqrt{7} + \sqrt{7}x - (\sqrt{7})^2 = \\
+            = x^2 - \cancel{\sqrt{7}x} - 2x + 2\sqrt{7} + \cancel{\sqrt{7}x} - 7 = \\
+            = x^2 - 2x + 2\sqrt{7} - 7
+          `}</BlockMath>
+          <P>So the quadratic equation is:</P>
+          <BlockMath>{math`x^2 - 2x + (2\sqrt{7} - 7) = 0`}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+    </Problems>
+
     <Problems $={uniques.oneRootOne} title="One root is one" level="medium" pretty method>
       <SubProblem label="Root 1">
         <ProblemDescription>
