@@ -11,7 +11,7 @@
     "format": "bun prettier --write ."
   },
   "dependencies": {
-    "erudit": "4.3.1",
+    "erudit": "4.3.2",
     "@open-math/shared": "open-math/shared"
   },
   "devDependencies": {
