@@ -329,7 +329,15 @@ export default defineProse({
 
     <P>We successfully completed the square in a quadratic equation in general form! The hardest part is behind us.</P>
 
-    <H1>The discriminant</H1>
+    <H1
+      snippet={{
+        seo: true,
+        title: 'Derivation of the discriminant',
+        description: 'How the discriminant of a quadratic equation is derived and why it is important.',
+      }}
+    >
+      The discriminant
+    </H1>
 
     <P>Take a close look at what we have now:</P>
 
