@@ -1,1 +1,0 @@
-import{i as n,a4 as r}from"./BKlwyjlL.js";const p=Symbol();function a(){return n(p)}function i(o){let e;typeof o=="string"?e=o:e=o.schema.name;const{appElements:s}=a(),t=s[e];if(!t)throw new r(`No AppElement found for schema "${e}"!`);return t}export{a,p,i as u};
