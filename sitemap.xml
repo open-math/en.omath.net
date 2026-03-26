@@ -42,11 +42,11 @@
     </url>
     <url>
         <loc>https://en.omath.net/book/foundations/</loc>
-        <lastmod>2026-03-23T16:32:15+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/group/foundations/equations/</loc>
-        <lastmod>2026-03-23T16:32:15+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/elementary/</loc>
@@ -126,7 +126,7 @@
     </url>
     <url>
         <loc>https://en.omath.net/group/foundations/equations/quadratic/</loc>
-        <lastmod>2026-03-23T16:32:15+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/</loc>
@@ -218,75 +218,79 @@
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/summary/foundations/equations/quadratic/quadratic-formula/</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/?element=general-formulas</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/?element=the-discriminant</loc>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/?element=discriminant</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/?element=formula</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/?element=biquadratic</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/?element=biquadratic-examples</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/quadratic-formula/?element=no-general-formulas-above-degree-4</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/summary/foundations/equations/quadratic/quadratic-formula/?element=algorithm</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/summary/foundations/equations/quadratic/quadratic-formula/?element=deriving-the-quadratic-formula</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/?element=quadratic-equations</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/?element=biquadratic-equations</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/?element=even-coefficient</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/?element=sridharas-method</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/?element=biquadratic-roots-formula</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/?element=quadratic-in-f</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/quadratic-formula/?element=palindromials</loc>
-        <lastmod>2026-03-21T18:16:14+03:00</lastmod>
+        <lastmod>2026-03-26T21:10:37+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/factoring/</loc>
