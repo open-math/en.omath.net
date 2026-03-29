@@ -6,7 +6,7 @@
       "name": "@open-math/en.omath.net",
       "dependencies": {
         "@open-math/shared": "open-math/shared",
-        "erudit": "4.3.3-dev.1",
+        "erudit": "4.3.4-dev.2",
       },
       "devDependencies": {
         "prettier": "^3.8.1",
@@ -102,11 +102,11 @@
 
     "@emnapi/wasi-threads": ["@emnapi/wasi-threads@1.1.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ=="],
 
-    "@erudit-js/cli": ["@erudit-js/cli@4.3.3-dev.1", "", { "dependencies": { "@erudit-js/core": "4.3.3-dev.1", "citty": "^0.2.1", "dotenv": "^17.3.1", "http-server": "^14.1.1" } }, "sha512-d/YRiMA0JQkDru+ScPy7XbzCPBCmq/lfw9smdbjk1K0zDXG9eKIZwifWfSljEgKJ/nA3GZpPUCwqZE6yxFW8RQ=="],
+    "@erudit-js/cli": ["@erudit-js/cli@4.3.4-dev.2", "", { "dependencies": { "@erudit-js/core": "4.3.4-dev.2", "citty": "^0.2.1", "dotenv": "^17.3.1", "http-server": "^14.1.1" } }, "sha512-bE4ihcPJTo7V72kY+YnHcac3h7Re8yqiKYrghMp0Za/AZSvyS74N+7aZVI/T77O4RiXw3dyGLmgo8hRxM5HrpA=="],
 
-    "@erudit-js/core": ["@erudit-js/core@4.3.3-dev.1", "", { "dependencies": { "tsprose": "^1.0.1" } }, "sha512-44heUIgFV9+ixhAUVRd2nJFrPxc/8r4LjVQ4CT9hpIBAZNQW4I/SVwSAt89cqCsQeAwWtuzEUFrs52b/7WhLUg=="],
+    "@erudit-js/core": ["@erudit-js/core@4.3.4-dev.2", "", { "dependencies": { "tsprose": "^1.0.1" } }, "sha512-LWF3qVr1CD81JJPPFZIKmLXENgiOSv84bbK83npPf4RJ/AgpkTWaC/0b91BW81WD4qg4UdxwChOdEigcY4Qa6w=="],
 
-    "@erudit-js/prose": ["@erudit-js/prose@4.3.3-dev.1", "", { "dependencies": { "@erudit-js/core": "4.3.3-dev.1", "@floating-ui/vue": "^1.1.11", "image-size": "^2.0.2", "katex": "^0.16.41", "mermaid": "^11.13.0", "photoswipe": "^5.4.4", "tsprose": "^1.0.1", "vue": "latest" } }, "sha512-wIK3banmAAtTDqt3iPJytAwI33AvowXyhcIXHFTrIYo0ocCGmTf7hKWFlUD18EJEbFB/Shbult9OVBPX+QgckA=="],
+    "@erudit-js/prose": ["@erudit-js/prose@4.3.4-dev.2", "", { "dependencies": { "@erudit-js/core": "4.3.4-dev.2", "@floating-ui/vue": "^1.1.11", "image-size": "^2.0.2", "katex": "^0.16.41", "mermaid": "^11.13.0", "photoswipe": "^5.4.4", "tsprose": "^1.0.1", "vue": "latest" } }, "sha512-G5OBXBN2hqhvPIYlf6XKJcDS1p0YcMgpyXivI9caj0hTkUqWvfjVG7BElMc0W2vFGNkPFoLOqUQoNNq4ye1hRw=="],
 
     "@esbuild-kit/core-utils": ["@esbuild-kit/core-utils@3.3.2", "", { "dependencies": { "esbuild": "~0.18.20", "source-map-support": "^0.5.21" } }, "sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ=="],
 
@@ -1020,7 +1020,7 @@
 
     "errx": ["errx@0.1.0", "", {}, "sha512-fZmsRiDNv07K6s2KkKFTiD2aIvECa7++PKyD5NC32tpRw46qZA3sOz+aM+/V9V0GDHxVTKLziveV4JhzBHDp9Q=="],
 
-    "erudit": ["erudit@4.3.3-dev.1", "", { "dependencies": { "@erudit-js/cli": "4.3.3-dev.1", "@erudit-js/core": "4.3.3-dev.1", "@erudit-js/prose": "4.3.3-dev.1", "@floating-ui/vue": "^1.1.11", "@resvg/resvg-js": "^2.6.2", "@tailwindcss/vite": "^4.2.1", "better-sqlite3": "^12.8.0", "chokidar": "^5.0.0", "consola": "^3.4.2", "drizzle-kit": "^0.31.10", "drizzle-orm": "^0.45.1", "esbuild": "^0.27.4", "flexsearch": "^0.8.212", "glob": "^13.0.6", "image-size": "^2.0.2", "jiti": "^2.6.1", "nuxt": "4.4.2", "nuxt-my-icons": "1.2.2", "perfect-debounce": "^2.1.0", "satori": "^0.26.0", "sharp": "^0.34.5", "tailwindcss": "^4.2.1", "ts-xor": "^1.3.0", "tsprose": "^1.0.1", "unslash": "^2.0.0", "vue": "latest", "vue-router": "latest" }, "bin": { "erudit": "bin/erudit.js" } }, "sha512-5cnMtK0ZobxE25sttjJVuZ1o6oNrUyjqANEIZ6Cb5NnEhzEmXJMstH5UlxQFiZFJf9tRk8vNF/SCLoig5KM+oA=="],
+    "erudit": ["erudit@4.3.4-dev.2", "", { "dependencies": { "@erudit-js/cli": "4.3.4-dev.2", "@erudit-js/core": "4.3.4-dev.2", "@erudit-js/prose": "4.3.4-dev.2", "@floating-ui/vue": "^1.1.11", "@resvg/resvg-js": "^2.6.2", "@tailwindcss/vite": "^4.2.1", "better-sqlite3": "^12.8.0", "chokidar": "^5.0.0", "consola": "^3.4.2", "drizzle-kit": "^0.31.10", "drizzle-orm": "^0.45.1", "esbuild": "^0.27.4", "flexsearch": "^0.8.212", "glob": "^13.0.6", "image-size": "^2.0.2", "jiti": "^2.6.1", "nuxt": "4.4.2", "nuxt-my-icons": "1.2.2", "perfect-debounce": "^2.1.0", "satori": "^0.26.0", "sharp": "^0.34.5", "tailwindcss": "^4.2.1", "ts-xor": "^1.3.0", "tsprose": "^1.0.1", "unslash": "^2.0.0", "vue": "latest", "vue-router": "latest" }, "bin": { "erudit": "bin/erudit.js" } }, "sha512-tlJGcWVWajcM5WimP+m6cNoG3LFMmUm4YtVTDTmT1VCO/BR06dpz6/hYNwE0G6Tb8r3dBcx3v2ilkw9lcutyKg=="],
 
     "es-define-property": ["es-define-property@1.0.1", "", {}, "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g=="],
 

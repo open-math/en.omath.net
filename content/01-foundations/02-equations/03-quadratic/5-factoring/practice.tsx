@@ -330,7 +330,7 @@ export default defineProse({
             \boxed{x = 1}
           `}</BlockMath>
           <P>
-            So we get a neat result: if the sum of coefficients of a quadratic equation is zero, then one root must be
+            So we get a neat result: if the sum of coefficients of a quadratic equation is zero, then one root must be{' '}
             <M>1</M>, and the other is <M>C/A</M>.
           </P>
         </ProblemSolution>
