@@ -99,20 +99,20 @@ export default defineProse({
 
           methods --> methodB0["
             **B equals 0**
-            $$ Ax^2 + C = 0 $$
+            $$ \begin{aligned} Ax^2 + C = 0 \\ 5x^2 - 20 = 0 \end{aligned} $$
           "]
           methodB0 --> rootsB0["$$x_{1,2} = \pm\sqrt{-\frac{C}{A}}$$"]
 
           methods --> methodC0["
             **C equals 0**
-            $$ Ax^2 + Bx = 0 $$
+            $$ \begin{aligned} Ax^2 + Bx = 0 \\ 3x^2 + 12x = 0 \end{aligned} $$
           "]
           methodC0 --> root1C0["$$x_1 = 0$$"]
           methodC0 -->|1st Vieta formula| root2C0["$$x_2 = -\frac{B}{A}$$"]
 
           methods --> methodBC0["
             **B and C equal 0**
-            $$ Ax^2 = 0 $$
+            $$ \begin{aligned} Ax^2 = 0 \\ 4x^2 = 0 \end{aligned} $$
           "]
           methodBC0 --> rootBC0["$$x_1 = x_2 = 0$$"]
 
@@ -758,27 +758,27 @@ export default defineProse({
 
           methods --> methodZeroSum["
             **1. Zero sum**
-            $$ A \pm B + C = 0 $$
+            $$ \begin{aligned} A \pm B + C = 0 \\ 2x^2 + 3x - 5 = 0 \end{aligned} $$
           "]
           methodZeroSum --> methodZeroSumRoot1["$$ x_1 = \pm 1 $$"]
           methodZeroSum -->|2nd Vieta formula| methodZeroSumRoot2["$$ x_2 = \pm \frac{C}{A} $$"]
 
           methods --> methodSquare["
             **2. Perfect square**
-            $$ (Kx)^2 \pm 2 \cdot Kx \cdot T + (T)^2 $$
+            $$ \begin{aligned} (Kx)^2 \pm 2 \cdot Kx \cdot T + (T)^2 \\ 4x^2 + 12x + 9 = 0 \end{aligned} $$
           "]
           methodSquare -->|$A$ lives downstairs<br />$K$ came from $A$, so it does too| methodSquareRoot["$$ x_1 = x_2 = \mp \frac{T}{K} $$"]
 
           methods --> methodFactoring["
             **3. Factoring**
-            $$ x^2 + (t + k)x + tk = 0 $$
+            $$ \begin{aligned} x^2 + (t + k)x + tk = 0 \\ x^2 + 8x + 15 = 0 \end{aligned} $$
           "]
           methodFactoring -->|Minus in front of $t$| methodFactoringRoot1["$$ x_1 = -t $$"]
           methodFactoring -->|Minus in front of $k$| methodFactoringRoot2["$$ x_2 = -k $$"]
 
           methods --> methodAtoC["
             **4. Transfer A to C**
-            $$ x^2 + Bx + AC = 0 $$
+            $$ \begin{aligned} x^2 + Bx + AC = 0 \\ 3x^2 - 17x - 6 = 0 \end{aligned} $$
           "]
           methodAtoC -->|$A$ lives downstairs<br />So divide the roots by $A$| methodAtoCRoots["$$ x_{1,2} = \frac{x'_{1,2}}{A} $$"]
 
