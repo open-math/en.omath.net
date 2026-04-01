@@ -216,5 +216,11 @@ export default defineProblemScript({
         </ProblemAnswer>
       </>
     ),
+    ensureStorage: [
+      <Dep on={methodZeroSum}>Zero sum</Dep>,
+      <Dep on={methodSquare}>Perfect square</Dep>,
+      <Dep on={methodFactoring}>Factoring</Dep>,
+      <Dep on={methodAtoC}>Transfer A to C</Dep>,
+    ],
   };
 });
