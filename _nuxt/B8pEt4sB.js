@@ -1,1 +1,0 @@
-import{_ as e,l as r,p as o}from"./Ct27mBGN.js";const s={},t={class:"border-border mx-(--proseAsideWidth) mt-(--proseGap) rounded border-0 border-b"};function c(n,d){return r(),o("hr",t)}const _=e(s,[["render",c]]);export{_ as default};
