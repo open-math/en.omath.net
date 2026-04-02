@@ -1,0 +1,1 @@
+import{n as t,T as s,m,a as i}from"./DHw--bUu.js";function r(n){const e=t(n?.children);if(!e)throw new s("JSX Fragment must have at least one child!");return m({schema:i,elementHandler:a=>{a.children=e}})}function o(n,e){return n===r?r(e):n(e)}const l=o;export{r as F,o as a,l as j};

@@ -2,7 +2,7 @@ var { P, ProblemDescription, ProblemSolution, ProblemAnswer, BlockMath, M, math,
 // node_modules/@open-math/shared/dist/utils/letter.js
 var DEFAULT_SKIP = ["i", "f", "g", "e", "z"];
 function getRandomLatinLetter(random, options) {
-  const { casing = "any", skip = DEFAULT_SKIP } = options ?? {};
+  const { casing = "lower", skip = DEFAULT_SKIP } = options ?? {};
   const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
   const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const skipLower = new Set(skip.map((l) => l.toLowerCase()));
