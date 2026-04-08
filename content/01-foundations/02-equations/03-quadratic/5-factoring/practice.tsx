@@ -6,6 +6,7 @@ import article from './article';
 
 import interestingDots from './assets/roots-plane-interesting-dots.svg';
 import planeSymmetry from './assets/roots-plane-symmetry.svg';
+import factoringStep1 from './assets/factoring-step-1.svg';
 
 //
 //
@@ -31,6 +32,7 @@ import oneRootOne from './scripts/one-root-one';
 const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty.$zeroProductMethod;
 const quadraticEquation = $CONTENT.foundations.equations.quadratic.whatIsIt.article.$quadraticEquation;
 const biquadraticEquation = $CONTENT.foundations.equations.quadratic.quadraticFormula.article.$biquadratic;
+const mentalFactoring = $CONTENT.foundations.equations.quadratic.mentalSolving.article.$factorizationSigns;
 
 //
 //
@@ -38,11 +40,118 @@ const biquadraticEquation = $CONTENT.foundations.equations.quadratic.quadraticFo
 
 export default defineProse({
   uniques: {
+    factoringSigns: Problem,
     oneRootOne: Problems,
   },
 })(({ uniques }) => (
   <>
     <Problem title="No-brainer roots" level="easy" script={mentalRoots()} />
+
+    <Problem $={uniques.factoringSigns} title="Factoring signs" level="easy" method>
+      <ProblemDescription>
+        <P>
+          Without finding the roots, determine what signs the numbers <M>t</M> and <M>k</M> will have when the
+          trinomials are factored:
+        </P>
+        <Image src={factoringStep1} invert="dark" width="400px" />
+        <BlockMath>{math`
+          1) \ x^2 + 80x + 3 >>{big}
+          2) \ y^2 - 2y + 18 >>{big}
+          3) \ z^2 - 5z - 14 >>{big}
+          4) \ w^2 + 4w - 5
+        `}</BlockMath>
+      </ProblemDescription>
+      <ProblemCheck
+        expand
+        label="Signs in the first trinomial"
+        select={[
+          {
+            content: 'Both positive.',
+            answer: true,
+          },
+          { content: 'Both negative.' },
+          { content: 'One positive and one negative.' },
+        ]}
+      />
+      <ProblemCheck
+        expand
+        label="Signs in the second trinomial"
+        select={[
+          { content: 'Both positive.' },
+          { content: 'Both negative.', answer: true },
+          { content: 'One positive and one negative.' },
+        ]}
+      />
+      <ProblemCheck
+        expand
+        label="Signs in the third trinomial"
+        select={[
+          { content: 'Both positive.' },
+          { content: 'Both negative.' },
+          { content: 'One positive and one negative.', answer: true },
+        ]}
+      />
+      <ProblemCheck
+        expand
+        label="Signs in the fourth trinomial"
+        select={[
+          { content: 'Both positive.' },
+          { content: 'Both negative.' },
+          { content: 'One positive and one negative.', answer: true },
+        ]}
+      />
+      <ProblemHint>
+        Recall the sign of the product of two positive numbers, one positive and one negative number, and two negative
+        numbers.
+      </ProblemHint>
+      <ProblemAnswer>
+        <ProblemSection title="First trinomial">
+          The numbers <M>t</M> and <M>k</M> are positive.
+        </ProblemSection>
+        <ProblemSection title="Second trinomial">
+          The numbers <M>t</M> and <M>k</M> are negative.
+        </ProblemSection>
+        <ProblemSection title="Third trinomial">
+          The numbers <M>t</M> and <M>k</M> have different signs: one is positive, the other is negative, and the
+          negative one has the larger absolute value.
+        </ProblemSection>
+        <ProblemSection title="Fourth trinomial">
+          The numbers <M>t</M> and <M>k</M> have different signs: one is positive, the other is negative, and the
+          negative one has the smaller absolute value.
+        </ProblemSection>
+      </ProblemAnswer>
+      <ProblemSolution>
+        <ProblemSection title="First trinomial">
+          Coefficient <M>C</M> is positive, so <M>t</M> and <M>k</M> must have the same sign: either both positive or
+          both negative. But if they were both negative, then their sum -- coefficient <M>B</M> -- would also be
+          negative, and it is not. So both <M>t</M> and <M>k</M> are positive.
+        </ProblemSection>
+        <ProblemSection title="Second trinomial">
+          Coefficient <M>C</M> is positive, so <M>t</M> and <M>k</M> must have the same sign: either both positive or
+          both negative. But coefficient <M>B</M> is negative, so both <M>t</M> and <M>k</M> must be negative to give a
+          negative sum.
+        </ProblemSection>
+        <ProblemSection title="Third trinomial">
+          Coefficient <M>C</M> is negative, so <M>t</M> and <M>k</M> must have different signs: one positive and one
+          negative. The negative coefficient <M>B</M> tells us that the negative one must have the larger absolute
+          value. For example, <M>t = -10</M> and <M>k = 5</M> give the negative sum <M>B = -5</M>.
+        </ProblemSection>
+        <ProblemSection title="Fourth trinomial">
+          Coefficient <M>C</M> is negative, so <M>t</M> and <M>k</M> must have different signs: one positive and one
+          negative. The positive coefficient <M>B</M> tells us that the negative one must have the smaller absolute
+          value. For example, <M>t = -2</M> and <M>k = 5</M> give the positive sum <M>B = 3</M>.
+        </ProblemSection>
+      </ProblemSolution>
+      <ProblemNote>
+        <P>
+          This is a very useful trick that makes <Ref to={mentalFactoring}>mental solving</Ref> of simple quadratic
+          equations much easier. If coefficients <M>B</M> and <M>C</M> have signs <M>++</M>, the factorization uses two
+          positive numbers. If the signs are <M>-+</M>, it uses two negative numbers. If <M>C</M> is negative, then the
+          signs are different. Just do not blindly use this trick everywhere -- it works only when <M>A</M> is positive.
+          If <M>A</M> is negative, everything flips the other way around.
+        </P>
+      </ProblemNote>
+    </Problem>
 
     <Problem title="There and back again" level="easy" script={thereAndBack()} />
 

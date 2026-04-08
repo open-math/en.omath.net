@@ -36,6 +36,7 @@ const quadraticFormula = $CONTENT.foundations.equations.quadratic.quadraticFormu
 const oneRootOne = $CONTENT.foundations.equations.quadratic.factoring.practice.$oneRootOne;
 const vietasFormulas = $CONTENT.foundations.equations.quadratic.vietasFormulas.article.$vietasFormulas;
 const manualFactoring = $CONTENT.foundations.equations.quadratic.factoring.article.$manualFactoring;
+const factoringSigns = $CONTENT.foundations.equations.quadratic.factoring.practice.$factoringSigns;
 
 //
 //
@@ -47,6 +48,7 @@ export default defineProse({
     methodZeroSum: Statement,
     methodSquare: Statement,
     methodFactoring: Statement,
+    factorizationSigns: Statement,
     methodAtoC: Statement,
     methodsAll: Diagram,
     methodsAllPractice: Problem,
@@ -503,6 +505,47 @@ export default defineProse({
       Just find numbers that give <M>B</M> and <M>C</M>, then flip both signs. Much nicer.
     </P>
 
+    <P>
+      Factoring mentally gets a lot easier once you can instantly tell what signs the numbers in the factorization must
+      have. You can do that with a simple trick first mentioned in the problem{' '}
+      <Ref to={factoringSigns}>Factoring signs</Ref>. Good problem, by the way. Solve it if you have not already. The
+      general rule is as follows:
+    </P>
+
+    <Statement $={uniques.factorizationSigns} title="Factoring signs">
+      <StatementMain>
+        <P>
+          You can determine the signs of the numbers <M>t</M> and <M>k</M> in the factorization of a quadratic trinomial
+          from the signs of coefficients <M>B</M> and <M>C</M>:
+        </P>
+        <BlockMath>{math`
+          +C \quad +B \\
+          \boxed{+t \quad +k} >>{big}{top}
+          +C \quad -B \\
+          \boxed{-t \quad -k} >>{big}{top}
+          -C \\
+          \boxed{\text{The signs of t and k are different}}
+        `}</BlockMath>
+      </StatementMain>
+      <StatementProof>
+        <P>
+          If coefficient <M>C</M> is positive, then the numbers <M>t</M> and <M>k</M> are either both positive or both
+          negative, because only two positives or two negatives multiply to a positive number. A positive <M>B</M> means{' '}
+          <M>t</M> and <M>k</M> must be positive ("plus + plus = plus"). If <M>B</M> is negative, then <M>t</M> and{' '}
+          <M>k</M> must be negative ("minus + minus = minus").
+        </P>
+
+        <P>
+          If coefficient <M>C</M> is negative, then <M>t</M> and <M>k</M> must have different signs ("minus times plus
+          equals minus").
+        </P>
+
+        <QED />
+      </StatementProof>
+    </Statement>
+
+    <P>Now that you know how to determine the signs you need, try solving quadratic equations mentally by factoring:</P>
+
     <Problems title="Factoring -- Practice" level="medium" method>
       <P>
         If possible, solve the quadratic equation mentally by the{' '}
@@ -521,8 +564,13 @@ export default defineProse({
         </ProblemAnswer>
         <ProblemSolution>
           <P>
-            The numbers <M>3</M> and <M>5</M> add up to <M>8</M> and multiply to <M>15</M>. So their opposites,
-            <M>-3</M> and <M>-5</M>, are the roots. That's it.
+            We see positive coefficients <M>B</M> and <M>C</M>. So we are looking for two{' '}
+            <Dep on={uniques.factorizationSigns}>positive numbers</Dep> that add up to <M>B</M> and multiply to <M>C</M>
+            .
+          </P>
+          <P>
+            It is easy to spot that <M>3</M> and <M>5</M> add up to <M>8</M> and multiply to <M>15</M>. So their
+            opposites, <M>-3</M> and <M>-5</M>, are the roots. That's the whole trick.
           </P>
         </ProblemSolution>
       </SubProblem>
@@ -539,8 +587,13 @@ export default defineProse({
         </ProblemAnswer>
         <ProblemSolution>
           <P>
-            The numbers <M>-2</M> and <M>-3</M> add up to <M>-5</M> and multiply to <M>6</M>. So their opposites,
-            <M>2</M> and <M>3</M>, are the roots.
+            We see a negative coefficient <M>B</M> and a positive coefficient <M>C</M>. So we are looking for two{' '}
+            <Dep on={uniques.factorizationSigns}>negative numbers</Dep> that add up to <M>B</M> and multiply to <M>C</M>
+            .
+          </P>
+          <P>
+            It is easy to spot that <M>-2</M> and <M>-3</M> add up to <M>-5</M> and multiply to <M>6</M>. So their
+            opposites, <M>2</M> and <M>3</M>, are the roots.
           </P>
         </ProblemSolution>
       </SubProblem>
@@ -557,8 +610,13 @@ export default defineProse({
         </ProblemAnswer>
         <ProblemSolution>
           <P>
-            The numbers <M>2</M> and <M>-8</M> add up to <M>-6</M> and multiply to <M>-16</M>. So their opposites,
-            <M>-2</M> and <M>8</M>, are the roots.
+            We see a negative coefficient <M>B</M> and a negative coefficient <M>C</M>. So we are looking for two{' '}
+            <Dep on={uniques.factorizationSigns}>numbers with different signs</Dep> that add up to <M>B</M> and multiply
+            to <M>C</M>.
+          </P>
+          <P>
+            It is easy to spot that <M>2</M> and <M>-8</M> add up to <M>-6</M> and multiply to <M>-16</M>. So their
+            opposites, <M>-2</M> and <M>8</M>, are the roots.
           </P>
         </ProblemSolution>
       </SubProblem>

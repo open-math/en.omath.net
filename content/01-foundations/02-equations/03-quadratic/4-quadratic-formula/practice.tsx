@@ -41,6 +41,7 @@ const zeroProductProperty = $CONTENT.foundations.equations.zeroProductProperty;
 
 export default defineProse({
   uniques: {
+    evenB: Problems,
     sridharasMethod: Problem,
     quadraticInF: Problems,
     palindromials: Problems,
@@ -82,6 +83,7 @@ export default defineProse({
     <Problem title="David and Goliath" level="easy" script={davidGoliath()} />
 
     <Problems
+      $={uniques.evenB}
       title="Even coefficient"
       level="medium"
       snippet={{
