@@ -72,13 +72,13 @@ function formatTrinomial(A, B, C, v, highPow, lowPow) {
   return parts.join("") + " = 0";
 }
 
-// content/01-foundations/02-equations/03-quadratic/7-mental-solving/scripts/mental-shared.tsx
+// content/01-foundations/02-equations/03-quadratic/8-mental-solving/scripts/mental-shared.tsx
 function rootCheckValue(n, d) {
   const [sn, sd] = simplifyFraction(n, d);
   return sd === 1 ? sn : `${sn}/${sd}`;
 }
 
-// content/01-foundations/02-equations/03-quadratic/7-mental-solving/scripts/perfect-square.tsx
+// content/01-foundations/02-equations/03-quadratic/8-mental-solving/scripts/perfect-square.tsx
 function generateSolvable(random) {
   const K = random.integer(1, 6);
   const T = random.integer(1, 7);
