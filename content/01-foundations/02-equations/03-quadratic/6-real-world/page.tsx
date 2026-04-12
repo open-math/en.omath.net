@@ -1150,7 +1150,7 @@ export const content = defineProse({
     </P>
 
     <P>
-      Distance <M>S</M> gets replaced by some "amount of work" <M>A</M>, whatever units it may use: the area of a fence
+      Distance <M>S</M> gets replaced by some "amount of work" <M>W</M>, whatever units it may use: the area of a fence
       to paint, the volume of a tank to fill, the number of parts a factory has to make, and so on. Speed <M>V</M>{' '}
       becomes "productivity", "output", or just a work rate <M>P</M>: how many square meters get painted per hour, how
       many liters flow into a tank per minute, how many parts get made per day, and so on.
@@ -1158,12 +1158,12 @@ export const content = defineProse({
 
     <P>
       The formulas are exactly the same, only the letters change. For example, if a worker makes <M>P = 8</M> parts per
-      hour, then in <M>t = 10</M> hours they make <M>8 \cdot 10 = 80 = A</M> parts. That gives the main formula{' '}
-      <M>A = Pt</M>, and from it you get the work-rate and work-time formulas, exactly like in constant-speed motion:
+      hour, then in <M>t = 10</M> hours they make <M>8 \cdot 10 = 80 = W</M> parts. That gives the main formula{' '}
+      <M>W = Pt</M>, and from it you get the work-rate and work-time formulas, exactly like in constant-speed motion:
     </P>
 
     <BlockMath>{math`
-      A = Pt >>{big} P = \frac{A}{t} >>{big} t = \frac{A}{P}
+        W = Pt >>{big} P = \frac{W}{t} >>{big} t = \frac{W}{P}
     `}</BlockMath>
 
     <Problem title="Painting a Fence" level="medium">
@@ -1175,7 +1175,7 @@ export const content = defineProse({
       <MathValueCheck label="Individual painting times" answers={[10, 15]} />
       <ProblemHint>
         <P>
-          Start from the work formula <M>A = Pt</M> for the situation where both workers are painting together. Then
+          Start from the work formula <M>W = Pt</M> for the situation where both workers are painting together. Then
           replace the work rate with expressions through total work and time.
         </P>
       </ProblemHint>
@@ -1187,20 +1187,20 @@ export const content = defineProse({
           Write the work formula for the case where both workers act together, so their rates add. They can paint the
           fence in <M>6</M> hours:
         </P>
-        <BlockMath>A = (P_1 + P_2) \cdot 6</BlockMath>
+        <BlockMath>W = (P_1 + P_2) \cdot 6</BlockMath>
         <P>
-          We are not given any rates, so replace them with expressions through <M>A</M> and time. From <M>A = Pt</M>, if
-          you divide both sides by <M>t</M>, you get <M>{math`P = \frac{A}{t}`}</M>.
+          We are not given any rates, so replace them with expressions through <M>W</M> and time. From <M>W = Pt</M>, if
+          you divide both sides by <M>t</M>, you get <M>{math`P = \frac{W}{t}`}</M>.
         </P>
         <BlockMath>{math`
-          A = \left(\frac{A}{t_1} + \frac{A}{t_2}\right) \cdot 6
+          W = \left(\frac{W}{t_1} + \frac{W}{t_2}\right) \cdot 6
         `}</BlockMath>
         <P>
-          Factor out <M>A</M> and divide both sides by it. That completely kills the total-work quantity, whatever you
+          Factor out <M>W</M> and divide both sides by it. That completely kills the total-work quantity, whatever you
           imagine it to be:
         </P>
         <BlockMath>{math`
-          \cancel{A} = \cancel{A} \cdot \left(\frac{1}{t_1} + \frac{1}{t_2}\right) \cdot 6 \\
+          \cancel{W} = \cancel{W} \cdot \left(\frac{1}{t_1} + \frac{1}{t_2}\right) \cdot 6 \\
           1 = \left(\frac{1}{t_1} + \frac{1}{t_2}\right) \cdot 6 \\
           \frac{1}{6} = \frac{1}{t_1} + \frac{1}{t_2}
         `}</BlockMath>
@@ -1219,9 +1219,9 @@ export const content = defineProse({
           t_2^2 - 17t_2 + 30 = 0
         `}</BlockMath>
         <P>
-          Yep, a quadratic equation. Surprise. Since <M>A = 1</M> and the other numbers are simple, you can{' '}
-          <Dep on={manualFactoring}>factor it by hand</Dep>. The numbers <M>-15</M> and <M>-2</M> add to <M>-17</M> and
-          multiply to <M>30</M>. So:
+          Yep, a quadratic equation. Surprise. Since the leading coefficient is <M>1</M> and the other numbers are
+          simple, you can <Dep on={manualFactoring}>factor it by hand</Dep>. The numbers <M>-15</M> and <M>-2</M> add to{' '}
+          <M>-17</M> and multiply to <M>30</M>. So:
         </P>
         <BlockMath>{math`
           (t_2 - 15)(t_2 - 2) = 0
@@ -1250,11 +1250,11 @@ export const content = defineProse({
       </ProblemAnswer>
       <ProblemSolution>
         <P>
-          Translate each sentence directly into math. First, the first brigade did <M>A_1 = 240</M> hectares of work.
+          Translate each sentence directly into math. First, the first brigade did <M>W_1 = 240</M> hectares of work.
           From that, find the second brigade's amount immediately:
         </P>
         <BlockMath>{math`
-          A_2 = A_1 + \frac{35}{100} \cdot A_1 = 240 + \frac{35}{100} \cdot 240 = 324
+          W_2 = W_1 + \frac{35}{100} \cdot W_1 = 240 + \frac{35}{100} \cdot 240 = 324
         `}</BlockMath>
         <P>The second sentence gives the relation between daily rates and completion times. Translate that:</P>
         <BlockMath>{math`
@@ -1265,7 +1265,7 @@ export const content = defineProse({
           relation and replace time by expressions through work amount and work rate:
         </P>
         <BlockMath>{math`
-          \frac{A_1}{P_1} = \frac{A_2}{P_2} - 2
+          \frac{W_1}{P_1} = \frac{W_2}{P_2} - 2
         `}</BlockMath>
         <P>
           Now substitute the expression for <M>P_1</M> through <M>P_2</M> from the first relation, and also the numeric
@@ -1317,7 +1317,7 @@ export const content = defineProse({
       <ProblemSolution>
         <P>Write the full-tank work formula for all three taps together:</P>
         <BlockMath>{math`
-          A = (P_1 + P_2 + P_3) \cdot 6
+          W = (P_1 + P_2 + P_3) \cdot 6
         `}</BlockMath>
         <P>Now write the time relations:</P>
         <BlockMath>{math`
@@ -1327,10 +1327,10 @@ export const content = defineProse({
           Substitute expressions through work and time for the rates in the first formula, because time is what we need:
         </P>
         <BlockMath>{math`
-          A = \left(\frac{A}{t_1} + \frac{A}{t_2} + \frac{A}{t_3}\right) \cdot 6
+          W = \left(\frac{W}{t_1} + \frac{W}{t_2} + \frac{W}{t_3}\right) \cdot 6
         `}</BlockMath>
         <P>
-          Factor out <M>A</M> on the right and divide both sides by it. That completely eliminates the total-work
+          Factor out <M>W</M> on the right and divide both sides by it. That completely eliminates the total-work
           quantity:
         </P>
         <BlockMath>{math`
