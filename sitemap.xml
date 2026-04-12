@@ -42,11 +42,11 @@
     </url>
     <url>
         <loc>https://en.omath.net/book/foundations/</loc>
-        <lastmod>2026-04-12T15:56:48+03:00</lastmod>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/group/foundations/equations/</loc>
-        <lastmod>2026-04-12T15:56:48+03:00</lastmod>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/elementary/</loc>
@@ -126,7 +126,7 @@
     </url>
     <url>
         <loc>https://en.omath.net/group/foundations/equations/quadratic/</loc>
-        <lastmod>2026-04-12T15:56:48+03:00</lastmod>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/what-is-it/</loc>
@@ -343,6 +343,30 @@
     <url>
         <loc>https://en.omath.net/practice/foundations/equations/quadratic/factoring/?element=factoring-biquadratic-trinomials</loc>
         <lastmod>2026-04-08T16:28:07+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://en.omath.net/page/foundations/equations/quadratic/real-world/</loc>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://en.omath.net/page/foundations/equations/quadratic/real-world/?element=household-problems</loc>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://en.omath.net/page/foundations/equations/quadratic/real-world/?element=physics</loc>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://en.omath.net/page/foundations/equations/quadratic/real-world/?element=work</loc>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://en.omath.net/page/foundations/equations/quadratic/real-world/?element=solutions-alloys-gas-mixtures</loc>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
+    </url>
+    <url>
+        <loc>https://en.omath.net/page/foundations/equations/quadratic/real-world/?element=mathematics</loc>
+        <lastmod>2026-04-12T16:49:28+03:00</lastmod>
     </url>
     <url>
         <loc>https://en.omath.net/article/foundations/equations/quadratic/vietas-formulas/</loc>

@@ -1,1 +1,0 @@
-import{d as e}from"./DHw--bUu.js";/* empty css        */const n=e({element_name:"Утверждение",section_title_proof:"Доказательство"});export{n as default};
