@@ -11,10 +11,10 @@
     "format": "bun prettier --write ."
   },
   "dependencies": {
-    "erudit": "4.3.5-dev.1",
+    "erudit": "4.3.5",
     "@open-math/shared": "open-math/shared"
   },
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.2"
   }
 }
