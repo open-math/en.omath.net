@@ -51,7 +51,7 @@ export default defineProse({
     <P>
       We need to solve it, but <M>A</M> can be any number! What do we do? We just treat <M>A</M> like a number and do
       the usual operations. Here, by the <Dep on={sameActionRule}>same action rule</Dep>, we subtract <M>A</M> from both
-      sides to get rid of it on the left and obtain a general solution formula:
+      sides to get rid of it on the left:
     </P>
 
     <BlockMath>{math`

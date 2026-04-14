@@ -32,7 +32,7 @@ export const page = definePage({
   title: 'Quadratic Equations in Real Life',
   navTitle: 'Real Life',
   description: `
-    Examples of quadratic equations showing up in all sorts of places:
+    Real life applications of quadratic equations in all sorts of places:
     everyday life, physics, work problems, solutions, mixtures, alloys, and of course mathematics itself.
     All problems come with detailed solutions and answers.
   `,
