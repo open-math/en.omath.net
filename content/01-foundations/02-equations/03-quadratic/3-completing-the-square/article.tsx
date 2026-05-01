@@ -11,25 +11,13 @@ import completingTheSquare3 from './assets/completing-the-square-3.svg';
 // #region Links
 //
 
+const squareSum = $CONTENT.foundations.polynomials.specialProducts.article.$squareSum;
+const squareDiff = $CONTENT.foundations.polynomials.specialProducts.article.$squareDiff;
 const elementaryEquations = $CONTENT.foundations.equations.elementary;
 const sameActionRule = $CONTENT.foundations.equations.elementary.article.$sameActionRule;
 const quadraticEquation = $CONTENT.foundations.equations.quadratic.whatIsIt.article.$quadraticEquation;
 const incompleteQuadratics = $CONTENT.foundations.equations.quadratic.incomplete;
 const incompleteC0Roots = $CONTENT.foundations.equations.quadratic.incomplete.article.$c0Roots;
-
-//
-// #endregion
-
-// #region Todos
-//
-
-/**
- * Add a link to the article on shortened multiplication formulas when it is ready.
- */
-
-/**
- * Add a link to the square root and how to work with it when the article is ready.
- */
 
 //
 // #endregion
@@ -60,9 +48,10 @@ export default defineProse({
     <H1>What is this "completing" thing?</H1>
 
     <P>
-      There are two wonderful, very useful and frequently used formulas called "square of a sum" and "square of a
-      difference" (not to be confused with "difference of squares"!). It is difficult to even call them formulas, these
-      are just two different notations for the same thing. They look like this:
+      There are two wonderful, very useful and frequently used formulas called <Dep on={squareSum}>square of a sum</Dep>{' '}
+      and <Dep on={squareDiff}>square of a difference</Dep> (not to be confused with "difference of squares"!). It is
+      difficult to even call them formulas, these are just two different notations for the same thing. They look like
+      this:
     </P>
 
     <BlockMath>{math`
@@ -71,7 +60,7 @@ export default defineProse({
     `}</BlockMath>
 
     <P>
-      These are two of the three special products formulas. You can verify their correctness if you simply{' '}
+      These are two of the three basic special products formulas. You can verify their correctness if you simply{' '}
       <Ref to={uniques._expandBrackets}>expand</Ref> the parentheses on the left side of the equation and combine like
       terms.
     </P>

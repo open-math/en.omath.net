@@ -264,7 +264,7 @@ export default defineProse({
 
     <P>
       Now that you get the main idea (and the usefulness) of such "general" formulas, let's derive a general formula for
-      the roots of any quadratic equation — one that does not depend on specific coefficient values.
+      the roots of any quadratic equation -- one that does not depend on specific coefficient values.
     </P>
 
     <H1>Completing the square</H1>
@@ -277,7 +277,7 @@ export default defineProse({
       Completing the square with the coefficient <M>A</M> still in front is <B>impossible</B>! We don't know whether{' '}
       <M>A</M> is positive or negative (what if it's <M>-10</M>?), so taking a square root is not an option. So let's
       get rid of it: by the <Dep on={sameActionRule}>same action rule</Dep>, divide both sides by <M>A</M>. We're
-      allowed to do that because by definition <M>A \neq 0</M> — otherwise it wouldn't be a quadratic equation.
+      allowed to do that because by definition <M>A \neq 0</M> -- otherwise it wouldn't be a quadratic equation.
     </P>
 
     <BlockMath>{math`
@@ -288,7 +288,7 @@ export default defineProse({
 
     <P>
       By the same action rule, subtract the "constant term" (the one without <M>x</M>) from both sides. It's just
-      ballast — it will only get in the way when we try to complete the square on the left:
+      ballast -- it will only get in the way when we try to complete the square on the left:
     </P>
 
     <BlockMath>{math`
@@ -354,7 +354,7 @@ export default defineProse({
     <P>
       On the right, the denominator is <M>4</M> times a square, so the whole denominator is also <B>100% positive</B>{' '}
       (it can't be zero, because you can't divide by zero). So the only thing that decides the sign of the right-hand
-      side — and therefore whether solutions exist — is the numerator <M>B^2 - 4AC</M>.
+      side -- and therefore whether solutions exist -- is the numerator <M>B^2 - 4AC</M>.
     </P>
 
     <BlockMath>{math`
@@ -363,7 +363,7 @@ export default defineProse({
 
     <P>
       This numerator plays a <B>decisive</B> role in solving a quadratic equation. That's why it's called the
-      discriminant — a number that "distinguishes" the cases. In cases of discrimination based on certain traits (such
+      discriminant -- a number that "distinguishes" the cases. In cases of discrimination based on certain traits (such
       as skin color or language), people's rights are violated. Similarly, the discriminant, depending on its sign,
       determines whether a quadratic equation will have roots or not.
     </P>
@@ -503,7 +503,7 @@ export default defineProse({
 
     <Reference to={$CONTENT.foundations.equations.quadratic.quadraticFormula.practice.$sridharasMethod}>
       We derived the formula the "classic" way. But it's not the only way, and not even the simplest. There are many
-      other approaches — you'll see some of them in Practice...
+      other approaches -- you'll see some of them in Practice...
     </Reference>
 
     <P>
@@ -885,8 +885,8 @@ export default defineProse({
       }}
     >
       The Abel-Ruffini theorem proves that for equations of degree 5 and higher <B accent>there is no</B> general root
-      formula. No more universal "Cardano formulas" or "Ferrari methods". Of course the roots still exist — you can
-      approximate them using numerical methods — but a general "substitute -- get the answer" formula does not exist.
+      formula. No more universal "Cardano formulas" or "Ferrari methods". Of course the roots still exist -- you can
+      approximate them using numerical methods -- but a general "substitute -- get the answer" formula does not exist.
     </Important>
   </>
 ));

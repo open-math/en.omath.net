@@ -176,7 +176,7 @@ export default defineProse({
         </ProblemSolution>
         <ProblemNote>
           <P>
-            Simpler formulas without extra multiplication let you solve quadratics with an even coefficient faster —
+            Simpler formulas without extra multiplication let you solve quadratics with an even coefficient faster --
             sometimes even in your head. The easiest way to remember it: when <M>B</M> is even, the root formula is{' '}
             <B>the same as the general one</B>, just write <M>K</M> instead of <M>B</M> and remove the 2 and 4:
           </P>
