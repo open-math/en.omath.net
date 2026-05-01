@@ -652,6 +652,169 @@ export default defineProse({
 
     <Problem title="Simple Difference of Squares" level="medium" script={simpleDiffOfSquares()} />
 
+    <Problem title="From One to the Other" level="easy">
+      <ProblemDescription>
+        <P>Suppose you only know the formulas for the square and cube of a sum:</P>
+        <BlockMath>{math`
+          (a+b)^2 = a^2 + 2ab + b^2 \\
+          (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+        `}</BlockMath>
+        <P>
+          Use them to derive the formulas for the square and cube of a difference <M>(a-b)^2</M> and <M>(a-b)^3</M>.
+        </P>
+      </ProblemDescription>
+      <ProblemHint>
+        Rewrite <M>(a-b)^2</M> and <M>(a-b)^3</M> using a plus sign.
+      </ProblemHint>
+      <ProblemSolution>
+        <P>
+          Write the square and cube of a difference using a plus sign, where the minus means negation, not subtraction:
+        </P>
+        <BlockMath>{math`
+          (a-b)^2 = (a + (-b))^2 >>{big}
+          (a-b)^3 = (a + (-b))^3
+        `}</BlockMath>
+        <P>Now apply the known formulas for the square and cube of a sum to these plus-form expressions:</P>
+        <BlockMath>{math`
+          (a + (-b))^2 = a^2 + 2a(-b) + (-b)^2 = \boxed{a^2 - 2ab + b^2} \\
+          (a + (-b))^3 = a^3 + 3a^2(-b) + 3a(-b)^2 + (-b)^3 = \boxed{a^3 - 3a^2b + 3ab^2 - b^3}
+        `}</BlockMath>
+        <QED />
+      </ProblemSolution>
+    </Problem>
+
+    <Problems title="Awkward Minus Signs" level="easy" method>
+      <SubProblem label="One Minus Sign">
+        <ProblemDescription>
+          <P>
+            Check whether the formula for the <Dep on={squareDiff}>square of a difference</Dep> still works when the
+            negative term comes first rather than second:
+          </P>
+          <BlockMath>{math`
+            (-a+b)^2 = \text{?}
+          `}</BlockMath>
+        </ProblemDescription>
+        <ProblemCheck label="Does the square of a difference still work?" yes />
+        <ProblemSolution>
+          <P>
+            Treat <M>-a</M> as a single object. Then this expression can be expanded using the{' '}
+            <Dep on={squareSum}>square of a sum</Dep> formula:
+          </P>
+          <BlockMath>{math`
+            ((-a) + b)^2 = (-a)^2 + 2 \cdot (-a) \cdot b + b^2 = \boxed{a^2 - 2ab + b^2}
+          `}</BlockMath>
+          <P>
+            We got the expanded form of the square of a difference. So the square-of-a-difference formula can still be
+            used safely if we ignore the minus sign inside <M>-a</M>: the outer terms stay positive, and the middle term
+            is still <M>-2ab</M>.
+          </P>
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem label="Two Minus Signs">
+        <ProblemDescription>
+          <P>
+            Check whether the formula for the <Dep on={squareSum}>square of a sum</Dep> still works when both terms are
+            negative:
+          </P>
+          <BlockMath>{math`
+            (-a - b)^2 = \text{?}
+          `}</BlockMath>
+        </ProblemDescription>
+        <ProblemCheck label="Does the square of a sum still work?" yes />
+        <ProblemSolution>
+          <P>
+            Treat <M>-a</M> and <M>-b</M> as single objects. Then this expression can be expanded using the{' '}
+            <Dep on={squareSum}>square of a sum</Dep> formula:
+          </P>
+          <BlockMath>{math`
+            ((-a) + (-b))^2 = (-a)^2 + 2 \cdot (-a) \cdot (-b) + (-b)^2 = \boxed{a^2 + 2ab + b^2}
+          `}</BlockMath>
+          <P>
+            We got the expanded form of the square of a sum. So the square-of-a-sum formula still works if you simply
+            ignore the minus signs attached to <M>-a</M> and <M>-b</M>.
+          </P>
+          <P>You can also reach the same result by factoring out a minus sign first:</P>
+          <BlockMath>{math`
+            (-a - b)^2 = (-(a + b))^2 = (-1)^2(a + b)^2 = a^2 + 2ab + b^2
+          `}</BlockMath>
+        </ProblemSolution>
+      </SubProblem>
+    </Problems>
+
+    <Problems title="Prove This, Prove That..." level="easy">
+      <SubProblem>
+        <ProblemDescription>
+          Prove that the difference of the squares of two consecutive natural numbers equals the sum of those numbers.
+        </ProblemDescription>
+        <ProblemHint>
+          Denote the two consecutive natural numbers by <M>n</M> and <M>n+1</M>.
+        </ProblemHint>
+        <ProblemSolution>
+          <P>
+            Let the two consecutive numbers be <M>n</M> and <M>n+1</M>. Find their{' '}
+            <Dep on={diffOfSquares}>difference of squares</Dep>:
+          </P>
+          <BlockMath>{math`
+            (n+1)^2 - n^2 = (\cancel{n} + 1 - \cancel{n})(n + 1 + n) = 1 \cdot ((n+1) + n) = (n+1) + n
+          `}</BlockMath>
+          <P>It really does turn into the sum of those numbers.</P>
+          <QED />
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Prove that the difference of the squares of two consecutive even numbers is divisible by <M>4</M>.
+        </ProblemDescription>
+        <ProblemHint>
+          Any even number can be written as <M>2n</M>.
+        </ProblemHint>
+        <ProblemSolution>
+          <P>
+            Let the two consecutive even numbers be <M>2n</M> and <M>2n + 2</M>. We add <M>2</M> because adding <M>1</M>{' '}
+            would give an odd number. Now find their <Dep on={diffOfSquares}>difference of squares</Dep>:
+          </P>
+          <BlockMath>{math`
+            (2n + 2)^2 - (2n)^2 = (\cancel{2n} + 2 - \cancel{2n})(2n + 2 + 2n) = 2 \cdot (4n + 2) = 4 \cdot (2n + 1)
+          `}</BlockMath>
+          <P>
+            So the difference of squares can be written as a product with one factor equal to <M>4</M>. That means it is
+            divisible by <M>4</M>.
+          </P>
+          <QED />
+        </ProblemSolution>
+      </SubProblem>
+
+      <SubProblem>
+        <ProblemDescription>
+          Prove that the difference between the sum of the squares of two consecutive integers and twice their product
+          does not depend on which integers you choose.
+        </ProblemDescription>
+        <ProblemSolution>
+          <P>
+            Let the two consecutive integers be <M>n</M> and <M>n+1</M>. The sum of their squares is{' '}
+            <M>n^2 + (n+1)^2</M>, and twice their product is <M>2n(n+1)</M>. Write the difference:
+          </P>
+          <BlockMath>{math`
+            n^2 + (n+1)^2 - 2n(n+1)
+          `}</BlockMath>
+          <P>
+            If we reorder the terms, we can spot an expanded <Dep on={squareDiff}>square of a difference</Dep> and pack
+            it:
+          </P>
+          <BlockMath>{math`
+            n^2 - 2n(n+1) + (n+1)^2 = (n - (n+1))^2 = (-1)^2 = 1
+          `}</BlockMath>
+          <P>
+            So the difference between the sum of the squares and twice the product is always equal to <M>1</M>, no
+            matter which consecutive integers you choose.
+          </P>
+          <QED />
+        </ProblemSolution>
+      </SubProblem>
+    </Problems>
+
     <Problem $={uniques.simpleProduct} title="Simple Product" level="medium" script={simpleProduct()} />
 
     <Problem title="Simple Difference with a Product" level="medium" script={simpleDifference()} />
@@ -1173,7 +1336,7 @@ export default defineProse({
       {expandSub('(49 + b^2 - 7b)(b + 7)', 'b^3 + 343', 'b^3+343')}
     </Problems>
 
-    <Problem title="Any Odd Number Is a Difference of Squares" level="hard" pretty>
+    <Problem title="Any Odd is a Difference of Squares" level="hard" pretty>
       <ProblemDescription>
         Prove that any odd number can be written as a <Dep on={diffOfSquares}>difference of squares</Dep> of two
         numbers. Find the numbers whose difference of squares equals <M>7</M>, <M>111</M>, and <M>507</M>.
